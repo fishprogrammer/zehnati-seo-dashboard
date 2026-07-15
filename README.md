@@ -31,16 +31,24 @@ cd D:\claude-seo\zehnati-seo-dashboard
 
 ---
 
-## روشن کردن GitHub Pages (یک‌بار)
+## روشن کردن GitHub Pages (یک‌بار — دقیق)
 
-1. برو: https://github.com/fishprogrammer/zehnati-seo-dashboard/settings/pages  
-2. **Source:** Deploy from a branch  
-3. **Branch:** `main` / folder: `/ (root)`  
-4. Save  
+خطای Actions به‌خاطر این بود که Pages هنوز روی **GitHub Actions** تنظیم نشده بود.
+برای این پروژهٔ استاتیک، **Deploy from a branch** کافی و ساده‌تر است.
 
-بعد از ۱–۲ دقیقه لینک بالا فعال می‌شود.
+### مراحل در GitHub
+1. باز کنید: https://github.com/fishprogrammer/zehnati-seo-dashboard/settings/pages  
+2. **Build and deployment → Source** را بگذارید روی:  
+   **`Deploy from a branch`**  
+3. Branch: **`main`**  
+4. Folder: **`/ (root)`**  
+5. **Save**
 
-اگر از workflow استفاده می‌کنید (فایل `.github/workflows/pages.yml`)، در همان صفحه Source را روی **GitHub Actions** بگذارید.
+بعد از ۱–۲ دقیقه سایت زنده می‌شود:  
+https://fishprogrammer.github.io/zehnati-seo-dashboard/
+
+> اگر قبلاً Source را روی GitHub Actions گذاشته‌اید، همان را به **Deploy from a branch** عوض کنید.  
+> فایل workflow Actions از ریپو حذف شد تا هر push خطای قرمز ندهد.
 
 ---
 
