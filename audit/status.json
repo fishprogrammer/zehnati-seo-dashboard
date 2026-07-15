@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "mode": "static",
+  "generated_at": "2026-07-15T22:45:33+03:30",
+  "findings": [
+    "ACTION-PLAN.md",
+    "audit-data.json",
+    "FULL-AUDIT-REPORT.md",
+    "content-score.json",
+    "content.md",
+    "geo-score.json",
+    "geo.md",
+    "local-score.json",
+    "local.md",
+    "page.md",
+    "schema-score.json",
+    "schema.md",
+    "sitemap-score.json",
+    "sitemap.md",
+    "sxo-score.json",
+    "sxo.md",
+    "technical-score.json",
+    "technical.md"
+  ],
+  "summary": {
+    "health_score": 55
+  }
+}

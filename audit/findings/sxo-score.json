@@ -1,0 +1,37 @@
+{
+  "score": 70,
+  "generated_at": "2026-07-15T22:12:00+03:30",
+  "what_works": [
+    "Homepage title and H1 directly match مشاوره رایگان کنکور intent",
+    "Homepage returns 200 and has one H1",
+    "Phone and Didar form CTAs are present",
+    "Homepage mentions Dr. Zahra Jafari, Isfahan, Tehran, and branch schema signals",
+    "/about/ and /contact-us/ are live trust/contact support pages"
+  ],
+  "findings": [
+    {
+      "title": "Homepage needs stronger proof before the lead form",
+      "severity": "medium",
+      "description": "The free consultation promise is clear, but users still need clearer proof, process explanation, advisor role, outcomes, and expectation-setting before submitting a lead.",
+      "recommendation": "Add near-CTA sections for what happens next, what the free consultation includes, advisor credentials, student outcomes, testimonials, and FAQ objections."
+    },
+    {
+      "title": "Main consultation hub does not support the broader journey",
+      "severity": "high",
+      "description": "/مشاوره-کنکور/ returns 200 but the live probe found 17 H1 elements and article/listing behavior, so it cannot fully carry commercial comparison and service-depth intent.",
+      "recommendation": "Rebuild /مشاوره-کنکور/ as a true commercial hub with one H1, proof, FAQs, packages/pricing paths, and links to child landings."
+    },
+    {
+      "title": "CTA journey has broken or mismatched next pages",
+      "severity": "high",
+      "description": "/مشاوره-آنلاین-کنکور/, /اصفهان/, and /تهران/ return 404, while /ثبت-نام/, /برنامه-ریزی-کنکور/, and /انتخاب-رشته/ redirect to mismatched articles.",
+      "recommendation": "Fix the post-homepage journey with live intent-matched pages for online consultation, registration, planning, selection, Isfahan, and Tehran."
+    },
+    {
+      "title": "Persona segmentation is still thin",
+      "severity": "medium",
+      "description": "The page addresses the general consultation need but does not clearly separate parent, student, online, Isfahan, Tehran, and high-intent buyer motivations.",
+      "recommendation": "Add short persona blocks with specific benefits, proof, and CTAs for each major audience segment."
+    }
+  ]
+}

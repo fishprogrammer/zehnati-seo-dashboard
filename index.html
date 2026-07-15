@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>داشبورد SEO — ذهن آتی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0c1f2e;
+      --ink-soft: #1a3548;
+      --teal: #0d7377;
+      --teal-deep: #095456;
+      --sand: #e8eef1;
+      --paper: #f4f7f8;
+      --white: #ffffff;
+      --fail: #b42318;
+      --warn: #b54708;
+      --pass: #067647;
+      --muted: #5b6b75;
+      --line: #d3dde3;
+      --accent: #c45c26;
+      --radius: 12px;
+      --shadow: 0 1px 0 rgba(12, 31, 46, 0.06);
+      --font: "Vazirmatn", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .bg-mesh {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(ellipse 80% 50% at 100% 0%, rgba(13, 115, 119, 0.12), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 0% 100%, rgba(196, 92, 38, 0.08), transparent 50%),
+        var(--paper);
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    /* —— Hero —— */
+    .hero {
+      position: relative;
+      padding: 2.75rem 0 2rem;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 1.75rem;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset-inline-end: -10%;
+      top: -40%;
+      width: 55%;
+      height: 180%;
+      background:
+        repeating-linear-gradient(
+          -18deg,
+          transparent,
+          transparent 18px,
+          rgba(13, 115, 119, 0.05) 18px,
+          rgba(13, 115, 119, 0.05) 19px
+        );
+      pointer-events: none;
+    }
+    .brand {
+      font-size: clamp(2.4rem, 6vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin: 0 0 0.35rem;
+      line-height: 1.15;
+    }
+    .brand span { color: var(--teal); }
+    .hero-lead {
+      max-width: 36rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0 0 1.25rem;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      align-items: center;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .hero-meta a {
+      color: var(--teal-deep);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .hero-meta a:hover { text-decoration: underline; }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+    .chip.active { border-color: var(--teal); color: var(--teal-deep); background: rgba(13,115,119,0.08); }
+
+    /* —— Score ring —— */
+    .score-panel {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    @media (max-width: 640px) {
+      .score-panel { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+    }
+    .ring {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: conic-gradient(var(--accent) calc(var(--pct) * 1%), var(--sand) 0);
+      position: relative;
+    }
+    .ring::before {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border-radius: 50%;
+      background: var(--white);
+    }
+    .ring-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .ring-num {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .ring-sub { font-size: 0.75rem; color: var(--muted); }
+    .score-copy h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.25rem;
+    }
+    .score-copy p { margin: 0 0 0.85rem; color: var(--muted); font-size: 0.95rem; }
+    .bars { display: grid; gap: 0.45rem; }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 7rem 1fr 2.5rem;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+    .bar-track {
+      height: 8px;
+      background: var(--sand);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: var(--teal);
+    }
+    .bar-fill.low { background: var(--fail); }
+    .bar-fill.mid { background: var(--warn); }
+
+    /* —— Nav tabs —— */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 1.25rem;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      padding: 0.65rem 0;
+      background: color-mix(in srgb, var(--paper) 92%, transparent);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .tab {
+      font-family: inherit;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      padding: 0.45rem 0.9rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .tab:hover { color: var(--ink); background: var(--sand); }
+    .tab[aria-selected="true"] {
+      color: var(--white);
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .panel { display: none; animation: fade 0.25s ease; }
+    .panel.active { display: block; }
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    section.block {
+      margin-bottom: 1.75rem;
+    }
+    section.block > h2 {
+      font-size: 1.15rem;
+      margin: 0 0 0.85rem;
+      font-weight: 700;
+    }
+    .section-lead {
+      margin: -0.4rem 0 1rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 760px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .status-list { display: grid; gap: 0.5rem; }
+    .status-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-top: 0.45rem;
+      flex-shrink: 0;
+    }
+    .dot.pass { background: var(--pass); }
+    .dot.warn { background: var(--warn); }
+    .dot.fail { background: var(--fail); }
+    .status-item strong { display: block; font-size: 0.95rem; }
+    .status-item span { font-size: 0.82rem; color: var(--muted); }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 800px) {
+      .kpi-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .kpi {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .kpi .label { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .kpi .val { font-size: 1.45rem; font-weight: 800; line-height: 1.2; }
+    .kpi .target { font-size: 0.78rem; color: var(--teal-deep); margin-top: 0.25rem; }
+
+    table.data {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 0.88rem;
+    }
+    table.data th {
+      text-align: right;
+      background: var(--ink);
+      color: var(--white);
+      padding: 0.65rem 0.85rem;
+      font-weight: 600;
+    }
+    table.data td {
+      padding: 0.65rem 0.85rem;
+      border-top: 1px solid var(--line);
+      vertical-align: top;
+    }
+    table.data tr:hover td { background: rgba(13, 115, 119, 0.04); }
+
+    .badge {
+      display: inline-block;
+      padding: 0.12rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .badge.ok { background: #e8f6ee; color: var(--pass); }
+    .badge.missing { background: #fdecea; color: var(--fail); }
+    .badge.partial { background: #fff4e5; color: var(--warn); }
+    .badge.critical { background: #fdecea; color: var(--fail); }
+    .badge.high { background: #fff4e5; color: var(--warn); }
+    .badge.medium { background: #e8f0f6; color: var(--ink-soft); }
+
+    .action {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 0.85rem;
+      align-items: start;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 0.65rem;
+      transition: border-color 0.15s;
+    }
+    .action.done {
+      opacity: 0.85;
+      border-style: dashed;
+      border-color: var(--pass);
+      background: color-mix(in srgb, var(--pass) 6%, var(--white));
+    }
+    .action.done .action-title { text-decoration: line-through; color: var(--muted); }
+    .action input[type="checkbox"] {
+      width: 1.15rem;
+      height: 1.15rem;
+      margin-top: 0.2rem;
+      accent-color: var(--teal);
+      cursor: pointer;
+    }
+    .action-title { font-weight: 700; margin: 0 0 0.25rem; }
+    .action-meta { font-size: 0.82rem; color: var(--muted); margin: 0; }
+    .action-why { font-size: 0.85rem; margin: 0.4rem 0 0; color: var(--ink-soft); }
+    .action-status {
+      display: inline-block;
+      margin-top: 0.55rem;
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--pass);
+    }
+    .action-status.pending {
+      color: var(--warn);
+      font-weight: 600;
+    }
+    .action-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.35rem;
+    }
+
+    .check-list { display: grid; gap: 0.4rem; }
+    .check-item {
+      display: flex;
+      gap: 0.65rem;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.65rem 0.85rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .check-item:hover { border-color: var(--teal); }
+    .check-item.done { opacity: 0.55; }
+    .check-item.done span { text-decoration: line-through; }
+    .check-item input { accent-color: var(--teal); width: 1.1rem; height: 1.1rem; }
+    .check-item .verify {
+      margin-inline-start: auto;
+      font-size: 0.72rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .check-item .verify.ok { color: var(--pass); }
+    .check-item .verify.fail { color: var(--fail); }
+    .check-item .verify.warn { color: var(--warn); }
+    .check-item .verify.pending { color: var(--muted); }
+
+    .compare {
+      display: grid;
+      gap: 0.75rem;
+    }
+    .compare-row {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .compare-row h3 {
+      margin: 0 0 0.65rem;
+      font-size: 0.95rem;
+    }
+    .now-target {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 640px) {
+      .now-target { grid-template-columns: 1fr; }
+    }
+    .box {
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-size: 0.85rem;
+    }
+    .box.now { background: #fdecea; border: 1px solid #f5c2c0; }
+    .box.target { background: #e8f6ee; border: 1px solid #a6e0bf; }
+    .box .lbl {
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 700px) {
+      .timeline { grid-template-columns: 1fr 1fr; }
+    }
+    .phase {
+      padding: 0.85rem;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--white);
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+    }
+    .phase:hover {
+      border-color: var(--teal);
+      box-shadow: 0 2px 10px rgba(13, 115, 119, 0.08);
+    }
+    .phase.active {
+      border-color: var(--teal);
+      background: rgba(13, 115, 119, 0.08);
+    }
+    .phase.done {
+      border-color: #7dbe98;
+      background: #f0faf4;
+    }
+    .phase.selected {
+      outline: 2px solid var(--teal);
+      outline-offset: 2px;
+    }
+    .phase .ph { font-weight: 800; font-size: 1.1rem; }
+    .phase .lb { font-size: 0.82rem; color: var(--muted); }
+    .phase .wk { font-size: 0.75rem; color: var(--teal-deep); margin-top: 0.25rem; }
+    .phase .st {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      background: #eef2f4;
+      color: var(--muted);
+    }
+    .phase.done .st { background: #d8f0e2; color: #1b6b3a; }
+    .phase.active .st { background: rgba(13, 115, 119, 0.15); color: var(--teal-deep); }
+
+    .phase-panel-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+    .phase-panel-head h2 { margin: 0; }
+    .phase-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+    }
+    .phase-badge.done { background: #d8f0e2; color: #1b6b3a; }
+    .phase-badge.active { background: rgba(13, 115, 119, 0.15); color: var(--teal-deep); }
+    .phase-badge.upcoming { background: #eef2f4; color: var(--muted); }
+    .phase-goal {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    .phase-subh {
+      font-size: 0.92rem;
+      font-weight: 800;
+      margin: 1rem 0 0.5rem;
+    }
+    .actions-phase-label {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--teal-deep);
+      margin: 1.25rem 0 0.5rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px dashed var(--line);
+    }
+    .actions-phase-label:first-child { margin-top: 0; }
+
+    .bucket-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 700px) {
+      .bucket-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .bucket {
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .bucket.p1 { background: var(--ink-soft); }
+    .bucket.p2 { background: var(--teal-deep); }
+    .bucket.p3 { background: #3d5564; }
+    .bucket .n { font-size: 1.8rem; font-weight: 800; line-height: 1; }
+    .bucket .l { font-size: 0.85rem; opacity: 0.9; margin-top: 0.25rem; }
+    .bucket .a { font-size: 0.72rem; opacity: 0.7; margin-top: 0.4rem; }
+
+    .pages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .pages a {
+      display: inline-block;
+      padding: 0.35rem 0.7rem;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+    .pages a:hover {
+      border-color: var(--teal);
+      color: var(--teal-deep);
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    .btn {
+      font-family: inherit;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+    .btn:hover { background: var(--ink-soft); }
+    .btn.ghost {
+      background: var(--white);
+      color: var(--ink);
+    }
+    .btn.ghost:hover { background: var(--sand); }
+    .btn:disabled { opacity: 0.5; cursor: wait; }
+    .live-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .live-note.ok { color: var(--pass); }
+    .live-note.err { color: var(--fail); }
+
+    .callout {
+      background: rgba(196, 92, 38, 0.08);
+      border: 1px solid rgba(196, 92, 38, 0.35);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.92rem;
+    }
+    .callout strong { color: var(--accent); }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .copy-btn {
+      font-family: inherit;
+      font-size: 0.72rem;
+      border: 1px solid var(--line);
+      background: var(--white);
+      border-radius: 6px;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+      color: var(--muted);
+    }
+    .copy-btn:hover { color: var(--ink); border-color: var(--teal); }
+
+    /* —— Audit tab —— */
+    .audit-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .audit-url-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .audit-url-chip code {
+      color: var(--teal-deep);
+      font-weight: 600;
+    }
+    .audit-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 900px) {
+      .audit-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .audit-cards { grid-template-columns: 1fr; }
+    }
+    .audit-card {
+      position: relative;
+      font-family: inherit;
+      text-align: right;
+      background: var(--white);
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      padding: 1rem 1rem 0.85rem;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s;
+    }
+    .audit-card:hover {
+      border-color: var(--teal);
+      box-shadow: 0 4px 14px rgba(12, 31, 46, 0.08);
+    }
+    .audit-card.active {
+      border-color: var(--ink);
+      background: color-mix(in srgb, var(--ink) 4%, var(--white));
+      box-shadow: 0 2px 0 var(--ink);
+    }
+    .audit-card-icon {
+      font-size: 1.35rem;
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+    .audit-card-label {
+      display: block;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.2rem;
+    }
+    .audit-card-cmd {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-family: ui-monospace, "Cascadia Code", monospace;
+      word-break: break-all;
+    }
+    .audit-card-dot {
+      position: absolute;
+      top: 0.65rem;
+      inset-inline-start: 0.65rem;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    .audit-card-dot.has-data { background: var(--pass); }
+    .audit-card-dot.no-data { background: var(--line); }
+
+    .audit-detail {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .audit-detail-head {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--sand) 50%, var(--white));
+    }
+    .audit-detail-head h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.1rem;
+    }
+    .audit-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.65rem;
+    }
+    @media (max-width: 760px) {
+      .audit-meta { grid-template-columns: 1fr 1fr; }
+    }
+    .audit-meta-item {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.55rem 0.7rem;
+      font-size: 0.8rem;
+    }
+    .audit-meta-item .k {
+      display: block;
+      color: var(--muted);
+      font-size: 0.72rem;
+      margin-bottom: 0.15rem;
+    }
+    .audit-meta-item .v { font-weight: 700; }
+    .audit-meta-item .v.ok { color: var(--pass); }
+    .audit-meta-item .v.warn { color: var(--warn); }
+    .audit-meta-item .v.score { font-size: 1.2rem; }
+    .audit-meta-item .v.score small { font-size: 0.75rem; color: var(--muted); font-weight: 500; }
+    .audit-cmd-display {
+      font-size: 0.72rem;
+      word-break: break-all;
+      color: var(--teal-deep);
+    }
+
+    .audit-detail-body {
+      padding: 1.25rem;
+      min-height: 200px;
+    }
+    .audit-loading { color: var(--muted); font-size: 0.9rem; }
+    .audit-note {
+      display: block;
+      margin-top: 0.85rem;
+      padding: 0 1.25rem 1rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .audit-note.ok { color: var(--pass); }
+    .audit-note.warn { color: var(--warn); }
+
+    .audit-md h2, .audit-md h3, .audit-md h4 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1rem;
+    }
+    .audit-md h2:first-child { margin-top: 0; }
+    .audit-md p { margin: 0.5rem 0; font-size: 0.9rem; color: var(--ink-soft); }
+    .audit-md ul { margin: 0.5rem 0; padding-inline-start: 1.25rem; }
+    .audit-md li { margin: 0.25rem 0; font-size: 0.88rem; }
+    .audit-md code {
+      background: var(--sand);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+    }
+
+    .audit-pre {
+      background: var(--ink);
+      color: #e8eef1;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .audit-fallback-lead {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0 0 1rem;
+    }
+    .audit-fallback-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.65rem;
+      margin-bottom: 1rem;
+    }
+    .audit-stat {
+      text-align: center;
+      background: var(--sand);
+      border-radius: 10px;
+      padding: 0.85rem;
+    }
+    .audit-stat .n {
+      display: block;
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .audit-stat .l { font-size: 0.75rem; color: var(--muted); margin-top: 0.25rem; }
+    .audit-table { margin-top: 0.5rem; }
+    .finding-list { padding-inline-start: 1.25rem; }
+    .finding-list li.sev-critical { color: var(--fail); }
+    .finding-list li.sev-high { color: var(--warn); }
+  </style>
+</head>
+<body>
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="hero">
+      <p class="chip active" id="phaseChip">فاز ۰</p>
+      <h1 class="brand">ذهن <span>آتی</span></h1>
+      <p class="hero-lead">
+        داشبورد آنالیز SEO — برنامهٔ فشردهٔ <strong>۴ هفته</strong> از
+        <strong>۲۰ تیر ۱۴۰۵</strong> · وضعیت فنی، کیوردها، چک‌لیست و اقدام‌ها برای
+        <strong>zehnati.ir</strong>
+      </p>
+      <div class="hero-meta">
+        <a href="https://zehnati.ir/" target="_blank" rel="noopener">zehnati.ir</a>
+        <span id="updatedLabel">به‌روزرسانی: —</span>
+        <span id="managerLabel"></span>
+      </div>
+    </header>
+
+    <div class="score-panel" id="scorePanel">
+      <div class="ring" id="scoreRing" style="--pct: 38">
+        <div class="ring-inner">
+          <div class="ring-num" id="scoreNum">38</div>
+          <div class="ring-sub">از ۱۰۰</div>
+        </div>
+      </div>
+      <div class="score-copy">
+        <h2 id="scoreLabel">نیاز به اقدام فوری</h2>
+        <p>امتیاز از audit زنده ۱۵ جولای ۲۰۲۶ · برنامه ۱ ماهه از ۲۰ تیر ۱۴۰۵.</p>
+        <div class="bars" id="scoreBars"></div>
+      </div>
+    </div>
+
+    <div class="callout" id="topCallout">
+      <strong>فاز جاری:</strong>
+      فاز ۱ — Landingهای P0 (هفته ۲: ۲۷ تیر تا ۲ مرداد). فاز ۰ فنی برای کارفرما به‌عنوان انجام‌شده نگه داشته شده است.
+    </div>
+
+    <nav class="tabs" role="tablist" aria-label="بخش‌های داشبورد">
+      <button class="tab" role="tab" aria-selected="true" data-tab="overview">نمای کلی</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="actions">اقدام‌ها</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="keywords">کیوردها</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="onpage">آن‌پیج</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="audit">آنالیز Claude SEO</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="checklist">چک‌لیست فاز</button>
+    </nav>
+
+    <!-- Overview -->
+    <div class="panel active" id="panel-overview" role="tabpanel">
+      <div class="toolbar">
+        <button class="btn" id="btnLive" type="button">بررسی زنده Sitemap</button>
+        <button class="btn ghost" id="btnReset" type="button">بازنشانی تیک‌ها</button>
+        <span class="live-note" id="liveNote">چک زنده فقط با <code>serve.py</code> لوکال · نسخه آنلاین از Git به‌روز می‌شود</span>
+      </div>
+
+      <div class="timeline" id="timeline" aria-label="فازهای برنامه یک‌ماهه"></div>
+      <p class="section-lead" style="margin:-0.75rem 0 1rem">
+        روی هر فاز کلیک کنید تا کارها و چک‌لیست همان فاز نمایش داده شود. فاز ۰ انجام‌شده باقی می‌ماند تا کارفرما پیشرفت را ببیند.
+      </p>
+
+      <section class="block" id="phaseWorkBlock">
+        <div class="phase-panel-head">
+          <h2 id="phaseWorkTitle">کارهای فاز</h2>
+          <span class="phase-badge active" id="phaseWorkBadge">جاری</span>
+        </div>
+        <p class="phase-goal" id="phaseWorkGoal"></p>
+        <p class="phase-subh">اقدام‌های این فاز</p>
+        <div id="phaseActions"></div>
+        <p class="phase-subh">چک‌لیست این فاز</p>
+        <div class="check-list" id="phaseChecks"></div>
+      </section>
+
+      <div class="kpi-grid" id="kpis"></div>
+
+      <section class="block">
+        <h2>وضعیت فنی</h2>
+        <p class="section-lead">بررسی زنده سایت — با باز شدن صفحه یا تیک چک‌لیست تازه می‌شود</p>
+        <div class="status-list" id="techStatus"></div>
+      </section>
+
+      <section class="block">
+        <h2>صفحات کلیدی موجود</h2>
+        <div class="pages" id="existingPages"></div>
+      </section>
+    </div>
+
+    <!-- Actions -->
+    <div class="panel" id="panel-actions" role="tabpanel">
+      <section class="block">
+        <h2>اقدام‌ها به‌تفکیک فاز</h2>
+        <p class="section-lead">فاز ۰ تیک‌خورده می‌ماند · با کلیک روی فاز در نمای کلی، روی همان فاز فوکوس می‌شود</p>
+        <div id="actions"></div>
+      </section>
+    </div>
+
+    <!-- Keywords -->
+    <div class="panel" id="panel-keywords" role="tabpanel">
+      <div class="bucket-grid" id="buckets"></div>
+      <section class="block">
+        <h2>۱۰ کلمه طلایی (Focus)</h2>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>کلمه</th>
+              <th>صفحه هدف</th>
+              <th>وضعیت</th>
+              <th>یادداشت</th>
+            </tr>
+          </thead>
+          <tbody id="kwBody"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <!-- On-page -->
+    <div class="panel" id="panel-onpage" role="tabpanel">
+      <section class="block">
+        <h2>صفحه اصلی — الان در برابر هدف</h2>
+        <div class="compare" id="homepageCompare"></div>
+      </section>
+      <section class="block">
+        <h2>Meta آماده برای کپی (فاز ۰)</h2>
+        <p class="section-lead">مستقیم در Rank Math بچسبانید</p>
+        <div id="metaTargets"></div>
+      </section>
+    </div>
+
+    <!-- Checklist -->
+    <div class="panel" id="panel-checklist" role="tabpanel">
+      <section class="block">
+        <h2 id="checklistTitle">چک‌لیست فاز انتخاب‌شده</h2>
+        <p class="section-lead" id="checklistLead">با هر تیک (فاز جاری)، سایت دوباره بررسی می‌شود</p>
+        <div class="toolbar" style="margin-bottom:0.85rem">
+          <span class="live-note" id="checkRecheckNote">تیک بزنید تا بررسی زنده شروع شود</span>
+        </div>
+        <div class="check-list" id="weekChecks"></div>
+      </section>
+    </div>
+
+    <!-- Claude SEO Audit -->
+    <div class="panel" id="panel-audit" role="tabpanel">
+      <section class="block">
+        <h2>آنالیز Claude SEO</h2>
+        <p class="section-lead">
+          هر بخش را جدا ببینید. دستور را در Cursor اجرا کنید؛ خروجی در
+          <code dir="ltr">claude-seo/zehnati.ir-audit/</code> ذخیره می‌شود.
+        </p>
+
+        <div class="audit-toolbar">
+          <span class="audit-url-chip">هدف: <code dir="ltr">https://zehnati.ir</code></span>
+          <button class="btn" id="btnAuditCopy" type="button">کپی دستور Cursor</button>
+          <button class="btn ghost" id="btnAuditRefresh" type="button" title="همان رفرش صفحه (F5)">به‌روزرسانی</button>
+          <span class="live-note" id="auditLoadedAt">بارگذاری خودکار با باز شدن صفحه</span>
+        </div>
+
+        <div class="audit-cards" id="auditCards" role="group" aria-label="دستورات Claude SEO"></div>
+
+        <div class="audit-detail">
+          <div class="audit-detail-head">
+            <h2 id="auditTitle">—</h2>
+            <div class="audit-meta" id="auditMeta"></div>
+          </div>
+          <div class="audit-detail-body" id="auditBody">
+            <p class="audit-loading">در حال بارگذاری…</p>
+          </div>
+          <span class="audit-note" id="auditNote"></span>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <span>zehnati.ir 2026 © All rights reserved</span>
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="audit.js"></script>
+  <script>
+    const D = window.ZEHNATI_SEO;
+    const STORE_KEY = "zehnati-seo-dashboard-v1";
+
+    function loadState() {
+      try {
+        return JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
+      } catch {
+        return {};
+      }
+    }
+    function saveState(state) {
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    }
+    let state = loadState();
+    let selectedPhase =
+      state.selectedPhase !== undefined && state.selectedPhase !== null
+        ? Number(state.selectedPhase)
+        : Number(D.meta.phase || 1);
+
+    function statusLabel(s) {
+      return { ok: "پوشش نسبی", missing: "نیاز به صفحه", partial: "ناقص", pass: "خوب", warn: "هشدار", fail: "بحرانی" }[s] || s;
+    }
+
+    function phaseStatusFa(st) {
+      return { done: "انجام شد", active: "جاری", upcoming: "آینده" }[st] || st;
+    }
+
+    function getPhaseDetail(n) {
+      return (D.phaseDetails && D.phaseDetails[n]) || null;
+    }
+
+    function fillHeader() {
+      document.getElementById("phaseChip").textContent = D.meta.phaseLabel;
+      document.getElementById("updatedLabel").textContent =
+        "به‌روزرسانی: " + D.meta.updatedAtFa + " · شروع برنامه: " + (D.meta.planStartFa || "");
+      document.getElementById("managerLabel").textContent = D.meta.manager;
+      document.getElementById("scoreNum").textContent = D.score.overall;
+      document.getElementById("scoreRing").style.setProperty("--pct", D.score.overall);
+      document.getElementById("scoreLabel").textContent = D.score.label;
+    }
+
+    function fillBars() {
+      const el = document.getElementById("scoreBars");
+      el.innerHTML = D.score.breakdown
+        .map((b) => {
+          const cls = b.score < 35 ? "low" : b.score < 55 ? "mid" : "";
+          return `<div class="bar-row">
+            <span>${b.name}</span>
+            <div class="bar-track"><div class="bar-fill ${cls}" style="width:${b.score}%"></div></div>
+            <span>${b.score}</span>
+          </div>`;
+        })
+        .join("");
+    }
+
+    function selectPhase(n, opts) {
+      selectedPhase = Number(n);
+      state.selectedPhase = selectedPhase;
+      saveState(state);
+      fillTimeline();
+      fillPhaseWork();
+      fillChecklist();
+      if (opts && opts.scroll) {
+        document.getElementById("phaseWorkBlock")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    function fillTimeline() {
+      document.getElementById("timeline").innerHTML = D.timeline
+        .map((t) => {
+          const selected = Number(t.phase) === selectedPhase ? "selected" : "";
+          const stClass = t.status === "done" ? "done" : t.status === "active" ? "active" : "";
+          return `<div class="phase ${stClass} ${selected}" role="button" tabindex="0" data-phase="${t.phase}" aria-pressed="${selected ? "true" : "false"}">
+            <div class="ph">فاز ${t.phase}</div>
+            <div class="lb">${t.label}</div>
+            <div class="wk">هفته ${t.weeks} · ${t.dateRange || ""}</div>
+            <span class="st">${phaseStatusFa(t.status)}</span>
+          </div>`;
+        })
+        .join("");
+
+      document.querySelectorAll("#timeline .phase").forEach((el) => {
+        const go = () => selectPhase(el.dataset.phase, { scroll: true });
+        el.addEventListener("click", go);
+        el.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            go();
+          }
+        });
+      });
+    }
+
+    function renderActionRows(list, mountId) {
+      const mount = document.getElementById(mountId);
+      if (!mount) return;
+      const doneMap = state.actions || {};
+      mount.innerHTML = list
+        .map((a) => {
+          const done = doneMap[a.id] !== undefined ? !!doneMap[a.id] : !!a.done;
+          const pri =
+            a.priority === "critical" ? "بحرانی" : a.priority === "high" ? "بالا" : "متوسط";
+          return `<div class="action ${done ? "done" : ""}" data-id="${a.id}">
+            <input type="checkbox" ${done ? "checked" : ""} aria-label="انجام شد" />
+            <div>
+              <p class="action-title">${a.title}</p>
+              <p class="action-meta">${a.where || ""}</p>
+              <p class="action-why">${a.why || ""}</p>
+              <span class="action-status ${done ? "" : "pending"}">${done ? "✓ انجام شد" : "در انتظار انجام"}</span>
+            </div>
+            <div class="action-side">
+              <span class="badge ${a.priority}">${pri}</span>
+            </div>
+          </div>`;
+        })
+        .join("");
+
+      mount.querySelectorAll(".action").forEach((row) => {
+        const id = row.dataset.id;
+        const cb = row.querySelector("input");
+        const status = row.querySelector(".action-status");
+        cb.addEventListener("change", () => {
+          state.actions = state.actions || {};
+          state.actions[id] = cb.checked;
+          saveState(state);
+          row.classList.toggle("done", cb.checked);
+          if (status) {
+            status.textContent = cb.checked ? "✓ انجام شد" : "در انتظار انجام";
+            status.classList.toggle("pending", !cb.checked);
+          }
+          // sync duplicate rows with same id
+          document.querySelectorAll(`.action[data-id="${id}"]`).forEach((other) => {
+            if (other === row) return;
+            other.classList.toggle("done", cb.checked);
+            const ocb = other.querySelector("input");
+            const ost = other.querySelector(".action-status");
+            if (ocb) ocb.checked = cb.checked;
+            if (ost) {
+              ost.textContent = cb.checked ? "✓ انجام شد" : "در انتظار انجام";
+              ost.classList.toggle("pending", !cb.checked);
+            }
+          });
+        });
+      });
+    }
+
+    function fillPhaseWork() {
+      const det = getPhaseDetail(selectedPhase);
+      const title = document.getElementById("phaseWorkTitle");
+      const badge = document.getElementById("phaseWorkBadge");
+      const goal = document.getElementById("phaseWorkGoal");
+      if (!det) {
+        if (title) title.textContent = "فاز یافت نشد";
+        return;
+      }
+      if (title) title.textContent = det.title;
+      if (goal) goal.textContent = (det.period || "") + " — هدف: " + (det.goal || "");
+      if (badge) {
+        badge.textContent = phaseStatusFa(det.status);
+        badge.className = "phase-badge " + (det.status || "upcoming");
+      }
+      renderActionRows(det.actions || [], "phaseActions");
+
+      const doneMap = state.checks || {};
+      const checksEl = document.getElementById("phaseChecks");
+      if (checksEl) {
+        checksEl.innerHTML = (det.checklist || [])
+          .map((c) => {
+            const done = doneMap[c.id] !== undefined ? doneMap[c.id] : c.done;
+            return `<label class="check-item ${done ? "done" : ""}">
+              <input type="checkbox" data-phase-check="${c.id}" ${done ? "checked" : ""} />
+              <span>${c.label}</span>
+            </label>`;
+          })
+          .join("");
+        checksEl.querySelectorAll("[data-phase-check]").forEach((cb) => {
+          cb.addEventListener("change", () => {
+            state.checks = state.checks || {};
+            state.checks[cb.dataset.phaseCheck] = cb.checked;
+            saveState(state);
+            cb.closest(".check-item").classList.toggle("done", cb.checked);
+            // sync checklist tab
+            const other = document.querySelector(`[data-check="${cb.dataset.phaseCheck}"]`);
+            if (other) {
+              other.checked = cb.checked;
+              other.closest(".check-item")?.classList.toggle("done", cb.checked);
+            }
+          });
+        });
+      }
+    }
+
+    function fillKpis() {
+      document.getElementById("kpis").innerHTML = D.kpis
+        .map(
+          (k) => `<div class="kpi">
+            <div class="label">${k.label}</div>
+            <div class="val">${k.current}</div>
+            <div class="target">هدف: ${k.target}</div>
+          </div>`
+        )
+        .join("");
+    }
+
+    function fillTech() {
+      document.getElementById("techStatus").innerHTML = D.techStatus
+        .map(
+          (t) => `<div class="status-item">
+            <div class="dot ${t.status}"></div>
+            <div>
+              <strong>${t.name}</strong>
+              <span>${t.detail}</span>
+            </div>
+          </div>`
+        )
+        .join("");
+    }
+
+    function fillPages() {
+      document.getElementById("existingPages").innerHTML = D.existingPages
+        .map(
+          (p) =>
+            `<a href="https://zehnati.ir${p.url}" target="_blank" rel="noopener">${p.title}</a>`
+        )
+        .join("");
+    }
+
+    function isActionDone(a) {
+      const doneMap = state.actions || {};
+      return doneMap[a.id] !== undefined ? !!doneMap[a.id] : !!a.done;
+    }
+
+    function fillActions() {
+      const mount = document.getElementById("actions");
+      if (!mount) return;
+      const groups = [0, 1, 2, 3]
+        .map((p) => {
+          const det = getPhaseDetail(p);
+          if (!det) return "";
+          const items = det.actions || [];
+          const doneMap = state.actions || {};
+          const rows = items
+            .map((a) => {
+              const done = doneMap[a.id] !== undefined ? !!doneMap[a.id] : !!a.done;
+              const pri =
+                a.priority === "critical" ? "بحرانی" : a.priority === "high" ? "بالا" : "متوسط";
+              return `<div class="action ${done ? "done" : ""}" data-id="${a.id}">
+                <input type="checkbox" ${done ? "checked" : ""} aria-label="انجام شد" />
+                <div>
+                  <p class="action-title">${a.title}</p>
+                  <p class="action-meta">${a.where || ""}</p>
+                  <p class="action-why">${a.why || ""}</p>
+                  <span class="action-status ${done ? "" : "pending"}">${done ? "✓ انجام شد" : "در انتظار انجام"}</span>
+                </div>
+                <div class="action-side">
+                  <span class="badge ${a.priority}">${pri}</span>
+                </div>
+              </div>`;
+            })
+            .join("");
+          return `<div class="actions-phase-label">فاز ${p} — ${det.title.replace(/^فاز \d+ — /, "")} · ${phaseStatusFa(det.status)}</div>${rows}`;
+        })
+        .join("");
+      mount.innerHTML = groups;
+
+      mount.querySelectorAll(".action").forEach((row) => {
+        const id = row.dataset.id;
+        const cb = row.querySelector("input");
+        const status = row.querySelector(".action-status");
+        cb.addEventListener("change", () => {
+          state.actions = state.actions || {};
+          state.actions[id] = cb.checked;
+          saveState(state);
+          document.querySelectorAll(`.action[data-id="${id}"]`).forEach((other) => {
+            other.classList.toggle("done", cb.checked);
+            const ocb = other.querySelector("input");
+            const ost = other.querySelector(".action-status");
+            if (ocb) ocb.checked = cb.checked;
+            if (ost) {
+              ost.textContent = cb.checked ? "✓ انجام شد" : "در انتظار انجام";
+              ost.classList.toggle("pending", !cb.checked);
+            }
+          });
+        });
+      });
+    }
+
+    function fillKeywords() {
+      document.getElementById("buckets").innerHTML = D.keywordBuckets
+        .map(
+          (b, i) => `<div class="bucket p${i}">
+            <div class="n">${b.count}</div>
+            <div class="l">${b.id} — ${b.label}</div>
+            <div class="a">${b.action}</div>
+          </div>`
+        )
+        .join("");
+
+      document.getElementById("kwBody").innerHTML = D.goldenKeywords
+        .map(
+          (k, i) => `<tr>
+            <td>${i + 1}</td>
+            <td><strong>${k.kw}</strong></td>
+            <td dir="ltr" style="text-align:left">${k.page}</td>
+            <td><span class="badge ${k.status}">${statusLabel(k.status)}</span></td>
+            <td>${k.note}</td>
+          </tr>`
+        )
+        .join("");
+    }
+
+    function fillOnpage() {
+      const h = D.homepage;
+      document.getElementById("homepageCompare").innerHTML = `
+        <div class="compare-row">
+          <h3>Title</h3>
+          <div class="now-target">
+            <div class="box now"><div class="lbl">الان</div>${h.titleNow}</div>
+            <div class="box target"><div class="lbl">هدف</div>${h.titleTarget}</div>
+          </div>
+        </div>
+        <div class="compare-row">
+          <h3>Meta Description</h3>
+          <div class="now-target">
+            <div class="box now"><div class="lbl">الان</div>${h.descNow}</div>
+            <div class="box target"><div class="lbl">هدف</div>${h.descTarget}</div>
+          </div>
+        </div>
+        <div class="compare-row">
+          <h3>H1 و Schema</h3>
+          <div class="now-target">
+            <div class="box now"><div class="lbl">الان</div>بدون H1 · Schema: ${h.schemas.join(", ")}</div>
+            <div class="box target"><div class="lbl">هدف</div>${h.h1Target} · + EducationalOrganization / LocalBusiness</div>
+          </div>
+        </div>`;
+
+      document.getElementById("metaTargets").innerHTML = D.metaTargets
+        .map(
+          (m, idx) => `<div class="compare-row" style="margin-bottom:0.65rem">
+            <h3>${m.page} <code dir="ltr">${m.url}</code>
+              <button class="copy-btn" type="button" data-copy="${idx}">کپی Meta</button>
+            </h3>
+            <p style="margin:0 0 0.35rem;font-size:0.85rem"><strong>Title:</strong> ${m.title}</p>
+            <p style="margin:0 0 0.35rem;font-size:0.85rem"><strong>Description:</strong> ${m.description}</p>
+            <p style="margin:0;font-size:0.85rem"><strong>H1:</strong> ${m.h1}</p>
+          </div>`
+        )
+        .join("");
+
+      document.querySelectorAll("[data-copy]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const m = D.metaTargets[Number(btn.dataset.copy)];
+          const text = `Title: ${m.title}\nDescription: ${m.description}\nH1: ${m.h1}`;
+          await navigator.clipboard.writeText(text);
+          btn.textContent = "کپی شد";
+          setTimeout(() => (btn.textContent = "کپی Meta"), 1200);
+        });
+      });
+    }
+
+    function setTechStatus(id, status, detail) {
+      const item = D.techStatus.find((t) => t.id === id);
+      if (!item) return;
+      item.status = status;
+      item.detail = detail;
+    }
+
+    function applyProbeToDashboard(probe) {
+      if (!probe || !probe.ok) return;
+      const h = probe.homepage || {};
+      const sm = probe.sitemap || {};
+      const rb = probe.robots || {};
+
+      setTechStatus("ssl", h.ssl ? "pass" : "fail", h.ssl ? "فعال" : "مشکل SSL");
+      setTechStatus(
+        "robots",
+        rb.ok ? (rb.mentions_sitemap && !sm.ok ? "warn" : "pass") : "fail",
+        rb.ok
+          ? rb.mentions_sitemap
+            ? sm.ok
+              ? "موجود؛ به sitemap اشاره می‌کند"
+              : "موجود؛ به sitemap مرده اشاره می‌کند"
+            : "موجود"
+          : "در دسترس نیست"
+      );
+      setTechStatus(
+        "sitemap",
+        sm.ok ? "pass" : "fail",
+        sm.ok ? "فعال (200)" : "هنوز " + (sm.status ?? "خطا") + " — اولویت بحرانی"
+      );
+      setTechStatus(
+        "rankmath",
+        h.has_rankmath ? "pass" : "warn",
+        h.has_rankmath ? "در HTML دیده شد" : "نشانه Rank Math در HTML نیست"
+      );
+      setTechStatus(
+        "analytics",
+        h.has_ga ? "pass" : "fail",
+        h.has_ga ? "GA/GTM در HTML دیده شد" : "Analytics در HTML دیده نشد"
+      );
+      setTechStatus(
+        "litespeed",
+        h.has_litespeed ? "pass" : "warn",
+        h.has_litespeed ? "فعال" : "نشانه LiteSpeed نیست"
+      );
+      setTechStatus(
+        "h1",
+        h.has_h1 ? "pass" : "fail",
+        h.has_h1 ? h.h1_count + " عدد H1" : "وجود ندارد"
+      );
+      setTechStatus(
+        "meta",
+        h.meta_description && h.meta_description.length > 40 && !h.meta_description.includes("مصاحبه/")
+          ? "pass"
+          : "fail",
+        h.meta_description
+          ? h.meta_description.slice(0, 80) + (h.meta_description.length > 80 ? "…" : "")
+          : "ندارد"
+      );
+      setTechStatus(
+        "schema",
+        h.has_local_business ? "pass" : h.has_educational_org ? "warn" : "fail",
+        h.has_local_business
+          ? "EducationalOrganization + LocalBusiness"
+          : h.has_educational_org
+            ? "EducationalOrganization هست؛ LocalBusiness نیست"
+            : "Schema محلی/سازمانی ضعیف"
+      );
+
+      if (h.title) D.homepage.titleNow = h.title;
+      if (h.meta_description) D.homepage.descNow = h.meta_description;
+
+      const note = document.getElementById("liveNote");
+      if (note) {
+        if (sm.ok) {
+          note.textContent = "Sitemap زنده است (200)";
+          note.className = "live-note ok";
+        } else {
+          note.textContent = "Sitemap هنوز " + (sm.status ?? "خطا") + " می‌دهد";
+          note.className = "live-note err";
+        }
+      }
+
+      const callout = document.getElementById("topCallout");
+      if (callout) {
+        if (h.noindex) {
+          callout.innerHTML =
+            "<strong>قدم بعدی:</strong> صفحه اصلی <code>noindex</code> است — اول Index را در Rank Math روشن کنید، بعد Sitemap.";
+        } else if (!sm.ok) {
+          callout.innerHTML =
+            "<strong>قدم بعدی:</strong> اول Sitemap را در Rank Math درست کنید — بدون آن ۳۳۲ مقاله عملاً برای گوگل گم می‌مانند.";
+        } else if (!h.has_h1) {
+          callout.innerHTML =
+            "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
+        } else {
+          callout.innerHTML =
+            "<strong>فاز جاری:</strong> فاز ۱ — لندینگ‌های P0 را پیش ببرید (قیمت، هاب مشاوره کنکور، آنلاین، اصفهان/تهران).";
+        }
+      }
+
+      fillTech();
+      fillOnpage();
+    }
+
+    function verifyLabel(hint, checked) {
+      if (hint === true) return { cls: "ok", text: "تأیید زنده ✓" };
+      if (hint === false) return { cls: "fail", text: checked ? "هنوز تأیید نشد" : "منفی در سایت" };
+      return { cls: "warn", text: "دستی / غیرقابل‌چک" };
+    }
+
+    function paintChecklistVerify(hints) {
+      if (!hints) return;
+      document.querySelectorAll("[data-check]").forEach((cb) => {
+        const id = cb.dataset.check;
+        const wrap = cb.closest(".check-item");
+        if (!wrap) return;
+        let badge = wrap.querySelector(".verify");
+        if (!badge) {
+          badge = document.createElement("span");
+          badge.className = "verify";
+          wrap.appendChild(badge);
+        }
+        const v = verifyLabel(hints[id], cb.checked);
+        badge.className = "verify " + v.cls;
+        badge.textContent = v.text;
+      });
+    }
+
+    async function recheckSiteAndRefresh(triggerId) {
+      const note = document.getElementById("checkRecheckNote");
+      if (note) {
+        note.textContent = "در حال بررسی مجدد سایت…";
+        note.className = "live-note";
+      }
+      try {
+        const res = await fetch("/api/site/probe?_=" + Date.now(), { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const probe = await res.json();
+        applyProbeToDashboard(probe);
+        paintChecklistVerify(probe.checklist_hints);
+
+        // اگر تیک زده شده ولی سایت هنوز تأیید نمی‌کند، هشدار بده
+        if (triggerId && probe.checklist_hints) {
+          const hint = probe.checklist_hints[triggerId];
+          if (state.checks?.[triggerId] && hint === false && note) {
+            note.textContent = "تیک ذخیره شد، ولی بررسی زنده هنوز این مورد را تأیید نکرد.";
+            note.className = "live-note err";
+          } else if (note) {
+            const when = new Date(probe.checked_at || Date.now()).toLocaleTimeString("fa-IR");
+            note.textContent = "بررسی زنده انجام شد · " + when;
+            note.className = "live-note ok";
+          }
+        } else if (note) {
+          note.textContent = "داده‌ها تازه شدند";
+          note.className = "live-note ok";
+        }
+
+        if (window.ZehnatiAudit?.refresh) {
+          await window.ZehnatiAudit.refresh();
+        }
+        return probe;
+      } catch {
+        if (note) {
+          note.textContent = "سرور محلی نیست — python serve.py را اجرا کنید";
+          note.className = "live-note err";
+        }
+        return null;
+      }
+    }
+
+    function fillChecklist() {
+      const det = getPhaseDetail(selectedPhase);
+      const title = document.getElementById("checklistTitle");
+      const lead = document.getElementById("checklistLead");
+      const list = (det && det.checklist) || D.week1Checklist || [];
+      if (title && det) title.textContent = "چک‌لیست — " + det.title;
+      if (lead && det) {
+        lead.textContent =
+          (det.period || "") +
+          (det.status === "done"
+            ? " — این فاز بسته شده و برای کارفرما قابل مشاهده می‌ماند"
+            : " — با تیک زدن، وضعیت ذخیره می‌شود");
+      }
+
+      const doneMap = state.checks || {};
+      document.getElementById("weekChecks").innerHTML = list
+        .map((c) => {
+          const done = doneMap[c.id] !== undefined ? doneMap[c.id] : c.done;
+          return `<label class="check-item ${done ? "done" : ""}">
+            <input type="checkbox" data-check="${c.id}" ${done ? "checked" : ""} />
+            <span>${c.label}</span>
+            <span class="verify pending">—</span>
+          </label>`;
+        })
+        .join("");
+
+      document.querySelectorAll("[data-check]").forEach((cb) => {
+        cb.addEventListener("change", async () => {
+          state.checks = state.checks || {};
+          state.checks[cb.dataset.check] = cb.checked;
+          saveState(state);
+          cb.closest(".check-item").classList.toggle("done", cb.checked);
+          const twin = document.querySelector(`[data-phase-check="${cb.dataset.check}"]`);
+          if (twin) {
+            twin.checked = cb.checked;
+            twin.closest(".check-item")?.classList.toggle("done", cb.checked);
+          }
+          cb.disabled = true;
+          await recheckSiteAndRefresh(cb.dataset.check);
+          cb.disabled = false;
+        });
+      });
+    }
+
+    /* Tabs + بازیابی تب آخر با رفرش */
+    function switchTab(tab) {
+      document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", "false"));
+      document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
+      tab.setAttribute("aria-selected", "true");
+      document.getElementById("panel-" + tab.dataset.tab).classList.add("active");
+      sessionStorage.setItem("zehnati-audit-tab", tab.dataset.tab);
+      location.hash = tab.dataset.tab;
+      if (tab.dataset.tab === "audit" && window.ZehnatiAudit) {
+        window.ZehnatiAudit.refresh();
+      }
+    }
+
+    document.querySelectorAll(".tab").forEach((tab) => {
+      tab.addEventListener("click", () => switchTab(tab));
+    });
+
+    const savedTabId =
+      location.hash.replace("#", "") || sessionStorage.getItem("zehnati-audit-tab");
+    if (savedTabId) {
+      const savedTab = document.querySelector(`.tab[data-tab="${savedTabId}"]`);
+      if (savedTab) switchTab(savedTab);
+    }
+
+    document.getElementById("btnLive")?.addEventListener("click", () => recheckSiteAndRefresh());
+
+    document.getElementById("btnReset").addEventListener("click", () => {
+      if (!confirm("همه تیک‌های ذخیره‌شده پاک شوند؟ (وضعیت پیش‌فرض فاز ۰ انجام‌شده می‌ماند)")) return;
+      localStorage.removeItem(STORE_KEY);
+      state = {};
+      selectedPhase = Number(D.meta.phase || 1);
+      fillTimeline();
+      fillPhaseWork();
+      fillActions();
+      fillChecklist();
+      recheckSiteAndRefresh();
+    });
+
+    fillHeader();
+    fillBars();
+    fillTimeline();
+    fillPhaseWork();
+    fillKpis();
+    fillTech();
+    fillPages();
+    fillActions();
+    fillKeywords();
+    fillOnpage();
+    fillChecklist();
+    recheckSiteAndRefresh();
+  </script>
+</body>
+</html>

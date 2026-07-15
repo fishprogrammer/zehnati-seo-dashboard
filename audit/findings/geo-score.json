@@ -1,0 +1,42 @@
+{
+  "score": 52,
+  "generated_at": "2026-07-15T22:12:00+03:30",
+  "what_works": [
+    "robots.txt returns 200, allows general crawling, and references the XML sitemap",
+    "No explicit GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, or Applebot-Extended blocks were found",
+    "Homepage has clear title, H1, Organization/EducationalOrganization schema, branch schema, and phone CTA",
+    "Sitemap access is healthy for crawler discovery"
+  ],
+  "findings": [
+    {
+      "title": "llms.txt is missing",
+      "severity": "medium",
+      "description": "https://zehnati.ir/llms.txt returns 404, so LLM crawlers do not receive a curated summary of the brand, expert, services, locations, phone, and preferred citation pages.",
+      "recommendation": "Publish /llms.txt with canonical facts, service summaries, official URLs, branch information, and preferred source pages."
+    },
+    {
+      "title": "AI citation pages are not strong enough",
+      "severity": "high",
+      "description": "The site lacks stable, easy-to-quote pages for online consultation, pricing, packages, city branches, expert biography, methodology, registration, planning, selection, and outcomes.",
+      "recommendation": "Create concise factual pages and sections that AI systems can quote directly, supported by schema and internal links."
+    },
+    {
+      "title": "Broken P0 URLs reduce source reliability",
+      "severity": "high",
+      "description": "Important source URLs such as /مشاوره-آنلاین-کنکور/, /اصفهان/, and /تهران/ return 404, while several commercial short slugs redirect to mismatched articles.",
+      "recommendation": "Publish or repair the P0 pages so AI systems can resolve service and location claims to stable canonical URLs."
+    },
+    {
+      "title": "Entity graph is thin beyond the website itself",
+      "severity": "medium",
+      "description": "Structured sameAs/citation signals are mostly self-referential, and verified external profiles such as GBP or social profiles are not strongly connected in schema.",
+      "recommendation": "Add verified sameAs links for official social profiles, GBP where eligible, Aparat/Rubika/Soroush/Bale profiles as appropriate, and advisor credentials."
+    },
+    {
+      "title": "Stale fish-programmer signal remains",
+      "severity": "medium",
+      "description": "The homepage rendered HTML still contains fish-programmer, which can confuse author/entity interpretation for an expert-led education service.",
+      "recommendation": "Remove or replace stale fish-programmer author/entity metadata with Dr. Zahra Jafari or a verified Mind Ati organization identity."
+    }
+  ]
+}

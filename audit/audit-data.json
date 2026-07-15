@@ -1,0 +1,436 @@
+{
+  "summary": {
+    "health_score": 55,
+    "business_type": "local-service / education",
+    "top_findings": [
+      "E-E-A-T is undermined by fish-programmer author signals",
+      "P0 service and local landings are missing or mismatched",
+      "Pricing landing page returns 404",
+      "Too many H1 tags on /مشاوره-کنکور/",
+      "Too many H1 tags on /مشاوره-کنکور-تجربی/"
+    ],
+    "quick_wins": [
+      "Replace every fish-programmer author, byline, schema, and social-card signal with دکتر زهرا جعفری or a verified آکادمی ذهن آتی organization author. Add a real Person entity for Dr. Jafari with credentials, role, image, sameAs, worksFor, and a link to /about/.",
+      "Create or repair P0 pages for مشاوره کنکور, مشاوره آنلاین, قیمت, ثبت نام, برنامه ریزی, انتخاب رشته, اصفهان, تهران, and city-specific best-consultant intent. Each page should have one intent, one H1, 700-1200 words, proof, FAQ, CTA, schema, and internal links.",
+      "Create a dedicated pricing/consultation-cost landing page or 301 it to the closest relevant commercial page, then add it to sitemap and internal links.",
+      "Keep one page-level H1 and demote card/archive/widget titles to H2/H3.",
+      "Add 700-1000 words of concise homepage copy covering a short intro, حضوری/آنلاین services, Dr. Jafari bio, method/process, branch details, proof with context, FAQ, and internal links to core service/local landings."
+    ],
+    "category_scores": {
+      "technical": 50,
+      "technical_raw": 48,
+      "content": 44,
+      "on_page_sxo": 70,
+      "schema": 69,
+      "sitemap": 55,
+      "local": 60,
+      "geo": 52,
+      "performance_est": 58,
+      "images": 35
+    }
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 50,
+      "what_works": [
+        "robots.txt is available and points to the sitemap index.",
+        "sitemap_index.xml is live and exposes 6 child sitemaps.",
+        "All checked child sitemaps returned 200.",
+        "Homepage is 200 and indexable.",
+        "Homepage canonical is correct: https://zehnati.ir/.",
+        "Homepage has a custom title and meta description."
+      ],
+      "findings": [
+        {
+          "title": "Pricing landing page returns 404",
+          "severity": "high",
+          "description": "The requested transactional URL /قیمت-مشاوره-کنکور/ returns HTTP 404.",
+          "recommendation": "Create a dedicated pricing/consultation-cost landing page or 301 it to the closest relevant commercial page, then add it to sitemap and internal links."
+        },
+        {
+          "title": "Too many H1 tags on /مشاوره-کنکور/",
+          "severity": "high",
+          "description": "/مشاوره-کنکور/ returns 200 but has 17 H1 tags, which weakens hub-page structure.",
+          "recommendation": "Keep one page-level H1 and demote card/archive/widget titles to H2/H3."
+        },
+        {
+          "title": "Too many H1 tags on /مشاوره-کنکور-تجربی/",
+          "severity": "high",
+          "description": "/مشاوره-کنکور-تجربی/ returns 200 but has 17 H1 tags, which weakens hub-page structure.",
+          "recommendation": "Keep one page-level H1 and demote card/archive/widget titles to H2/H3."
+        },
+        {
+          "title": "Core security headers are missing",
+          "severity": "medium",
+          "description": "Homepage is missing: strict-transport-security, content-security-policy, x-frame-options, x-content-type-options, referrer-policy, permissions-policy",
+          "recommendation": "Set HSTS, X-Content-Type-Options, X-Frame-Options or CSP frame-ancestors, Referrer-Policy, and Permissions-Policy at server/CDN level. Test CSP in Report-Only first."
+        },
+        {
+          "title": "X-Powered-By exposes PHP",
+          "severity": "low",
+          "description": "x-powered-by: PHP/8.3.31",
+          "recommendation": "Disable expose_php or strip this header at LiteSpeed/web server level."
+        },
+        {
+          "title": "fish-programmer remains in homepage metadata",
+          "severity": "medium",
+          "description": "twitter:data1=fish-programmer; fish_programmer=True",
+          "recommendation": "Update the WordPress/Rank Math author or social metadata to Dr. Zahra Jafari or Zehn Ati Academy."
+        },
+        {
+          "title": "robots.txt has no explicit AI crawler policy",
+          "severity": "info",
+          "description": "No dedicated User-agent rule was found for GPTBot, ClaudeBot, PerplexityBot, Bytespider, Google-Extended, or CCBot.",
+          "recommendation": "Decide the GEO/AI-crawler policy and express it explicitly in robots.txt."
+        },
+        {
+          "title": "IndexNow is not configured",
+          "severity": "info",
+          "description": "IndexNow key file was not found at /indexnow-key.txt or /.well-known/indexnow-key.",
+          "recommendation": "Enable IndexNow through Rank Math or a dedicated plugin to speed up Bing/Yandex discovery."
+        },
+        {
+          "title": "llms.txt is missing",
+          "severity": "low",
+          "description": "https://zehnati.ir/llms.txt returns 404.",
+          "recommendation": "Add a concise llms.txt at the site root for LLM/GEO discovery if this is part of the content strategy."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 44,
+      "what_works": [
+        "Homepage title and meta description now target مشاوره رایگان کنکور, ذهن آتی, دکتر زهرا جعفری, اصفهان, تهران, and online consultation.",
+        "Homepage has one visible H1: مشاوره رایگان کنکور در ذهن آتی.",
+        "Homepage includes conversion and proof paths through consultation request links, contact page links, report-card/interview, satisfaction, webinar, voice content, branch mentions, and a lead form.",
+        "/about/ returns 200, has one H1, mentions دکتر زهرا جعفری, and includes proof claims such as ۲۰۰۰+ قبولی and ۵۰۰ رتبه دو و سه‌رقمی.",
+        "/contact-us/ returns 200 with contact-focused title/meta, phone number, Isfahan/Tehran branch mentions, and online consultation language.",
+        "/مشاوره-کنکور/ returns 200 with relevant title and meta description, giving the site a main hub URL to rebuild."
+      ],
+      "findings": [
+        {
+          "title": "E-E-A-T is undermined by fish-programmer author signals",
+          "severity": "critical",
+          "description": "The homepage still exposes fish-programmer in author-related metadata, and live probes found fish-programmer present on homepage, /مشاوره-کنکور/, /about/, /contact-us/, and redirected legacy pages. This conflicts with the public expert identity of دکتر زهرا جعفری and weakens trust, social previews, and AI/entity interpretation.",
+          "recommendation": "Replace every fish-programmer author, byline, schema, and social-card signal with دکتر زهرا جعفری or a verified آکادمی ذهن آتی organization author. Add a real Person entity for Dr. Jafari with credentials, role, image, sameAs, worksFor, and a link to /about/."
+        },
+        {
+          "title": "Homepage is still thin as a commercial service explanation",
+          "severity": "high",
+          "description": "The homepage now has correct title, meta, H1, branch mentions, proof links, and CTA elements, but the visible service narrative remains light. It does not clearly explain the counseling method, student fit, parent/student pain points, free-session details, ongoing follow-up, Dr. Jafari credibility, pricing expectations, or FAQ objections.",
+          "recommendation": "Add 700-1000 words of concise homepage copy covering a short intro, حضوری/آنلاین services, Dr. Jafari bio, method/process, branch details, proof with context, FAQ, and internal links to core service/local landings."
+        },
+        {
+          "title": "P0 service and local landings are missing or mismatched",
+          "severity": "critical",
+          "description": "Live probes show /مشاوره-آنلاین-کنکور/, /اصفهان/, /تهران/, /بهترین-مشاور-کنکور-اصفهان/, /بهترین-مشاور-کنکور-تهران/, and /قیمت-مشاوره-کنکور/ return 404. /ثبت-نام/, /برنامه-ریزی-کنکور/, and /انتخاب-رشته/ redirect to mismatched legacy articles instead of commercial landing pages.",
+          "recommendation": "Create or repair P0 pages for مشاوره کنکور, مشاوره آنلاین, قیمت, ثبت نام, برنامه ریزی, انتخاب رشته, اصفهان, تهران, and city-specific best-consultant intent. Each page should have one intent, one H1, 700-1200 words, proof, FAQ, CTA, schema, and internal links."
+        },
+        {
+          "title": "/مشاوره-کنکور/ is live but not quality-ready",
+          "severity": "high",
+          "description": "/مشاوره-کنکور/ returns 200 with relevant title/meta, but the live page has 17 H1 elements and includes unrelated article/widget titles. The probe did not find دکتر زهرا جعفری on the page, which is a serious weakness for the site's main consultation hub.",
+          "recommendation": "Rebuild /مشاوره-کنکور/ as the canonical consultation hub with exactly one H1, Dr. Jafari authority, counseling method, رشته‌های تجربی/ریاضی/انسانی coverage, online/in-person options, proof, pricing/registration path, FAQ, and links to child pages."
+        },
+        {
+          "title": "About and contact trust pages need stronger citation blocks",
+          "severity": "medium",
+          "description": "/about/ is live, has one H1, and mentions دکتر زهرا جعفری. /contact-us/ is live and has strong contact meta, but the live text does not mention Dr. Jafari. Both pages still need more structured trust content around credentials, branch NAP, hours, service area, process, and proof sources.",
+          "recommendation": "Make /about/ the canonical founder and academy trust page. Expand /contact-us/ with separate Isfahan and Tehran branch blocks, consistent phone/address/hours, map links, expected response time, and what happens after submitting the form."
+        },
+        {
+          "title": "AI citation readiness is low",
+          "severity": "high",
+          "description": "The site has useful brand signals, but AI-readable facts are fragmented by wrong author identity, weak Person entity coverage, missing city/service pages, no visible homepage FAQ, inconsistent local branch depth, and a main service hub polluted by unrelated H1s.",
+          "recommendation": "Add citation-ready blocks for About ذهن آتی, Who is دکتر زهرا جعفری, Services, Branches, How consultation works, Results, Pricing/registration, and FAQ. Mirror those visible facts in Person, LocalBusiness, Service, and FAQPage schema where appropriate."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO / SXO",
+      "score": 70,
+      "what_works": [
+        "Homepage title and H1 directly match مشاوره رایگان کنکور intent",
+        "Homepage returns 200 and has one H1",
+        "Phone and Didar form CTAs are present",
+        "Homepage mentions Dr. Zahra Jafari, Isfahan, Tehran, and branch schema signals",
+        "/about/ and /contact-us/ are live trust/contact support pages"
+      ],
+      "findings": [
+        {
+          "title": "Homepage needs stronger proof before the lead form",
+          "severity": "medium",
+          "description": "The free consultation promise is clear, but users still need clearer proof, process explanation, advisor role, outcomes, and expectation-setting before submitting a lead.",
+          "recommendation": "Add near-CTA sections for what happens next, what the free consultation includes, advisor credentials, student outcomes, testimonials, and FAQ objections."
+        },
+        {
+          "title": "Main consultation hub does not support the broader journey",
+          "severity": "high",
+          "description": "/مشاوره-کنکور/ returns 200 but the live probe found 17 H1 elements and article/listing behavior, so it cannot fully carry commercial comparison and service-depth intent.",
+          "recommendation": "Rebuild /مشاوره-کنکور/ as a true commercial hub with one H1, proof, FAQs, packages/pricing paths, and links to child landings."
+        },
+        {
+          "title": "CTA journey has broken or mismatched next pages",
+          "severity": "high",
+          "description": "/مشاوره-آنلاین-کنکور/, /اصفهان/, and /تهران/ return 404, while /ثبت-نام/, /برنامه-ریزی-کنکور/, and /انتخاب-رشته/ redirect to mismatched articles.",
+          "recommendation": "Fix the post-homepage journey with live intent-matched pages for online consultation, registration, planning, selection, Isfahan, and Tehran."
+        },
+        {
+          "title": "Persona segmentation is still thin",
+          "severity": "medium",
+          "description": "The page addresses the general consultation need but does not clearly separate parent, student, online, Isfahan, Tehran, and high-intent buyer motivations.",
+          "recommendation": "Add short persona blocks with specific benefits, proof, and CTAs for each major audience segment."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 69,
+      "what_works": [
+        "One Rank Math JSON-LD block is present in the homepage head and uses https://schema.org.",
+        "The main brand entity exists as EducationalOrganization + Organization with a stable @id, URL, and logo.",
+        "WebSite schema includes publisher, inLanguage, and SearchAction.",
+        "WebPage schema is connected to the WebSite and Organization entities and includes publish and modified dates.",
+        "The Isfahan branch is represented as LocalBusiness with name, URL, telephone, email, parentOrganization, PostalAddress, areaServed, and sameAs."
+      ],
+      "findings": [
+        {
+          "title": "Tehran branch is not modeled as LocalBusiness",
+          "severity": "high",
+          "description": "The Tehran branch exists as https://zehnati.ir/#local-tehran, but its @type is EducationalOrganization rather than LocalBusiness or a relevant local subtype. It has address, phone, email, areaServed, and parentOrganization, but local-search systems do not get a clear local business entity for Tehran.",
+          "recommendation": "Change the Tehran branch node to LocalBusiness, or use an array such as [\"EducationalOrganization\", \"LocalBusiness\"] if both education and local branch identity are needed. Keep the existing @id and add local fields such as geo, openingHoursSpecification, priceRange, hasMap, and branch-specific sameAs links."
+        },
+        {
+          "title": "Isfahan LocalBusiness is incomplete",
+          "severity": "high",
+          "description": "The Isfahan branch is correctly typed as LocalBusiness, but the node is still thin. It lacks geo coordinates, opening hours, priceRange, hasMap, postalCode, branch-specific page/map URL, and verified local profile links.",
+          "recommendation": "Enrich https://zehnati.ir/#local-isfahan with real GeoCoordinates, OpeningHoursSpecification, postalCode where available, priceRange, hasMap, and Google Business Profile or other verified citation URLs. Mirror the same NAP visibly on the page and contact/local landing pages."
+        },
+        {
+          "title": "Person schema for Dr Zahra Jafari is missing",
+          "severity": "high",
+          "description": "The title and visible content reference دکتر زهرا جعفری, but the JSON-LD graph does not include a Person entity for her. This leaves the expert/founder entity disconnected from the organization and homepage.",
+          "recommendation": "Add a Person node for دکتر زهرا جعفری with a stable @id, name, jobTitle/role, worksFor or affiliation, knowsAbout, image, sameAs/profile URLs, and a relationship from the WebPage or Organization where accurate."
+        },
+        {
+          "title": "Twitter author still exposes fish-programmer",
+          "severity": "high",
+          "description": "The homepage contains twitter:label1=نویسنده and twitter:data1=fish-programmer. This conflicts with the public brand/expert positioning around ذهن آتی and دکتر زهرا جعفری.",
+          "recommendation": "Update the WordPress/Rank Math author identity so Twitter card author data uses دکتر زهرا جعفری or a verified brand author. Also check Gravatar, byline, Article author settings, and any author archive metadata."
+        },
+        {
+          "title": "No Service schema for consultation offer",
+          "severity": "medium",
+          "description": "The homepage presents free کنکور consultation and lead-generation CTAs, but no Service schema describes the consultation offer, provider, service area, channel, or action target.",
+          "recommendation": "Add Service schema only after the visible copy clearly states the consultation service details. Connect it to the organization, Tehran/Isfahan branches, areaServed, and the existing consultation form or phone CTA."
+        },
+        {
+          "title": "No BreadcrumbList schema",
+          "severity": "low",
+          "description": "No BreadcrumbList node was detected on the homepage. This is not critical for the homepage, but it should be consistent on deeper service, city, and article pages if visible breadcrumbs are used.",
+          "recommendation": "Add BreadcrumbList only where a visible breadcrumb trail exists, and keep item URLs absolute and canonical."
+        }
+      ]
+    },
+    {
+      "name": "Sitemap",
+      "score": 55,
+      "what_works": [
+        "sitemap_index.xml returns 200 and is referenced from robots.txt",
+        "Six child sitemaps returned 200: three post sitemaps, page sitemap, category sitemap, and local sitemap",
+        "Homepage, /about/, /contact-us/, and /مشاوره-کنکور/ are present in page-sitemap.xml"
+      ],
+      "findings": [
+        {
+          "title": "P0 landing coverage is still incomplete",
+          "severity": "high",
+          "description": "Live checks found /مشاوره-آنلاین-کنکور/, /اصفهان/, /تهران/, /بهترین-مشاور-کنکور-اصفهان/, and /بهترین-مشاور-کنکور-تهران/ returning 404, so the sitemap cannot cover key online and local commercial intent.",
+          "recommendation": "Create clean indexable landing pages for online consultation, Isfahan, Tehran, and best-consultant city queries, then verify they appear in page-sitemap.xml."
+        },
+        {
+          "title": "Commercial short slugs redirect to mismatched articles",
+          "severity": "high",
+          "description": "/ثبت-نام/, /برنامه-ریزی-کنکور/, and /انتخاب-رشته/ return 301 to unrelated article-style pages instead of commercial landings.",
+          "recommendation": "Replace these redirects with intent-matched landing pages or redirect them to the closest true commercial service pages."
+        },
+        {
+          "title": "/مشاوره-کنکور/ is present but not a clean hub",
+          "severity": "high",
+          "description": "The page returns 200 and is in page-sitemap.xml, but the live probe found 17 H1 elements including article titles.",
+          "recommendation": "Rebuild /مشاوره-کنکور/ as a commercial hub with one H1, clear offer, proof, FAQs, CTA, and links to child service pages."
+        },
+        {
+          "title": "local-sitemap.xml does not represent city pages",
+          "severity": "medium",
+          "description": "local-sitemap.xml returns 200 but only points to locations.kml, while clean Isfahan and Tehran landing pages are missing.",
+          "recommendation": "Use city pages in the normal page sitemap and keep KML/schema as supporting local signals."
+        }
+      ]
+    },
+    {
+      "name": "Local SEO",
+      "score": 60,
+      "what_works": [
+        "Homepage and contact page mention Isfahan and Tehran",
+        "Phone CTA is crawlable as tel:02128427259 and schema uses +98-21-28427259",
+        "Homepage JSON-LD includes an Isfahan LocalBusiness branch with PostalAddress",
+        "Homepage JSON-LD includes a Tehran branch with phone and PostalAddress",
+        "Contact page meta supports branch/contact intent"
+      ],
+      "findings": [
+        {
+          "title": "Isfahan and Tehran city landing pages return 404",
+          "severity": "high",
+          "description": "Live checks found /اصفهان/, /تهران/, /بهترین-مشاور-کنکور-اصفهان/, and /بهترین-مشاور-کنکور-تهران/ returning 404, leaving homepage/contact/schema to carry all local relevance.",
+          "recommendation": "Create dedicated city hubs and city-service pages with unique copy, visible NAP, maps, branch proof, FAQs, CTAs, and internal links."
+        },
+        {
+          "title": "Branch NAP and local schema are incomplete",
+          "severity": "medium",
+          "description": "Schema exposes street/city/phone, but no postal code, geo coordinates, opening hours, hasMap, or branch-specific URL was confirmed.",
+          "recommendation": "Complete PostalAddress fields and add geo, openingHours, hasMap, branch URLs, and visible NAP blocks that exactly match schema."
+        },
+        {
+          "title": "Tehran branch type is weaker than Isfahan",
+          "severity": "medium",
+          "description": "Isfahan is typed as LocalBusiness, while Tehran is typed as EducationalOrganization. This creates inconsistent local entity interpretation.",
+          "recommendation": "Add a local business-compatible Tehran branch node or type array while preserving the education context."
+        },
+        {
+          "title": "GBP and branch citation signals are not surfaced",
+          "severity": "medium",
+          "description": "No Google Business Profile URL, review source, map profile URL, or branch-specific citation link was confirmed in homepage schema.",
+          "recommendation": "Add eligible GBP links and verified citation profiles, keeping NAP identical across website, GBP, schema, and visible copy."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness (GEO)",
+      "score": 52,
+      "what_works": [
+        "robots.txt returns 200, allows general crawling, and references the XML sitemap",
+        "No explicit GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, or Applebot-Extended blocks were found",
+        "Homepage has clear title, H1, Organization/EducationalOrganization schema, branch schema, and phone CTA",
+        "Sitemap access is healthy for crawler discovery"
+      ],
+      "findings": [
+        {
+          "title": "llms.txt is missing",
+          "severity": "medium",
+          "description": "https://zehnati.ir/llms.txt returns 404, so LLM crawlers do not receive a curated summary of the brand, expert, services, locations, phone, and preferred citation pages.",
+          "recommendation": "Publish /llms.txt with canonical facts, service summaries, official URLs, branch information, and preferred source pages."
+        },
+        {
+          "title": "AI citation pages are not strong enough",
+          "severity": "high",
+          "description": "The site lacks stable, easy-to-quote pages for online consultation, pricing, packages, city branches, expert biography, methodology, registration, planning, selection, and outcomes.",
+          "recommendation": "Create concise factual pages and sections that AI systems can quote directly, supported by schema and internal links."
+        },
+        {
+          "title": "Broken P0 URLs reduce source reliability",
+          "severity": "high",
+          "description": "Important source URLs such as /مشاوره-آنلاین-کنکور/, /اصفهان/, and /تهران/ return 404, while several commercial short slugs redirect to mismatched articles.",
+          "recommendation": "Publish or repair the P0 pages so AI systems can resolve service and location claims to stable canonical URLs."
+        },
+        {
+          "title": "Entity graph is thin beyond the website itself",
+          "severity": "medium",
+          "description": "Structured sameAs/citation signals are mostly self-referential, and verified external profiles such as GBP or social profiles are not strongly connected in schema.",
+          "recommendation": "Add verified sameAs links for official social profiles, GBP where eligible, Aparat/Rubika/Soroush/Bale profiles as appropriate, and advisor credentials."
+        },
+        {
+          "title": "Stale fish-programmer signal remains",
+          "severity": "medium",
+          "description": "The homepage rendered HTML still contains fish-programmer, which can confuse author/entity interpretation for an expert-led education service.",
+          "recommendation": "Remove or replace stale fish-programmer author/entity metadata with Dr. Zahra Jafari or a verified Mind Ati organization identity."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 58,
+      "what_works": [
+        "HTTPS فعال است",
+        "GA4 نصب است"
+      ],
+      "findings": [
+        {
+          "title": "اندازه‌گیری میدانی CWV در دسترس نیست",
+          "severity": "info",
+          "description": "Google API / CrUX credentials تنظیم نشده؛ امتیاز Performance تخمینی است.",
+          "recommendation": "GOOGLE_API_KEY را برای PSI/CrUX تنظیم کنید یا در PageSpeed Insights دستی تست بگیرید."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 35,
+      "what_works": [
+        "16 تصویر در homepage"
+      ],
+      "findings": [
+        {
+          "title": "تصاویر بدون alt یا alt خالی",
+          "severity": "medium",
+          "description": "15 از 16 تصویر alt خالی/ندارند.",
+          "recommendation": "برای تصاویر معنادار alt فارسی بنویسید."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "تعویض نویسنده fish-programmer به دکتر زهرا جعفری",
+          "ساخت /قیمت-مشاوره-کنکور/",
+          "کاهش H1های /مشاوره-کنکور/ و تجربی به ۱ عدد + ساختار هاب"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "تکمیل LocalBusiness اصفهان/تهران + Person دکتر جعفری",
+          "Landing محلی اصفهان/تهران",
+          "هدرهای امنیتی پایه (HSTS, X-Frame-Options, nosniff)",
+          "راه‌اندازی Google Business اصفهان"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "تقویت محتوای homepage",
+          "llms.txt + صفحات قابل استناد",
+          "پوشش P0 باقی‌مانده (آنلاین، پکیج، …)"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "PageSpeed / CrUX + drift baseline",
+          "مانیتور Rank Math Analytics + GSC",
+          "بازاودیت ماهانه /seo audit"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-07-15T22:16:27+03:30",
+  "source": "full /seo audit 2026-07-15 — parallel specialists (technical, content, schema, sitemap, local, sxo, geo) + live fetch",
+  "artifacts": {
+    "findings_dir": "findings/",
+    "homepage_html": "homepage.html",
+    "screenshots_dir": "screenshots/"
+  },
+  "limitations": [
+    "Google API credentials missing — no CrUX/GSC/GA4 API enrichment",
+    "Performance score estimated without Lighthouse/PSI API",
+    "No Moz/Bing backlink enrichment"
+  ]
+}
