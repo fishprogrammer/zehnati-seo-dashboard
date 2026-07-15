@@ -68,5 +68,5 @@ if ($Push) {
   }
 } else {
   Write-Host "Done. Next: git add/commit/push  OR  .\sync-from-workspace.ps1 -Push"
-  Write-Host "Or from local dashboard: click «انتشار برای کارفرما»"
+  Write-Host 'Or from local dashboard: click انتشار آنلاین'
 }

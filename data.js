@@ -368,7 +368,7 @@ window.ZEHNATI_SEO = {
         {
           id: "p3-a5",
           priority: "high",
-          title: "گزارش ماه اول به کارفرما + /seo audit مجدد",
+          title: "گزارش ماه اول + /seo audit مجدد",
           where: "داشبورد + Cursor",
           why: "اثبات پیشرفت فاز ۰→۳ در ۴ هفته",
           done: false,
@@ -379,7 +379,7 @@ window.ZEHNATI_SEO = {
         { id: "p3-c2", label: "هدرهای امنیتی فعال", done: false },
         { id: "p3-c3", label: "alt تصاویر صفحه اصلی", done: false },
         { id: "p3-c4", label: "PageSpeed ثبت نهایی", done: false },
-        { id: "p3-c5", label: "Audit مجدد + گزارش کارفرما", done: false },
+        { id: "p3-c5", label: "Audit مجدد + گزارش ماه اول", done: false },
       ],
     },
   },

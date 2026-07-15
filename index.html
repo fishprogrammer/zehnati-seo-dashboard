@@ -881,7 +881,7 @@
 
     <div class="callout" id="topCallout">
       <strong>فاز جاری:</strong>
-      فاز ۱ — Landingهای P0 (هفته ۲: ۲۷ تیر تا ۲ مرداد). فاز ۰ فنی برای کارفرما به‌عنوان انجام‌شده نگه داشته شده است.
+      فاز ۱ — Landingهای P0 (هفته ۲: ۲۷ تیر تا ۲ مرداد). فاز ۰ فنی انجام شده است.
     </div>
 
     <nav class="tabs" role="tablist" aria-label="بخش‌های داشبورد">
@@ -897,14 +897,14 @@
     <div class="panel active" id="panel-overview" role="tabpanel">
       <div class="toolbar">
         <button class="btn" id="btnLive" type="button">بررسی زنده Sitemap</button>
-        <button class="btn" id="btnPublish" type="button" title="تیک‌ها را در data.js می‌نویسد و به GitHub Pages پوش می‌کند">انتشار برای کارفرما</button>
+        <button class="btn" id="btnPublish" type="button" title="تیک‌ها را در data.js می‌نویسد و به GitHub Pages پوش می‌کند">انتشار آنلاین</button>
         <button class="btn ghost" id="btnReset" type="button">بازنشانی تیک‌ها</button>
-        <span class="live-note" id="liveNote">لوکال: تیک‌ها ذخیره می‌شوند · دکمه انتشار = همان وضعیت برای کارفرما</span>
+        <span class="live-note" id="liveNote">لوکال: تیک‌ها ذخیره می‌شوند · دکمه انتشار = همگام‌سازی با نسخه آنلاین</span>
       </div>
 
       <div class="timeline" id="timeline" aria-label="فازهای برنامه یک‌ماهه"></div>
       <p class="section-lead" style="margin:-0.75rem 0 1rem">
-        روی هر فاز کلیک کنید تا کارها و چک‌لیست همان فاز نمایش داده شود. فاز ۰ انجام‌شده باقی می‌ماند تا کارفرما پیشرفت را ببیند.
+        روی هر فاز کلیک کنید تا کارها و چک‌لیست همان فاز نمایش داده شود. فاز ۰ انجام‌شده در تاریخچه می‌ماند.
       </p>
 
       <section class="block" id="phaseWorkBlock">
@@ -1599,9 +1599,9 @@
         lead.textContent =
           (det.period || "") +
           (det.status === "done"
-            ? " — این فاز بسته شده و برای کارفرما قابل مشاهده می‌ماند"
+            ? " — این فاز بسته شده و در تاریخچه باقی می‌ماند"
             : USE_BROWSER_TICKS
-              ? " — تیک بزنید؛ برای دیدن کارفرما دکمه «انتشار برای کارفرما» را بزنید"
+              ? " — تیک بزنید؛ برای نسخه آنلاین دکمه «انتشار آنلاین» را بزنید"
               : " — نسخه آنلاین (فقط خواندنی از data.js)");
       }
 
@@ -1668,7 +1668,7 @@
         btnPublish.style.display = "none";
       } else {
         btnPublish.addEventListener("click", async () => {
-          if (!confirm("وضعیت فعلی تیک‌ها برای کارفرما روی GitHub Pages منتشر شود؟")) return;
+          if (!confirm("وضعیت فعلی تیک‌ها روی GitHub Pages منتشر شود؟")) return;
           const note = document.getElementById("liveNote");
           btnPublish.disabled = true;
           if (note) {

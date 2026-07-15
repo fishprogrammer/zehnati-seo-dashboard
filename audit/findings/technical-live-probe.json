@@ -1,0 +1,657 @@
+{
+  "generated_at": "2026-07-15T22:12:19+03:30",
+  "robots": {
+    "url": "https://zehnati.ir/robots.txt",
+    "status_code": 200,
+    "headers": {
+      "Connection": "Keep-Alive",
+      "Keep-Alive": "timeout=5, max=100",
+      "x-powered-by": "PHP/8.3.31",
+      "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\"",
+      "content-type": "text/plain; charset=utf-8",
+      "etag": "\"11899-1784122863;gz\"",
+      "x-litespeed-cache": "hit",
+      "content-encoding": "gzip",
+      "vary": "Accept-Encoding,User-Agent",
+      "content-length": "111",
+      "date": "Wed, 15 Jul 2026 18:42:21 GMT"
+    },
+    "redirect_details": [],
+    "redirect_chain": [],
+    "error": null,
+    "content_length": 114
+  },
+  "sitemap_index": {
+    "url": "https://zehnati.ir/sitemap_index.xml",
+    "status_code": 200,
+    "headers": {
+      "Connection": "Keep-Alive",
+      "Keep-Alive": "timeout=5, max=100",
+      "x-powered-by": "PHP/8.3.31",
+      "x-robots-tag": "noindex",
+      "content-type": "text/xml; charset=UTF-8",
+      "pragma": "public",
+      "expires": "0",
+      "x-litespeed-cache-control": "no-cache",
+      "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+      "content-length": "349",
+      "content-encoding": "gzip",
+      "vary": "Accept-Encoding,User-Agent",
+      "date": "Wed, 15 Jul 2026 18:42:22 GMT"
+    },
+    "redirect_details": [],
+    "redirect_chain": [],
+    "error": null,
+    "content_length": 998
+  },
+  "sitemap_children": {
+    "https://zehnati.ir/post-sitemap1.xml": {
+      "url": "https://zehnati.ir/post-sitemap1.xml",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "x-robots-tag": "noindex",
+        "content-type": "text/xml; charset=UTF-8",
+        "pragma": "public",
+        "expires": "0",
+        "x-litespeed-cache-control": "no-cache",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:28 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 59610,
+      "sample_locs": [
+        "https://zehnati.ir/%d9%86%d8%ad%d9%88%d9%87-%d9%85%d8%b7%d8%a7%d9%84%d8%b9%d9%87-%d8%af%d8%b1%d8%b3-%d8%b4%db%8c%d9%85%db%8c/",
+        "https://zehnati.ir/%d8%aa%d9%85%d8%b1%da%a9%d8%b2/",
+        "https://zehnati.ir/%d8%a8%d9%82%da%86%d9%87-%d8%a7%db%8c-%d8%af%d8%b1%d8%b3-%d8%ae%d9%88%d8%a7%d9%86%d8%af%d9%86/",
+        "https://zehnati.ir/%da%86%d8%b1%d8%a7-%d8%a7%db%8c%d9%86%d9%82%d8%af%d8%b1-%d8%a7%d8%b3%d8%aa%d8%b1%d8%b3-%d8%af%d8%a7%d8%b1%d9%85%d8%9f/",
+        "https://zehnati.ir/%d9%85%d8%af%db%8c%d8%aa%db%8c%d8%b4%d9%86-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a2%d8%b1%d8%a7%d9%85%d8%b4/"
+      ]
+    },
+    "https://zehnati.ir/post-sitemap2.xml": {
+      "url": "https://zehnati.ir/post-sitemap2.xml",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "x-robots-tag": "noindex",
+        "content-type": "text/xml; charset=UTF-8",
+        "pragma": "public",
+        "expires": "0",
+        "x-litespeed-cache-control": "no-cache",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:29 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 81771,
+      "sample_locs": [
+        "https://zehnati.ir/%da%a9%d8%af%d9%88%d9%85-%d8%a2%d8%b2%d9%85%d9%88%d9%86-%d8%b1%d8%a7-%d8%b4%d8%b1%da%a9%d8%aa-%da%a9%d9%86%d9%85%d8%9f/",
+        "https://zehnati.ir/%da%86%d8%b1%d8%a7-%d8%b7%d8%a8%d9%82-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d8%b1%db%8c%d8%b2%db%8c-%d9%87%d8%a7%d9%85-%d9%be%db%8c%d8%b4-%d9%86%d9%85%db%8c%d8%b1%d9%85%d8%9f/",
+        "https://zehnati.ir/%d8%aa%d8%a7%d8%a8%d8%b3%d8%aa%d9%88%d9%86%d9%85-%d8%b1%d8%a7-%da%86%db%8c%da%a9%d8%a7%d8%b1%da%a9%d9%86%d9%85%d8%9f/",
+        "https://zehnati.ir/%d9%85%d9%86%d8%a7%d8%a8%d8%b9-%d8%af%d8%b1%d8%b3-%d9%81%db%8c%d8%b2%db%8c%da%a9/",
+        "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d9%85%d8%b7%d8%a7%d9%84%d8%b9%d9%87-%d8%af%d8%b1%d8%b3-%d9%81%d9%84%d8%b3%d9%81%d9%87/"
+      ]
+    },
+    "https://zehnati.ir/post-sitemap3.xml": {
+      "url": "https://zehnati.ir/post-sitemap3.xml",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "x-robots-tag": "noindex",
+        "content-type": "text/xml; charset=UTF-8",
+        "pragma": "public",
+        "expires": "0",
+        "x-litespeed-cache-control": "no-cache",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:30 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 42584,
+      "sample_locs": [
+        "https://zehnati.ir/%d9%87%d9%85%d9%87-%da%86%db%8c%d8%b2-%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%ad%d8%b3%d8%a7%d8%a8%d8%af%d8%a7%d8%b1%db%8c/",
+        "https://zehnati.ir/%d8%a8%d9%88%d8%af%d8%ac%d9%87-%d8%a8%d9%86%d8%af%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-1404-%d8%af%d9%82%db%8c%d9%82-%d8%aa%d8%b1%db%8c%d9%86-%d8%a8%d8%a7%d8%b1%d9%85-%d8%a8%d9%86%d8%af%db%8c-%da%a9/",
+        "https://zehnati.ir/%da%86%da%af%d9%88%d9%86%d9%87-%d8%b1%d8%aa%d8%a8%d9%87-1%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%aa%d8%ac%d8%b1%d8%a8%db%8c-1404-%d8%b4%d9%88%db%8c%d9%85/",
+        "https://zehnati.ir/%d9%85%d8%af%d8%aa-%d8%b2%d9%85%d8%a7%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+        "https://zehnati.ir/%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%ae%d8%a7%d8%b1%d8%ac-%d8%a7%d8%b2-%da%a9%d8%b4%d9%88%d8%b1-%da%86%db%8c%d8%b3%d8%aa%d8%9f/"
+      ]
+    },
+    "https://zehnati.ir/page-sitemap.xml": {
+      "url": "https://zehnati.ir/page-sitemap.xml",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "x-robots-tag": "noindex",
+        "content-type": "text/xml; charset=UTF-8",
+        "pragma": "public",
+        "expires": "0",
+        "x-litespeed-cache-control": "no-cache",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:32 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 11955,
+      "sample_locs": [
+        "https://zehnati.ir/",
+        "https://zehnati.ir/report-card/",
+        "https://zehnati.ir/webinars/",
+        "https://zehnati.ir/academic-counseling/",
+        "https://zehnati.ir/about/"
+      ]
+    },
+    "https://zehnati.ir/category-sitemap.xml": {
+      "url": "https://zehnati.ir/category-sitemap.xml",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "x-robots-tag": "noindex",
+        "content-type": "text/xml; charset=UTF-8",
+        "pragma": "public",
+        "expires": "0",
+        "x-litespeed-cache-control": "no-cache",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "content-length": "744",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:33 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 3291,
+      "sample_locs": [
+        "https://zehnati.ir/blogs/",
+        "https://zehnati.ir/%d9%85%d8%aa%d9%88%d8%b3%d8%b7%d9%87-%d8%a7%d9%88%d9%84/",
+        "https://zehnati.ir/%d8%af%d9%87%d9%85/",
+        "https://zehnati.ir/%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85/",
+        "https://zehnati.ir/%d8%af%d9%88%d8%a7%d8%b2%d8%af%d9%87%d9%85/"
+      ]
+    },
+    "https://zehnati.ir/local-sitemap.xml": {
+      "url": "https://zehnati.ir/local-sitemap.xml",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "x-robots-tag": "noindex",
+        "content-type": "text/xml; charset=UTF-8",
+        "pragma": "public",
+        "expires": "0",
+        "x-litespeed-cache-control": "no-cache",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "content-length": "289",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:35 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 379,
+      "sample_locs": [
+        "https://zehnati.ir/locations.kml"
+      ]
+    }
+  },
+  "pages": {
+    "/": {
+      "url": "https://zehnati.ir/",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\", <https://zehnati.ir/wp-json/wp/v2/pages/13169>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://zehnati.ir/>; rel=shortlink",
+        "x-litespeed-cache-control": "public,max-age=604800",
+        "x-litespeed-tag": "132_front,132_URL.6666cd76f96956469e7be39d750cc7d9,132_F,132_Po.13169,132_PGS,132_",
+        "etag": "\"12441-1784140958;gz\"",
+        "x-litespeed-cache": "miss",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:38 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 134022,
+      "seo": {
+        "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+        "meta_description": "مشاوره رایگان کنکور با ۹ سال سابقه و ۵۰۰+ رتبه برتر. شعب اصفهان و تهران + آنلاین سراسر کشور. همین الان ثبت‌نام کنید!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://zehnati.ir/",
+        "h1_count": 1,
+        "h1s": [
+          "مشاوره رایگان کنکور در ذهن آتی"
+        ],
+        "viewport": true,
+        "lang": "fa-IR",
+        "ga4": [
+          "G-Y0GZ4B5T0Y"
+        ],
+        "twitter_author": "fish-programmer",
+        "fish_programmer": true,
+        "json_ld_types": [
+          "EducationalOrganization",
+          "ImageObject",
+          "LocalBusiness",
+          "Organization",
+          "PostalAddress",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "script_count": 29,
+        "html_bytes": 134022
+      }
+    },
+    "/about/": {
+      "url": "https://zehnati.ir/about/",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\", <https://zehnati.ir/wp-json/wp/v2/pages/2>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://zehnati.ir/?p=2>; rel=shortlink",
+        "x-litespeed-cache-control": "public,max-age=604800",
+        "x-litespeed-tag": "132_page,132_URL.f34bb62f734d1cecaa4de6a8b8efab52,132_Po.2,132_PGS,132_",
+        "etag": "\"12442-1784140960;gz\"",
+        "x-litespeed-cache": "miss",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:40 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 127892,
+      "seo": {
+        "title": "درباره آکادمی ذهن آتی | دکتر زهرا جعفری",
+        "meta_description": "آکادمی مشاوره کنکور ذهن آتی با مدیریت دکتر زهرا جعفری. ۲۰۰۰+ قبولی و ۵۰۰ رتبه دو و سه‌رقمی. اپلیکیشن اختصاصی.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://zehnati.ir/about/",
+        "h1_count": 1,
+        "h1s": [
+          "درباره آکادمی ذهن آتی"
+        ],
+        "viewport": true,
+        "lang": "fa-IR",
+        "ga4": [
+          "G-Y0GZ4B5T0Y"
+        ],
+        "twitter_author": "1 دقیقه",
+        "fish_programmer": true,
+        "json_ld_types": [
+          "Article",
+          "BreadcrumbList",
+          "EducationalOrganization",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "script_count": 29,
+        "html_bytes": 127892
+      }
+    },
+    "/contact-us/": {
+      "url": "https://zehnati.ir/contact-us/",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\", <https://zehnati.ir/wp-json/wp/v2/pages/8756>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://zehnati.ir/?p=8756>; rel=shortlink",
+        "x-litespeed-cache-control": "public,max-age=604800",
+        "x-litespeed-tag": "132_page,132_URL.11068bc73d0ccf4c3330dda4436d0e50,132_Po.8756,132_PGS,132_",
+        "etag": "\"12443-1784140962;gz\"",
+        "x-litespeed-cache": "miss",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:42 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 101990,
+      "seo": {
+        "title": "تماس با ذهن آتی | مشاوره رایگان کنکور",
+        "meta_description": "تماس با آکادمی ذهن آتی: ۰۲۱-۲۸۴۲۷۲۵۹. شعب اصفهان (وحید) و تهران (میدان فاطمی). مشاوره رایگان آنلاین.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://zehnati.ir/contact-us/",
+        "h1_count": 1,
+        "h1s": [
+          "ارتباط با ما"
+        ],
+        "viewport": true,
+        "lang": "fa-IR",
+        "ga4": [
+          "G-Y0GZ4B5T0Y"
+        ],
+        "twitter_author": "کمتر از یک دقیقه",
+        "fish_programmer": true,
+        "json_ld_types": [
+          "Article",
+          "BreadcrumbList",
+          "EducationalOrganization",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "script_count": 28,
+        "html_bytes": 101990
+      }
+    },
+    "/مشاوره-کنکور/": {
+      "url": "https://zehnati.ir/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\", <https://zehnati.ir/wp-json/wp/v2/pages/19269>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://zehnati.ir/?p=19269>; rel=shortlink",
+        "x-litespeed-cache-control": "public,max-age=604800",
+        "x-litespeed-tag": "132_page,132_URL.d07b63dc41ecf1f22122722aa9dbbb3a,132_Po.19269,132_PGS,132_",
+        "etag": "\"12444-1784140964;gz\"",
+        "x-litespeed-cache": "miss",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:44 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 187490,
+      "seo": {
+        "title": "مشاوره کنکور | بهترین مشاور کنکور — ذهن آتی",
+        "meta_description": "بهترین مشاوره کنکور با برنامه شخصی‌سازی‌شده و پیگیری روزانه. تجربی، ریاضی، انسانی. مشاوره رایگان اولیه.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://zehnati.ir/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+        "h1_count": 17,
+        "h1s": [
+          "مشاوره کنکور",
+          "مشاوره کنکور",
+          "مشاور تحصیلی",
+          "غیبت در کنکور؛ اگر سر جلسه کنکور نریم چی میشه؟",
+          "بهترین روش مطالعه جامعه شناسی برای کنکور",
+          "رتبه لازم برای رشته فیزیوتراپی، چگونه می‌توان به رشته فیزیوتراپی دست یافت؟",
+          "شرایط ثبت نام دانشگاه غیرانتفاعی ۱۴۰۳",
+          "بررسی انواع دام‌های تستی در کنکور",
+          "همه چیز درباره کنکور اردیبهشت",
+          "کارنامه سبز کنکور",
+          "همه چیز در مورد کنکور گرافیک",
+          "آموزش برنامه‌ریزی کنکور ریاضی 1403",
+          "کنکور تربیت بدنی|شرایط منابع",
+          "سبک زندگی کنکوری رتبه برترها",
+          "روش خلاصه نویسی زیست+راهکار",
+          "انتخاب رشته پایه نهم چگونه است؟",
+          "استراتژی‌هایی کاربردی برای نوشتن برنامه ریزی کنکور تجربی"
+        ],
+        "viewport": true,
+        "lang": "fa-IR",
+        "ga4": [
+          "G-Y0GZ4B5T0Y"
+        ],
+        "twitter_author": "کمتر از یک دقیقه",
+        "fish_programmer": true,
+        "json_ld_types": [
+          "Article",
+          "BreadcrumbList",
+          "EducationalOrganization",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "script_count": 30,
+        "html_bytes": 187490
+      }
+    },
+    "/مشاوره-کنکور-تجربی/": {
+      "url": "https://zehnati.ir/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D8%AC%D8%B1%D8%A8%DB%8C/",
+      "status_code": 200,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\", <https://zehnati.ir/wp-json/wp/v2/posts/7904>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://zehnati.ir/?p=7904>; rel=shortlink",
+        "x-litespeed-cache-control": "public,max-age=604800",
+        "x-litespeed-tag": "132_post,132_URL.2017555d1da1bb18df2d84a51cd69e8c,132_Po.7904,132_",
+        "etag": "\"12445-1784140967;gz\"",
+        "x-litespeed-cache": "miss",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 15 Jul 2026 18:42:47 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 203080,
+      "seo": {
+        "title": "مشاوره کنکور تجربی - ذهن آتی",
+        "meta_description": "در این مقاله قصد داریم مشاوره کنکور تجربی را در سایت ذهن آتی به شما معرفی کنیم.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://zehnati.ir/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%aa%d8%ac%d8%b1%d8%a8%db%8c/",
+        "h1_count": 17,
+        "h1s": [
+          "مشاوره کنکور تجربی",
+          "اسما نوایی ارده",
+          "قبولی پزشکی دانشگاه علوم پزشکی زنجان",
+          "داستان قبولی زهرا صادقی",
+          "بهترین منابع کنکور",
+          "فراموش نکردن مطالب",
+          "آزمون عملی کنکور هنر رشته گرافیک",
+          "برای مدرسه بخونیم یا کنکور؟",
+          "ستایش شجاعیان",
+          "قبولی پزشکی زنجان",
+          "وسواس",
+          "تخمین رتبه کنکور+درصدها+معدل",
+          "رفع مشکل کند خوانی+راهکار تضمینی",
+          "بررسی انواع دام‌های تستی در کنکور",
+          "بهترین مشاوره کنکور انسانی",
+          "راه‌هایی برای فرار از نمره منفی کنکور",
+          "تاحالا فکر کردی چرا بعضی ها سریعتر یاد می گیرن و بهتر تصمیم می گیرن؟"
+        ],
+        "viewport": true,
+        "lang": "fa-IR",
+        "ga4": [
+          "G-Y0GZ4B5T0Y"
+        ],
+        "twitter_author": "fish-programmer",
+        "fish_programmer": true,
+        "json_ld_types": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "EducationalOrganization",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "script_count": 29,
+        "html_bytes": 203080
+      }
+    },
+    "/قیمت-مشاوره-کنکور/": {
+      "url": "https://zehnati.ir/%D9%82%DB%8C%D9%85%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "status_code": 404,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\"",
+        "x-litespeed-cache": "hit",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "content-length": "21474",
+        "date": "Wed, 15 Jul 2026 18:42:47 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 87646,
+      "seo": {
+        "title": "Page Not Found - ذهن آتی",
+        "meta_description": "",
+        "meta_robots": "follow, noindex",
+        "canonical": "",
+        "h1_count": 1,
+        "h1s": [
+          "صفحه پیدا نشد."
+        ],
+        "viewport": true,
+        "lang": "fa-IR",
+        "ga4": [
+          "G-Y0GZ4B5T0Y"
+        ],
+        "twitter_author": "",
+        "fish_programmer": false,
+        "json_ld_types": [
+          "BreadcrumbList",
+          "EducationalOrganization",
+          "ImageObject",
+          "ListItem",
+          "WebPage",
+          "WebSite"
+        ],
+        "script_count": 28,
+        "html_bytes": 87646
+      }
+    }
+  },
+  "http_root": {
+    "url": "http://zehnati.ir/",
+    "status_code": 301,
+    "headers": {
+      "Connection": "Keep-Alive",
+      "Keep-Alive": "timeout=5, max=100",
+      "content-type": "text/html",
+      "content-length": "795",
+      "date": "Wed, 15 Jul 2026 18:42:24 GMT",
+      "location": "https://zehnati.ir/",
+      "vary": "User-Agent"
+    },
+    "redirect_details": [],
+    "redirect_chain": [],
+    "error": null,
+    "content_length": 795
+  },
+  "indexnow": {
+    "https://zehnati.ir/indexnow-key.txt": {
+      "url": "https://zehnati.ir/indexnow-key.txt",
+      "status_code": 404,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\"",
+        "x-litespeed-cache": "hit",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "content-length": "21474",
+        "date": "Wed, 15 Jul 2026 18:42:25 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 87646
+    },
+    "https://zehnati.ir/.well-known/indexnow-key": {
+      "url": "https://zehnati.ir/.well-known/indexnow-key",
+      "status_code": 404,
+      "headers": {
+        "Connection": "Keep-Alive",
+        "Keep-Alive": "timeout=5, max=100",
+        "x-powered-by": "PHP/8.3.31",
+        "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+        "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\"",
+        "x-litespeed-cache": "hit",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "content-length": "21474",
+        "date": "Wed, 15 Jul 2026 18:42:25 GMT"
+      },
+      "redirect_details": [],
+      "redirect_chain": [],
+      "error": null,
+      "content_length": 87646
+    }
+  },
+  "llms": {
+    "url": "https://zehnati.ir/llms.txt",
+    "status_code": 404,
+    "headers": {
+      "Connection": "Keep-Alive",
+      "Keep-Alive": "timeout=5, max=100",
+      "x-powered-by": "PHP/8.3.31",
+      "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+      "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+      "content-type": "text/html; charset=UTF-8",
+      "link": "<https://zehnati.ir/wp-json/>; rel=\"https://api.w.org/\"",
+      "x-litespeed-cache": "hit",
+      "content-encoding": "gzip",
+      "vary": "Accept-Encoding,User-Agent",
+      "content-length": "21474",
+      "date": "Wed, 15 Jul 2026 18:42:26 GMT"
+    },
+    "redirect_details": [],
+    "redirect_chain": [],
+    "error": null,
+    "content_length": 87646
+  }
+}
