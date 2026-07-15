@@ -25,7 +25,7 @@ https://fishprogrammer.github.io/zehnati-seo-dashboard/
 
 ### روش ۲ — اسکریپت
 ```powershell
-cd G:\74-zehnati\zehnati-seo-dashboard
+cd D:\claude-seo\zehnati-seo-dashboard
 .\sync-from-workspace.ps1 -Push
 ```
 

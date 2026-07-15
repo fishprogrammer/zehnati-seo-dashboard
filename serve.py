@@ -28,7 +28,7 @@ import apply_dashboard_state as dash_state
 
 ROOT = Path(__file__).resolve().parent
 AUDIT_DIR = ROOT.parents[1] / "claude-seo" / "zehnati.ir-audit"
-PUBLISH_REPO = Path(r"G:\74-zehnati\zehnati-seo-dashboard")
+PUBLISH_REPO = Path(r"D:\claude-seo\zehnati-seo-dashboard")
 PORT = 8765
 ALLOWED_HOSTS = {"zehnati.ir", "www.zehnati.ir"}
 
