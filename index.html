@@ -897,8 +897,9 @@
     <div class="panel active" id="panel-overview" role="tabpanel">
       <div class="toolbar">
         <button class="btn" id="btnLive" type="button">بررسی زنده Sitemap</button>
+        <button class="btn" id="btnPublish" type="button" title="تیک‌ها را در data.js می‌نویسد و به GitHub Pages پوش می‌کند">انتشار برای کارفرما</button>
         <button class="btn ghost" id="btnReset" type="button">بازنشانی تیک‌ها</button>
-        <span class="live-note" id="liveNote">چک زنده فقط با <code>serve.py</code> لوکال · نسخه آنلاین از Git به‌روز می‌شود</span>
+        <span class="live-note" id="liveNote">لوکال: تیک‌ها ذخیره می‌شوند · دکمه انتشار = همان وضعیت برای کارفرما</span>
       </div>
 
       <div class="timeline" id="timeline" aria-label="فازهای برنامه یک‌ماهه"></div>
@@ -1027,6 +1028,11 @@
   <script>
     const D = window.ZEHNATI_SEO;
     const STORE_KEY = "zehnati-seo-dashboard-v1";
+    const IS_LOCAL =
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "localhost";
+    /** روی GitHub Pages فقط data.js منبع حقیقت است */
+    const USE_BROWSER_TICKS = IS_LOCAL;
 
     function loadState() {
       try {
@@ -1035,14 +1041,53 @@
         return {};
       }
     }
-    function saveState(state) {
-      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    function saveState(next) {
+      localStorage.setItem(STORE_KEY, JSON.stringify(next));
+      if (IS_LOCAL) {
+        fetch("/api/dashboard-state", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ state: next }),
+        }).catch(() => {});
+      }
     }
     let state = loadState();
     let selectedPhase =
       state.selectedPhase !== undefined && state.selectedPhase !== null
         ? Number(state.selectedPhase)
         : Number(D.meta.phase || 1);
+
+    function itemDone(id, defaultDone) {
+      if (!USE_BROWSER_TICKS) return !!defaultDone;
+      if (state.actions && state.actions[id] !== undefined) return !!state.actions[id];
+      if (state.checks && state.checks[id] !== undefined) return !!state.checks[id];
+      return !!defaultDone;
+    }
+
+    async function hydrateStateFromServer() {
+      if (!IS_LOCAL) return;
+      try {
+        const res = await fetch("/api/dashboard-state?_=" + Date.now(), { cache: "no-store" });
+        if (!res.ok) return;
+        const data = await res.json();
+        const remote = data.state || {};
+        state = {
+          ...state,
+          actions: { ...(state.actions || {}), ...(remote.actions || {}) },
+          checks: { ...(state.checks || {}), ...(remote.checks || {}) },
+          selectedPhase:
+            remote.selectedPhase !== undefined && remote.selectedPhase !== null
+              ? remote.selectedPhase
+              : state.selectedPhase,
+        };
+        localStorage.setItem(STORE_KEY, JSON.stringify(state));
+        if (state.selectedPhase !== undefined && state.selectedPhase !== null) {
+          selectedPhase = Number(state.selectedPhase);
+        }
+      } catch {
+        /* no server */
+      }
+    }
 
     function statusLabel(s) {
       return { ok: "پوشش نسبی", missing: "نیاز به صفحه", partial: "ناقص", pass: "خوب", warn: "هشدار", fail: "بحرانی" }[s] || s;
@@ -1121,14 +1166,13 @@
     function renderActionRows(list, mountId) {
       const mount = document.getElementById(mountId);
       if (!mount) return;
-      const doneMap = state.actions || {};
       mount.innerHTML = list
         .map((a) => {
-          const done = doneMap[a.id] !== undefined ? !!doneMap[a.id] : !!a.done;
+          const done = itemDone(a.id, a.done);
           const pri =
             a.priority === "critical" ? "بحرانی" : a.priority === "high" ? "بالا" : "متوسط";
           return `<div class="action ${done ? "done" : ""}" data-id="${a.id}">
-            <input type="checkbox" ${done ? "checked" : ""} aria-label="انجام شد" />
+            <input type="checkbox" ${done ? "checked" : ""} ${USE_BROWSER_TICKS ? "" : "disabled"} aria-label="انجام شد" />
             <div>
               <p class="action-title">${a.title}</p>
               <p class="action-meta">${a.where || ""}</p>
@@ -1142,6 +1186,8 @@
         })
         .join("");
 
+      if (!USE_BROWSER_TICKS) return;
+
       mount.querySelectorAll(".action").forEach((row) => {
         const id = row.dataset.id;
         const cb = row.querySelector("input");
@@ -1150,14 +1196,7 @@
           state.actions = state.actions || {};
           state.actions[id] = cb.checked;
           saveState(state);
-          row.classList.toggle("done", cb.checked);
-          if (status) {
-            status.textContent = cb.checked ? "✓ انجام شد" : "در انتظار انجام";
-            status.classList.toggle("pending", !cb.checked);
-          }
-          // sync duplicate rows with same id
           document.querySelectorAll(`.action[data-id="${id}"]`).forEach((other) => {
-            if (other === row) return;
             other.classList.toggle("done", cb.checked);
             const ocb = other.querySelector("input");
             const ost = other.querySelector(".action-status");
@@ -1188,32 +1227,32 @@
       }
       renderActionRows(det.actions || [], "phaseActions");
 
-      const doneMap = state.checks || {};
       const checksEl = document.getElementById("phaseChecks");
       if (checksEl) {
         checksEl.innerHTML = (det.checklist || [])
           .map((c) => {
-            const done = doneMap[c.id] !== undefined ? doneMap[c.id] : c.done;
+            const done = itemDone(c.id, c.done);
             return `<label class="check-item ${done ? "done" : ""}">
-              <input type="checkbox" data-phase-check="${c.id}" ${done ? "checked" : ""} />
+              <input type="checkbox" data-phase-check="${c.id}" ${done ? "checked" : ""} ${USE_BROWSER_TICKS ? "" : "disabled"} />
               <span>${c.label}</span>
             </label>`;
           })
           .join("");
-        checksEl.querySelectorAll("[data-phase-check]").forEach((cb) => {
-          cb.addEventListener("change", () => {
-            state.checks = state.checks || {};
-            state.checks[cb.dataset.phaseCheck] = cb.checked;
-            saveState(state);
-            cb.closest(".check-item").classList.toggle("done", cb.checked);
-            // sync checklist tab
-            const other = document.querySelector(`[data-check="${cb.dataset.phaseCheck}"]`);
-            if (other) {
-              other.checked = cb.checked;
-              other.closest(".check-item")?.classList.toggle("done", cb.checked);
-            }
+        if (USE_BROWSER_TICKS) {
+          checksEl.querySelectorAll("[data-phase-check]").forEach((cb) => {
+            cb.addEventListener("change", () => {
+              state.checks = state.checks || {};
+              state.checks[cb.dataset.phaseCheck] = cb.checked;
+              saveState(state);
+              cb.closest(".check-item").classList.toggle("done", cb.checked);
+              const other = document.querySelector(`[data-check="${cb.dataset.phaseCheck}"]`);
+              if (other) {
+                other.checked = cb.checked;
+                other.closest(".check-item")?.classList.toggle("done", cb.checked);
+              }
+            });
           });
-        });
+        }
       }
     }
 
@@ -1252,11 +1291,6 @@
         .join("");
     }
 
-    function isActionDone(a) {
-      const doneMap = state.actions || {};
-      return doneMap[a.id] !== undefined ? !!doneMap[a.id] : !!a.done;
-    }
-
     function fillActions() {
       const mount = document.getElementById("actions");
       if (!mount) return;
@@ -1265,14 +1299,13 @@
           const det = getPhaseDetail(p);
           if (!det) return "";
           const items = det.actions || [];
-          const doneMap = state.actions || {};
           const rows = items
             .map((a) => {
-              const done = doneMap[a.id] !== undefined ? !!doneMap[a.id] : !!a.done;
+              const done = itemDone(a.id, a.done);
               const pri =
                 a.priority === "critical" ? "بحرانی" : a.priority === "high" ? "بالا" : "متوسط";
               return `<div class="action ${done ? "done" : ""}" data-id="${a.id}">
-                <input type="checkbox" ${done ? "checked" : ""} aria-label="انجام شد" />
+                <input type="checkbox" ${done ? "checked" : ""} ${USE_BROWSER_TICKS ? "" : "disabled"} aria-label="انجام شد" />
                 <div>
                   <p class="action-title">${a.title}</p>
                   <p class="action-meta">${a.where || ""}</p>
@@ -1290,10 +1323,11 @@
         .join("");
       mount.innerHTML = groups;
 
+      if (!USE_BROWSER_TICKS) return;
+
       mount.querySelectorAll(".action").forEach((row) => {
         const id = row.dataset.id;
         const cb = row.querySelector("input");
-        const status = row.querySelector(".action-status");
         cb.addEventListener("change", () => {
           state.actions = state.actions || {};
           state.actions[id] = cb.checked;
@@ -1566,20 +1600,23 @@
           (det.period || "") +
           (det.status === "done"
             ? " — این فاز بسته شده و برای کارفرما قابل مشاهده می‌ماند"
-            : " — با تیک زدن، وضعیت ذخیره می‌شود");
+            : USE_BROWSER_TICKS
+              ? " — تیک بزنید؛ برای دیدن کارفرما دکمه «انتشار برای کارفرما» را بزنید"
+              : " — نسخه آنلاین (فقط خواندنی از data.js)");
       }
 
-      const doneMap = state.checks || {};
       document.getElementById("weekChecks").innerHTML = list
         .map((c) => {
-          const done = doneMap[c.id] !== undefined ? doneMap[c.id] : c.done;
+          const done = itemDone(c.id, c.done);
           return `<label class="check-item ${done ? "done" : ""}">
-            <input type="checkbox" data-check="${c.id}" ${done ? "checked" : ""} />
+            <input type="checkbox" data-check="${c.id}" ${done ? "checked" : ""} ${USE_BROWSER_TICKS ? "" : "disabled"} />
             <span>${c.label}</span>
             <span class="verify pending">—</span>
           </label>`;
         })
         .join("");
+
+      if (!USE_BROWSER_TICKS) return;
 
       document.querySelectorAll("[data-check]").forEach((cb) => {
         cb.addEventListener("change", async () => {
@@ -1625,11 +1662,61 @@
 
     document.getElementById("btnLive")?.addEventListener("click", () => recheckSiteAndRefresh());
 
+    const btnPublish = document.getElementById("btnPublish");
+    if (btnPublish) {
+      if (!IS_LOCAL) {
+        btnPublish.style.display = "none";
+      } else {
+        btnPublish.addEventListener("click", async () => {
+          if (!confirm("وضعیت فعلی تیک‌ها برای کارفرما روی GitHub Pages منتشر شود؟")) return;
+          const note = document.getElementById("liveNote");
+          btnPublish.disabled = true;
+          if (note) {
+            note.textContent = "در حال انتشار به GitHub…";
+            note.className = "live-note";
+          }
+          try {
+            const res = await fetch("/api/publish", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ state, push: true }),
+            });
+            const data = await res.json();
+            if (!res.ok || !data.ok) {
+              throw new Error(data.error || data.stderr || "publish_failed");
+            }
+            if (note) {
+              const extra = data.unchanged
+                ? "بدون تغییر فایل — از قبل به‌روز بود"
+                : data.pushed
+                  ? "پوش شد ✓"
+                  : "ذخیره شد";
+              note.textContent =
+                extra +
+                " · " +
+                (data.pages_url || "https://fishprogrammer.github.io/zehnati-seo-dashboard/");
+              note.className = "live-note ok";
+            }
+            // reload data.js semantics after server rewrote file
+            setTimeout(() => location.reload(), 800);
+          } catch (err) {
+            if (note) {
+              note.textContent = "انتشار ناموفق: " + (err.message || err);
+              note.className = "live-note err";
+            }
+          } finally {
+            btnPublish.disabled = false;
+          }
+        });
+      }
+    }
+
     document.getElementById("btnReset").addEventListener("click", () => {
       if (!confirm("همه تیک‌های ذخیره‌شده پاک شوند؟ (وضعیت پیش‌فرض فاز ۰ انجام‌شده می‌ماند)")) return;
       localStorage.removeItem(STORE_KEY);
       state = {};
       selectedPhase = Number(D.meta.phase || 1);
+      saveState(state);
       fillTimeline();
       fillPhaseWork();
       fillActions();
@@ -1637,18 +1724,21 @@
       recheckSiteAndRefresh();
     });
 
-    fillHeader();
-    fillBars();
-    fillTimeline();
-    fillPhaseWork();
-    fillKpis();
-    fillTech();
-    fillPages();
-    fillActions();
-    fillKeywords();
-    fillOnpage();
-    fillChecklist();
-    recheckSiteAndRefresh();
+    (async function boot() {
+      await hydrateStateFromServer();
+      fillHeader();
+      fillBars();
+      fillTimeline();
+      fillPhaseWork();
+      fillKpis();
+      fillTech();
+      fillPages();
+      fillActions();
+      fillKeywords();
+      fillOnpage();
+      fillChecklist();
+      recheckSiteAndRefresh();
+    })();
   </script>
 </body>
 </html>

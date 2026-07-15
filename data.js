@@ -4,7 +4,7 @@ window.ZEHNATI_SEO = {
     brand: "ذهن آتی",
     domain: "https://zehnati.ir/",
     manager: "دکتر زهرا جعفری",
-    updatedAt: "۲۰۲۶-۰۷-۱۵",
+    updatedAt: "2026-07-15",
     updatedAtFa: "۲۴ تیر ۱۴۰۵",
     phase: 1,
     phaseLabel: "فاز ۱ — Landingهای P0 (هفته ۲)",

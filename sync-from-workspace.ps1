@@ -1,11 +1,21 @@
 # Sync local dashboard + audit artifacts into this GitHub Pages repo
+# Usage:
+#   .\sync-from-workspace.ps1
+#   .\sync-from-workspace.ps1 -Push
+param([switch]$Push)
+
 $ErrorActionPreference = "Stop"
 $SrcDash = "D:\claude-seo\SEO\dashboard"
 $SrcAudit = "D:\claude-seo\claude-seo\zehnati.ir-audit"
 $Dest = Split-Path -Parent $MyInvocation.MyCommand.Path
+$py = Join-Path $env:LOCALAPPDATA "Programs\Python\Python312\python.exe"
+if (-not (Test-Path $py)) { $py = "python" }
 
-Write-Host "Sync -> $Dest"
+Write-Host "1) Apply browser ticks into data.js..."
+& $py (Join-Path $SrcDash "apply_dashboard_state.py")
+if ($LASTEXITCODE -ne 0) { throw "apply_dashboard_state failed" }
 
+Write-Host "2) Copy dashboard files -> $Dest"
 Copy-Item "$SrcDash\index.html", "$SrcDash\data.js", "$SrcDash\audit.js" -Destination $Dest -Force
 
 $auditDest = Join-Path $Dest "audit"
@@ -21,9 +31,7 @@ Get-ChildItem (Join-Path $SrcAudit "findings") -File -ErrorAction SilentlyContin
   Where-Object { $_.Extension -in ".md", ".json" -and $_.Name -notlike "_*" } |
   ForEach-Object { Copy-Item $_.FullName -Destination $findDest -Force }
 
-# rebuild status.json for static audit cards
-$py = Join-Path $env:LOCALAPPDATA "Programs\Python\Python312\python.exe"
-if (-not (Test-Path $py)) { $py = "python" }
+Write-Host "3) Rebuild audit/status.json"
 & $py -c @"
 import json
 from pathlib import Path
@@ -43,7 +51,22 @@ status = {
   'summary': {'health_score': score} if score is not None else None,
 }
 (root/'audit'/'status.json').write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding='utf-8')
-print('status.json ok,', len(names), 'files, score=', score)
+print('status.json ok,', len(names), 'files')
 "@
 
-Write-Host "Done. Next: git add -A && git commit && git push"
+if ($Push) {
+  Write-Host "4) git commit + push"
+  Set-Location $Dest
+  git add -A
+  $pending = git status --porcelain
+  if (-not $pending) {
+    Write-Host "No changes to push."
+  } else {
+    git commit -m "Publish dashboard $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+    git push origin main
+    Write-Host "Pushed: https://fishprogrammer.github.io/zehnati-seo-dashboard/"
+  }
+} else {
+  Write-Host "Done. Next: git add/commit/push  OR  .\sync-from-workspace.ps1 -Push"
+  Write-Host "Or from local dashboard: click «انتشار برای کارفرما»"
+}
