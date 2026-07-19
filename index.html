@@ -448,7 +448,7 @@
 
     .timeline {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
       gap: 0.5rem;
       margin-bottom: 1.5rem;
     }
@@ -854,8 +854,8 @@
       <p class="chip active" id="phaseChip">فاز ۰</p>
       <h1 class="brand">ذهن <span>آتی</span></h1>
       <p class="hero-lead">
-        داشبورد آنالیز SEO — برنامهٔ فشردهٔ <strong>۴ هفته</strong> از
-        <strong>۲۰ تیر ۱۴۰۵</strong> · وضعیت فنی، کیوردها، چک‌لیست و اقدام‌ها برای
+        داشبورد آنالیز SEO — برنامهٔ <strong>۶ ماهه</strong> از
+        <strong>۲۰ تیر ۱۴۰۵</strong> تا <strong>۱۹ دی ۱۴۰۵</strong> · وضعیت فنی، کیوردها، چک‌لیست و اقدام‌ها برای
         <strong>zehnati.ir</strong>
       </p>
       <div class="hero-meta">
@@ -874,14 +874,14 @@
       </div>
       <div class="score-copy">
         <h2 id="scoreLabel">نیاز به اقدام فوری</h2>
-        <p>امتیاز از audit زنده ۱۵ جولای ۲۰۲۶ · برنامه ۱ ماهه از ۲۰ تیر ۱۴۰۵.</p>
+        <p>امتیاز از audit زنده ۱۵ جولای ۲۰۲۶ · برنامه ۶ ماهه از ۲۰ تیر تا ۱۹ دی ۱۴۰۵.</p>
         <div class="bars" id="scoreBars"></div>
       </div>
     </div>
 
     <div class="callout" id="topCallout">
       <strong>فاز جاری:</strong>
-      فاز ۱ — Landingهای P0 (هفته ۲: ۲۷ تیر تا ۲ مرداد). فاز ۰ فنی انجام شده است.
+      فاز ۱ — ماه ۱: لندینگ‌های تجاری P0 (۲۰ تیر تا ۱۹ مرداد). فاز ۰ فنی انجام شده است.
     </div>
 
     <nav class="tabs" role="tablist" aria-label="بخش‌های داشبورد">
@@ -902,7 +902,7 @@
         <span class="live-note" id="liveNote">لوکال: تیک‌ها ذخیره می‌شوند · دکمه انتشار = همگام‌سازی با نسخه آنلاین</span>
       </div>
 
-      <div class="timeline" id="timeline" aria-label="فازهای برنامه یک‌ماهه"></div>
+      <div class="timeline" id="timeline" aria-label="فازهای برنامه شش‌ماهه"></div>
       <p class="section-lead" style="margin:-0.75rem 0 1rem">
         روی هر فاز کلیک کنید تا کارها و چک‌لیست همان فاز نمایش داده شود. فاز ۰ انجام‌شده در تاریخچه می‌ماند.
       </p>
@@ -1145,7 +1145,7 @@
           return `<div class="phase ${stClass} ${selected}" role="button" tabindex="0" data-phase="${t.phase}" aria-pressed="${selected ? "true" : "false"}">
             <div class="ph">فاز ${t.phase}</div>
             <div class="lb">${t.label}</div>
-            <div class="wk">هفته ${t.weeks} · ${t.dateRange || ""}</div>
+            <div class="wk">${t.spanLabel || (t.months ? "ماه " + t.months : "هفته " + (t.weeks || ""))} · ${t.dateRange || ""}</div>
             <span class="st">${phaseStatusFa(t.status)}</span>
           </div>`;
         })
@@ -1294,7 +1294,9 @@
     function fillActions() {
       const mount = document.getElementById("actions");
       if (!mount) return;
-      const groups = [0, 1, 2, 3]
+      const groups = Object.keys(D.phaseDetails || {})
+        .map(Number)
+        .sort((a, b) => a - b)
         .map((p) => {
           const det = getPhaseDetail(p);
           if (!det) return "";
@@ -1515,7 +1517,7 @@
             "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
         } else {
           callout.innerHTML =
-            "<strong>فاز جاری:</strong> فاز ۱ — لندینگ‌های P0 را پیش ببرید (قیمت، هاب مشاوره کنکور، آنلاین، اصفهان/تهران).";
+            "<strong>فاز جاری:</strong> ماه ۱ — لندینگ‌های P0 را پیش ببرید (قیمت، هاب مشاوره کنکور، آنلاین، اصفهان/تهران).";
         }
       }
 
