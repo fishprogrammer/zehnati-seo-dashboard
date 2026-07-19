@@ -854,8 +854,8 @@
       <p class="chip active" id="phaseChip">فاز ۰</p>
       <h1 class="brand">ذهن <span>آتی</span></h1>
       <p class="hero-lead">
-        داشبورد آنالیز SEO — برنامهٔ <strong>۶ ماهه</strong> از
-        <strong>۲۰ تیر ۱۴۰۵</strong> تا <strong>۱۹ دی ۱۴۰۵</strong> · وضعیت فنی، کیوردها، چک‌لیست و اقدام‌ها برای
+        داشبورد آنالیز SEO — برنامهٔ <strong>۷ ماهه</strong> از
+        <strong>۲۰ تیر ۱۴۰۵</strong> تا <strong>۱۹ بهمن ۱۴۰۵</strong> · پوشش <strong>۲۰۶ کیورد</strong> ·
         <strong>zehnati.ir</strong>
       </p>
       <div class="hero-meta">
@@ -874,14 +874,14 @@
       </div>
       <div class="score-copy">
         <h2 id="scoreLabel">نیاز به اقدام فوری</h2>
-        <p>امتیاز از audit زنده ۱۵ جولای ۲۰۲۶ · برنامه ۶ ماهه از ۲۰ تیر تا ۱۹ دی ۱۴۰۵.</p>
+        <p>امتیاز از audit زنده ۱۵ جولای ۲۰۲۶ · برنامه ۷ ماهه · پوشش ۲۰۶ کیورد تا ۱۹ بهمن ۱۴۰۵.</p>
         <div class="bars" id="scoreBars"></div>
       </div>
     </div>
 
     <div class="callout" id="topCallout">
       <strong>فاز جاری:</strong>
-      فاز ۱ — ماه ۱: لندینگ‌های تجاری P0 (۲۰ تیر تا ۱۹ مرداد). فاز ۰ فنی انجام شده است.
+      فاز ۱ — ماه ۱: لندینگ‌های تجاری P0 (۲۵ کیورد از ۲۰۶). فاز ۰ فنی انجام شده است.
     </div>
 
     <nav class="tabs" role="tablist" aria-label="بخش‌های داشبورد">
@@ -902,7 +902,7 @@
         <span class="live-note" id="liveNote">لوکال: تیک‌ها ذخیره می‌شوند · دکمه انتشار = همگام‌سازی با نسخه آنلاین</span>
       </div>
 
-      <div class="timeline" id="timeline" aria-label="فازهای برنامه شش‌ماهه"></div>
+      <div class="timeline" id="timeline" aria-label="فازهای برنامه هفت‌ماهه"></div>
       <p class="section-lead" style="margin:-0.75rem 0 1rem">
         روی هر فاز کلیک کنید تا کارها و چک‌لیست همان فاز نمایش داده شود. فاز ۰ انجام‌شده در تاریخچه می‌ماند.
       </p>
@@ -945,6 +945,24 @@
     <!-- Keywords -->
     <div class="panel" id="panel-keywords" role="tabpanel">
       <div class="bucket-grid" id="buckets"></div>
+      <section class="block">
+        <h2>پوشش ماهانهٔ ۲۰۶ کیورد</h2>
+        <p class="section-lead">جمع ماهانه = ۲۰۶ · هاب مشترک مجاز است، ولی هر کیورد باید URL هدف داشته باشد</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>ماه</th>
+              <th>P0</th>
+              <th>P1</th>
+              <th>P2</th>
+              <th>P3</th>
+              <th>جمع ماه</th>
+              <th>یادداشت</th>
+            </tr>
+          </thead>
+          <tbody id="kwCoverBody"></tbody>
+        </table>
+      </section>
       <section class="block">
         <h2>۱۰ کلمه طلایی (Focus)</h2>
         <table class="data">
@@ -1220,7 +1238,14 @@
         return;
       }
       if (title) title.textContent = det.title;
-      if (goal) goal.textContent = (det.period || "") + " — هدف: " + (det.goal || "");
+      if (goal) {
+        const kw = det.kwTarget;
+        const kwLine =
+          kw && kw.total
+            ? ` · کیورد این ماه: ${kw.total} (P0:${kw.p0 || 0} P1:${kw.p1 || 0} P2:${kw.p2 || 0} P3:${kw.p3 || 0})`
+            : "";
+        goal.textContent = (det.period || "") + " — هدف: " + (det.goal || "") + kwLine;
+      }
       if (badge) {
         badge.textContent = phaseStatusFa(det.status);
         badge.className = "phase-badge " + (det.status || "upcoming");
@@ -1358,6 +1383,34 @@
           </div>`
         )
         .join("");
+
+      const coverEl = document.getElementById("kwCoverBody");
+      if (coverEl) {
+        const plan = D.keywordCoveragePlan || [];
+        coverEl.innerHTML =
+          plan
+            .map(
+              (r) => `<tr>
+              <td>ماه ${r.month}</td>
+              <td>${r.p0}</td>
+              <td>${r.p1}</td>
+              <td>${r.p2}</td>
+              <td>${r.p3}</td>
+              <td><strong>${r.p0 + r.p1 + r.p2 + r.p3}</strong></td>
+              <td>${r.note || ""}</td>
+            </tr>`
+            )
+            .join("") +
+          `<tr>
+            <td><strong>جمع</strong></td>
+            <td><strong>${plan.reduce((s, r) => s + r.p0, 0)}</strong></td>
+            <td><strong>${plan.reduce((s, r) => s + r.p1, 0)}</strong></td>
+            <td><strong>${plan.reduce((s, r) => s + r.p2, 0)}</strong></td>
+            <td><strong>${plan.reduce((s, r) => s + r.p3, 0)}</strong></td>
+            <td><strong>${plan.reduce((s, r) => s + r.p0 + r.p1 + r.p2 + r.p3, 0)}</strong></td>
+            <td>هدف قرارداد: ۲۰۶/۲۰۶</td>
+          </tr>`;
+      }
 
       document.getElementById("kwBody").innerHTML = D.goldenKeywords
         .map(
@@ -1517,7 +1570,7 @@
             "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
         } else {
           callout.innerHTML =
-            "<strong>فاز جاری:</strong> ماه ۱ — لندینگ‌های P0 را پیش ببرید (قیمت، هاب مشاوره کنکور، آنلاین، اصفهان/تهران).";
+            "<strong>فاز جاری:</strong> ماه ۱ — ۲۵ کیورد P0 (قیمت، هاب مشاوره، آنلاین، اصفهان/تهران) از مجموع ۲۰۶.";
         }
       }
 
