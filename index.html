@@ -496,6 +496,17 @@
     .phase.done .st { background: #d8f0e2; color: #1b6b3a; }
     .phase.active .st { background: rgba(13, 115, 119, 0.15); color: var(--teal-deep); }
 
+    /* فقط نسخهٔ لوکال / اپراتور — روی GitHub Pages مخفی */
+    body.client-view .dev-only {
+      display: none !important;
+    }
+    body:not(.client-view) .client-only {
+      display: none !important;
+    }
+    body.client-view .audit-card-cmd {
+      display: none !important;
+    }
+
     .phase-panel-head {
       display: flex;
       flex-wrap: wrap;
@@ -889,17 +900,17 @@
       <button class="tab" role="tab" aria-selected="false" data-tab="actions">اقدام‌ها</button>
       <button class="tab" role="tab" aria-selected="false" data-tab="keywords">کیوردها</button>
       <button class="tab" role="tab" aria-selected="false" data-tab="onpage">آن‌پیج</button>
-      <button class="tab" role="tab" aria-selected="false" data-tab="audit">آنالیز Claude SEO</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="audit" id="tabAudit">آنالیز</button>
       <button class="tab" role="tab" aria-selected="false" data-tab="checklist">چک‌لیست فاز</button>
     </nav>
 
     <!-- Overview -->
     <div class="panel active" id="panel-overview" role="tabpanel">
       <div class="toolbar">
-        <button class="btn" id="btnLive" type="button">بررسی زنده Sitemap</button>
-        <button class="btn" id="btnPublish" type="button" title="تیک‌ها را در data.js می‌نویسد و به GitHub Pages پوش می‌کند">انتشار آنلاین</button>
-        <button class="btn ghost" id="btnReset" type="button">بازنشانی تیک‌ها</button>
-        <span class="live-note" id="liveNote">لوکال: تیک‌ها ذخیره می‌شوند · دکمه انتشار = همگام‌سازی با نسخه آنلاین</span>
+        <button class="btn dev-only" id="btnLive" type="button">بررسی زنده Sitemap</button>
+        <button class="btn dev-only" id="btnPublish" type="button" title="تیک‌ها را در data.js می‌نویسد و به GitHub Pages پوش می‌کند">انتشار آنلاین</button>
+        <button class="btn ghost dev-only" id="btnReset" type="button">بازنشانی تیک‌ها</button>
+        <span class="live-note" id="liveNote">وضعیت از نسخهٔ منتشرشده خوانده می‌شود</span>
       </div>
 
       <div class="timeline" id="timeline" aria-label="فازهای برنامه هفت‌ماهه"></div>
@@ -923,7 +934,7 @@
 
       <section class="block">
         <h2>وضعیت فنی</h2>
-        <p class="section-lead">بررسی زنده سایت — با باز شدن صفحه یا تیک چک‌لیست تازه می‌شود</p>
+        <p class="section-lead">خلاصهٔ وضعیت فنی سایت</p>
         <div class="status-list" id="techStatus"></div>
       </section>
 
@@ -997,31 +1008,34 @@
     <div class="panel" id="panel-checklist" role="tabpanel">
       <section class="block">
         <h2 id="checklistTitle">چک‌لیست فاز انتخاب‌شده</h2>
-        <p class="section-lead" id="checklistLead">با هر تیک (فاز جاری)، سایت دوباره بررسی می‌شود</p>
-        <div class="toolbar" style="margin-bottom:0.85rem">
+        <p class="section-lead" id="checklistLead">وضعیت کارهای فاز انتخاب‌شده</p>
+        <div class="toolbar dev-only" style="margin-bottom:0.85rem">
           <span class="live-note" id="checkRecheckNote">تیک بزنید تا بررسی زنده شروع شود</span>
         </div>
         <div class="check-list" id="weekChecks"></div>
       </section>
     </div>
 
-    <!-- Claude SEO Audit -->
+    <!-- Audit -->
     <div class="panel" id="panel-audit" role="tabpanel">
       <section class="block">
-        <h2>آنالیز Claude SEO</h2>
-        <p class="section-lead">
+        <h2 id="auditPanelTitle">آنالیز SEO</h2>
+        <p class="section-lead client-only" id="auditPanelLead">
+          گزارش‌های آنالیز ذخیره‌شده را ببینید.
+        </p>
+        <p class="section-lead dev-only" id="auditPanelLeadDev">
           هر بخش را جدا ببینید. دستور را در Cursor اجرا کنید؛ خروجی در
           <code dir="ltr">claude-seo/zehnati.ir-audit/</code> ذخیره می‌شود.
         </p>
 
         <div class="audit-toolbar">
-          <span class="audit-url-chip">هدف: <code dir="ltr">https://zehnati.ir</code></span>
-          <button class="btn" id="btnAuditCopy" type="button">کپی دستور Cursor</button>
-          <button class="btn ghost" id="btnAuditRefresh" type="button" title="همان رفرش صفحه (F5)">به‌روزرسانی</button>
-          <span class="live-note" id="auditLoadedAt">بارگذاری خودکار با باز شدن صفحه</span>
+          <span class="audit-url-chip">سایت: <code dir="ltr">https://zehnati.ir</code></span>
+          <button class="btn dev-only" id="btnAuditCopy" type="button">کپی دستور Cursor</button>
+          <button class="btn ghost" id="btnAuditRefresh" type="button" title="بارگذاری مجدد گزارش‌ها">به‌روزرسانی</button>
+          <span class="live-note" id="auditLoadedAt">بارگذاری خودکار</span>
         </div>
 
-        <div class="audit-cards" id="auditCards" role="group" aria-label="دستورات Claude SEO"></div>
+        <div class="audit-cards" id="auditCards" role="group" aria-label="بخش‌های آنالیز"></div>
 
         <div class="audit-detail">
           <div class="audit-detail-head">
@@ -1051,6 +1065,16 @@
       location.hostname === "localhost";
     /** روی GitHub Pages فقط data.js منبع حقیقت است */
     const USE_BROWSER_TICKS = IS_LOCAL;
+    if (!IS_LOCAL) {
+      document.body.classList.add("client-view");
+      const note = document.getElementById("liveNote");
+      if (note) note.textContent = "نسخهٔ منتشرشده — فقط‌خواندنی";
+    } else {
+      const note = document.getElementById("liveNote");
+      if (note) {
+        note.textContent = "لوکال: تیک‌ها ذخیره می‌شوند · دکمه انتشار = همگام‌سازی با نسخه آنلاین";
+      }
+    }
 
     function loadState() {
       try {
@@ -1766,7 +1790,8 @@
       }
     }
 
-    document.getElementById("btnReset").addEventListener("click", () => {
+    document.getElementById("btnReset")?.addEventListener("click", () => {
+      if (!IS_LOCAL) return;
       if (!confirm("همه تیک‌های ذخیره‌شده پاک شوند؟ (وضعیت پیش‌فرض فاز ۰ انجام‌شده می‌ماند)")) return;
       localStorage.removeItem(STORE_KEY);
       state = {};

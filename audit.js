@@ -54,6 +54,10 @@
   let statusCache = null;
   let lastLoadedAt = null;
 
+  const IS_LOCAL =
+    location.hostname === "127.0.0.1" || location.hostname === "localhost";
+  const IS_CLIENT = !IS_LOCAL;
+
   function cmdText(id) {
     return `/seo ${id} ${DEFAULT_URL}`;
   }
@@ -189,7 +193,9 @@
     }
 
     if (id === "content" || id === "schema" || id === "local") {
-      return `<div class="audit-fallback"><p class="audit-fallback-lead">فایل <code>${id}.md</code> یافت نشد. دستور را در Cursor اجرا کنید و صفحه را رفرش کنید.</p></div>`;
+      return IS_CLIENT
+        ? `<div class="audit-fallback"><p class="audit-fallback-lead">گزارش این بخش هنوز آماده نیست.</p></div>`
+        : `<div class="audit-fallback"><p class="audit-fallback-lead">فایل <code>${id}.md</code> یافت نشد. دستور را در Cursor اجرا کنید و صفحه را رفرش کنید.</p></div>`;
     }
 
     return "";
@@ -316,7 +322,12 @@
       status?.summary?.health_score ??
       (window.ZEHNATI_SEO ? window.ZEHNATI_SEO.score.overall : "—");
 
-    meta.innerHTML = `
+    meta.innerHTML = IS_CLIENT
+      ? `
+      <div class="audit-meta-item"><span class="k">وضعیت گزارش</span><span class="v ${hasReport ? "ok" : "warn"}">${hasReport ? "موجود" : "در انتظار"}</span></div>
+      <div class="audit-meta-item"><span class="k">آخرین به‌روزرسانی</span><span class="v">${formatDate(data?.modified || status?.last_modified)}</span></div>
+      <div class="audit-meta-item"><span class="k">امتیاز</span><span class="v score">${score}<small>/۱۰۰</small></span></div>`
+      : `
       <div class="audit-meta-item"><span class="k">دستور</span><code dir="ltr" class="audit-cmd-display">${cmdText(cmd.id)}</code></div>
       <div class="audit-meta-item"><span class="k">وضعیت گزارش</span><span class="v ${hasReport ? "ok" : "warn"}">${hasReport ? "زنده از فایل" : "fallback"}</span></div>
       <div class="audit-meta-item"><span class="k">آخرین تغییر فایل</span><span class="v">${formatDate(data?.modified || status?.last_modified)}</span></div>
@@ -339,8 +350,9 @@
     } catch {
       body.innerHTML = fallbackHtml(cmd.id);
       if (note) {
-        note.textContent =
-          "گزارش audit پیدا نشد. لوکال: serve.py یا پوشه audit/ · آنلاین: بعد از sync و push.";
+        note.textContent = IS_CLIENT
+          ? "گزارش این بخش هنوز منتشر نشده است."
+          : "گزارش audit پیدا نشد. لوکال: serve.py یا پوشه audit/ · آنلاین: بعد از sync و push.";
         note.className = "audit-note err";
       }
       return;
@@ -379,17 +391,19 @@
         body.innerHTML = `<pre class="audit-pre">${escapeHtml(data.content)}</pre>`;
       }
       if (note) {
-        note.textContent =
-          "منبع فایل: " +
-          data.name +
-          " — F5 فقط فایل را از دیسک می‌خواند؛ برای وضعیت جدید سایت باید audit دوباره اجرا یا فایل findings آپدیت شود.";
+        note.textContent = IS_CLIENT
+          ? "گزارش به‌روز از آخرین انتشار."
+          : "منبع فایل: " +
+            data.name +
+            " — F5 فقط فایل را از دیسک می‌خواند؛ برای وضعیت جدید سایت باید audit دوباره اجرا یا فایل findings آپدیت شود.";
         note.className = "audit-note ok";
       }
     } else {
       body.innerHTML = fallbackHtml(cmd.id);
       if (note) {
-        note.textContent =
-          "فایل گزارش نیست. دستور را در Cursor اجرا کنید، سپس صفحه را رفرش کنید (F5).";
+        note.textContent = IS_CLIENT
+          ? "گزارش این بخش هنوز آماده نیست."
+          : "فایل گزارش نیست. دستور را در Cursor اجرا کنید، سپس صفحه را رفرش کنید (F5).";
         note.className = "audit-note warn";
       }
     }
@@ -421,16 +435,18 @@
   }
 
   function bindToolbar() {
-    document.getElementById("btnAuditCopy")?.addEventListener("click", async () => {
-      const btn = document.getElementById("btnAuditCopy");
-      try {
-        await navigator.clipboard.writeText(cmdText(activeId));
-        btn.textContent = "کپی شد ✓";
-        setTimeout(() => (btn.textContent = "کپی دستور Cursor"), 1500);
-      } catch {
-        btn.textContent = "خطا در کپی";
-      }
-    });
+    if (!IS_CLIENT) {
+      document.getElementById("btnAuditCopy")?.addEventListener("click", async () => {
+        const btn = document.getElementById("btnAuditCopy");
+        try {
+          await navigator.clipboard.writeText(cmdText(activeId));
+          btn.textContent = "کپی شد ✓";
+          setTimeout(() => (btn.textContent = "کپی دستور Cursor"), 1500);
+        } catch {
+          btn.textContent = "خطا در کپی";
+        }
+      });
+    }
     document.getElementById("btnAuditRefresh")?.addEventListener("click", refresh);
   }
 
