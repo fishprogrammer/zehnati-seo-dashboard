@@ -666,8 +666,9 @@ window.ZEHNATI_SEO = {
         },
         {
           "from": "/مشاوره-رایگان-حضوری-در-تهران/",
-          "to": "/contact-us/ یا لندینگ تهران",
-          "priority": "high"
+          "to": "/contact-us/",
+          "priority": "high",
+          "done": true
         },
         {
           "from": "/aboutus/",
