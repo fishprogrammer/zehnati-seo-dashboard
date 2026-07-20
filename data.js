@@ -61,7 +61,7 @@ window.ZEHNATI_SEO = {
   },
   goldenKeywords: [
     { kw: "مشاوره رایگان کنکور", page: "/", status: "ok", note: "صفحه اصلی بهینه شد" },
-    { kw: "مشاوره کنکور", page: "/مشاوره-کنکور/", status: "partial", note: "ماه ۱: کاهش ۱۷ H1 + هاب تجاری" },
+    { kw: "مشاوره کنکور", page: "/مشاوره-کنکور/", status: "mapped", note: "ماه ۱ — ۱ H1 + هاب تجاری" },
     { kw: "بهترین مشاور کنکور اصفهان", page: "/بهترین-مشاور-کنکور-اصفهان/", status: "missing", note: "ماه ۱" },
     { kw: "برنامه ریزی کنکور", page: "/برنامه-ریزی-کنکور/", status: "partial", note: "ماه ۱–۲" },
     { kw: "مشاوره کنکور تجربی", page: "/مشاوره-کنکور-تجربی/", status: "ok", note: "موجود — اصلاح ساختار H1 در ماه ۱" },
@@ -264,8 +264,8 @@ window.ZEHNATI_SEO = {
           priority: "critical",
           title: "اصلاح هاب /مشاوره-کنکور/ (۱ H1 + محتوای تجاری)",
           where: "Elementor / قالب صفحه",
-          why: "صفحه 200 است ولی ۱۷ H1 دارد",
-          done: false,
+          why: "انجام شد — ۱ H1 + هاب تجاری",
+          done: true,
         },
         {
           id: "p1-a3",
@@ -334,7 +334,7 @@ window.ZEHNATI_SEO = {
       ],
       checklist: [
         { id: "p1-c1", label: "صفحه قیمت مشاوره کنکور (200)", done: true },
-        { id: "p1-c2", label: "هاب مشاوره کنکور با ۱ H1", done: false },
+        { id: "p1-c2", label: "هاب مشاوره کنکور با ۱ H1", done: true },
         { id: "p1-c3", label: "لندینگ مشاوره آنلاین", done: false },
         { id: "p1-c4", label: "لندینگ اصفهان", done: false },
         { id: "p1-c5", label: "لندینگ تهران یا ثبت‌نام", done: false },

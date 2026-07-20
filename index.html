@@ -329,6 +329,7 @@
       font-weight: 700;
     }
     .badge.ok { background: #e8f6ee; color: var(--pass); }
+    .badge.mapped { background: #e8f6ee; color: var(--pass); }
     .badge.missing { background: #fdecea; color: var(--fail); }
     .badge.partial { background: #fff4e5; color: var(--warn); }
     .badge.critical { background: #fdecea; color: var(--fail); }
@@ -1132,7 +1133,15 @@
     }
 
     function statusLabel(s) {
-      return { ok: "پوشش نسبی", missing: "نیاز به صفحه", partial: "ناقص", pass: "خوب", warn: "هشدار", fail: "بحرانی" }[s] || s;
+      return {
+        ok: "پوشش نسبی",
+        mapped: "صفحه آماده",
+        missing: "نیاز به صفحه",
+        partial: "ناقص",
+        pass: "خوب",
+        warn: "هشدار",
+        fail: "بحرانی"
+      }[s] || s;
     }
 
     function phaseStatusFa(st) {
