@@ -613,6 +613,7 @@ window.ZEHNATI_SEO = {
       "Sitemap scope در گزارش: All known pages.",
       "Drilldown ۴۰۴: ۶۱ URL — ۵ مورد کنکور/مشاوره مرده اولویت ریدایرکت دارند.",
       "۲۰۲۶-۰۷-۲۰: aboutus / about-us / contactus / رضایتمندی / مشاورین-برتر → ۳۰۱ تأیید زنده.",
+      "۲۰۲۶-۰۷-۲۰: /shop/ و /shop/page/2/ → ۳۰۱ به خانه تأیید زنده.",
       "نمونه: /مشاوره-کنکور-در-اصفهان/ و /مشاوره-تحصیلی-کنکور-در-اصفهان/ → لندینگ‌های زنده."
     ],
     "drilldown404": {
@@ -700,12 +701,14 @@ window.ZEHNATI_SEO = {
         {
           "from": "/shop/",
           "to": "حذف از ایندکس / ریدایرکت خانه",
-          "priority": "medium"
+          "priority": "medium",
+          "done": true
         },
         {
           "from": "/shop/page/2/",
           "to": "حذف از ایندکس / ریدایرکت خانه",
-          "priority": "medium"
+          "priority": "medium",
+          "done": true
         }
       ],
       "sampleUrls": [
