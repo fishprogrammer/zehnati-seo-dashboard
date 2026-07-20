@@ -1005,6 +1005,34 @@
           <tbody id="gscOppBody"></tbody>
         </table>
         <ul class="gsc-insights" id="gscInsights"></ul>
+        <p class="phase-subh">مقایسه هفته‌به‌هفته (WoW)</p>
+        <p class="gsc-note" id="gscWowScope"></p>
+        <div class="gsc-grid" id="gscWowTotals"></div>
+        <p class="phase-subh">بیشترین افت صفحات</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>صفحه</th>
+              <th>قبل</th>
+              <th>الان</th>
+              <th>تغییر</th>
+            </tr>
+          </thead>
+          <tbody id="gscWowPageLosers"></tbody>
+        </table>
+        <p class="phase-subh">بیشترین افت کیوردها</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>کیورد</th>
+              <th>قبل</th>
+              <th>الان</th>
+              <th>تغییر</th>
+            </tr>
+          </thead>
+          <tbody id="gscWowQueryLosers"></tbody>
+        </table>
+        <ul class="gsc-insights" id="gscWowInsights"></ul>
         <p class="phase-subh">ایندکس / Coverage</p>
         <p class="gsc-note" id="coverageScope"></p>
         <div class="gsc-grid" id="coverageTotals"></div>
@@ -1506,6 +1534,58 @@
       insights.innerHTML = (g.insights || []).map((s) => `<li>${s}</li>`).join("");
     }
 
+    function fillGscWow() {
+      const w = D.gscWow;
+      const scope = document.getElementById("gscWowScope");
+      const totals = document.getElementById("gscWowTotals");
+      const pageLosers = document.getElementById("gscWowPageLosers");
+      const queryLosers = document.getElementById("gscWowQueryLosers");
+      const insights = document.getElementById("gscWowInsights");
+      if (!w || !scope || !totals || !pageLosers || !queryLosers || !insights) return;
+
+      scope.innerHTML = `${w.scopeNote || ""}<br>جاری: <strong>${w.currentRange || ""}</strong> · قبل: <strong>${w.previousRange || ""}</strong> · اکسپورت ${w.exportedAtFa || w.exportedAt || ""}`;
+
+      const t = w.totals || {};
+      const clickLabel = t.clicksPct == null ? "—" : `${t.clicksPct}%`;
+      const impLabel = t.impsPct == null ? "—" : `${t.impsPct}%`;
+      totals.innerHTML = [
+        { label: "کلیک این هفته", val: t.clicksCur },
+        { label: "کلیک هفته قبل", val: t.clicksPrev },
+        { label: "تغییر کلیک", val: `${t.clicksDelta} (${clickLabel})` },
+        { label: "نمایش این هفته", val: t.impsCur },
+        { label: "نمایش هفته قبل", val: t.impsPrev },
+        { label: "تغییر نمایش", val: `${t.impsDelta} (${impLabel})` },
+      ]
+        .map(
+          (x) => `<div class="gsc-stat"><div class="label">${x.label}</div><div class="val">${x.val ?? "—"}</div></div>`
+        )
+        .join("");
+
+      pageLosers.innerHTML = (w.pageLosers || [])
+        .map(
+          (p) => `<tr>
+            <td><code>${p.page}</code></td>
+            <td>${p.clicksPrev}</td>
+            <td>${p.clicks}</td>
+            <td>${p.delta} (${p.pct ?? "—"}%)</td>
+          </tr>`
+        )
+        .join("");
+
+      queryLosers.innerHTML = (w.queryLosers || [])
+        .map(
+          (q) => `<tr>
+            <td>${q.kw}</td>
+            <td>${q.clicksPrev}</td>
+            <td>${q.clicks}</td>
+            <td>${q.delta} (${q.pct ?? "—"}%)</td>
+          </tr>`
+        )
+        .join("");
+
+      insights.innerHTML = (w.insights || []).map((s) => `<li>${s}</li>`).join("");
+    }
+
     function severityFa(s) {
       return { critical: "بحرانی", high: "بالا", medium: "متوسط", ok: "خوب", warn: "هشدار" }[s] || s;
     }
@@ -1851,7 +1931,7 @@
             "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
         } else {
           callout.innerHTML =
-            "<strong>فاز جاری:</strong> ماه ۱ — Coverage: ۱۱۷ ایندکس / ۶۱×۴۰۴ / ۴۶×noindex باید پاکسازی شوند؛ همزمان لندینگ اصفهان/آنلاین.";
+            "<strong>هشدار هفته:</strong> کلیک GSC حدود ۲۱٪ افت کرده (خانه −۵۵٪) در حالی که نمایش کمی بالا رفته — همزمان Coverage ۴۰۴ و لندینگ اصفهان را پیش ببرید.";
         }
       }
 
@@ -2069,6 +2149,7 @@
       fillPhaseWork();
       fillKpis();
       fillGsc();
+      fillGscWow();
       fillCoverage();
       fillTech();
       fillPages();
