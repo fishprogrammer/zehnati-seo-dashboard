@@ -39,7 +39,7 @@ window.ZEHNATI_SEO = {
   techStatus: [
     { id: "ssl", name: "HTTPS / SSL", status: "pass", detail: "فعال" },
     { id: "robots", name: "robots.txt", status: "pass", detail: "موجود؛ به sitemap_index.xml اشاره می‌کند (فعال)" },
-    { id: "sitemap", name: "XML Sitemap", status: "pass", detail: "فعال (200) — sitemap_index.xml" },
+    { id: "sitemap", name: "XML Sitemap", status: "pass", detail: "sitemap_index.xml = 200 (با و بدون www) · ۶ زیرنقشه" },
     { id: "rankmath", name: "Rank Math", status: "pass", detail: "نصب شده" },
     { id: "analytics", name: "Analytics / GTM", status: "pass", detail: "GA4 از Rank Math — G-Y0GZ4B5T0Y" },
     { id: "litespeed", name: "LiteSpeed Cache", status: "pass", detail: "فعال" },
@@ -186,8 +186,8 @@ window.ZEHNATI_SEO = {
           id: "p0-a1",
           priority: "critical",
           title: "رفع Sitemap 404",
-          where: "Rank Math → Sitemap",
-          why: "انجام شد — sitemap_index.xml = 200",
+          where: "Rank Math → Sitemap + Permalinks + LiteSpeed exclude",
+          why: "درست شد — sitemap_index.xml = 200",
           done: true,
         },
         {
