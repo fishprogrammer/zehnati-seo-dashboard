@@ -343,8 +343,210 @@ window.ZEHNATI_SEO = {
       "noindex: 46 صفحه — فقط صفحات خصوصی مجازند.",
       "خزش‌شده ولی ایندکس‌نشده: 126 · کشف‌شده ولی ایندکس‌نشده: 98.",
       "۵xx و robots.txt مسدودکننده = ۰ (خوب).",
-      "Sitemap scope در گزارش: All known pages."
-    ]
+      "Sitemap scope در گزارش: All known pages.",
+      "Drilldown ۴۰۴: ۶۱ URL — ۵ مورد کنکور/مشاوره مرده اولویت ریدایرکت دارند.",
+      "نمونه: /مشاوره-کنکور-در-اصفهان/ و /مشاوره-تحصیلی-کنکور-در-اصفهان/ → لندینگ‌های زنده."
+    ],
+    "drilldown404": {
+      "exportedAt": "2026-07-20",
+      "exportedAtFa": "۲۸ تیر ۱۴۰۵",
+      "issue": "Not found (404)",
+      "issueFa": "صفحه پیدا نشد (۴۰۴)",
+      "count": 61,
+      "categories": [
+        {
+          "name": "اسلاگ تکی متفرقه",
+          "count": 18
+        },
+        {
+          "name": "پروفایل/نام مشاور (احتمالی)",
+          "count": 17
+        },
+        {
+          "name": "سایر",
+          "count": 13
+        },
+        {
+          "name": "محتوای کنکور/مشاوره (مرده)",
+          "count": 4
+        },
+        {
+          "name": "پارامتر / کوئری",
+          "count": 4
+        },
+        {
+          "name": "صفحات سیستمی/قدیمی",
+          "count": 3
+        },
+        {
+          "name": "فروشگاه / shop",
+          "count": 2
+        }
+      ],
+      "redirectPlan": [
+        {
+          "from": "/مشاوره-کنکور-در-اصفهان/",
+          "to": "/بهترین-مشاور-کنکور-اصفهان/ یا /مشاوره-کنکور/",
+          "priority": "critical"
+        },
+        {
+          "from": "/مشاوره-تحصیلی-کنکور-در-اصفهان/",
+          "to": "/مشاوره-تحصیلی-در-اصفهان/",
+          "priority": "critical"
+        },
+        {
+          "from": "/مشاوره-رایگان-حضوری-در-تهران/",
+          "to": "/contact-us/ یا لندینگ تهران",
+          "priority": "high"
+        },
+        {
+          "from": "/aboutus/",
+          "to": "/about/",
+          "priority": "high"
+        },
+        {
+          "from": "/about-us/",
+          "to": "/about/",
+          "priority": "high"
+        },
+        {
+          "from": "/contactus/",
+          "to": "/contact-us/",
+          "priority": "high"
+        },
+        {
+          "from": "/رضایتمندی/",
+          "to": "/satisfaction/",
+          "priority": "medium"
+        },
+        {
+          "from": "/مشاورین-برتر/",
+          "to": "/top-consultants/",
+          "priority": "medium"
+        },
+        {
+          "from": "/shop/",
+          "to": "حذف از ایندکس / ریدایرکت خانه",
+          "priority": "medium"
+        },
+        {
+          "from": "/shop/page/2/",
+          "to": "حذف از ایندکس / ریدایرکت خانه",
+          "priority": "medium"
+        }
+      ],
+      "sampleUrls": [
+        {
+          "path": "/shop/page/2/",
+          "category": "فروشگاه / shop",
+          "lastCrawled": "2026-07-11"
+        },
+        {
+          "path": "/shop/",
+          "category": "فروشگاه / shop",
+          "lastCrawled": "2026-07-11"
+        },
+        {
+          "path": "/آموزش-صفر-تا-صد-تست-زنی/",
+          "category": "اسلاگ تکی متفرقه",
+          "lastCrawled": "2026-07-09"
+        },
+        {
+          "path": "/aboutus/",
+          "category": "صفحات سیستمی/قدیمی",
+          "lastCrawled": "2026-07-04"
+        },
+        {
+          "path": "/باران-داوری/",
+          "category": "پروفایل/نام مشاور (احتمالی)",
+          "lastCrawled": "2026-06-26"
+        },
+        {
+          "path": "/امیر-ناصری/",
+          "category": "پروفایل/نام مشاور (احتمالی)",
+          "lastCrawled": "2026-06-24"
+        },
+        {
+          "path": "/مشاوره-تحصیلی-کنکور-در-اصفهان/",
+          "category": "محتوای کنکور/مشاوره (مرده)",
+          "lastCrawled": "2026-06-22"
+        },
+        {
+          "path": "/taein-sath/",
+          "category": "پروفایل/نام مشاور (احتمالی)",
+          "lastCrawled": "2026-06-16"
+        },
+        {
+          "path": "/هفتم/",
+          "category": "اسلاگ تکی متفرقه",
+          "lastCrawled": "2026-06-16"
+        },
+        {
+          "path": "/نازنین-عباسی/",
+          "category": "پروفایل/نام مشاور (احتمالی)",
+          "lastCrawled": "2026-06-15"
+        },
+        {
+          "path": "/ddd/",
+          "category": "اسلاگ تکی متفرقه",
+          "lastCrawled": "2026-06-09"
+        },
+        {
+          "path": "/profile/",
+          "category": "اسلاگ تکی متفرقه",
+          "lastCrawled": "2026-06-09"
+        },
+        {
+          "path": "/رضایتمندی/",
+          "category": "اسلاگ تکی متفرقه",
+          "lastCrawled": "2026-06-08"
+        },
+        {
+          "path": "/فرم-قرارداد/",
+          "category": "پروفایل/نام مشاور (احتمالی)",
+          "lastCrawled": "2026-06-07"
+        },
+        {
+          "path": "/مشاوره-کنکور-در-اصفهان/",
+          "category": "محتوای کنکور/مشاوره (مرده)",
+          "lastCrawled": "2026-06-04"
+        },
+        {
+          "path": "/contactus/",
+          "category": "صفحات سیستمی/قدیمی",
+          "lastCrawled": "2026-06-03"
+        },
+        {
+          "path": "/مشاورین-برتر/",
+          "category": "پروفایل/نام مشاور (احتمالی)",
+          "lastCrawled": "2026-05-26"
+        },
+        {
+          "path": "/home-2/",
+          "category": "پروفایل/نام مشاور (احتمالی)",
+          "lastCrawled": "2026-05-25"
+        },
+        {
+          "path": "/ticket/",
+          "category": "اسلاگ تکی متفرقه",
+          "lastCrawled": "2026-05-21"
+        },
+        {
+          "path": "/ثبت-نام-آنلاین-ترمیم-معدل-و-سابقه-تحصیل/",
+          "category": "اسلاگ تکی متفرقه",
+          "lastCrawled": "2026-05-19"
+        }
+      ],
+      "insights": [
+        "Drilldown فقط برای «Not found (404)» است — 61 URL در جدول.",
+        "اولویت: ریدایرکت ۳۰۱ اسلاگ‌های کنکور/مشاوره مرده به لندینگ‌های زنده؛ حذف از لینک داخلی.",
+        "URLهای /shop/ و پارامترهای فروشگاه احتمالاً ووکامرس/باقی‌مانده‌اند — noindex یا ریدایرکت به خانه/خدمات.",
+        "aboutus و اسلاگ‌های قدیمی را به /about/ و صفحات فعلی وصل کنید.",
+        "برای هر ۴۰۴ مهم در GSC Validate بعد از اصلاح.",
+        "بخش زیادی از ۴۰۴ها دموی قالب (portfolio/courses) و تیکت/پروفایل تست است — اولویت پایین‌تر از اسلاگ‌های کنکور.",
+        "۵ URL کنکور/مشاوره مرده را اول ۳۰۱ کنید."
+      ]
+    }
   },
   techStatus: [
     { id: "ssl", name: "HTTPS / SSL", status: "pass", detail: "فعال" },
@@ -368,7 +570,7 @@ window.ZEHNATI_SEO = {
       id: "coverage",
       name: "ایندکس / Coverage",
       status: "warn",
-      detail: "ایندکس ۱۱۷ · غیرایندکس ۳۴۳ · ۴۰۴=۶۱ · noindex=۴۶ · crawled-not-indexed=۱۲۶",
+      detail: "ایندکس ۱۱۷ · ۴۰۴=۶۱ (۵ اسلاگ کنکور مرده) · noindex=۴۶ · crawled-not-indexed=۱۲۶",
     },
   ],
   homepage: {
@@ -666,7 +868,7 @@ window.ZEHNATI_SEO = {
           priority: "critical",
           title: "پاکسازی Coverage: ۶۱×۴۰۴ + ۴۶×noindex",
           where: "وردپرس / Rank Math / ریدایرکت",
-          why: "GSC Coverage ۲۰ جولای — ایندکس ۱۱۷ در برابر ۳۴۳ غیرایندکس",
+          why: "Drilldown ۴۰۴: ۶۱ URL · اول ریدایرکت ۵ اسلاگ کنکور/مشاوره + aboutus/contactus",
           done: false,
         },
       ],

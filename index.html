@@ -1020,6 +1020,28 @@
           <tbody id="coverageBody"></tbody>
         </table>
         <ul class="gsc-insights" id="coverageInsights"></ul>
+        <p class="phase-subh">ریدایرکت پیشنهادی برای ۴۰۴ها</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>از</th>
+              <th>به</th>
+              <th>اولویت</th>
+            </tr>
+          </thead>
+          <tbody id="coverage404Redirects"></tbody>
+        </table>
+        <p class="phase-subh">نمونه URLهای ۴۰۴</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>مسیر</th>
+              <th>دسته</th>
+              <th>آخرین خزش</th>
+            </tr>
+          </thead>
+          <tbody id="coverage404Samples"></tbody>
+        </table>
       </section>
 
       <section class="block">
@@ -1524,6 +1546,32 @@
         .join("");
 
       insights.innerHTML = (c.insights || []).map((s) => `<li>${s}</li>`).join("");
+
+      const d404 = c.drilldown404 || {};
+      const redirBody = document.getElementById("coverage404Redirects");
+      if (redirBody) {
+        redirBody.innerHTML = (d404.redirectPlan || [])
+          .map(
+            (r) => `<tr>
+              <td><code>${r.from}</code></td>
+              <td>${r.to}</td>
+              <td><span class="badge ${r.priority}">${severityFa(r.priority)}</span></td>
+            </tr>`
+          )
+          .join("");
+      }
+      const sampleBody = document.getElementById("coverage404Samples");
+      if (sampleBody) {
+        sampleBody.innerHTML = (d404.sampleUrls || [])
+          .map(
+            (u) => `<tr>
+              <td><code>${u.path}</code></td>
+              <td>${u.category || ""}</td>
+              <td>${u.lastCrawled || ""}</td>
+            </tr>`
+          )
+          .join("");
+      }
     }
 
     function fillTech() {
