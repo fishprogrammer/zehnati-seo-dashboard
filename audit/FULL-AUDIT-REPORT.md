@@ -1,47 +1,70 @@
 # Full SEO Audit — zehnati.ir
 
-**Generated:** 2026-07-15T22:16:27+03:30
-**Health Score:** 55/100
+**Generated:** 2026-07-20T23:20:00+03:30  
+**Health Score:** 62/100 (+7 نسبت به آدیت ۱۵ جولای)  
 **Business type:** local-service / education (آکادمی ذهن آتی)
 
 ## Executive Summary
 
-امتیاز کلی **55/100**. پایهٔ فنی ایندکس (robots، sitemap، homepage indexable، about=1 H1، GA4) پایدار است؛ گلوگاه‌ها هنوز محتوای تجاری/محلی ناقص، نویسنده fish-programmer، چند H1 روی هاب‌ها، و 404 قیمت هستند.
+پایهٔ فنی پایدارتر شده: **قیمت** و **هاب مشاوره کنکور** درست شده‌اند. امتیاز از ۵۵ به **۶۲** رسیده. گلوگاه‌های باقی‌مانده: نویسنده fish-programmer، لندینگ اصفهان/آنلاین 404، چند H1 روی صفحات محلی/تجربی، و NAP/اسکیمای شعبه اصفهان.
+
+### Resolved since previous audit
+1. `/قیمت-مشاوره-کنکور/` → 200 · ۱ H1
+2. `/مشاوره-کنکور/` → ۱ H1 (قبلاً ۱۷)
+3. ریدایرکت‌های aboutus / contactus / رضایتمندی / مشاورین-برتر فعال
 
 ### Top findings
-1. E-E-A-T is undermined by fish-programmer author signals
-2. P0 service and local landings are missing or mismatched
-3. Pricing landing page returns 404
-4. Too many H1 tags on /مشاوره-کنکور/
-5. Too many H1 tags on /مشاوره-کنکور-تجربی/
+1. E-E-A-T: نویسنده fish-programmer در متادیتا و Person
+2. لندینگ `/بهترین-مشاور-کنکور-اصفهان/` و `/مشاوره-آنلاین-کنکور/` هنوز 404
+3. ~۱۶ H1 روی تجربی و صفحات محلی اصفهان
+4. تلفن ۰۳۱ در NAP/اسکیما دیده نشد؛ شعبه اصفهان با ۰۲۱
+5. هدرهای امنیتی غایب
 
 ### Quick wins
-1. Replace every fish-programmer author, byline, schema, and social-card signal with دکتر زهرا جعفری or a verified آکادمی ذهن آتی organization author. Add a real Person entity for Dr. Jafari with credentials, role, image, sameAs, worksFor, and a link to /about/.
-2. Create or repair P0 pages for مشاوره کنکور, مشاوره آنلاین, قیمت, ثبت نام, برنامه ریزی, انتخاب رشته, اصفهان, تهران, and city-specific best-consultant intent. Each page should have one intent, one H1, 700-1200 words, proof, FAQ, CTA, schema, and internal links.
-3. Create a dedicated pricing/consultation-cost landing page or 301 it to the closest relevant commercial page, then add it to sitemap and internal links.
-4. Keep one page-level H1 and demote card/archive/widget titles to H2/H3.
-5. Add 700-1000 words of concise homepage copy covering a short intro, حضوری/آنلاین services, Dr. Jafari bio, method/process, branch details, proof with context, FAQ, and internal links to core service/local landings.
+1. تعویض نویسنده → دکتر زهرا جعفری + Person schema
+2. انتشار لندینگ اصفهان + ۳۰۱ از بلاگ نزدیک
+3. H1 قالب Posts → H3 در تجربی / محلی
+4. افزودن ۰۳۱ به NAP و LocalBusiness اصفهان
+5. یک‌هاپه کردن ریدایرکت‌ها به URL نهایی با `/`
 
 ## Category scores
 
 | Category | Score |
 |----------|------:|
-| Technical (blended) | 50 |
-| Technical (raw) | 48 |
-| Content | 44 |
-| On-Page / SXO | 70 |
-| Schema | 69 |
-| Sitemap | 55 |
-| Local | 60 |
+| Technical | 68 |
+| Technical (raw) | 66 |
+| Content / E-E-A-T | 48 |
+| On-Page / SXO | 72 |
+| Schema | 52 |
+| Sitemap | 72 |
+| Local | 55 |
 | GEO / AI | 52 |
 | Performance (est.) | 58 |
-| Images | 35 |
+| Images | 38 |
+
+## Key pages (live)
+
+| URL | Status | H1 | Note |
+|-----|-------:|---:|------|
+| `/` | 200 | 1 | OK |
+| `/about/` | 200 | 1 | Person اشتباه |
+| `/contact-us/` | 200 | 1 | OK |
+| `/مشاوره-کنکور/` | 200 | 1 | هاب اصلاح شد |
+| `/قیمت-مشاوره-کنکور/` | 200 | 1 | منتشر شد |
+| `/مشاوره-کنکور-تجربی/` | 200 | 16 | H1 زیاد |
+| `/بهترین-مشاور-کنکور-اصفهان/` | 404 | — | هدف ماه ۱ |
+| `/بهترین-مشاوره-کنکور-در-اصفهان/` | 200 | 16 | بلاگ نزدیک |
+| `/مشاوره-تحصیلی-در-اصفهان/` | 200 | 16 | قوی GSC |
+| `/مشاوره-آنلاین-کنکور/` | 404 | — | هدف ماه ۱ |
 
 ## Limitations
-- Google API credentials missing — no CrUX/GSC/GA4 API enrichment
-- Performance score estimated without Lighthouse/PSI API
-- No Moz/Bing backlink enrichment
+- بدون Google API credentials در این اجرا
+- Performance تخمینی
+- جزئیات GSC Coverage/Performance از اکسپورت دستی در داشبورد موجود است
 
-## Detailed findings
-
-See `findings/*.md` for specialist reports.
+## Next actions (priority)
+1. **Critical:** نویسنده + Person schema
+2. **Critical:** لندینگ اصفهان + ریدایرکت اسلاگ‌های مرده کنکور
+3. **High:** کاهش H1 صفحات تجربی/محلی
+4. **High:** NAP ۰۳۱ + LocalBusiness اصفهان
+5. **Medium:** امنیت هدرها · یک‌هاپ ریدایرکت

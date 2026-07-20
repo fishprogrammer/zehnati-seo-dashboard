@@ -1,37 +1,4 @@
 {
-  "score": 60,
-  "generated_at": "2026-07-15T22:12:00+03:30",
-  "what_works": [
-    "Homepage and contact page mention Isfahan and Tehran",
-    "Phone CTA is crawlable as tel:02128427259 and schema uses +98-21-28427259",
-    "Homepage JSON-LD includes an Isfahan LocalBusiness branch with PostalAddress",
-    "Homepage JSON-LD includes a Tehran branch with phone and PostalAddress",
-    "Contact page meta supports branch/contact intent"
-  ],
-  "findings": [
-    {
-      "title": "Isfahan and Tehran city landing pages return 404",
-      "severity": "high",
-      "description": "Live checks found /اصفهان/, /تهران/, /بهترین-مشاور-کنکور-اصفهان/, and /بهترین-مشاور-کنکور-تهران/ returning 404, leaving homepage/contact/schema to carry all local relevance.",
-      "recommendation": "Create dedicated city hubs and city-service pages with unique copy, visible NAP, maps, branch proof, FAQs, CTAs, and internal links."
-    },
-    {
-      "title": "Branch NAP and local schema are incomplete",
-      "severity": "medium",
-      "description": "Schema exposes street/city/phone, but no postal code, geo coordinates, opening hours, hasMap, or branch-specific URL was confirmed.",
-      "recommendation": "Complete PostalAddress fields and add geo, openingHours, hasMap, branch URLs, and visible NAP blocks that exactly match schema."
-    },
-    {
-      "title": "Tehran branch type is weaker than Isfahan",
-      "severity": "medium",
-      "description": "Isfahan is typed as LocalBusiness, while Tehran is typed as EducationalOrganization. This creates inconsistent local entity interpretation.",
-      "recommendation": "Add a local business-compatible Tehran branch node or type array while preserving the education context."
-    },
-    {
-      "title": "GBP and branch citation signals are not surfaced",
-      "severity": "medium",
-      "description": "No Google Business Profile URL, review source, map profile URL, or branch-specific citation link was confirmed in homepage schema.",
-      "recommendation": "Add eligible GBP links and verified citation profiles, keeping NAP identical across website, GBP, schema, and visible copy."
-    }
-  ]
+  "score": 55,
+  "generated_at": "2026-07-20"
 }

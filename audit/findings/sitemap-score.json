@@ -1,35 +1,4 @@
 {
-  "score": 55,
-  "generated_at": "2026-07-15T22:12:00+03:30",
-  "what_works": [
-    "sitemap_index.xml returns 200 and is referenced from robots.txt",
-    "Six child sitemaps returned 200: three post sitemaps, page sitemap, category sitemap, and local sitemap",
-    "Homepage, /about/, /contact-us/, and /مشاوره-کنکور/ are present in page-sitemap.xml"
-  ],
-  "findings": [
-    {
-      "title": "P0 landing coverage is still incomplete",
-      "severity": "high",
-      "description": "Live checks found /مشاوره-آنلاین-کنکور/, /اصفهان/, /تهران/, /بهترین-مشاور-کنکور-اصفهان/, and /بهترین-مشاور-کنکور-تهران/ returning 404, so the sitemap cannot cover key online and local commercial intent.",
-      "recommendation": "Create clean indexable landing pages for online consultation, Isfahan, Tehran, and best-consultant city queries, then verify they appear in page-sitemap.xml."
-    },
-    {
-      "title": "Commercial short slugs redirect to mismatched articles",
-      "severity": "high",
-      "description": "/ثبت-نام/, /برنامه-ریزی-کنکور/, and /انتخاب-رشته/ return 301 to unrelated article-style pages instead of commercial landings.",
-      "recommendation": "Replace these redirects with intent-matched landing pages or redirect them to the closest true commercial service pages."
-    },
-    {
-      "title": "/مشاوره-کنکور/ is present but not a clean hub",
-      "severity": "high",
-      "description": "The page returns 200 and is in page-sitemap.xml, but the live probe found 17 H1 elements including article titles.",
-      "recommendation": "Rebuild /مشاوره-کنکور/ as a commercial hub with one H1, clear offer, proof, FAQs, CTA, and links to child service pages."
-    },
-    {
-      "title": "local-sitemap.xml does not represent city pages",
-      "severity": "medium",
-      "description": "local-sitemap.xml returns 200 but only points to locations.kml, while clean Isfahan and Tehran landing pages are missing.",
-      "recommendation": "Use city pages in the normal page sitemap and keep KML/schema as supporting local signals."
-    }
-  ]
+  "score": 72,
+  "generated_at": "2026-07-20"
 }

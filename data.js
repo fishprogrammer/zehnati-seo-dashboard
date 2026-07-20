@@ -20,14 +20,14 @@ window.ZEHNATI_SEO = {
     keywordTotal: 206,
   },
   score: {
-    overall: 57,
-    label: "در حال پیشرفت — ماه ۱ · برند قوی، لندینگ تجاری کنکور ضعیف",
+    overall: 62,
+    label: "آدیت ۲۰ جولای: ۶۲/۱۰۰ — قیمت/هاب درست؛ اصفهان و نویسنده باقی",
     breakdown: [
-      { id: "tech", name: "فنی", score: 50, max: 100 },
-      { id: "onpage", name: "آن‌پیج", score: 70, max: 100 },
-      { id: "content", name: "محتوا", score: 44, max: 100 },
-      { id: "local", name: "محلی", score: 65, max: 100 },
-      { id: "conversion", name: "تبدیل / Landing", score: 40, max: 100 },
+      { id: "tech", name: "فنی", score: 68, max: 100 },
+      { id: "onpage", name: "آن‌پیج", score: 72, max: 100 },
+      { id: "content", name: "محتوا", score: 48, max: 100 },
+      { id: "local", name: "محلی", score: 55, max: 100 },
+      { id: "conversion", name: "تبدیل / Landing", score: 48, max: 100 },
     ],
   },
   kpis: [
@@ -832,12 +832,12 @@ window.ZEHNATI_SEO = {
     { id: "meta", name: "Meta Description", status: "pass", detail: "اختصاصی و بهینه — دیگر اسکرپ نیست" },
     { id: "about-h1", name: "H1 درباره ما", status: "pass", detail: "۱ H1 — درباره آکادمی ذهن آتی" },
     { id: "schema", name: "Schema محلی", status: "warn", detail: "LocalBusiness اصفهان هست؛ تهران/Person در ماه ۱" },
-    { id: "landings", name: "Landingهای P0", status: "warn", detail: "قیمت + هاب 200 · اصفهان/آنلاین باقی" },
+    { id: "landings", name: "Landingهای P0", status: "warn", detail: "قیمت+هاب 200/۱H1 · اصفهان هدف و آنلاین هنوز 404" },
     {
       id: "gsc-site",
       name: "GSC کل سایت",
       status: "pass",
-      detail: "۶ماه: ۲۸۴۵۱ کلیک · برند قوی · لندینگ تجاری کنکور ضعیف",
+      detail: "آدیت ۲۰ جولای: امتیاز ۶۲ · نویسنده و لندینگ اصفهان گلوگاه",
     },
     {
       id: "gsc-wow",
