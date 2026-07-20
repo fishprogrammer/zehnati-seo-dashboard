@@ -662,7 +662,8 @@ window.ZEHNATI_SEO = {
         {
           "from": "/مشاوره-تحصیلی-کنکور-در-اصفهان/",
           "to": "/مشاوره-تحصیلی-در-اصفهان/",
-          "priority": "critical"
+          "priority": "critical",
+          "done": true
         },
         {
           "from": "/مشاوره-رایگان-حضوری-در-تهران/",
