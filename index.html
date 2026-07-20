@@ -631,6 +631,37 @@
     }
     .callout strong { color: var(--accent); }
 
+    .gsc-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0 0 1rem;
+      line-height: 1.7;
+    }
+    .gsc-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.1rem;
+    }
+    @media (max-width: 800px) {
+      .gsc-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .gsc-stat {
+      background: var(--sand);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+    }
+    .gsc-stat .label { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.25rem; }
+    .gsc-stat .val { font-size: 1.35rem; font-weight: 700; color: var(--ink); }
+    .gsc-insights {
+      margin: 0.75rem 0 0;
+      padding: 0 1.1rem 0 0;
+      color: var(--ink-soft);
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+
     footer {
       margin-top: 2.5rem;
       padding-top: 1.25rem;
@@ -932,6 +963,37 @@
       </section>
 
       <div class="kpi-grid" id="kpis"></div>
+
+      <section class="block">
+        <h2>گزارش Search Console</h2>
+        <p class="gsc-note" id="gscScope"></p>
+        <div class="gsc-grid" id="gscTotals"></div>
+        <p class="phase-subh">پرس‌وجوهای برتر (کلیک)</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>کیورد</th>
+              <th>کلیک</th>
+              <th>نمایش</th>
+              <th>رتبه</th>
+            </tr>
+          </thead>
+          <tbody id="gscTopBody"></tbody>
+        </table>
+        <p class="phase-subh">فرصت‌ها (نمایش بدون کلیک)</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>کیورد</th>
+              <th>نمایش</th>
+              <th>رتبه</th>
+              <th>اقدام</th>
+            </tr>
+          </thead>
+          <tbody id="gscOppBody"></tbody>
+        </table>
+        <ul class="gsc-insights" id="gscInsights"></ul>
+      </section>
 
       <section class="block">
         <h2>وضعیت فنی</h2>
@@ -1326,6 +1388,56 @@
         .join("");
     }
 
+    function fillGsc() {
+      const g = D.gsc;
+      const scope = document.getElementById("gscScope");
+      const totals = document.getElementById("gscTotals");
+      const topBody = document.getElementById("gscTopBody");
+      const oppBody = document.getElementById("gscOppBody");
+      const insights = document.getElementById("gscInsights");
+      if (!g || !scope || !totals || !topBody || !oppBody || !insights) return;
+
+      scope.innerHTML = `${g.scopeNote}<br>بازه: <strong>${g.rangeLabel}</strong> · صفحه:
+        <a href="${g.pageUrl}" target="_blank" rel="noopener">${g.page}</a>
+        · اکسپورت ${g.exportedAtFa || g.exportedAt}`;
+
+      const t = g.totals || {};
+      totals.innerHTML = [
+        { label: "کلیک", val: t.clicks },
+        { label: "نمایش", val: t.impressions },
+        { label: "CTR", val: t.ctr },
+        { label: "میانگین رتبه", val: t.position },
+      ]
+        .map(
+          (x) => `<div class="gsc-stat"><div class="label">${x.label}</div><div class="val">${x.val ?? "—"}</div></div>`
+        )
+        .join("");
+
+      topBody.innerHTML = (g.topQueries || [])
+        .map(
+          (q) => `<tr>
+            <td>${q.kw}</td>
+            <td>${q.clicks}</td>
+            <td>${q.impressions}</td>
+            <td>${q.position}</td>
+          </tr>`
+        )
+        .join("");
+
+      oppBody.innerHTML = (g.opportunities || [])
+        .map(
+          (q) => `<tr>
+            <td>${q.kw}</td>
+            <td>${q.impressions}</td>
+            <td>${q.position}</td>
+            <td>${q.note || ""}</td>
+          </tr>`
+        )
+        .join("");
+
+      insights.innerHTML = (g.insights || []).map((s) => `<li>${s}</li>`).join("");
+    }
+
     function fillTech() {
       document.getElementById("techStatus").innerHTML = D.techStatus
         .map(
@@ -1603,7 +1715,7 @@
             "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
         } else {
           callout.innerHTML =
-            "<strong>فاز جاری:</strong> ماه ۱ — ۲۵ کیورد P0 (قیمت، هاب مشاوره، آنلاین، اصفهان/تهران) از مجموع ۲۰۶.";
+            "<strong>فاز جاری:</strong> ماه ۱ — لندینگ اصفهان اولویت دارد (GSC: کیورد کنکور اصفهان نمایش دارد ولی کلیک صفر). قیمت و هاب آماده؛ آنلاین/شهر باقی است.";
         }
       }
 
@@ -1820,6 +1932,7 @@
       fillTimeline();
       fillPhaseWork();
       fillKpis();
+      fillGsc();
       fillTech();
       fillPages();
       fillActions();
