@@ -1005,6 +1005,21 @@
           <tbody id="gscOppBody"></tbody>
         </table>
         <ul class="gsc-insights" id="gscInsights"></ul>
+        <p class="phase-subh">ایندکس / Coverage</p>
+        <p class="gsc-note" id="coverageScope"></p>
+        <div class="gsc-grid" id="coverageTotals"></div>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>مسئله</th>
+              <th>صفحات</th>
+              <th>شدت</th>
+              <th>اقدام</th>
+            </tr>
+          </thead>
+          <tbody id="coverageBody"></tbody>
+        </table>
+        <ul class="gsc-insights" id="coverageInsights"></ul>
       </section>
 
       <section class="block">
@@ -1469,6 +1484,48 @@
       insights.innerHTML = (g.insights || []).map((s) => `<li>${s}</li>`).join("");
     }
 
+    function severityFa(s) {
+      return { critical: "بحرانی", high: "بالا", medium: "متوسط", ok: "خوب", warn: "هشدار" }[s] || s;
+    }
+
+    function fillCoverage() {
+      const c = D.coverage;
+      const scope = document.getElementById("coverageScope");
+      const totals = document.getElementById("coverageTotals");
+      const body = document.getElementById("coverageBody");
+      const insights = document.getElementById("coverageInsights");
+      if (!c || !scope || !totals || !body || !insights) return;
+
+      const latest = c.latest || {};
+      scope.innerHTML = `${c.scopeNote || ""}<br>آخرین نقطه: <strong>${latest.date || "—"}</strong> · اکسپورت ${c.exportedAtFa || c.exportedAt || ""}`;
+
+      totals.innerHTML = [
+        { label: "ایندکس‌شده", val: latest.indexed },
+        { label: "غیرایندکس", val: latest.notIndexed },
+        { label: "۴۰۴", val: c.totals?.critical404 },
+        { label: "noindex", val: c.totals?.noindex },
+        { label: "خزش‌شده، ایندکس‌نشده", val: c.totals?.crawledNotIndexed },
+        { label: "کشف‌شده، ایندکس‌نشده", val: c.totals?.discoveredNotIndexed },
+      ]
+        .map(
+          (x) => `<div class="gsc-stat"><div class="label">${x.label}</div><div class="val">${x.val ?? "—"}</div></div>`
+        )
+        .join("");
+
+      body.innerHTML = (c.issues || [])
+        .map(
+          (i) => `<tr>
+            <td>${i.reasonFa || i.reason || ""}</td>
+            <td>${i.pages ?? 0}</td>
+            <td><span class="badge ${i.severity === "ok" ? "ok" : i.severity === "critical" ? "critical" : i.severity === "high" ? "high" : "medium"}">${severityFa(i.severity)}</span></td>
+            <td>${i.note || ""}</td>
+          </tr>`
+        )
+        .join("");
+
+      insights.innerHTML = (c.insights || []).map((s) => `<li>${s}</li>`).join("");
+    }
+
     function fillTech() {
       document.getElementById("techStatus").innerHTML = D.techStatus
         .map(
@@ -1746,7 +1803,7 @@
             "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
         } else {
           callout.innerHTML =
-            "<strong>فاز جاری:</strong> ماه ۱ — برند در GSC قوی است؛ لندینگ تجاری کنکور (اصفهان/آنلاین) هنوز شکاف اصلی است. قیمت و هاب آماده.";
+            "<strong>فاز جاری:</strong> ماه ۱ — Coverage: ۱۱۷ ایندکس / ۶۱×۴۰۴ / ۴۶×noindex باید پاکسازی شوند؛ همزمان لندینگ اصفهان/آنلاین.";
         }
       }
 
@@ -1964,6 +2021,7 @@
       fillPhaseWork();
       fillKpis();
       fillGsc();
+      fillCoverage();
       fillTech();
       fillPages();
       fillActions();

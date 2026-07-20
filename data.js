@@ -32,7 +32,7 @@ window.ZEHNATI_SEO = {
   },
   kpis: [
     { label: "کیورد پوشش‌داده‌شده (از ۲۰۶)", current: "~۱۵", target: "۲۰۶" },
-    { label: "صفحات ایندکس (هدف ۷ماه)", current: "~۵", target: "۱۰۰+" },
+    { label: "صفحات ایندکس (GSC)", current: "۱۱۷", target: "۱۰۰+ · کاهش ۴۰۴/noindex" },
     { label: "لندینگ/هاب P0", current: "۳", target: "۲۵+ URL" },
     { label: "کلیک GSC (کل سایت · ۶ماه)", current: "۲۸٬۴۵۱", target: "رشد لندینگ‌های تجاری کنکور" },
   ],
@@ -263,6 +263,89 @@ window.ZEHNATI_SEO = {
       "موبایل ~۹۱٪ کلیک‌ها."
     ]
   },
+  coverage: {
+    "exportedAt": "2026-07-20",
+    "exportedAtFa": "۲۸ تیر ۱۴۰۵",
+    "scopeNote": "گزارش Indexing / Coverage · All known pages · تاریخ آخرین نقطهٔ نمودار داخل گزارش",
+    "latest": {
+      "date": "2026-07-10",
+      "indexed": 117,
+      "notIndexed": 343,
+      "impressions": 887
+    },
+    "totals": {
+      "issueRowsWithPages": 7,
+      "issuePagesSum": 343,
+      "critical404": 61,
+      "noindex": 46,
+      "crawledNotIndexed": 126,
+      "discoveredNotIndexed": 98
+    },
+    "issues": [
+      {
+        "reasonFa": "صفحه پیدا نشد (۴۰۴)",
+        "pages": 61,
+        "severity": "critical",
+        "note": "اولویت فنی: ریدایرکت ۳۰۱ یا حذف از لینک‌ها/سایت‌مپ"
+      },
+      {
+        "reasonFa": "حذف با تگ noindex",
+        "pages": 46,
+        "severity": "critical",
+        "note": "بررسی Rank Math — فقط صفحات خصوصی باید noindex باشند"
+      },
+      {
+        "reasonFa": "صفحه با ریدایرکت",
+        "pages": 6,
+        "severity": "medium",
+        "note": "طبیعی اگر زنجیره کوتاه باشد"
+      },
+      {
+        "reasonFa": "مسدود به‌خاطر خطای ۴xx دیگر",
+        "pages": 5,
+        "severity": "critical",
+        "note": "بررسی URLهای ۴۰۱/۴۰۳/۴۱۰"
+      },
+      {
+        "reasonFa": "صفحه جایگزین با canonical درست",
+        "pages": 1,
+        "severity": "medium",
+        "note": "معمولاً نرمال (نسخه تکراری)"
+      },
+      {
+        "reasonFa": "خزش شده ولی هنوز ایندکس نیست",
+        "pages": 126,
+        "severity": "high",
+        "note": "کیفیت/تکرار محتوا — تقویت لندینگ‌های P0 و لینک داخلی"
+      },
+      {
+        "reasonFa": "کشف شده ولی هنوز ایندکس نیست",
+        "pages": 98,
+        "severity": "high",
+        "note": "صفحات در صف ایندکس — Submit مهم‌ها در GSC"
+      },
+      {
+        "reasonFa": "خطای سرور (۵xx)",
+        "pages": 0,
+        "severity": "ok",
+        "note": "وضعیت خوب اگر صفر بماند"
+      },
+      {
+        "reasonFa": "مسدود با robots.txt",
+        "pages": 0,
+        "severity": "ok",
+        "note": "وضعیت خوب اگر صفر بماند"
+      }
+    ],
+    "insights": [
+      "آخرین وضعیت Coverage: ایندکس 117 · غیرایندکس 343 (2026-07-10).",
+      "۴۰۴: 61 URL — باید پاکسازی/ریدایرکت شوند.",
+      "noindex: 46 صفحه — فقط صفحات خصوصی مجازند.",
+      "خزش‌شده ولی ایندکس‌نشده: 126 · کشف‌شده ولی ایندکس‌نشده: 98.",
+      "۵xx و robots.txt مسدودکننده = ۰ (خوب).",
+      "Sitemap scope در گزارش: All known pages."
+    ]
+  },
   techStatus: [
     { id: "ssl", name: "HTTPS / SSL", status: "pass", detail: "فعال" },
     { id: "robots", name: "robots.txt", status: "pass", detail: "موجود؛ به sitemap_index.xml اشاره می‌کند (فعال)" },
@@ -280,6 +363,12 @@ window.ZEHNATI_SEO = {
       name: "GSC کل سایت",
       status: "pass",
       detail: "۶ماه: ۲۸۴۵۱ کلیک · برند قوی · لندینگ تجاری کنکور ضعیف",
+    },
+    {
+      id: "coverage",
+      name: "ایندکس / Coverage",
+      status: "warn",
+      detail: "ایندکس ۱۱۷ · غیرایندکس ۳۴۳ · ۴۰۴=۶۱ · noindex=۴۶ · crawled-not-indexed=۱۲۶",
     },
   ],
   homepage: {
@@ -572,6 +661,14 @@ window.ZEHNATI_SEO = {
           why: "اثبات پیشرفت ماه اول · هدف تجمعی ۲۵/۲۰۶",
           done: false,
         },
+        {
+          id: "p1-a11",
+          priority: "critical",
+          title: "پاکسازی Coverage: ۶۱×۴۰۴ + ۴۶×noindex",
+          where: "وردپرس / Rank Math / ریدایرکت",
+          why: "GSC Coverage ۲۰ جولای — ایندکس ۱۱۷ در برابر ۳۴۳ غیرایندکس",
+          done: false,
+        },
       ],
       checklist: [
         { id: "p1-c1", label: "صفحه قیمت مشاوره کنکور (200)", done: true },
@@ -583,6 +680,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c7", label: "Schema Local + Person", done: false },
         { id: "p1-c8", label: "۲۵ کیورد P0 ماه ۱ به URL وصل شدند", done: false },
         { id: "p1-c9", label: "Submit صفحات جدید در GSC", done: false },
+        { id: "p1-c11", label: "کاهش ۴۰۴ و noindexهای غیرضروری (Coverage)", done: false },
         { id: "p1-c10", label: "گزارش ماه ۱ آماده", done: false },
       ],
     },
