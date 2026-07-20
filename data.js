@@ -1,11 +1,11 @@
-/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: ۱۹ جولای ۲۰۲۶ / ۲۸ تیر ۱۴۰۵ */
+/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: ۲۰ جولای ۲۰۲۶ / ۲۹ تیر ۱۴۰۵ */
 window.ZEHNATI_SEO = {
   meta: {
     brand: "ذهن آتی",
     domain: "https://zehnati.ir/",
     manager: "دکتر زهرا جعفری",
     updatedAt: "2026-07-20",
-    updatedAtFa: "۲۸ تیر ۱۴۰۵",
+    updatedAtFa: "۲۹ تیر ۱۴۰۵",
     phase: 1,
     phaseLabel: "فاز ۱ — ماه ۱: لندینگ‌های تجاری P0",
     week: 1,
@@ -612,6 +612,7 @@ window.ZEHNATI_SEO = {
       "۵xx و robots.txt مسدودکننده = ۰ (خوب).",
       "Sitemap scope در گزارش: All known pages.",
       "Drilldown ۴۰۴: ۶۱ URL — ۵ مورد کنکور/مشاوره مرده اولویت ریدایرکت دارند.",
+      "۲۰۲۶-۰۷-۲۰: aboutus / about-us / contactus / رضایتمندی / مشاورین-برتر → ۳۰۱ تأیید زنده.",
       "نمونه: /مشاوره-کنکور-در-اصفهان/ و /مشاوره-تحصیلی-کنکور-در-اصفهان/ → لندینگ‌های زنده."
     ],
     "drilldown404": {
@@ -669,27 +670,32 @@ window.ZEHNATI_SEO = {
         {
           "from": "/aboutus/",
           "to": "/about/",
-          "priority": "high"
+          "priority": "high",
+          "done": true
         },
         {
           "from": "/about-us/",
           "to": "/about/",
-          "priority": "high"
+          "priority": "high",
+          "done": true
         },
         {
           "from": "/contactus/",
           "to": "/contact-us/",
-          "priority": "high"
+          "priority": "high",
+          "done": true
         },
         {
           "from": "/رضایتمندی/",
           "to": "/satisfaction/",
-          "priority": "medium"
+          "priority": "medium",
+          "done": true
         },
         {
           "from": "/مشاورین-برتر/",
           "to": "/top-consultants/",
-          "priority": "medium"
+          "priority": "medium",
+          "done": true
         },
         {
           "from": "/shop/",
@@ -843,7 +849,7 @@ window.ZEHNATI_SEO = {
       id: "coverage",
       name: "ایندکس / Coverage",
       status: "warn",
-      detail: "ایندکس ۱۱۷ · ۴۰۴=۶۱ (۵ اسلاگ کنکور مرده) · noindex=۴۶ · crawled-not-indexed=۱۲۶",
+      detail: "۴۰۴ سیستمی about/contact/رضایتمندی/مشاورین = ۳۰۱ شد · باقی کنکور/shop/دمو",
     },
   ],
   homepage: {
@@ -1141,7 +1147,7 @@ window.ZEHNATI_SEO = {
           priority: "critical",
           title: "پاکسازی Coverage: ۶۱×۴۰۴ + ۴۶×noindex",
           where: "Rank Math Redirections",
-          why: "جدول ۳۰۱ در action-plan-clicks-404-esfahan.md",
+          why: "انجام شد: aboutus/contactus/رضایتمندی/مشاورین · باقی: کنکور مرده + shop + noindex",
           done: false,
         },
         {
@@ -1163,7 +1169,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c7", label: "Schema Local + Person", done: false },
         { id: "p1-c8", label: "۲۵ کیورد P0 ماه ۱ به URL وصل شدند", done: false },
         { id: "p1-c9", label: "Submit صفحات جدید در GSC", done: false },
-        { id: "p1-c11", label: "کاهش ۴۰۴ و noindexهای غیرضروری (Coverage)", done: false },
+        { id: "p1-c11", label: "کاهش ۴۰۴ و noindex (۵ ریدایرکت سیستمی انجام شد)", done: false },
         { id: "p1-c12", label: "بازیابی CTR خانه / جداسازی دکمه ورود", done: false },
         { id: "p1-c10", label: "گزارش ماه ۱ آماده", done: false },
       ],

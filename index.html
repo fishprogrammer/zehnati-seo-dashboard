@@ -1055,6 +1055,7 @@
               <th>از</th>
               <th>به</th>
               <th>اولویت</th>
+              <th>وضعیت</th>
             </tr>
           </thead>
           <tbody id="coverage404Redirects"></tbody>
@@ -1636,6 +1637,7 @@
               <td><code>${r.from}</code></td>
               <td>${r.to}</td>
               <td><span class="badge ${r.priority}">${severityFa(r.priority)}</span></td>
+              <td><span class="badge ${r.done ? "ok" : "missing"}">${r.done ? "انجام شد" : "باقی مانده"}</span></td>
             </tr>`
           )
           .join("");
@@ -1931,7 +1933,7 @@
             "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
         } else {
           callout.innerHTML =
-            "<strong>پلن فوری:</strong> ۱) ریدایرکت ۴۰۴ها · ۲) انتشار لندینگ اصفهان · ۳) بازیابی CTR خانه (جداسازی /auth/). جزئیات در action-plan-clicks-404-esfahan.";
+            "<strong>پیشرفت امشب:</strong> ۵ ریدایرکت سیستمی ۳۰۱ شد. بعدی: لندینگ اصفهان + ریدایرکت اسلاگ‌های کنکور مرده + بازیابی CTR خانه.";
         }
       }
 
