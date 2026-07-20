@@ -639,7 +639,7 @@
     }
     .gsc-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 0.75rem;
       margin-bottom: 1.1rem;
     }
@@ -980,7 +980,19 @@
           </thead>
           <tbody id="gscTopBody"></tbody>
         </table>
-        <p class="phase-subh">فرصت‌ها (نمایش بدون کلیک)</p>
+        <p class="phase-subh">صفحات برتر</p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>صفحه</th>
+              <th>کلیک</th>
+              <th>نمایش</th>
+              <th>رتبه</th>
+            </tr>
+          </thead>
+          <tbody id="gscPagesBody"></tbody>
+        </table>
+        <p class="phase-subh">فرصت‌ها (نمایش بدون کلیک کافی)</p>
         <table class="data">
           <thead>
             <tr>
@@ -1397,17 +1409,22 @@
       const insights = document.getElementById("gscInsights");
       if (!g || !scope || !totals || !topBody || !oppBody || !insights) return;
 
-      scope.innerHTML = `${g.scopeNote}<br>بازه: <strong>${g.rangeLabel}</strong> · صفحه:
-        <a href="${g.pageUrl}" target="_blank" rel="noopener">${g.page}</a>
-        · اکسپورت ${g.exportedAtFa || g.exportedAt}`;
+      scope.innerHTML = `${g.scopeNote}<br>بازه: <strong>${g.rangeLabel}</strong>` +
+        (g.scope === "site"
+          ? ` · دامنه: <a href="${g.pageUrl}" target="_blank" rel="noopener">${g.pageUrl}</a>`
+          : ` · صفحه: <a href="${g.pageUrl}" target="_blank" rel="noopener">${g.page}</a>`) +
+        ` · اکسپورت ${g.exportedAtFa || g.exportedAt}`;
 
       const t = g.totals || {};
-      totals.innerHTML = [
+      const totalCards = [
         { label: "کلیک", val: t.clicks },
         { label: "نمایش", val: t.impressions },
         { label: "CTR", val: t.ctr },
         { label: "میانگین رتبه", val: t.position },
-      ]
+      ];
+      if (t.pages) totalCards.push({ label: "صفحات در گزارش", val: t.pages });
+      if (t.queries) totalCards.push({ label: "کیورد (سقف)", val: t.queries });
+      totals.innerHTML = totalCards
         .map(
           (x) => `<div class="gsc-stat"><div class="label">${x.label}</div><div class="val">${x.val ?? "—"}</div></div>`
         )
@@ -1423,6 +1440,20 @@
           </tr>`
         )
         .join("");
+
+      const pagesBody = document.getElementById("gscPagesBody");
+      if (pagesBody) {
+        pagesBody.innerHTML = (g.topPages || [])
+          .map(
+            (q) => `<tr>
+              <td>${q.page}</td>
+              <td>${q.clicks}</td>
+              <td>${q.impressions}</td>
+              <td>${q.position}</td>
+            </tr>`
+          )
+          .join("");
+      }
 
       oppBody.innerHTML = (g.opportunities || [])
         .map(
