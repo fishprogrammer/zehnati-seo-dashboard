@@ -4,5 +4,6 @@
 
 - LocalBusiness روی لندینگ اصفهان
 - EducationalOrganization روی آنلاین
-- Person/nauthor: fish-programmer هنوز روی برخی صفحات
+- Person/author وردپرس: fishprogrammer عمدی (مدیر SEO)
+- دکتر جعفری در Title/محتوا می‌ماند؛ جدا از author WP
 - FAQ روی لندینگ‌های P0 جدید

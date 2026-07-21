@@ -1,12 +1,12 @@
 {
   "summary": {
-    "health_score": 60,
+    "health_score": 63,
     "business_type": "local-service / education",
     "generated_at": "2026-07-21T17:20:00+03:30",
     "top_findings": [
-      "E-E-A-T: نویسنده fish-programmer هنوز در HTML صفحات کلیدی",
       "چند H1 روی 3 صفحه: /مشاوره-کنکور-تجربی/, /مشاوره-تحصیلی-در-اصفهان/, /ثبت-نام/",
       "لندینگ تهران هنوز 404",
+      "ویجت CTA لندینگ‌ها روی خانه هنوز publish نشده",
       "404+noindex audit انجام شد — re-crawl GSC در جریان",
       "۵ لندینگ P0 اصلی لایو: قیمت · هاب · اصفهان · آنلاین (+ خانه)"
     ],
@@ -14,19 +14,20 @@
       "لندینگ /بهترین-مشاور-کنکور-اصفهان/ و /مشاوره-آنلاین-کنکور/ لایو (200 · 1 H1)",
       "64 ریدایرکت 301 برای 404 GSC · Validate Fix ثبت شد",
       "/auth/ noindex + meta اختصاصی",
-      "Rank Math noindex برای صفحات خصوصی/سیستمی"
+      "Rank Math noindex برای صفحات خصوصی/سیستمی",
+      "نویسنده WP = fishprogrammer عمدی (مدیر SEO) — نه دکتر جعفری"
     ],
     "quick_wins": [
-      "تعویض نویسنده fish-programmer → دکتر زهرا جعفری",
       "انتشار ویجت CTA لندینگ‌ها روی صفحه اصلی",
       "کاهش H1 قالب Posts در صفحات تجربی/ثبت‌نام",
+      "لندینگ تهران یا تقویت /ثبت-نام/",
       "Submit لندینگ‌های جدید در GSC · منتظر re-crawl"
     ],
     "category_scores": {
       "technical": 74,
       "technical_raw": 72,
-      "content": 42,
-      "on_page_sxo": 66,
+      "content": 50,
+      "on_page_sxo": 70,
       "schema": 58,
       "sitemap": 72,
       "local": 58,
