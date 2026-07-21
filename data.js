@@ -1304,7 +1304,7 @@ window.ZEHNATI_SEO = {
           priority: "critical",
           title: "بازیابی CTR خانه / برند (افت ۲۱٪ کلیک)",
           where: "خانه Elementor + /auth/",
-          why: "✅ لایو 21 Jul: /auth/=0 · contact-us · آنلاین+اصفهان inline · بدون ویجت HTML",
+          why: "✅ لایو 21 Jul: /auth/=0 · contact · آنلاین+اصفهان · هدر: مشاوره کنکور×4",
           done: true,
         },
       ],
