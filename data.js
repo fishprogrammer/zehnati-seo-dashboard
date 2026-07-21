@@ -32,7 +32,7 @@ window.ZEHNATI_SEO = {
   },
   kpis: [
     { label: "کیورد پوشش‌داده‌شده (از ۲۰۶)", current: "~۱۵", target: "۲۰۶" },
-    { label: "صفحات ایندکس (GSC)", current: "۱۱۷", target: "۱۰۰+ · 404 Validate pending · noindex 46" },
+    { label: "صفحات ایندکس (GSC)", current: "۱۱۷", target: "۱۰۰+ · 404 fix done · noindex 46" },
     { label: "لندینگ/هاب P0", current: "۵", target: "۲۵+ URL" },
     { label: "کلیک GSC (کل سایت · ۶ماه)", current: "۲۸٬۴۵۱", target: "رشد لندینگ‌های تجاری کنکور" },
     { label: "کلیک هفته اخیر (WoW)", current: "۵۸۵ (−۲۱٪)", target: "بازگشت به سطح هفته قبل (~۷۳۹)" },
@@ -552,8 +552,8 @@ window.ZEHNATI_SEO = {
       {
         "reasonFa": "صفحه پیدا نشد (۴۰۴)",
         "pages": 61,
-        "severity": "critical",
-        "note": "64 ریدایرکت 301 لایو · Validate GSC 21 Jul · منتظر re-crawl"
+        "severity": "ok",
+        "note": "✅ انجام شد: 64×301 لایو · تست 64/64 · Validate GSC 21 Jul · re-crawl"
       },
       {
         "reasonFa": "حذف با تگ noindex",
@@ -606,8 +606,7 @@ window.ZEHNATI_SEO = {
     ],
     "insights": [
       "آخرین وضعیت Coverage: ایندکس 117 · غیرایندکس 343 (2026-07-10).",
-      "۴۰۴: 61 URL — 64 ریدایرکت 301 لایو (تست 21 Jul: 64/64 PASS).",
-      "Validate Fix در GSC ثبت شد (21 Jul) — منتظر re-crawl گوگل.",
+      "۴۰۴: 61 URL — ✅ 64 ریدایرکت 301 لایو · Validate GSC 21 Jul · منتظر re-crawl.",
       "noindex: 46 صفحه — فقط صفحات خصوصی مجازند.",
       "خزش‌شده ولی ایندکس‌نشده: 126 · کشف‌شده ولی ایندکس‌نشده: 98.",
       "۵xx و robots.txt مسدودکننده = ۰ (خوب).",
@@ -853,7 +852,7 @@ window.ZEHNATI_SEO = {
       id: "gsc-site",
       name: "GSC کل سایت",
       status: "pass",
-      detail: "آدیت ۲۱ جولای: امتیاز ۶۵ · 404 پاکسازی شد · noindex و آنلاین گلوگاه",
+      detail: "آدیت ۲۱ جولای: امتیاز ۶۶ · 404 done · noindex 46 باز",
     },
     {
       id: "gsc-wow",
@@ -865,7 +864,7 @@ window.ZEHNATI_SEO = {
       id: "coverage",
       name: "ایندکس / Coverage",
       status: "warn",
-      detail: "61×404 → 64 redirect 301 لایو · Validate GSC 21 Jul · noindex 46 باز",
+      detail: "404=✅ 64×301 · Validate GSC · noindex 46 باز · re-crawl pending",
     },
   ],
   homepage: {
@@ -1161,9 +1160,17 @@ window.ZEHNATI_SEO = {
         {
           id: "p1-a11",
           priority: "critical",
-          title: "پاکسازی Coverage: ۶۱×۴۰۴ + ۴۶×noindex",
+          title: "پاکسازی ۶۱×۴۰۴ GSC (Rank Math)",
           where: "Rank Math Redirections",
-          why: "404: 64 ریدایرکت 301 لایو · Validate GSC 21 Jul · noindex 46 هنوز باز",
+          why: "✅ 64 ریدایرکت 301 لایو · تست 64/64 · Validate GSC 21 Jul · re-crawl",
+          done: true,
+        },
+        {
+          id: "p1-a13",
+          priority: "high",
+          title: "بررسی ۴۶×noindex در Coverage",
+          where: "GSC Export + Rank Math Robots",
+          why: "404 انجام شد · /auth/ noindex OK · export noindex URLs و audit",
           done: false,
         },
         {
@@ -1186,6 +1193,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c8", label: "۲۵ کیورد P0 ماه ۱ به URL وصل شدند", done: false },
         { id: "p1-c9", label: "Submit صفحات جدید در GSC", done: false },
         { id: "p1-c11", label: "۶۱×۴۰۴ → 301 (64 rule · Validate GSC)", done: true },
+        { id: "p1-c13", label: "Audit 46×noindex (GSC export)", done: false },
         { id: "p1-c12", label: "CTR خانه: auth ✓ · ویجت CTA خانه", done: false },
         { id: "p1-c10", label: "گزارش ماه ۱ آماده", done: false },
       ],
