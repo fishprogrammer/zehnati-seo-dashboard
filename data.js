@@ -20,14 +20,14 @@ window.ZEHNATI_SEO = {
     keywordTotal: 206,
   },
   score: {
-    overall: 63,
-    label: "آدیت ۲۱ جولای: 63/۱۰۰ — ۵ لندینگ P0 لایو؛ CTA خانه و H1 تجربی باقی",
+    overall: 64,
+    label: "آدیت ۲۱ جولای: 64/۱۰۰ — ۵ لندینگ P0 · CTA خانه ✓ · H1 تجربی باقی",
     breakdown: [
       { id: "tech", name: "فنی", score: 74, max: 100 },
       { id: "onpage", name: "آن‌پیج", score: 70, max: 100 },
       { id: "content", name: "محتوا", score: 50, max: 100 },
       { id: "local", name: "محلی", score: 58, max: 100 },
-      { id: "conversion", name: "تبدیل / Landing", score: 62, max: 100 },
+      { id: "conversion", name: "تبدیل / Landing", score: 64, max: 100 },
     ],
   },
   kpis: [
@@ -1304,8 +1304,8 @@ window.ZEHNATI_SEO = {
           priority: "critical",
           title: "بازیابی CTR خانه / برند (افت ۲۱٪ کلیک)",
           where: "خانه Elementor + /auth/",
-          why: "/auth/ noindex+meta ✓ · ویجت CTA لندینگ‌ها روی خانه هنوز publish نشده",
-          done: false,
+          why: "✅ لایو 21 Jul: /auth/=0 · contact-us · آنلاین+اصفهان inline · بدون ویجت HTML",
+          done: true,
         },
       ],
       checklist: [
@@ -1320,7 +1320,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c9", label: "Submit صفحات جدید در GSC", done: false },
         { id: "p1-c11", label: "۶۱×۴۰۴ → 301 (64 rule · Validate GSC)", done: true },
         { id: "p1-c13", label: "Audit 46×noindex (Rank Math)", done: true },
-        { id: "p1-c12", label: "CTR خانه: auth ✓ · ویجت CTA خانه", done: false },
+        { id: "p1-c12", label: "CTR خانه: auth ✓ · لینک آنلاین+اصفهان (Elementor)", done: true },
         { id: "p1-c10", label: "گزارش ماه ۱ آماده", done: false },
       ],
     },
