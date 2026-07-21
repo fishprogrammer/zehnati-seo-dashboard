@@ -553,7 +553,7 @@ window.ZEHNATI_SEO = {
         "reasonFa": "صفحه پیدا نشد (۴۰۴)",
         "pages": 61,
         "severity": "critical",
-        "note": "اولویت فنی: ریدایرکت ۳۰۱ یا حذف از لینک‌ها/سایت‌مپ"
+        "note": "64 ریدایرکت 301 لایو · Validate GSC 21 Jul · منتظر re-crawl"
       },
       {
         "reasonFa": "حذف با تگ noindex",
@@ -606,7 +606,8 @@ window.ZEHNATI_SEO = {
     ],
     "insights": [
       "آخرین وضعیت Coverage: ایندکس 117 · غیرایندکس 343 (2026-07-10).",
-      "۴۰۴: 61 URL — باید پاکسازی/ریدایرکت شوند.",
+      "۴۰۴: 61 URL — 64 ریدایرکت 301 لایو (تست 21 Jul: 64/64 PASS).",
+      "Validate Fix در GSC ثبت شد (21 Jul) — منتظر re-crawl گوگل.",
       "noindex: 46 صفحه — فقط صفحات خصوصی مجازند.",
       "خزش‌شده ولی ایندکس‌نشده: 126 · کشف‌شده ولی ایندکس‌نشده: 98.",
       "۵xx و robots.txt مسدودکننده = ۰ (خوب).",
@@ -829,6 +830,8 @@ window.ZEHNATI_SEO = {
         "URLهای /shop/ و پارامترهای فروشگاه احتمالاً ووکامرس/باقی‌مانده‌اند — noindex یا ریدایرکت به خانه/خدمات.",
         "aboutus و اسلاگ‌های قدیمی را به /about/ و صفحات فعلی وصل کنید.",
         "برای هر ۴۰۴ مهم در GSC Validate بعد از اصلاح.",
+        "2026-07-21: 64 ریدایرکت 301 (import+supplement+parents) — تست لایو 64/64 و GSC list 60/60.",
+        "2026-07-21: Validate Fix 404 در GSC — وضعیت PENDING تا re-crawl.",
         "بخش زیادی از ۴۰۴ها دموی قالب (portfolio/courses) و تیکت/پروفایل تست است — اولویت پایین‌تر از اسلاگ‌های کنکور.",
         "۵ URL کنکور/مشاوره مرده را اول ۳۰۱ کنید."
       ]
@@ -862,7 +865,7 @@ window.ZEHNATI_SEO = {
       id: "coverage",
       name: "ایندکس / Coverage",
       status: "warn",
-      detail: "۴۰۴ سیستمی about/contact/رضایتمندی/مشاورین = ۳۰۱ شد · باقی کنکور/shop/دمو",
+      detail: "61×404 → 64 redirect 301 لایو · Validate GSC 21 Jul · noindex 46 باز",
     },
   ],
   homepage: {
@@ -1160,7 +1163,7 @@ window.ZEHNATI_SEO = {
           priority: "critical",
           title: "پاکسازی Coverage: ۶۱×۴۰۴ + ۴۶×noindex",
           where: "Rank Math Redirections",
-          why: "انجام شد: aboutus/contactus/رضایتمندی/مشاورین · باقی: کنکور مرده + shop + noindex",
+          why: "404: 64 ریدایرکت 301 لایو · Validate GSC 21 Jul · noindex 46 هنوز باز",
           done: false,
         },
         {
@@ -1182,7 +1185,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c7", label: "Schema Local + Person", done: false },
         { id: "p1-c8", label: "۲۵ کیورد P0 ماه ۱ به URL وصل شدند", done: false },
         { id: "p1-c9", label: "Submit صفحات جدید در GSC", done: false },
-        { id: "p1-c11", label: "کاهش ۴۰۴ و noindex (۵ ریدایرکت سیستمی انجام شد)", done: false },
+        { id: "p1-c11", label: "۶۱×۴۰۴ → 301 (64 rule · Validate GSC)", done: true },
         { id: "p1-c12", label: "بازیابی CTR خانه / جداسازی دکمه ورود", done: false },
         { id: "p1-c10", label: "گزارش ماه ۱ آماده", done: false },
       ],
