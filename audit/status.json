@@ -1,13 +1,32 @@
 {
-  "generated_at": "2026-07-20T23:20:00+03:30",
-  "url": "https://zehnati.ir",
-  "health_score": 62,
-  "files": [
+  "ok": true,
+  "mode": "static",
+  "generated_at": "2026-07-21T17:20:32+03:30",
+  "findings": [
+    "ACTION-PLAN.md",
     "audit-data.json",
     "FULL-AUDIT-REPORT.md",
-    "ACTION-PLAN.md",
-    "findings/technical.md",
-    "findings/schema.md",
-    "findings/local.md"
-  ]
+    "status.json",
+    "content-score.json",
+    "content.md",
+    "geo-score.json",
+    "geo.md",
+    "local-score.json",
+    "local.md",
+    "page.md",
+    "parse-home.json",
+    "schema-score.json",
+    "schema.md",
+    "sitemap-score.json",
+    "sitemap.md",
+    "sxo-score.json",
+    "sxo.md",
+    "technical-keyurls-probe.json",
+    "technical-live-probe.json",
+    "technical-score.json",
+    "technical.md"
+  ],
+  "summary": {
+    "health_score": 60
+  }
 }

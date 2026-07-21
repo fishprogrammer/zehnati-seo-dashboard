@@ -1,17 +1,28 @@
-# Technical — live 2026-07-20
+# Technical SEO — zehnati.ir
 
-**Score:** 68/100
+> **تاریخ:** 2026-07-21 (۳۰ تیر ۱۴۰۵)
 
-## What works
-- Homepage indexable · 1 H1 · canonical OK
-- robots + sitemap_index 200
-- قیمت + هاب مشاوره کنکور = 200 / 1 H1
-- System redirects about/contact/رضایتمندی/مشاورین OK
+## خلاصه
 
-## Findings
-- High: اصفهان هدف و آنلاین 404
-- High: ~16 H1 on تجربی + local Isfahan pages
-- Medium: missing security headers
-- Medium: redirect chains (2 hops)
-- Medium: fish-programmer twitter author
-- Low: X-Powered-By PHP · www sitemap direct 200
+| شدت | یافته |
+|-----|--------|
+| 🟢 OK | Sitemap/robots · ۵ لندینگ P0 لایو · 64×301 404 |
+| 🟠 High | نویسنده fish-programmer · H1 چندگانه تجربی/ثبت‌نام |
+| 🟡 Medium | لندینگ تهران 404 · هدرهای امنیتی |
+
+## صفحات کلیدی
+
+| URL | Status | H1 |
+|-----|-------:|---:|
+| `/` | 200 | 1 |
+| `/about/` | 200 | 1 |
+| `/contact-us/` | 200 | 1 |
+| `/auth/` | 200 | 0 |
+| `/مشاوره-کنکور/` | 200 | 1 |
+| `/قیمت-مشاوره-کنکور/` | 200 | 1 |
+| `/بهترین-مشاور-کنکور-اصفهان/` | 200 | 1 |
+| `/مشاوره-آنلاین-کنکور/` | 200 | 1 |
+| `/مشاوره-کنکور-تجربی/` | 200 | 16 |
+| `/مشاوره-تحصیلی-در-اصفهان/` | 200 | 16 |
+| `/ثبت-نام/` | 200 | 16 |
+| `/بهترین-مشاور-کنکور-تهران/` | 404 | 1 |

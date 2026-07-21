@@ -1,194 +1,283 @@
 {
   "summary": {
-    "health_score": 62,
+    "health_score": 60,
     "business_type": "local-service / education",
-    "generated_at": "2026-07-20T23:20:00+03:30",
+    "generated_at": "2026-07-21T17:20:00+03:30",
     "top_findings": [
-      "E-E-A-T: نویسنده fish-programmer هنوز در متادیتا و Person schema",
-      "لندینگ هدف اصفهان /بهترین-مشاور-کنکور-اصفهان/ و آنلاین هنوز 404",
-      "۱۶× H1 روی تجربی، مشاوره تحصیلی اصفهان، و بهترین‌مشاوره-در-اصفهان",
-      "NAP اصفهان ناقص: شماره ۰۳۱ در صفحه/اسکیما دیده نشد؛ تلفن تهران روی شعبه اصفهان",
-      "هدرهای امنیتی (HSTS/CSP/…) غایب"
+      "E-E-A-T: نویسنده fish-programmer هنوز در HTML صفحات کلیدی",
+      "چند H1 روی 3 صفحه: /مشاوره-کنکور-تجربی/, /مشاوره-تحصیلی-در-اصفهان/, /ثبت-نام/",
+      "لندینگ تهران هنوز 404",
+      "404+noindex audit انجام شد — re-crawl GSC در جریان",
+      "۵ لندینگ P0 اصلی لایو: قیمت · هاب · اصفهان · آنلاین (+ خانه)"
     ],
     "resolved_since_prev": [
-      "صفحه /قیمت-مشاوره-کنکور/ از 404 به 200 با ۱ H1",
-      "هاب /مشاوره-کنکور/ از ۱۷ H1 به ۱ H1",
-      "ریدایرکت‌های aboutus / contactus / رضایتمندی / مشاورین-برتر فعال (برخی با زنجیره ۲ هاپ)"
+      "لندینگ /بهترین-مشاور-کنکور-اصفهان/ و /مشاوره-آنلاین-کنکور/ لایو (200 · 1 H1)",
+      "64 ریدایرکت 301 برای 404 GSC · Validate Fix ثبت شد",
+      "/auth/ noindex + meta اختصاصی",
+      "Rank Math noindex برای صفحات خصوصی/سیستمی"
     ],
     "quick_wins": [
-      "تعویض نویسنده WordPress/Rank Math از fish-programmer به دکتر زهرا جعفری + Person schema صحیح",
-      "انتشار لندینگ /بهترین-مشاور-کنکور-اصفهان/ و ۳۰۱ از بلاگ ۱۷/۱۶ H1 نزدیک",
-      "کاهش H1 قالب Posts به H3 در صفحات تجربی و محلی اصفهان",
-      "افزودن ۰۳۱-۳۶۶۴۳۵۵۷ به NAP مرئی و LocalBusiness اصفهان",
-      "یک‌هاپه کردن ریدایرکت‌ها به مقصد با اسلش پایانی"
+      "تعویض نویسنده fish-programmer → دکتر زهرا جعفری",
+      "انتشار ویجت CTA لندینگ‌ها روی صفحه اصلی",
+      "کاهش H1 قالب Posts در صفحات تجربی/ثبت‌نام",
+      "Submit لندینگ‌های جدید در GSC · منتظر re-crawl"
     ],
     "category_scores": {
-      "technical": 68,
-      "technical_raw": 66,
-      "content": 48,
-      "on_page_sxo": 72,
-      "schema": 52,
+      "technical": 74,
+      "technical_raw": 72,
+      "content": 42,
+      "on_page_sxo": 66,
+      "schema": 58,
       "sitemap": 72,
-      "local": 55,
+      "local": 58,
       "geo": 52,
       "performance_est": 58,
-      "images": 38
+      "images": 40
     }
   },
-  "categories": [
-    {
-      "name": "Technical SEO",
-      "score": 68,
-      "what_works": [
-        "Homepage 200، indexable، canonical صحیح، ۱ H1",
-        "robots.txt و sitemap_index.xml = 200 با ۶ زیرنقشه",
-        "قیمت مشاوره کنکور و هاب مشاوره کنکور 200 با ۱ H1",
-        "ریدایرکت‌های سیستمی about/contact/رضایتمندی/مشاورین فعال"
-      ],
-      "findings": [
-        {
-          "title": "لندینگ‌های هدف هنوز 404",
-          "severity": "high",
-          "description": "/بهترین-مشاور-کنکور-اصفهان/ و /مشاوره-آنلاین-کنکور/ = 404",
-          "recommendation": "انتشار لندینگ‌های ماه ۱ یا ۳۰۱ به نزدیک‌ترین URL زنده"
-        },
-        {
-          "title": "چند H1 روی ۳ صفحه کلیدی",
-          "severity": "high",
-          "description": "تجربی، مشاوره تحصیلی اصفهان، بهترین‌مشاوره-در-اصفهان هر کدام ~۱۶ H1",
-          "recommendation": "عنوان کارت/پست را H2/H3 کنید؛ فقط یک H1 صفحه‌ای"
-        },
-        {
-          "title": "هدرهای امنیتی غایب",
-          "severity": "medium",
-          "description": "HSTS، CSP، XFO، XCTO، Referrer-Policy، Permissions-Policy نیستند",
-          "recommendation": "در LiteSpeed/سرور تنظیم کنید؛ CSP را ابتدا Report-Only"
-        },
-        {
-          "title": "زنجیره ریدایرکت ۲ هاپ",
-          "severity": "medium",
-          "description": "aboutus/contactus/مشاورین گاهی بدون اسلش میانی می‌روند",
-          "recommendation": "مقصد را مستقیم با trailing slash تنظیم کنید"
-        },
-        {
-          "title": "نویسنده fish-programmer در Twitter card",
-          "severity": "medium",
-          "description": "twitter:data1=fish-programmer روی خانه",
-          "recommendation": "نویسنده را به دکتر جعفری یا برند آکادمی عوض کنید"
-        },
-        {
-          "title": "X-Powered-By: PHP",
-          "severity": "low",
-          "description": "PHP/8.3.31 افشا شده",
-          "recommendation": "expose_php را خاموش کنید"
-        }
-      ]
-    },
-    {
-      "name": "Schema",
-      "score": 52,
-      "what_works": [
-        "EducationalOrganization / Organization روی خانه و درباره ما",
-        "LocalBusiness شعب روی خانه"
-      ],
-      "findings": [
-        {
-          "title": "Person اشتباه روی /about/",
-          "severity": "high",
-          "description": "Person هنوز fish-programmer است نه دکتر زهرا جعفری",
-          "recommendation": "Person کامل با name/image/jobTitle/sameAs/worksFor"
-        },
-        {
-          "title": "تلفن شعبه اصفهان نادرست",
-          "severity": "high",
-          "description": "LocalBusiness اصفهان با شماره ۰۲۱ پر شده؛ ۰۳۱ دیده نشد",
-          "recommendation": "۰۳۱-۳۶۶۴۳۵۵۷ را در NAP و schema بگذارید"
-        },
-        {
-          "title": "FAQPage روی صفحات کلیدی محلی نیست",
-          "severity": "medium",
-          "description": "خانه/about/صفحات محلی FAQPage نداشتند (لندینگ‌های جدید HTML ممکن است جداگانه داشته باشند)",
-          "recommendation": "FAQ مرئی + FAQPage فقط جایی که Q&A در صفحه هست"
-        }
-      ]
-    },
-    {
-      "name": "Local SEO",
-      "score": 55,
-      "what_works": [
-        "سیگنال خیابان وحید و میدان فاطمی دیده می‌شود",
-        "تلفن ۰۲۱ مرئی است",
-        "/مشاوره-تحصیلی-در-اصفهان/ و /بهترین-مشاوره-کنکور-در-اصفهان/ = 200"
-      ],
-      "findings": [
-        {
-          "title": "لندینگ دقیق بهترین مشاور کنکور اصفهان 404",
-          "severity": "high",
-          "description": "اسلاگ هدف P0 هنوز ساخته نشده",
-          "recommendation": "انتشار پیش‌نویس behtrarin-moshaver-konkoor-esfahan + ۳۰۱ از بلاگ نزدیک"
-        },
-        {
-          "title": "صفحه نزدیک ۱۶ H1 و محتوای ضعیف برند",
-          "severity": "medium",
-          "description": "/بهترین-مشاوره-کنکور-در-اصفهان/ آرشیوگونه است و ارجاع به برند رقیب دیده شده",
-          "recommendation": "لندینگ تجاری جایگزین + ۳۰۱"
-        }
-      ]
-    },
-    {
-      "name": "Content / E-E-A-T",
-      "score": 48,
-      "what_works": [
-        "Title/Description خانه بهینه است",
-        "هاب مشاوره و قیمت تجاری منتشر شده‌اند"
-      ],
-      "findings": [
-        {
-          "title": "نویسنده fish-programmer E-E-A-T را تضعیف می‌کند",
-          "severity": "critical",
-          "description": "سیگنال نویسنده فنی به‌جای دکتر جعفری",
-          "recommendation": "تعویض کاربر نویسنده و Person schema"
-        },
-        {
-          "title": "لندینگ آنلاین و اصفهان هدف هنوز نیستند",
-          "severity": "high",
-          "description": "شکاف تجاری ماه ۱",
-          "recommendation": "طبق پلن فاز ۱ منتشر کنید"
-        }
-      ]
-    },
-    {
-      "name": "Sitemap",
-      "score": 72,
-      "what_works": [
-        "sitemap_index.xml = 200",
-        "۶ زیرنقشه در دسترس"
-      ],
-      "findings": [
-        {
-          "title": "نسخه www سایت‌مپ مستقیم 200 می‌دهد",
-          "severity": "low",
-          "description": "www sitemap ریدایرکت به non-www ندارد (ولی noindex دارد)",
-          "recommendation": "ریدایرکت یکدست www→non-www"
-        }
-      ]
-    }
-  ],
   "key_pages": [
-    { "url": "/", "status": 200, "h1_count": 1, "notes": "OK" },
-    { "url": "/about/", "status": 200, "h1_count": 1, "notes": "Person schema اشتباه" },
-    { "url": "/contact-us/", "status": 200, "h1_count": 1, "notes": "OK" },
-    { "url": "/مشاوره-کنکور/", "status": 200, "h1_count": 1, "notes": "هاب اصلاح شد" },
-    { "url": "/قیمت-مشاوره-کنکور/", "status": 200, "h1_count": 1, "notes": "عنوان برند تکراری جزئی" },
-    { "url": "/مشاوره-کنکور-تجربی/", "status": 200, "h1_count": 16, "notes": "H1 زیاد" },
-    { "url": "/بهترین-مشاور-کنکور-اصفهان/", "status": 404, "h1_count": null, "notes": "هدف ماه ۱" },
-    { "url": "/بهترین-مشاوره-کنکور-در-اصفهان/", "status": 200, "h1_count": 16, "notes": "بلاگ نزدیک" },
-    { "url": "/مشاوره-تحصیلی-در-اصفهان/", "status": 200, "h1_count": 16, "notes": "قوی در GSC ولی H1 زیاد" },
-    { "url": "/مشاوره-آنلاین-کنکور/", "status": 404, "h1_count": null, "notes": "هدف ماه ۱" }
-  ],
-  "limitations": [
-    "بدون Google API credentials — بدون CrUX/GSC API زنده در این اجرا",
-    "Performance تخمینی بدون Lighthouse کامل",
-    "داده‌های GSC دستی اکسپورت‌شده جداگانه در داشبورد موجود است"
+    {
+      "path": "/",
+      "status": 200,
+      "final": "/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+      "schemas": [
+        "EducationalOrganization",
+        "ImageObject",
+        "LocalBusiness",
+        "PostalAddress",
+        "SearchAction",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": true
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "final": "/about/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "درباره آکادمی ذهن آتی | دکتر زهرا جعفری",
+      "schemas": [
+        "Article",
+        "BreadcrumbList",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": false
+    },
+    {
+      "path": "/contact-us/",
+      "status": 200,
+      "final": "/contact-us/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "تماس با ذهن آتی | مشاوره رایگان کنکور",
+      "schemas": [
+        "Article",
+        "BreadcrumbList",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": false
+    },
+    {
+      "path": "/auth/",
+      "status": 200,
+      "final": "/auth/",
+      "h1": 0,
+      "noindex": true,
+      "fish_author": true,
+      "title": "ورود به پنل دانش‌آموز | ذهن آتی",
+      "schemas": [
+        "Article",
+        "BreadcrumbList",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": false
+    },
+    {
+      "path": "/مشاوره-کنکور/",
+      "status": 200,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "مشاوره کنکور | بهترین مشاور کنکور — ذهن آتی",
+      "schemas": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_local": false
+    },
+    {
+      "path": "/قیمت-مشاوره-کنکور/",
+      "status": 200,
+      "final": "/%D9%82%DB%8C%D9%85%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "قیمت مشاوره کنکور ۱۴۰۵ | هزینه — ذهن آتی - ذهن آتی",
+      "schemas": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_local": false
+    },
+    {
+      "path": "/بهترین-مشاور-کنکور-اصفهان/",
+      "status": 200,
+      "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "بهترین مشاور کنکور اصفهان | ذهن آتی — وحید",
+      "schemas": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "EducationalOrganization",
+        "FAQPage",
+        "GeoCoordinates",
+        "ImageObject"
+      ],
+      "has_faq": true,
+      "has_local": false
+    },
+    {
+      "path": "/مشاوره-آنلاین-کنکور/",
+      "status": 200,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "مشاوره آنلاین کنکور | سراسر کشور — ذهن آتی - ذهن آتی",
+      "schemas": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "Country",
+        "EducationalOrganization",
+        "FAQPage",
+        "ImageObject",
+        "ListItem"
+      ],
+      "has_faq": true,
+      "has_local": false
+    },
+    {
+      "path": "/مشاوره-کنکور-تجربی/",
+      "status": 200,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D8%AC%D8%B1%D8%A8%DB%8C/",
+      "h1": 16,
+      "noindex": false,
+      "fish_author": true,
+      "title": "مشاوره کنکور تجربی - ذهن آتی",
+      "schemas": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": false
+    },
+    {
+      "path": "/مشاوره-تحصیلی-در-اصفهان/",
+      "status": 200,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C-%D8%AF%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
+      "h1": 16,
+      "noindex": false,
+      "fish_author": true,
+      "title": "مشاور تحصیلی رایگان در اصفهان - ذهن آتی",
+      "schemas": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": false
+    },
+    {
+      "path": "/ثبت-نام/",
+      "status": 200,
+      "final": "/%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85-%d8%a8%d8%af%d9%88%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+      "h1": 16,
+      "noindex": false,
+      "fish_author": true,
+      "title": "ثبت نام بدون کنکور - ذهن آتی",
+      "schemas": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": false
+    },
+    {
+      "path": "/بهترین-مشاور-کنکور-تهران/",
+      "status": 404,
+      "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/",
+      "h1": 1,
+      "noindex": true,
+      "fish_author": false,
+      "title": "Page Not Found - ذهن آتی",
+      "schemas": [
+        "BreadcrumbList",
+        "EducationalOrganization",
+        "ImageObject",
+        "ListItem",
+        "WebPage",
+        "WebSite"
+      ],
+      "has_faq": false,
+      "has_local": false
+    }
   ]
 }

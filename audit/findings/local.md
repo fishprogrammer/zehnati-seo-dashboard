@@ -1,13 +1,7 @@
-# Local SEO — live 2026-07-20
+# Local SEO — zehnati.ir
 
-**Score:** 55/100
+> **تاریخ:** 2026-07-21
 
-## What works
-- وحید / فاطمی visible
-- 021 visible
-- /مشاوره-تحصیلی-در-اصفهان/ and /بهترین-مشاوره-کنکور-در-اصفهان/ = 200
-
-## Findings
-- High: /بهترین-مشاور-کنکور-اصفهان/ = 404
-- Medium: nearby page has ~16 H1 and weak commercial structure
-- High: Isfahan NAP phone incomplete in schema
+- لندینگ اصفهان لایو با FAQ/Local schema
+- تهران: لندینگ اختصاصی هنوز 404
+- GSC ۳ماه: «مشاور تحصیلی رایگان اصفهان» در Top queries
