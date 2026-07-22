@@ -1280,7 +1280,7 @@ window.ZEHNATI_SEO = {
           priority: "high",
           title: "گزارش ماه ۱ + Submit صفحات جدید در GSC",
           where: "داشبورد + Search Console",
-          why: "اثبات پیشرفت ماه اول · هدف تجمعی ۲۵/۲۰۶",
+          why: "GSC Request indexing ✓ (تهران+لندینگ‌های P0) · گزارش ماه ۱ هنوز باز",
           done: false,
         },
         {
@@ -1317,7 +1317,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c6", label: "نویسنده WP = fishprogrammer (عمدی)", done: true },
         { id: "p1-c7", label: "Schema Local + Person", done: false },
         { id: "p1-c8", label: "۲۵ کیورد P0 ماه ۱ به URL وصل شدند", done: true },
-        { id: "p1-c9", label: "Submit صفحات جدید در GSC", done: false },
+        { id: "p1-c9", label: "Submit صفحات جدید در GSC (Request indexing)", done: true },
         { id: "p1-c11", label: "۶۱×۴۰۴ → 301 (64 rule · Validate GSC)", done: true },
         { id: "p1-c13", label: "Audit 46×noindex (Rank Math)", done: true },
         { id: "p1-c12", label: "CTR خانه: auth ✓ · آنلاین+اصفهان · منوی مشاوره کنکور", done: true },
