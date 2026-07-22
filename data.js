@@ -696,8 +696,8 @@ window.ZEHNATI_SEO = {
       {
         "reasonFa": "مسدود به‌خاطر خطای ۴xx دیگر",
         "pages": 5,
-        "severity": "critical",
-        "note": "بررسی URLهای ۴۰۱/۴۰۳/۴۱۰"
+        "severity": "medium",
+        "note": "۲۲ Jul: ۵× admin-ajax iguru_like → HTTP 400 · اولویت پایین · gsc-2026-07-22-coverage-4xx-drilldown.md"
       },
       {
         "reasonFa": "صفحه جایگزین با canonical درست",
@@ -741,6 +741,7 @@ window.ZEHNATI_SEO = {
       "۲۰۲۶-۰۷-۲۰: aboutus / about-us / contactus / رضایتمندی / مشاورین-برتر → ۳۰۱ تأیید زنده.",
       "۲۰۲۶-۰۷-۲۰: /shop/ و /shop/page/2/ → ۳۰۱ به خانه تأیید زنده.",
       "۲۰۲۶-۰۷-۲۰: مشاوره-رایگان-حضوری-در-تهران → /contact-us/ تأیید (با و بدون اسلش).",
+      "۲۰۲۶-۰۷-۲۲: ۴xx دیگر = ۵ URL فقط admin-ajax?action=iguru_like (لایک تم) · لایو 400 · اولویت پایین.",
       "نمونه: /مشاوره-کنکور-در-اصفهان/ و /مشاوره-تحصیلی-کنکور-در-اصفهان/ → لندینگ‌های زنده."
     ],
     "drilldown404": {
