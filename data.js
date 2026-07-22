@@ -1012,7 +1012,7 @@ window.ZEHNATI_SEO = {
       status: "mapped",
       note: "ماه ۱ — 200 · ۱ H1 · FAQ/Local schema · ۳۰۱ از بلاگ و URL قدیمی",
     },
-    { kw: "برنامه ریزی کنکور", page: "/برنامه-ریزی-کنکور/", status: "partial", note: "ماه۱ mapped · صفحه 200 ولی محتوا نامرتبط — بازنویسی ماه۲" },
+    { kw: "برنامه ریزی کنکور", page: "/برنامه-ریزی-کنکور/", status: "mapped", note: "لایو 22 Jul: Title/H1 درست · محتوا+CTA · لینک هاب/قیمت/آنلاین" },
     { kw: "مشاوره کنکور تجربی", page: "/مشاوره-کنکور-تجربی/", status: "mapped", note: "لایو: 1 H1 · محتوا+CTA · لینک داخلی" },
     { kw: "قیمت مشاوره کنکور", page: "/قیمت-مشاوره-کنکور/", status: "mapped", note: "ماه ۱ — 200 · هنوز در Top1000 نیست" },
     { kw: "مشاوره آنلاین کنکور", page: "/مشاوره-آنلاین-کنکور/", status: "mapped", note: "ماه ۱ — 200 · ۱ H1 · FAQ/schema · landing-online" },
