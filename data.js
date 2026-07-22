@@ -21,7 +21,7 @@ window.ZEHNATI_SEO = {
   },
   score: {
     overall: 64,
-    label: "آدیت ۲۱ جولای: 64/۱۰۰ — ۵ لندینگ P0 · CTA خانه ✓ · H1 تجربی باقی",
+    label: "آدیت ۲۲ جولای: 64/۱۰۰ — محتوای تجربی ✓ · H1×16 از Theme Builder باقی",
     breakdown: [
       { id: "tech", name: "فنی", score: 74, max: 100 },
       { id: "onpage", name: "آن‌پیج", score: 70, max: 100 },
@@ -1013,7 +1013,7 @@ window.ZEHNATI_SEO = {
       note: "ماه ۱ — 200 · ۱ H1 · FAQ/Local schema · ۳۰۱ از بلاگ و URL قدیمی",
     },
     { kw: "برنامه ریزی کنکور", page: "/برنامه-ریزی-کنکور/", status: "partial", note: "ماه ۱–۲" },
-    { kw: "مشاوره کنکور تجربی", page: "/مشاوره-کنکور-تجربی/", status: "ok", note: "GSC: ۲۱ نمایش / رتبه ~۳۹ — H1 ماه ۱" },
+    { kw: "مشاوره کنکور تجربی", page: "/مشاوره-کنکور-تجربی/", status: "partial", note: "محتوا ✓ · هنوز 16 H1 از Posts Theme Builder" },
     { kw: "قیمت مشاوره کنکور", page: "/قیمت-مشاوره-کنکور/", status: "mapped", note: "ماه ۱ — 200 · هنوز در Top1000 نیست" },
     { kw: "مشاوره آنلاین کنکور", page: "/مشاوره-آنلاین-کنکور/", status: "mapped", note: "ماه ۱ — 200 · ۱ H1 · FAQ/schema · landing-online" },
     { kw: "چگونه پزشکی قبول شویم", page: "بلاگ", status: "partial", note: "ماه ۲–۳" },
@@ -1248,7 +1248,7 @@ window.ZEHNATI_SEO = {
           priority: "medium",
           title: "کاهش H1 صفحه تجربی به ۱",
           where: "/مشاوره-کنکور-تجربی/",
-          why: "الان ۱۷ H1 مثل آرشیو است",
+          why: "محتوای جدید ✓ · لایو هنوز 16 H1 از ویجت Posts در Theme Builder — Title Tag را H3 کنید",
           done: false,
         },
         {
@@ -1320,7 +1320,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c9", label: "Submit صفحات جدید در GSC", done: false },
         { id: "p1-c11", label: "۶۱×۴۰۴ → 301 (64 rule · Validate GSC)", done: true },
         { id: "p1-c13", label: "Audit 46×noindex (Rank Math)", done: true },
-        { id: "p1-c12", label: "CTR خانه: auth ✓ · لینک آنلاین+اصفهان (Elementor)", done: true },
+        { id: "p1-c12", label: "CTR خانه: auth ✓ · آنلاین+اصفهان · منوی مشاوره کنکور", done: true },
         { id: "p1-c10", label: "گزارش ماه ۱ آماده", done: false },
       ],
     },
