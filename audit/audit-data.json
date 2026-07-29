@@ -1,37 +1,38 @@
 {
   "summary": {
-    "health_score": 63,
+    "health_score": 71,
     "business_type": "local-service / education",
-    "generated_at": "2026-07-21T17:20:00+03:30",
+    "generated_at": "2026-07-29T15:57:39+03:30",
     "top_findings": [
-      "چند H1 روی 3 صفحه: /مشاوره-کنکور-تجربی/, /مشاوره-تحصیلی-در-اصفهان/, /ثبت-نام/",
-      "لندینگ تهران هنوز 404",
-      "ویجت CTA لندینگ‌ها روی خانه هنوز publish نشده",
-      "404+noindex audit انجام شد — re-crawl GSC در جریان",
-      "۵ لندینگ P0 اصلی لایو: قیمت · هاب · اصفهان · آنلاین (+ خانه)"
+      "سقوط ترافیک ~۲۵ مه هنوز باز است (-56.0٪ میانگین روزانه) — سطح فعلی ~۱/۳ پیش از سقوط.",
+      "لندینگ‌های P0 لایو‌اند (6/۶ با ۲۰۰/۱H1) ولی در GSC هنوز کلیک ناچیز دارند.",
+      "کیوردهای طلایی تجاری (قیمت/آنلاین/برنامه‌ریزی/تجربی) در Top1000 غایب یا ضعیف‌اند.",
+      "/auth/ هنوز در Top pages کلیک می‌گیرد — ترافیک برند هدر می‌رود.",
+      "E-E-A-T: نویسنده fish-programmer در HTML: /, /about/, /contact-us/"
     ],
     "resolved_since_prev": [
-      "لندینگ /بهترین-مشاور-کنکور-اصفهان/ و /مشاوره-آنلاین-کنکور/ لایو (200 · 1 H1)",
-      "64 ریدایرکت 301 برای 404 GSC · Validate Fix ثبت شد",
-      "/auth/ noindex + meta اختصاصی",
-      "Rank Math noindex برای صفحات خصوصی/سیستمی",
-      "نویسنده WP = fishprogrammer عمدی (مدیر SEO) — نه دکتر جعفری"
+      "۶ لندینگ/هاب P0 اصلی ۲۰۰ + ۱ H1 (قیمت · هاب · اصفهان · آنلاین · تهران · تجربی)",
+      "نقشه پوشش ۲۵/۲۵ کیورد ماه ۱",
+      "۶۴ ریدایرکت ۳۰۱ برای ۴۰۴ GSC",
+      "/auth/ noindex (تأیید لایو در این آدیت)",
+      "ریباند هفتگی کلیک +66.1% (۲۰–۲۶ جولای)"
     ],
     "quick_wins": [
-      "انتشار ویجت CTA لندینگ‌ها روی صفحه اصلی",
-      "کاهش H1 قالب Posts در صفحات تجربی/ثبت‌نام",
-      "لندینگ تهران یا تقویت /ثبت-نام/",
-      "Submit لندینگ‌های جدید در GSC · منتظر re-crawl"
+      "تقویت لینک داخلی از خانه + بلاگ‌های پرکلیک به لندینگ‌های P0 (نه /auth/)",
+      "Request indexing مجدد برای هاب/قیمت/اصفهان/تهران/آنلاین + مانیتور ۷روزه",
+      "بهینه‌سازی Title/Meta هاب «مشاوره کنکور» برای CTR (۲۱۳ نمایش / ۷ کلیک / رتبه ~۱۰.۷)",
+      "رشد Local: NAP+LocalBusiness تهران · GBP اصفهان/تهران",
+      "مقاله ستون ماه ۲: چگونه پزشکی قبول شویم + لینک به هاب/ثبت‌نام"
     ],
     "category_scores": {
-      "technical": 74,
-      "technical_raw": 72,
-      "content": 50,
-      "on_page_sxo": 70,
-      "schema": 58,
+      "technical": 77,
+      "technical_raw": 77,
+      "content": 48,
+      "on_page_sxo": 76,
+      "schema": 62,
       "sitemap": 72,
-      "local": 58,
-      "geo": 52,
+      "local": 70,
+      "geo": 54,
       "performance_est": 58,
       "images": 40
     }
@@ -205,7 +206,7 @@
       "path": "/مشاوره-کنکور-تجربی/",
       "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D8%AC%D8%B1%D8%A8%DB%8C/",
-      "h1": 16,
+      "h1": 1,
       "noindex": false,
       "fish_author": true,
       "title": "مشاوره کنکور تجربی - ذهن آتی",
@@ -225,7 +226,7 @@
       "path": "/مشاوره-تحصیلی-در-اصفهان/",
       "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C-%D8%AF%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
-      "h1": 16,
+      "h1": 1,
       "noindex": false,
       "fish_author": true,
       "title": "مشاور تحصیلی رایگان در اصفهان - ذهن آتی",
@@ -245,7 +246,7 @@
       "path": "/ثبت-نام/",
       "status": 200,
       "final": "/%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85-%d8%a8%d8%af%d9%88%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
-      "h1": 16,
+      "h1": 1,
       "noindex": false,
       "fish_author": true,
       "title": "ثبت نام بدون کنکور - ذهن آتی",
@@ -263,22 +264,68 @@
     },
     {
       "path": "/بهترین-مشاور-کنکور-تهران/",
-      "status": 404,
+      "status": 200,
       "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/",
       "h1": 1,
-      "noindex": true,
-      "fish_author": false,
-      "title": "Page Not Found - ذهن آتی",
+      "noindex": false,
+      "fish_author": true,
+      "title": "بهترین مشاور کنکور تهران - ذهن آتی",
       "schemas": [
+        "Answer",
+        "Article",
         "BreadcrumbList",
+        "City",
         "EducationalOrganization",
+        "FAQPage",
+        "GeoCoordinates",
+        "ImageObject"
+      ],
+      "has_faq": true,
+      "has_local": false
+    },
+    {
+      "path": "/برنامه-ریزی-کنکور/",
+      "status": 200,
+      "final": "/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d8%b1%db%8c%d8%b2%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%a7%d8%b1%d8%b4%d8%af-%da%a9%d8%a7%d9%85%d9%be%db%8c%d9%88%d8%aa%d8%b1-1404/",
+      "h1": 1,
+      "noindex": false,
+      "fish_author": true,
+      "title": "برنامه ریزی کنکور - ذهن آتی",
+      "schemas": [
+        "BlogPosting",
+        "BreadcrumbList",
         "ImageObject",
         "ListItem",
+        "Person",
         "WebPage",
         "WebSite"
       ],
       "has_faq": false,
       "has_local": false
     }
-  ]
+  ],
+  "gsc_totals": {
+    "clicks": 19141,
+    "impressions": 231293,
+    "ctr": "8.28%",
+    "position": 6.05,
+    "pages": 261,
+    "queries": 1000
+  },
+  "wow": {
+    "clicksCur": 1053,
+    "clicksPrev": 634,
+    "clicksDelta": 419,
+    "clicksPct": 66.1,
+    "impsCur": 8778,
+    "impsPrev": 7129,
+    "impsDelta": 1649,
+    "impsPct": 23.1
+  },
+  "cliff": {
+    "preAvgClicks": 377.7,
+    "postAvgClicks": 166.1,
+    "deltaPct": -56.0,
+    "note": "سقوط ناگهانی حدود ۲۵ مه ۲۰۲۶"
+  }
 }

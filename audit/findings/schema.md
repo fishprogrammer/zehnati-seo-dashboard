@@ -1,9 +1,8 @@
 # Schema — zehnati.ir
 
-> **تاریخ:** 2026-07-21
+> **تاریخ:** 2026-07-29
 
-- LocalBusiness روی لندینگ اصفهان
+- LocalBusiness روی لندینگ اصفهان/تهران (بررسی لایو)
 - EducationalOrganization روی آنلاین
-- Person/author وردپرس: fishprogrammer عمدی (مدیر SEO)
-- دکتر جعفری در Title/محتوا می‌ماند؛ جدا از author WP
-- FAQ روی لندینگ‌های P0 جدید
+- FAQ روی لندینگ‌های P0
+- Person دکتر جعفری جدا از author وردپرس — هنوز تکمیل باز

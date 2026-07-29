@@ -151,33 +151,49 @@
       const bars = D.score.breakdown
         .map((b) => `<li><strong>${b.name}:</strong> ${b.score}/۱۰۰</li>`)
         .join("");
-      const acts = D.actions
-        .slice(0, 4)
-        .map((a) => `<li class="sev-${a.priority}">${a.title}</li>`)
+      const p0 = (D.phaseDetails && D.phaseDetails[0] && D.phaseDetails[0].actions) || [];
+      const criticalDone = p0
+        .filter((a) => a.priority === "critical")
+        .map(
+          (a) =>
+            `<li class="sev-ok">✅ ${escapeHtml(a.title)} — ${escapeHtml(a.why || "انجام شد")}</li>`
+        )
+        .join("");
+      const openActs = (D.actions || [])
+        .filter((a) => !a.done)
+        .slice(0, 5)
+        .map(
+          (a) =>
+            `<li class="sev-${a.priority}">${escapeHtml(a.title)} <small>(فاز ${a.phase})</small></li>`
+        )
         .join("");
       return `
         <div class="audit-fallback">
-          <p class="audit-fallback-lead">گزارش زنده موجود نیست — fallback از <strong>data.js</strong>:</p>
+          <p class="audit-fallback-lead">گزارش کامل از فایل لود نشد — خلاصه از <strong>data.js</strong> (فاز ۰ بسته ✅):</p>
           <div class="audit-fallback-grid">
-            <div class="audit-stat"><span class="n">${D.score.overall}</span><span class="l">امتیاز (تخمین)</span></div>
-            <div class="audit-stat"><span class="n">${D.kpis[0].current}</span><span class="l">صفحات ایندکس</span></div>
-            <div class="audit-stat"><span class="n">${D.kpis[1].current}</span><span class="l">پست بلاگ</span></div>
+            <div class="audit-stat"><span class="n">${D.score.overall}</span><span class="l">امتیاز</span></div>
+            <div class="audit-stat"><span class="n">${escapeHtml(D.meta.updatedAtFa || D.meta.updatedAt)}</span><span class="l">به‌روز</span></div>
+            <div class="audit-stat"><span class="n">${escapeHtml((D.kpis[3] && D.kpis[3].current) || "—")}</span><span class="l">کلیک GSC ۳ماه</span></div>
           </div>
           <h3>امتیاز دسته‌ها</h3><ul>${bars}</ul>
-          <h3>اقدام‌های بحرانی</h3><ul class="finding-list">${acts}</ul>
+          <h3>اقدام‌های بحرانی فاز ۰ (انجام‌شده)</h3><ul class="finding-list">${criticalDone || "<li>✅ فاز ۰ بسته</li>"}</ul>
+          <h3>اقدام‌های باز بعدی</h3><ul class="finding-list">${openActs || "<li>—</li>"}</ul>
+          <p class="audit-fallback-lead">گزارش فاز ۰: <code>SEO/05-tracking/phase0-critical-report.md</code> · ماه ۱: <code>month1-report-1405-04.md</code></p>
         </div>`;
     }
 
     if (id === "page") {
       const h = D.homepage;
+      const about = (D.metaTargets || []).find((m) => m.url === "/about/");
+      const contact = (D.metaTargets || []).find((m) => m.url === "/contact-us/");
       return `
         <div class="audit-fallback">
-          <p class="audit-fallback-lead">یافتهٔ <code>page.md</code> موجود نیست — baseline:</p>
+          <p class="audit-fallback-lead">یافتهٔ <code>page.md</code> لود نشد — وضعیت فاز ۰ (Title/Meta/H1) از baseline:</p>
           <table class="data audit-table">
-            <tr><th>عنصر</th><th>الان</th><th>هدف</th></tr>
-            <tr><td>Title</td><td>${escapeHtml(h.titleNow)}</td><td>${escapeHtml(h.titleTarget)}</td></tr>
-            <tr><td>Meta</td><td>${escapeHtml(h.descNow)}</td><td>${escapeHtml(h.descTarget)}</td></tr>
-            <tr><td>H1</td><td>ندارد</td><td>${escapeHtml(h.h1Target)}</td></tr>
+            <tr><th>صفحه</th><th>Title</th><th>H1 هدف</th><th>وضعیت</th></tr>
+            <tr><td>/</td><td>${escapeHtml(h.titleNow)}</td><td>${escapeHtml(h.h1Target)}</td><td>✅ فاز ۰</td></tr>
+            <tr><td>/about/</td><td>${escapeHtml((about && about.title) || "—")}</td><td>${escapeHtml((about && about.h1) || "—")}</td><td>✅ فاز ۰</td></tr>
+            <tr><td>/contact-us/</td><td>${escapeHtml((contact && contact.title) || "—")}</td><td>${escapeHtml((contact && contact.h1) || "—")}</td><td>✅ فاز ۰</td></tr>
           </table>
         </div>`;
     }
