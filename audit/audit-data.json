@@ -1,40 +1,39 @@
 {
   "summary": {
-    "health_score": 71,
+    "health_score": 72,
     "business_type": "local-service / education",
-    "generated_at": "2026-07-29T15:57:39+03:30",
+    "generated_at": "2026-08-06T13:55:56+03:30",
     "top_findings": [
-      "سقوط ترافیک ~۲۵ مه هنوز باز است (-56.0٪ میانگین روزانه) — سطح فعلی ~۱/۳ پیش از سقوط.",
-      "لندینگ‌های P0 لایو‌اند (6/۶ با ۲۰۰/۱H1) ولی در GSC هنوز کلیک ناچیز دارند.",
-      "کیوردهای طلایی تجاری (قیمت/آنلاین/برنامه‌ریزی/تجربی) در Top1000 غایب یا ضعیف‌اند.",
-      "/auth/ هنوز در Top pages کلیک می‌گیرد — ترافیک برند هدر می‌رود.",
-      "E-E-A-T: نویسنده fish-programmer در HTML: /, /about/, /contact-us/"
+      "پنجره GSC ۳ماه بیشتر پسا-سقوط است: 17,466 کلیک (کمتر از اکسپورت قبلی).",
+      "لندینگ‌های P0 شروع رشد کرده‌اند (جمع کلیک تقریبی تجاری کلیدی ~75) ولی هنوز ناچیز نسبت به خانه/بلاگ.",
+      "WoW: -7.8% — ریباند تثبیت نشده.",
+      "/auth/ همچنان در Top pages کلیک می‌گیرد.",
+      "کیوردهای تجاری طلایی هنوز در Top1000 غایبند یا CTR/رتبه ضعیف‌اند."
     ],
     "resolved_since_prev": [
-      "۶ لندینگ/هاب P0 اصلی ۲۰۰ + ۱ H1 (قیمت · هاب · اصفهان · آنلاین · تهران · تجربی)",
-      "نقشه پوشش ۲۵/۲۵ کیورد ماه ۱",
-      "۶۴ ریدایرکت ۳۰۱ برای ۴۰۴ GSC",
-      "/auth/ noindex (تأیید لایو در این آدیت)",
-      "ریباند هفتگی کلیک +66.1% (۲۰–۲۶ جولای)"
+      "6/۶ لندینگ P0 لایو ۲۰۰/۱H1",
+      "فاز ۰ Sitemap/Meta بسته",
+      "گزارش ماه ۱ منتشر شده",
+      "رشد اولیه کلیک روی قیمت/شهر/آنلاین نسبت به آدیت ۲۹ جولای"
     ],
     "quick_wins": [
-      "تقویت لینک داخلی از خانه + بلاگ‌های پرکلیک به لندینگ‌های P0 (نه /auth/)",
-      "Request indexing مجدد برای هاب/قیمت/اصفهان/تهران/آنلاین + مانیتور ۷روزه",
-      "بهینه‌سازی Title/Meta هاب «مشاوره کنکور» برای CTR (۲۱۳ نمایش / ۷ کلیک / رتبه ~۱۰.۷)",
-      "رشد Local: NAP+LocalBusiness تهران · GBP اصفهان/تهران",
-      "مقاله ستون ماه ۲: چگونه پزشکی قبول شویم + لینک به هاب/ثبت‌نام"
+      "لینک داخلی از ۱۰ بلاگ پرکلیک → هاب/قیمت/اصفهان/تهران/آنلاین",
+      "تقویت Title/Meta/محتوای هاب «مشاوره کنکور» (رتبه ~۱۰ · CTR ضعیف)",
+      "LocalBusiness+NAP تهران/اصفهان + شروع GBP",
+      "۳۰۱ یا پاکسازی SERP برای /auth/",
+      "مقاله ستون ماه ۲: چگونه پزشکی قبول شویم"
     ],
     "category_scores": {
-      "technical": 77,
-      "technical_raw": 77,
-      "content": 48,
-      "on_page_sxo": 76,
-      "schema": 62,
-      "sitemap": 72,
-      "local": 70,
+      "technical": 76,
+      "technical_raw": 76,
+      "content": 57,
+      "on_page_sxo": 79,
+      "schema": 64,
+      "sitemap": 74,
+      "local": 74,
       "geo": 54,
       "performance_est": 58,
-      "images": 40
+      "images": 42
     }
   },
   "key_pages": [
@@ -42,10 +41,15 @@
       "path": "/",
       "status": 200,
       "final": "/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+      "description": "مشاوره رایگان کنکور با ۹ سال سابقه و ۵۰۰+ رتبه برتر. شعب اصفهان و تهران + آنلاین سراسر کشور. همین الان ثبت‌نام کنید!",
+      "h1": 1,
+      "h1_text": [
+        "مشاوره رایگان کنکور در ذهن آتی"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "EducationalOrganization",
         "ImageObject",
@@ -56,16 +60,32 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": true
+      "has_local": true,
+      "has_person": false,
+      "has_form": true,
+      "text_approx": 33746,
+      "imgs": 16,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 90,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/about/",
       "status": 200,
       "final": "/about/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "درباره آکادمی ذهن آتی | دکتر زهرا جعفری",
+      "description": "آکادمی مشاوره کنکور ذهن آتی با مدیریت دکتر زهرا جعفری. ۲۰۰۰+ قبولی و ۵۰۰ رتبه دو و سه‌رقمی. اپلیکیشن اختصاصی.",
+      "h1": 1,
+      "h1_text": [
+        "درباره آکادمی ذهن آتی"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "Article",
         "BreadcrumbList",
@@ -76,16 +96,32 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 35638,
+      "imgs": 12,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 83,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/contact-us/",
       "status": 200,
       "final": "/contact-us/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "تماس با ذهن آتی | مشاوره رایگان کنکور",
+      "description": "تماس با آکادمی ذهن آتی: ۰۲۱-۲۸۴۲۷۲۵۹. شعب اصفهان (وحید) و تهران (میدان فاطمی). مشاوره رایگان آنلاین.",
+      "h1": 1,
+      "h1_text": [
+        "ارتباط با ما"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "Article",
         "BreadcrumbList",
@@ -96,16 +132,30 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 32091,
+      "imgs": 8,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 73,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/auth/",
       "status": 200,
       "final": "/auth/",
-      "h1": 0,
-      "noindex": true,
-      "fish_author": true,
       "title": "ورود به پنل دانش‌آموز | ذهن آتی",
+      "description": "ورود به پنل دانش‌آموز ذهن آتی — مشاوره رایگان از صفحه اصلی سایت.",
+      "h1": 0,
+      "h1_text": [],
+      "noindex": true,
+      "robots": "follow, noindex",
+      "fish_author": true,
       "schemas": [
         "Article",
         "BreadcrumbList",
@@ -116,16 +166,32 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 29821,
+      "imgs": 3,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 61,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/مشاوره-کنکور/",
       "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "مشاوره کنکور | بهترین مشاور کنکور — ذهن آتی",
+      "description": "بهترین مشاوره کنکور با برنامه شخصی‌سازی‌شده و پیگیری روزانه. تجربی، ریاضی، انسانی. مشاوره رایگان اولیه.",
+      "h1": 1,
+      "h1_text": [
+        "مشاوره کنکور با برنامه شخصی‌سازی‌شده"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "Answer",
         "Article",
@@ -134,19 +200,37 @@
         "ImageObject",
         "ListItem",
         "Person",
-        "Question"
+        "Question",
+        "WebPage",
+        "WebSite"
       ],
       "has_faq": true,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 44642,
+      "imgs": 7,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 81,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/قیمت-مشاوره-کنکور/",
       "status": 200,
       "final": "/%D9%82%DB%8C%D9%85%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "قیمت مشاوره کنکور ۱۴۰۵ | هزینه — ذهن آتی - ذهن آتی",
+      "description": "به‌جای عدد گمراه‌کننده برای قیمت مشاوره کنکور، اول نیازسنجی رایگان و بعد اعلام قیمت دقیق انجام می‌شود.",
+      "h1": 1,
+      "h1_text": [
+        "قیمت مشاوره کنکور ۱۴۰۵"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "Answer",
         "Article",
@@ -155,19 +239,37 @@
         "ImageObject",
         "ListItem",
         "Person",
-        "Question"
+        "Question",
+        "WebPage",
+        "WebSite"
       ],
       "has_faq": true,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 52595,
+      "imgs": 7,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 82,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/بهترین-مشاور-کنکور-اصفهان/",
       "status": 200,
       "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "بهترین مشاور کنکور اصفهان | ذهن آتی — وحید",
+      "description": "بهترین مشاور کنکور اصفهان در خیابان وحید. ۹ سال سابقه، ۲۰۰۰ قبولی. مشاوره رایگان — ۰۳۱ و ۰۲۱.",
+      "h1": 1,
+      "h1_text": [
+        "بهترین مشاور کنکور اصفهان — آکادمی ذهن آتی"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "Answer",
         "Article",
@@ -176,19 +278,39 @@
         "EducationalOrganization",
         "FAQPage",
         "GeoCoordinates",
-        "ImageObject"
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "PostalAddress",
+        "Question"
       ],
       "has_faq": true,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 45814,
+      "imgs": 4,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 79,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/مشاوره-آنلاین-کنکور/",
       "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "مشاوره آنلاین کنکور | سراسر کشور — ذهن آتی - ذهن آتی",
+      "description": "مشاوره آنلاین کنکور برای همه شهرها. برنامه‌ریزی، کلاس و پیگیری روزانه. اپ اختصاصی ذهن آتی. جلسه اول رایگان",
+      "h1": 1,
+      "h1_text": [
+        "مشاوره آنلاین کنکور — سراسر کشور"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "Answer",
         "Article",
@@ -197,19 +319,39 @@
         "EducationalOrganization",
         "FAQPage",
         "ImageObject",
-        "ListItem"
+        "ListItem",
+        "Person",
+        "Question",
+        "WebPage",
+        "WebSite"
       ],
       "has_faq": true,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 47162,
+      "imgs": 4,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 83,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/مشاوره-کنکور-تجربی/",
       "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D8%AC%D8%B1%D8%A8%DB%8C/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "مشاوره کنکور تجربی - ذهن آتی",
+      "description": "اگر دنبال مشاوره کنکور تجربی هستید تا مسیر پزشکی، داروسازی، دندان‌پزشکی یا رشته‌های پیراپزشکی را با برنامه و آرامش طی کنید، این صفحه برای شماست. در آکادمی ذهن",
+      "h1": 1,
+      "h1_text": [
+        "مشاوره کنکور تجربی"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "BlogPosting",
         "BreadcrumbList",
@@ -220,16 +362,32 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 51751,
+      "imgs": 28,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 124,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/مشاوره-تحصیلی-در-اصفهان/",
       "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C-%D8%AF%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "مشاور تحصیلی رایگان در اصفهان - ذهن آتی",
+      "description": "در این مقاله قصد داریم مشاوره تحصیلی در اصفهان را در سایت ذهن آتی به شما معرفی کنیم",
+      "h1": 1,
+      "h1_text": [
+        "مشاور تحصیلی رایگان در اصفهان"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "BlogPosting",
         "BreadcrumbList",
@@ -240,16 +398,32 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 58323,
+      "imgs": 28,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 113,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/ثبت-نام/",
       "status": 200,
       "final": "/%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85-%d8%a8%d8%af%d9%88%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "ثبت نام بدون کنکور - ذهن آتی",
+      "description": "در این مقاله قصد داریم ثبت نام بدون کنکور را در سایت ذهن آتی به شما معرفی کنیم.",
+      "h1": 1,
+      "h1_text": [
+        "ثبت نام بدون کنکور"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "BlogPosting",
         "BreadcrumbList",
@@ -260,16 +434,32 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 54945,
+      "imgs": 26,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 111,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/بهترین-مشاور-کنکور-تهران/",
       "status": 200,
       "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "بهترین مشاور کنکور تهران - ذهن آتی",
+      "description": "بهترین مشاور کنکور تهران در میدان فاطمی. ۹ سال سابقه، ۲۰۰۰ قبولی. مشاوره رایگان — ۰۲۱-۲۸۴۲۷۲۵۹",
+      "h1": 1,
+      "h1_text": [
+        "بهترین مشاور کنکور تهران — آکادمی ذهن آتی"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "Answer",
         "Article",
@@ -278,19 +468,39 @@
         "EducationalOrganization",
         "FAQPage",
         "GeoCoordinates",
-        "ImageObject"
+        "ImageObject",
+        "ListItem",
+        "Person",
+        "PostalAddress",
+        "Question"
       ],
       "has_faq": true,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 45431,
+      "imgs": 4,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 79,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     },
     {
       "path": "/برنامه-ریزی-کنکور/",
       "status": 200,
       "final": "/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d8%b1%db%8c%d8%b2%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%a7%d8%b1%d8%b4%d8%af-%da%a9%d8%a7%d9%85%d9%be%db%8c%d9%88%d8%aa%d8%b1-1404/",
-      "h1": 1,
-      "noindex": false,
-      "fish_author": true,
       "title": "برنامه ریزی کنکور - ذهن آتی",
+      "description": "برنامه‌ریزی کنکور یعنی نقشهٔ واقعی مطالعه: چه بخوانید، چقدر تست بزنید، کی جمع‌بندی کنید و چطور پیشرفت را بسنجید. در آکادمی ذهن آتی برنامه‌ریزی بخشی از مشاوره",
+      "h1": 1,
+      "h1_text": [
+        "برنامه ریزی کنکور"
+      ],
+      "noindex": false,
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "fish_author": true,
       "schemas": [
         "BlogPosting",
         "BreadcrumbList",
@@ -301,31 +511,50 @@
         "WebSite"
       ],
       "has_faq": false,
-      "has_local": false
+      "has_local": true,
+      "has_person": true,
+      "has_form": true,
+      "text_approx": 51378,
+      "imgs": 25,
+      "imgs_no_alt": 0,
+      "links_internal_approx": 123,
+      "security": {
+        "hsts": false,
+        "xfo": false,
+        "csp": false
+      }
     }
   ],
   "gsc_totals": {
-    "clicks": 19141,
-    "impressions": 231293,
-    "ctr": "8.28%",
-    "position": 6.05,
-    "pages": 261,
+    "clicks": 17466,
+    "impressions": 206971,
+    "ctr": "8.44%",
+    "position": 6.28,
+    "pages": 300,
     "queries": 1000
   },
   "wow": {
-    "clicksCur": 1053,
-    "clicksPrev": 634,
-    "clicksDelta": 419,
-    "clicksPct": 66.1,
-    "impsCur": 8778,
-    "impsPrev": 7129,
-    "impsDelta": 1649,
-    "impsPct": 23.1
+    "clicksCur": 977,
+    "clicksPrev": 1060,
+    "clicksDelta": -83,
+    "clicksPct": -7.8,
+    "impsCur": 7760,
+    "impsPrev": 9133,
+    "impsDelta": -1373,
+    "impsPct": -15.0
   },
   "cliff": {
-    "preAvgClicks": 377.7,
+    "preAvgClicks": 378.6,
     "postAvgClicks": 166.1,
-    "deltaPct": -56.0,
-    "note": "سقوط ناگهانی حدود ۲۵ مه ۲۰۲۶"
-  }
+    "deltaPct": -56.1,
+    "note": "سقوط ناگهانی حدود ۲۵ مه ۲۰۲۶ — همچنان اثرگذار روی میانگین ۳ماه"
+  },
+  "commands_run": [
+    "page",
+    "technical",
+    "content",
+    "schema",
+    "local",
+    "audit"
+  ]
 }

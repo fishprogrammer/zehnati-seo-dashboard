@@ -1,7 +1,7 @@
 {
-  "exportedAt": "2026-07-29",
-  "exportedAtFa": "۷ مرداد ۱۴۰۵",
-  "rangeLabel": "۳ ماه اخیر (۲۷ آوریل – ۲۶ جولای ۲۰۲۶)",
+  "exportedAt": "2026-08-06",
+  "exportedAtFa": "۱۵ مرداد ۱۴۰۵",
+  "rangeLabel": "۳ ماه اخیر (۵ مه – ۴ اوت ۲۰۲۶)",
   "scope": "site",
   "scopeNote": "اکسپورت کل سایت — Web · Last 3 months · سقف ۱۰۰۰ کیورد GSC",
   "page": "/",
@@ -11,158 +11,151 @@
     "Date": "Last 3 months"
   },
   "totals": {
-    "clicks": 19141,
-    "impressions": 231293,
-    "ctr": "8.28%",
-    "position": 6.05,
-    "pages": 261,
+    "clicks": 17466,
+    "impressions": 206971,
+    "ctr": "8.44%",
+    "position": 6.28,
+    "pages": 300,
     "queries": 1000
   },
   "devices": [
     {
       "name": "Mobile",
-      "clicks": 17598,
+      "clicks": 16031,
       "share": "92٪ کلیک"
     },
     {
       "name": "Desktop",
-      "clicks": 1318,
+      "clicks": 1226,
       "share": ""
     },
     {
       "name": "Tablet",
-      "clicks": 225,
+      "clicks": 209,
       "share": ""
     }
   ],
   "topQueries": [
     {
       "kw": "ذهن آتی",
-      "clicks": 1106,
-      "impressions": 1642,
+      "clicks": 1135,
+      "impressions": 1685,
       "ctr": "67.36%",
       "position": 1.01
     },
     {
       "kw": "ذهن اتی",
-      "clicks": 652,
-      "impressions": 1021,
-      "ctr": "63.86%",
+      "clicks": 670,
+      "impressions": 1044,
+      "ctr": "64.18%",
       "position": 1.01
     },
     {
       "kw": "کنکور حسابداری",
-      "clicks": 351,
-      "impressions": 1706,
-      "ctr": "20.57%",
-      "position": 2.1
+      "clicks": 300,
+      "impressions": 1620,
+      "ctr": "18.52%",
+      "position": 2.29
     },
     {
       "kw": "آکادمی ذهن آتی",
-      "clicks": 316,
-      "impressions": 548,
-      "ctr": "57.66%",
-      "position": 1.01
+      "clicks": 298,
+      "impressions": 511,
+      "ctr": "58.32%",
+      "position": 1.0
     },
     {
       "kw": "مشاور تحصیلی رایگان اصفهان",
-      "clicks": 268,
-      "impressions": 506,
-      "ctr": "52.96%",
-      "position": 1.06
+      "clicks": 260,
+      "impressions": 528,
+      "ctr": "49.24%",
+      "position": 1.04
     },
     {
       "kw": "موسسه ذهن آتی",
-      "clicks": 185,
-      "impressions": 326,
-      "ctr": "56.75%",
+      "clicks": 187,
+      "impressions": 334,
+      "ctr": "55.99%",
       "position": 1.02
     },
     {
       "kw": "سایت ذهن آتی",
-      "clicks": 180,
-      "impressions": 312,
-      "ctr": "57.69%",
+      "clicks": 184,
+      "impressions": 297,
+      "ctr": "61.95%",
       "position": 1.0
     },
     {
       "kw": "رتبه لازم برای رشته داروسازی",
-      "clicks": 172,
-      "impressions": 2076,
-      "ctr": "8.29%",
-      "position": 1.75
+      "clicks": 144,
+      "impressions": 1850,
+      "ctr": "7.78%",
+      "position": 1.86
     },
     {
       "kw": "مشاور تحصیلی رایگان",
-      "clicks": 151,
-      "impressions": 974,
-      "ctr": "15.5%",
-      "position": 5.29
+      "clicks": 139,
+      "impressions": 945,
+      "ctr": "14.71%",
+      "position": 5.77
     },
     {
       "kw": "هزینه مشاوره ذهن آتی نی نی سایت",
-      "clicks": 113,
-      "impressions": 1113,
-      "ctr": "10.15%",
-      "position": 3.96
+      "clicks": 108,
+      "impressions": 1059,
+      "ctr": "10.2%",
+      "position": 4.2
+    },
+    {
+      "kw": "ذهن آتی اصفهان",
+      "clicks": 100,
+      "impressions": 173,
+      "ctr": "57.8%",
+      "position": 1.04
     },
     {
       "kw": "zehnati",
-      "clicks": 94,
-      "impressions": 286,
-      "ctr": "32.87%",
-      "position": 1.06
-    },
-    {
-      "kw": "app.zehnati",
       "clicks": 91,
-      "impressions": 141,
-      "ctr": "64.54%",
-      "position": 1.0
+      "impressions": 274,
+      "ctr": "33.21%",
+      "position": 1.07
     }
   ],
   "topPages": [
     {
       "page": "/",
-      "clicks": 6229,
-      "impressions": 24237,
-      "ctr": "25.7%",
-      "position": 3.6
+      "clicks": 6172,
+      "impressions": 24432,
+      "ctr": "25.26%",
+      "position": 3.78
     },
     {
       "page": "/رتبه-لازم-برای-رشته-داروسازی-چند-است؟/",
-      "clicks": 2029,
-      "impressions": 27466,
-      "ctr": "7.39%",
-      "position": 5.31
+      "clicks": 1683,
+      "impressions": 24383,
+      "ctr": "6.9%",
+      "position": 5.53
     },
     {
       "page": "/همه-چیز-درباره-کنکور-حسابداری/",
-      "clicks": 1879,
-      "impressions": 21403,
-      "ctr": "8.78%",
-      "position": 5.11
-    },
-    {
-      "page": "/مشاوره-تحصیلی-در-اصفهان/",
-      "clicks": 915,
-      "impressions": 11013,
-      "ctr": "8.31%",
-      "position": 3.87
+      "clicks": 1623,
+      "impressions": 18425,
+      "ctr": "8.81%",
+      "position": 5.04
     },
     {
       "page": "/چند-درصد-کنکور-دوازدهم-است/",
-      "clicks": 858,
-      "impressions": 8165,
-      "ctr": "10.51%",
-      "position": 4.95
+      "clicks": 810,
+      "impressions": 7632,
+      "ctr": "10.61%",
+      "position": 4.81
     },
     {
-      "page": "/رتبه-لازم-برای-رشته-فیزیوتراپی،-چگونه/",
-      "clicks": 799,
-      "impressions": 10704,
-      "ctr": "7.46%",
-      "position": 5.77
+      "page": "/مشاوره-تحصیلی-در-اصفهان/",
+      "clicks": 805,
+      "impressions": 10245,
+      "ctr": "7.86%",
+      "position": 4.13
     },
     {
       "page": "/auth/",
@@ -172,41 +165,48 @@
       "position": 1.26
     },
     {
+      "page": "/رتبه-لازم-برای-رشته-فیزیوتراپی،-چگونه/",
+      "clicks": 581,
+      "impressions": 8413,
+      "ctr": "6.91%",
+      "position": 5.96
+    },
+    {
       "page": "/مدت-زمان-کنکور/",
-      "clicks": 566,
-      "impressions": 16312,
-      "ctr": "3.47%",
-      "position": 5.27
+      "clicks": 482,
+      "impressions": 13828,
+      "ctr": "3.49%",
+      "position": 5.32
     },
     {
       "page": "/بهترین-مشاوره-کنکور-تجربی/",
-      "clicks": 405,
-      "impressions": 8234,
-      "ctr": "4.92%",
-      "position": 3.25
+      "clicks": 434,
+      "impressions": 9018,
+      "ctr": "4.81%",
+      "position": 3.17
     },
     {
-      "page": "/قبولی-کنکور-پرستاری/",
-      "clicks": 403,
-      "impressions": 5637,
-      "ctr": "7.15%",
-      "position": 6.25
+      "page": "/کنکور-تربیت-بدنی/",
+      "clicks": 391,
+      "impressions": 13273,
+      "ctr": "2.95%",
+      "position": 6.31
     }
   ],
   "landingPages": [
     {
       "page": "/",
-      "clicks": 6229,
-      "impressions": 24237,
-      "ctr": "25.7%",
-      "position": 3.6
+      "clicks": 6172,
+      "impressions": 24432,
+      "ctr": "25.26%",
+      "position": 3.78
     },
     {
       "page": "/مشاوره-تحصیلی-در-اصفهان/",
-      "clicks": 915,
-      "impressions": 11013,
-      "ctr": "8.31%",
-      "position": 3.87
+      "clicks": 805,
+      "impressions": 10245,
+      "ctr": "7.86%",
+      "position": 4.13
     },
     {
       "page": "/auth/",
@@ -217,107 +217,83 @@
     },
     {
       "page": "/contact-us/",
-      "clicks": 142,
-      "impressions": 4407,
-      "ctr": "3.22%",
-      "position": 3.01
+      "clicks": 165,
+      "impressions": 5417,
+      "ctr": "3.05%",
+      "position": 2.88
     },
     {
       "page": "/قیمت-مشاوره-کنکور/",
-      "clicks": 11,
-      "impressions": 26,
-      "ctr": "42.31%",
-      "position": 3.31
+      "clicks": 40,
+      "impressions": 90,
+      "ctr": "44.44%",
+      "position": 4.63
     },
     {
       "page": "/بهترین-مشاور-کنکور-اصفهان/",
-      "clicks": 8,
-      "impressions": 197,
-      "ctr": "4.06%",
-      "position": 2.19
-    },
-    {
-      "page": "/مشاوره-کنکور/",
-      "clicks": 3,
-      "impressions": 305,
-      "ctr": "0.98%",
-      "position": 6.23
-    },
-    {
-      "page": "/بهترین-مشاور-کنکور-تهران/",
-      "clicks": 2,
-      "impressions": 61,
-      "ctr": "3.28%",
-      "position": 2.97
+      "clicks": 14,
+      "impressions": 551,
+      "ctr": "2.54%",
+      "position": 10.54
     },
     {
       "page": "/مشاوره-آنلاین-کنکور/",
-      "clicks": 1,
-      "impressions": 164,
-      "ctr": "0.61%",
-      "position": 1.96
+      "clicks": 8,
+      "impressions": 407,
+      "ctr": "1.97%",
+      "position": 2.46
+    },
+    {
+      "page": "/بهترین-مشاور-کنکور-تهران/",
+      "clicks": 8,
+      "impressions": 222,
+      "ctr": "3.6%",
+      "position": 3.0
+    },
+    {
+      "page": "/مشاوره-کنکور/",
+      "clicks": 5,
+      "impressions": 780,
+      "ctr": "0.64%",
+      "position": 4.95
     }
   ],
   "opportunities": [
     {
-      "kw": "کنکور فنی",
-      "impressions": 526,
-      "position": 8.64,
-      "note": "بلاگ/خوشه فنی‌حرفه‌ای (ترافیک غیرتبدیلی)"
-    },
-    {
-      "kw": "زمان کنکور",
-      "impressions": 314,
-      "position": 9.11,
-      "note": "فرصت محتوا/لندینگ"
-    },
-    {
       "kw": "شرایط قبولی در رشته تربیت بدنی",
-      "impressions": 276,
+      "impressions": 264,
       "position": 9.03,
       "note": "فرصت محتوا/لندینگ"
     },
     {
-      "kw": "کنکور کاردانی فنی حرفه ای",
-      "impressions": 232,
-      "position": 8.53,
-      "note": "بلاگ/خوشه فنی‌حرفه‌ای (ترافیک غیرتبدیلی)"
+      "kw": "کنکور فنی",
+      "impressions": 201,
+      "position": 9.08,
+      "note": "فرصت محتوا/لندینگ"
     },
     {
       "kw": "کنکور فنی و حرفه ای",
-      "impressions": 222,
-      "position": 8.31,
-      "note": "بلاگ/خوشه فنی‌حرفه‌ای (ترافیک غیرتبدیلی)"
+      "impressions": 192,
+      "position": 8.45,
+      "note": "فرصت محتوا/لندینگ"
     },
     {
-      "kw": "انتخاب رشته نهم",
-      "impressions": 207,
-      "position": 9.88,
+      "kw": "زمان کنکور",
+      "impressions": 156,
+      "position": 9.68,
+      "note": "فرصت محتوا/لندینگ"
+    },
+    {
+      "kw": "کنکور کاردانی فنی حرفه ای",
+      "impressions": 131,
+      "position": 9.16,
       "note": "فرصت محتوا/لندینگ"
     },
     {
       "kw": "رشته های کنکور فنی حرفه ای",
-      "impressions": 155,
-      "position": 8.57,
-      "note": "بلاگ/خوشه فنی‌حرفه‌ای (ترافیک غیرتبدیلی)"
-    },
-    {
-      "kw": "لیست کشورهایی که کنکور دارند",
-      "impressions": 131,
-      "position": 9.0,
+      "impressions": 120,
+      "position": 8.53,
       "note": "فرصت محتوا/لندینگ"
-    },
-    {
-      "kw": "رتبه قبولی داروسازی دانشگاه آزاد",
-      "impressions": 116,
-      "position": 8.35,
-      "note": "فرصت محتوا/لندینگ"
-    },
-    {
-      "kw": "مشاوره کنکور اصفهان",
-      "impressions": 108,
-      "position": 14.74,
-      "note": "هدف /بهترین-مشاور-کنکور-اصفهان/"
     },
     {
       "kw": "ادامه تحصیل بعد از دیپلم کاردانش",
@@ -326,43 +302,67 @@
       "note": "فرصت محتوا/لندینگ"
     },
     {
-      "kw": "رشته های بدون کنکور",
-      "impressions": 102,
-      "position": 9.03,
+      "kw": "مشاوره کنکور اصفهان",
+      "impressions": 104,
+      "position": 15.46,
+      "note": "هدف /بهترین-مشاور-کنکور-اصفهان/"
+    },
+    {
+      "kw": "انتخاب رشته نهم",
+      "impressions": 103,
+      "position": 10.88,
+      "note": "فرصت محتوا/لندینگ"
+    },
+    {
+      "kw": "رتبه قبولی داروسازی دانشگاه آزاد",
+      "impressions": 98,
+      "position": 8.57,
+      "note": "فرصت محتوا/لندینگ"
+    },
+    {
+      "kw": "لیست کشورهایی که کنکور دارند",
+      "impressions": 94,
+      "position": 9.16,
+      "note": "فرصت محتوا/لندینگ"
+    },
+    {
+      "kw": "کنکور اردیبهشت",
+      "impressions": 93,
+      "position": 10.4,
       "note": "فرصت محتوا/لندینگ"
     }
   ],
   "insights": [
-    "۳ ماه (2026-04-27 → 2026-07-26): 19,141 کلیک و 231,293 نمایش (CTR ~8.28٪ · رتبه ~6.05).",
-    "سقوط از ~۲۵ مه: میانگین روزانه کلیک 377.7 → 166.1 (-56.0٪) — هنوز به سطح پیش از سقوط برنگشته.",
-    "هفته آخر (۲۰–۲۶ جولای): 1,053 کلیک در برابر 634 هفته قبل (+66.1٪) — اولین ریباند واضح بعد از لایو لندینگ‌های P0.",
-    "برند «ذهن آتی / ذهن اتی» همچنان ستون کلیک است؛ کیوردهای تجاری طلایی هنوز در Top1000 کم‌رنگ یا غایب‌اند.",
-    "لندینگ‌های P0 در GSC کلیک ناچیز دارند (هاب ۳ · اصفهان ۸ · آنلاین ۱ · تهران ۲ · قیمت ۱۱) — ایندکس/رتبه تازه است.",
-    "/auth/ هنوز 738 کلیک در ۳ماه دارد — ترافیک مرده؛ باید noindex+۳۰۱ به CTA زنده بماند.",
+    "۳ ماه (2026-05-05 → 2026-08-04): 17,466 کلیک و 206,971 نمایش (CTR ~8.44٪ · رتبه ~6.28).",
+    "سقوط ~۲۵ مه هنوز در پنجره است (میانگین روزانه 378.6 → 166.1 = -56.1٪) — پنجره ۳ماه بیشتر دوره پسا-سقوط است؛ کل کلیک نسبت به اکسپورت قبلی (~۱۹.۱K) پایین‌تر است.",
+    "WoW ۲۹ جولای–۴ اوت: 977 کلیک (-7.8٪) در برابر هفته قبل — ریباند تثبیت نشده.",
+    "لندینگ P0 رشد اولیه کلیک: قیمت 40 · اصفهان 14 · آنلاین 8 · تهران 8 · هاب 5.",
+    "کیوردهای تجاری طلایی هنوز اکثراً خارج Top1000 یا CTR ضعیف‌اند؛ برند ستون ترافیک است.",
+    "/auth/ هنوز در Top pages است (738 کلیک) — نشتی ادامه دارد.",
     "موبایل ~92٪ کلیک‌ها."
   ],
   "cliff": {
-    "preAvgClicks": 377.7,
+    "preAvgClicks": 378.6,
     "postAvgClicks": 166.1,
-    "deltaPct": -56.0,
-    "note": "سقوط ناگهانی حدود ۲۵ مه ۲۰۲۶"
+    "deltaPct": -56.1,
+    "note": "سقوط ناگهانی حدود ۲۵ مه ۲۰۲۶ — همچنان اثرگذار روی میانگین ۳ماه"
   },
   "goldHits": [
     {
       "kw": "مشاوره رایگان کنکور",
       "missing": false,
-      "clicks": 18,
-      "impressions": 106,
-      "ctr": "16.98%",
-      "position": 6.75
+      "clicks": 21,
+      "impressions": 151,
+      "ctr": "13.91%",
+      "position": 6.43
     },
     {
       "kw": "مشاوره کنکور",
       "missing": false,
-      "clicks": 7,
-      "impressions": 213,
-      "ctr": "3.29%",
-      "position": 10.69
+      "clicks": 9,
+      "impressions": 322,
+      "ctr": "2.8%",
+      "position": 10.45
     },
     {
       "kw": "بهترین مشاور کنکور اصفهان",
@@ -372,9 +372,9 @@
       "kw": "بهترین مشاور کنکور در اصفهان",
       "missing": false,
       "clicks": 0,
-      "impressions": 56,
+      "impressions": 76,
       "ctr": "0.0%",
-      "position": 29.05
+      "position": 45.04
     },
     {
       "kw": "برنامه ریزی کنکور",
@@ -404,25 +404,25 @@
       "kw": "دکتر زهرا جعفری",
       "missing": false,
       "clicks": 0,
-      "impressions": 24,
+      "impressions": 37,
       "ctr": "0.0%",
-      "position": 8.12
+      "position": 8.46
     },
     {
       "kw": "مشاوره کنکور اصفهان",
       "missing": false,
-      "clicks": 1,
-      "impressions": 108,
-      "ctr": "0.93%",
-      "position": 14.74
+      "clicks": 0,
+      "impressions": 104,
+      "ctr": "0.0%",
+      "position": 15.46
     },
     {
       "kw": "مشاور تحصیلی رایگان اصفهان",
       "missing": false,
-      "clicks": 268,
-      "impressions": 506,
-      "ctr": "52.96%",
-      "position": 1.06
+      "clicks": 260,
+      "impressions": 528,
+      "ctr": "49.24%",
+      "position": 1.04
     }
   ]
 }
