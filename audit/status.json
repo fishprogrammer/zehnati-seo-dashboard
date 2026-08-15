@@ -1,7 +1,7 @@
 {
   "ok": true,
   "mode": "static",
-  "generated_at": "2026-08-06T13:57:26+03:30",
+  "generated_at": "2026-08-15T13:33:17+03:30",
   "findings": [
     "ACTION-PLAN.md",
     "audit-data.json",
@@ -28,6 +28,6 @@
     "technical.md"
   ],
   "summary": {
-    "health_score": 72
+    "health_score": 73
   }
 }
