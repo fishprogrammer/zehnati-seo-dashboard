@@ -32,7 +32,7 @@ window.ZEHNATI_SEO = {
   },
   score: {
     overall: 73,
-    label: "آدیت 08 اوت: 73/۱۰۰ — GSC ۲۸روز 4٬403 کلیک · WoW +18.8٪ · P0~183",
+    label: "آدیت ۲۲ اوت: 73/۱۰۰ — GSC ۲۸روز 4٬403 کلیک · WoW +18.8٪ · P0~183",
     breakdown: [
       { id: "tech", name: "فنی", score: 78, max: 100 },
       { id: "onpage", name: "آن‌پیج", score: 79, max: 100 },
