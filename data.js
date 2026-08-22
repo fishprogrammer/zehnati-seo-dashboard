@@ -30,6 +30,468 @@ window.ZEHNATI_SEO = {
     sitemapOk: false,
     alerts: [{"level": "critical", "path": "/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-کنکور/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/قیمت-مشاوره-کنکور/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/بهترین-مشاور-کنکور-اصفهان/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-آنلاین-کنکور/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-کنکور-تجربی/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-تحصیلی-در-اصفهان/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/بهترین-مشاور-کنکور-تهران/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}],
   },
+  wpOrganic: {
+    "ok": true,
+    "updatedAt": "2026-08-22T19:20:31+03:30",
+    "updatedAtFa": "۲۰۲۶-۰۸-۲۲ · ۱۹:۲۰",
+    "category": {
+      "name": "مقالات",
+      "slug": "blogs",
+      "total": 220
+    },
+    "totals": {
+      "optimizedAllTime": 9,
+      "remaining": 211,
+      "runsAllTime": 7,
+      "optimizedToday": 11,
+      "runsToday": 5
+    },
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "dateFa": "۲۰۲۶-۰۸-۲۲",
+        "runs": 7,
+        "runsLive": 5,
+        "postsOptimized": 11,
+        "postsPreviewed": 2,
+        "entries": [
+          {
+            "at": "2026-08-22T16:41:57+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۴۱",
+            "dryRun": true,
+            "processed": 1,
+            "optimized": 0,
+            "results": [
+              {
+                "postId": 7669,
+                "title": "مرور",
+                "link": "https://zehnati.ir/moroor/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-08-22T16:45:09+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۴۵",
+            "dryRun": false,
+            "processed": 3,
+            "optimized": 3,
+            "results": [
+              {
+                "postId": 7669,
+                "title": "مرور",
+                "link": "https://zehnati.ir/moroor/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7671,
+                "title": "کنکور نوبت اول",
+                "link": "https://zehnati.ir/konkoor-nobat-aval/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_internal_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک داخلی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_append"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "لینک داخلی/خروجی"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7673,
+                "title": "رتبه برتر کنکور چه عادت هایی دارد؟",
+                "link": "https://zehnati.ir/rotbe-bartar/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_internal_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک داخلی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_append"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "لینک داخلی/خروجی"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-08-22T16:57:09+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۵۷",
+            "dryRun": true,
+            "processed": 1,
+            "optimized": 0,
+            "results": [
+              {
+                "postId": 7671,
+                "title": "کنکور نوبت اول",
+                "link": "https://zehnati.ir/konkoor-nobat-aval/",
+                "issuesBefore": [],
+                "issuesBeforeFa": [],
+                "changed": [],
+                "changedFa": [],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-08-22T16:59:47+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۵۹",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7673,
+                "title": "رتبه برتر کنکور چه عادت هایی دارد؟",
+                "link": "https://zehnati.ir/rotbe-bartar/",
+                "issuesBefore": [
+                  "focus_keyword_not_in_content",
+                  "no_outbound_links",
+                  "image_alt_no_keyword"
+                ],
+                "issuesBeforeFa": [
+                  "کلمه کلیدی در متن",
+                  "لینک خروجی",
+                  "alt تصویر + کلمه کلیدی"
+                ],
+                "changed": [
+                  "content_prepend",
+                  "content_append",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-08-22T17:00:05+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۷:۰۰",
+            "dryRun": false,
+            "processed": 3,
+            "optimized": 3,
+            "results": [
+              {
+                "postId": 7675,
+                "title": "دندانپزشکی",
+                "link": "https://zehnati.ir/dandaanpezeshki/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_internal_links",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک داخلی",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_append"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "لینک داخلی/خروجی"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7677,
+                "title": "مشاور تحصیلی",
+                "link": "https://zehnati.ir/moshaver-tahsili/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_append"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "لینک داخلی/خروجی"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7679,
+                "title": "مهندسی برق",
+                "link": "https://zehnati.ir/mohandesi-bargh/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_internal_links",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک داخلی",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_append"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "لینک داخلی/خروجی"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-08-22T19:14:53+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۹:۱۴",
+            "dryRun": false,
+            "processed": 3,
+            "optimized": 3,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "فرهنگیان",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "content_append",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7690,
+                "title": "روش خلاصه نویسی عربی+راهکار",
+                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%84%d8%a7%d8%b5%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%b9%d8%b1%d8%a8%db%8c%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_append"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "لینک داخلی/خروجی"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7683,
+                "title": "چگونه در سال کنکور چاق نشویم؟+تضمینی",
+                "link": "https://zehnati.ir/%da%86%da%af%d9%88%d9%86%d9%87-%d8%af%d8%b1-%d8%b3%d8%a7%d9%84-%da%a9%d9%86%da%a9%d9%88%d8%b1-%da%86%d8%a7%d9%82-%d9%86%d8%b4%d9%88%db%8c%d9%85%d8%9f%d8%aa%d8%b6%d9%85%db%8c%d9%86%db%8c/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_append"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "لینک داخلی/خروجی"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-08-22T19:20:31+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۹:۲۰",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "فرهنگیان",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "content_append",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   score: {
     overall: 73,
     label: "آدیت ۲۲ اوت: 73/۱۰۰ — GSC 3m 14٬288 کلیک · WoW +18.8٪ · P0 کلیک~195",

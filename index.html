@@ -885,10 +885,116 @@
     }
     .audit-stat .l { font-size: 0.75rem; color: var(--muted); margin-top: 0.25rem; }
     .audit-table { margin-top: 0.5rem; }
+
+    /* —— GSC import tab (local only) —— */
+    .gsc-panel {
+      display: grid;
+      gap: 1.25rem;
+      max-width: 42rem;
+    }
+    .gsc-drop {
+      border: 2px dashed rgba(13, 115, 119, 0.35);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      background: rgba(13, 115, 119, 0.04);
+      text-align: center;
+    }
+    .gsc-drop input[type="file"] {
+      margin: 0.75rem 0;
+      max-width: 100%;
+    }
+    .gsc-meta {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .gsc-meta strong { color: var(--ink); }
+    .gsc-log {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.75rem;
+      background: #0f1419;
+      color: #c9d1d9;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      max-height: 12rem;
+      overflow: auto;
+      display: none;
+    }
+    .gsc-log.show { display: block; }
     .finding-list { padding-inline-start: 1.25rem; }
     .finding-list li.sev-critical { color: var(--fail); }
     .finding-list li.sev-ok { color: var(--ok, #1a7f4e); }
     .finding-list li.sev-high { color: var(--warn); }
+
+    /* —— WP Organic tab —— */
+    .wp-org-kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .wp-org-kpi {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .wp-org-kpi .n {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--teal, #0d7377);
+      line-height: 1.1;
+    }
+    .wp-org-kpi .l { font-size: 0.78rem; color: var(--muted); margin-top: 0.25rem; }
+    .wp-org-day {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      margin-bottom: 0.85rem;
+      overflow: hidden;
+      background: var(--card);
+    }
+    .wp-org-day-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      background: rgba(13, 115, 119, 0.06);
+      border-bottom: 1px solid var(--line);
+    }
+    .wp-org-day-head strong { font-size: 0.95rem; }
+    .wp-org-day-meta { font-size: 0.82rem; color: var(--muted); }
+    .wp-org-run {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px dashed var(--line);
+    }
+    .wp-org-run:last-child { border-bottom: none; }
+    .wp-org-run-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 0.45rem;
+      font-size: 0.84rem;
+    }
+    .wp-org-badge {
+      display: inline-block;
+      padding: 0.12rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .wp-org-badge.live { background: rgba(26, 127, 78, 0.12); color: #1a7f4e; }
+    .wp-org-badge.preview { background: rgba(120, 120, 120, 0.12); color: var(--muted); }
+    .wp-org-empty {
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1rem 0;
+    }
   </style>
 </head>
 <body>
@@ -934,6 +1040,8 @@
       <button class="tab" role="tab" aria-selected="false" data-tab="keywords">کیوردها</button>
       <button class="tab" role="tab" aria-selected="false" data-tab="onpage">آن‌پیج</button>
       <button class="tab" role="tab" aria-selected="false" data-tab="audit" id="tabAudit">آنالیز</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="wp-organic">بهینه‌سازی مقالات</button>
+      <button class="tab dev-only" role="tab" aria-selected="false" data-tab="gsc">GSC</button>
       <button class="tab" role="tab" aria-selected="false" data-tab="checklist">چک‌لیست فاز</button>
     </nav>
 
@@ -964,6 +1072,17 @@
       </section>
 
       <div class="kpi-grid" id="kpis"></div>
+
+      <section class="block" id="wpOrgOverviewBlock">
+        <h2>بهینه‌سازی مقالات</h2>
+        <p class="section-lead" id="wpOrgOverviewLead">
+          پیشرفت روزانه Rank Math روی مقالات سایت — هر روز ۲ تا ۴ پست
+        </p>
+        <div class="wp-org-kpis" id="wpOrgOverviewKpis"></div>
+        <p style="margin-top:0.75rem">
+          <button type="button" class="btn ghost" id="wpOrgGoTab">تاریخچه و جزئیات ←</button>
+        </p>
+      </section>
 
       <section class="block">
         <h2>گزارش Search Console</h2>
@@ -1143,6 +1262,45 @@
         <h2>Meta آماده برای کپی (فاز ۰)</h2>
         <p class="section-lead">مستقیم در Rank Math بچسبانید</p>
         <div id="metaTargets"></div>
+      </section>
+    </div>
+
+    <!-- WP Organic history -->
+    <div class="panel" id="panel-wp-organic" role="tabpanel">
+      <section class="block">
+        <h2>بهینه‌سازی Rank Math — مقالات</h2>
+        <p class="section-lead client-only" id="wpOrgLeadClient">
+          گزارش شفاف از بهینه‌سازی خودکار مقالات سایت (دستهٔ مقالات) — Rank Math، لینک‌سازی داخلی و SEO on-page.
+        </p>
+        <p class="section-lead dev-only" id="wpOrgLead">Agent لوکال · دسته blogs · تاریخچه روزانه</p>
+        <div class="wp-org-kpis" id="wpOrgKpis"></div>
+        <p class="phase-subh">تاریخچه روزانه</p>
+        <div id="wpOrgDaily"></div>
+        <p class="live-note" id="wpOrgUpdated">—</p>
+      </section>
+    </div>
+
+    <!-- GSC import (local operator) -->
+    <div class="panel dev-only" id="panel-gsc" role="tabpanel">
+      <section class="block">
+        <h2>بروزرسانی GSC + Audit</h2>
+        <p class="section-lead">
+          export اکسل Google Search Console را انتخاب کنید. ingest، audit کامل
+          (page · technical · content · schema · local · audit) و push به GitHub Pages
+          خودکار انجام می‌شود.
+        </p>
+        <div class="gsc-panel">
+          <div class="gsc-drop">
+            <p><strong>فایل Performance-on-Search (.xlsx)</strong></p>
+            <p class="gsc-meta">ترجیحاً <code dir="ltr">Last 3 months</code> · Web · کل سایت</p>
+            <input type="file" id="gscFile" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+            <div class="toolbar" style="justify-content:center;margin-top:0.5rem">
+              <button class="btn" id="btnGscRun" type="button">بروزرسانی داشبورد</button>
+            </div>
+          </div>
+          <div class="gsc-meta" id="gscStatus">در حال بارگذاری وضعیت inbox…</div>
+          <pre class="gsc-log" id="gscLog" aria-live="polite"></pre>
+        </div>
       </section>
     </div>
 
@@ -2081,6 +2239,12 @@
       if (tab.dataset.tab === "audit" && window.ZehnatiAudit) {
         window.ZehnatiAudit.refresh();
       }
+      if (tab.dataset.tab === "gsc") {
+        loadGscStatus();
+      }
+      if (tab.dataset.tab === "wp-organic") {
+        fillWpOrganic(true);
+      }
     }
 
     document.querySelectorAll(".tab").forEach((tab) => {
@@ -2095,6 +2259,243 @@
     }
 
     document.getElementById("btnLive")?.addEventListener("click", () => recheckSiteAndRefresh());
+
+    async function fillWpOrganic(refresh) {
+      const lead = document.getElementById("wpOrgLead");
+      const leadClient = document.getElementById("wpOrgLeadClient");
+      const leadOverview = document.getElementById("wpOrgOverviewLead");
+      const kpis = document.getElementById("wpOrgKpis");
+      const kpisOverview = document.getElementById("wpOrgOverviewKpis");
+      const daily = document.getElementById("wpOrgDaily");
+      const updated = document.getElementById("wpOrgUpdated");
+      if (!kpis || !daily) return;
+
+      let data = D.wpOrganic || null;
+      if (IS_LOCAL && refresh) {
+        try {
+          const res = await fetch("/api/wp-organic/history?_=" + Date.now(), { cache: "no-store" });
+          const json = await res.json();
+          if (json.ok) data = json;
+        } catch {
+          /* fallback to data.js */
+        }
+      }
+      if (!data || !data.ok) {
+        const emptyMsg = "هنوز اجرایی ثبت نشده — هر روز ۲ تا ۴ مقاله بهینه می‌شود.";
+        if (lead) lead.textContent = emptyMsg;
+        if (leadClient) leadClient.textContent = emptyMsg;
+        if (leadOverview) leadOverview.textContent = emptyMsg;
+        kpis.innerHTML = "";
+        if (kpisOverview) kpisOverview.innerHTML = "";
+        daily.innerHTML = '<p class="wp-org-empty">تاریخچه‌ای موجود نیست.</p>';
+        return;
+      }
+
+      const cat = data.category || {};
+      const t = data.totals || {};
+      const summaryText =
+        "دسته «" +
+        (cat.name || "مقالات") +
+        "» · " +
+        (cat.total || "—") +
+        " مقاله · هر روز ۲ تا ۴ پست به‌صورت خودکار بهینه می‌شود";
+      if (lead) lead.textContent = summaryText;
+      if (leadClient) leadClient.textContent = summaryText;
+      if (leadOverview) {
+        leadOverview.textContent =
+          "امروز " +
+          (t.optimizedToday ?? 0) +
+          " · کل " +
+          (t.optimizedAllTime ?? 0) +
+          " · باقی‌مانده " +
+          (t.remaining ?? "—") +
+          (data.updatedAtFa ? " · به‌روز: " + data.updatedAtFa : "");
+      }
+
+      const kpiHtml = [
+        { n: t.optimizedToday ?? 0, l: "امروز" },
+        { n: t.optimizedAllTime ?? 0, l: "کل بهینه‌شده" },
+        { n: t.remaining ?? "—", l: "باقی‌مانده" },
+        { n: t.runsToday ?? 0, l: "اجرای امروز" },
+      ]
+        .map(
+          (k) =>
+            '<div class="wp-org-kpi"><span class="n">' +
+            k.n +
+            '</span><span class="l">' +
+            k.l +
+            "</span></div>"
+        )
+        .join("");
+      kpis.innerHTML = kpiHtml;
+      if (kpisOverview) kpisOverview.innerHTML = kpiHtml;
+
+      const days = data.daily || [];
+      if (!days.length) {
+        daily.innerHTML = '<p class="wp-org-empty">هنوز روزی ثبت نشده.</p>';
+      } else {
+        daily.innerHTML = days
+          .map((day) => {
+            const entries = (day.entries || [])
+              .map((run) => {
+                const badge = run.dryRun
+                  ? '<span class="wp-org-badge preview">پیش‌نمایش</span>'
+                  : '<span class="wp-org-badge live">اعمال شد</span>';
+                const rows = (run.results || [])
+                  .map((r) => {
+                    const status = r.skipped
+                      ? "رد شد"
+                      : r.dryRun
+                        ? "پیش‌نمایش"
+                        : r.ok
+                          ? "✓"
+                          : "✗";
+                    const changed = (r.changedFa || r.changed || []).join(" · ") || "—";
+                    const issues = (r.issuesBeforeFa || r.issuesBefore || []).join(" · ") || "—";
+                    return (
+                      "<tr><td>" +
+                      status +
+                      '</td><td><a href="' +
+                      (r.link || "#") +
+                      '" target="_blank" rel="noopener">' +
+                      (r.title || "—") +
+                      "</a></td><td>" +
+                      issues +
+                      "</td><td>" +
+                      changed +
+                      "</td></tr>"
+                    );
+                  })
+                  .join("");
+                return (
+                  '<div class="wp-org-run">' +
+                  '<div class="wp-org-run-head">' +
+                  badge +
+                  "<span>" +
+                  (run.atFa || run.at || "") +
+                  "</span>" +
+                  "<span>" +
+                  (run.dryRun ? run.processed + " پیش‌نمایش" : run.optimized + " اعمال") +
+                  "</span></div>" +
+                  '<table class="data wp-org-table"><thead><tr><th>وضعیت</th><th>مقاله</th><th>مشکلات قبل</th><th>تغییرات</th></tr></thead><tbody>' +
+                  rows +
+                  "</tbody></table></div>"
+                );
+              })
+              .join("");
+            return (
+              '<div class="wp-org-day">' +
+              '<div class="wp-org-day-head"><strong>' +
+              (day.dateFa || day.date) +
+              "</strong>" +
+              '<span class="wp-org-day-meta">' +
+              (day.postsOptimized || 0) +
+              " اعمال · " +
+              (day.runsLive || 0) +
+              " اجرا" +
+              (day.postsPreviewed ? " · " + day.postsPreviewed + " پیش‌نمایش" : "") +
+              "</span></div>" +
+              entries +
+              "</div>"
+            );
+          })
+          .join("");
+      }
+
+      if (updated) {
+        updated.textContent = data.updatedAtFa
+          ? "آخرین به‌روزرسانی: " + data.updatedAtFa
+          : "";
+      }
+    }
+
+    document.getElementById("wpOrgGoTab")?.addEventListener("click", () => {
+      const tab = document.querySelector('.tab[data-tab="wp-organic"]');
+      if (tab) switchTab(tab);
+    });
+
+    async function loadGscStatus() {
+      const el = document.getElementById("gscStatus");
+      if (!el || !IS_LOCAL) return;
+      try {
+        const res = await fetch("/api/gsc/status?_=" + Date.now(), { cache: "no-store" });
+        const data = await res.json();
+        if (!data.ok) throw new Error("status_failed");
+        const latest = data.latest;
+        const files = (data.files || []).slice(0, 3);
+        let html = "<strong>inbox:</strong> <code dir=\"ltr\">" + (data.inbox || "") + "</code><br>";
+        if (latest) {
+          html +=
+            "<strong>آخرین GSC:</strong> " +
+            (latest.dateFilter || "—") +
+            " · " +
+            (latest.clicks != null ? latest.clicks.toLocaleString("fa-IR") + " کلیک" : "—") +
+            (latest.wowPct != null ? " · WoW " + (latest.wowPct > 0 ? "+" : "") + latest.wowPct + "٪" : "") +
+            "<br><span dir=\"ltr\">" +
+            (latest.rangeLabel || "") +
+            "</span>";
+        } else {
+          html += "هنوز export پردازش‌شده‌ای نیست.";
+        }
+        if (files.length) {
+          html += "<br><strong>فایل‌های inbox:</strong> " + files.map((f) => f.name).join(" · ");
+        }
+        el.innerHTML = html;
+      } catch {
+        el.textContent = "برای این تب سرور محلی لازم است: py -3 serve.py";
+      }
+    }
+
+    const btnGscRun = document.getElementById("btnGscRun");
+    if (btnGscRun && IS_LOCAL) {
+      btnGscRun.addEventListener("click", async () => {
+        const input = document.getElementById("gscFile");
+        const log = document.getElementById("gscLog");
+        const file = input?.files?.[0];
+        if (!file) {
+          alert("اول فایل xlsx را انتخاب کنید.");
+          return;
+        }
+        if (!confirm("GSC ingest + audit کامل + push انجام شود؟ (۱–۳ دقیقه طول می‌کشد)")) return;
+        btnGscRun.disabled = true;
+        if (log) {
+          log.classList.add("show");
+          log.textContent = "در حال اجرا… لطفاً این پنجره را نبندید.\n";
+        }
+        try {
+          const fd = new FormData();
+          fd.append("file", file);
+          const res = await fetch("/api/gsc/import-audit", { method: "POST", body: fd });
+          const data = await res.json();
+          if (log) {
+            const steps = (data.steps || [])
+              .map((s, i) => "Step " + (i + 1) + " exit " + s.returncode + "\n" + (s.stdout || s.stderr || ""))
+              .join("\n---\n");
+            log.textContent = steps || JSON.stringify(data, null, 2);
+          }
+          if (!res.ok || !data.ok) {
+            alert("خطا: " + (data.error || "pipeline_failed"));
+            return;
+          }
+          alert(
+            "انجام شد ✓\nامتیاز: " +
+              (data.score ?? "—") +
+              "/100\nGSC: " +
+              (data.gsc?.clicks ?? "—") +
+              " کلیک\n" +
+              (data.pages_url || "")
+          );
+          location.reload();
+        } catch (err) {
+          if (log) log.textContent += "\nError: " + (err.message || err);
+          alert("درخواست ناموفق — serve.py روشن است؟");
+        } finally {
+          btnGscRun.disabled = false;
+          loadGscStatus();
+        }
+      });
+      loadGscStatus();
+    }
 
     const btnPublish = document.getElementById("btnPublish");
     if (btnPublish) {
@@ -2175,6 +2576,7 @@
       fillKeywords();
       fillOnpage();
       fillChecklist();
+      fillWpOrganic(IS_LOCAL);
       recheckSiteAndRefresh();
     })();
   </script>
