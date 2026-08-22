@@ -1293,6 +1293,20 @@
       return (D.phaseDetails && D.phaseDetails[n]) || null;
     }
 
+    function paintDailyHealthCallout() {
+      const callout = document.getElementById("topCallout");
+      const dh = D.dailyHealth;
+      if (!callout || !dh) return;
+      const icon = dh.status === "ok" ? "✓" : dh.status === "warn" ? "⚠" : "✗";
+      callout.innerHTML =
+        "<strong>Sentinel " +
+        (dh.checkedAtFa || "") +
+        ":</strong> " +
+        icon +
+        " " +
+        (dh.summaryFa || "");
+    }
+
     function fillHeader() {
       document.getElementById("phaseChip").textContent = D.meta.phaseLabel;
       document.getElementById("updatedLabel").textContent =
@@ -1301,6 +1315,7 @@
       document.getElementById("scoreNum").textContent = D.score.overall;
       document.getElementById("scoreRing").style.setProperty("--pct", D.score.overall);
       document.getElementById("scoreLabel").textContent = D.score.label;
+      paintDailyHealthCallout();
     }
 
     function fillBars() {

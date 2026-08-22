@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-08-22T13:49:33+03:30",
+  "status": "critical",
+  "summary": "۰/۱۳ صفحه 200 · مشکل robots/sitemap · P0 خراب: /، /مشاوره-کنکور/، /قیمت-مشاوره-کنکور/ · ۹ هشدار drift · بحرانی",
+  "pages": [
+    {
+      "path": "/",
+      "status": 0,
+      "final": "/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/about/",
+      "status": 0,
+      "final": "/about/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": false
+    },
+    {
+      "path": "/contact-us/",
+      "status": 0,
+      "final": "/contact-us/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": false
+    },
+    {
+      "path": "/auth/",
+      "status": 0,
+      "final": "/auth/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": false
+    },
+    {
+      "path": "/مشاوره-کنکور/",
+      "status": 0,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/قیمت-مشاوره-کنکور/",
+      "status": 0,
+      "final": "/%D9%82%DB%8C%D9%85%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/بهترین-مشاور-کنکور-اصفهان/",
+      "status": 0,
+      "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/مشاوره-آنلاین-کنکور/",
+      "status": 0,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/مشاوره-کنکور-تجربی/",
+      "status": 0,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D8%AC%D8%B1%D8%A8%DB%8C/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/مشاوره-تحصیلی-در-اصفهان/",
+      "status": 0,
+      "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C-%D8%AF%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/ثبت-نام/",
+      "status": 0,
+      "final": "/%D8%AB%D8%A8%D8%AA-%D9%86%D8%A7%D9%85/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": false
+    },
+    {
+      "path": "/بهترین-مشاور-کنکور-تهران/",
+      "status": 0,
+      "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    },
+    {
+      "path": "/برنامه-ریزی-کنکور/",
+      "status": 0,
+      "final": "/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B1%DB%8C%D8%B2%DB%8C-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
+      "title": "",
+      "h1": 0,
+      "noindex": false,
+      "ok": false,
+      "p0": true
+    }
+  ],
+  "infra": {
+    "robots_status": 0,
+    "robots_ok": false,
+    "sitemap_status": 0,
+    "sitemap_ok": false,
+    "robots_has_sitemap": false
+  },
+  "alerts": [
+    {
+      "level": "critical",
+      "path": "/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/مشاوره-کنکور/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/قیمت-مشاوره-کنکور/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/بهترین-مشاور-کنکور-اصفهان/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/مشاوره-آنلاین-کنکور/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/مشاوره-کنکور-تجربی/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/مشاوره-تحصیلی-در-اصفهان/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/بهترین-مشاور-کنکور-تهران/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    },
+    {
+      "level": "critical",
+      "path": "/برنامه-ریزی-کنکور/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+    }
+  ]
+}
