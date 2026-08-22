@@ -1076,7 +1076,7 @@
       <section class="block" id="wpOrgOverviewBlock">
         <h2>بهینه‌سازی مقالات</h2>
         <p class="section-lead" id="wpOrgOverviewLead">
-          پیشرفت روزانه Rank Math روی مقالات سایت — هر روز ۲ تا ۴ پست
+          پیشرفت روزانه بهینه‌سازی Rank Math روی مقالات سایت
         </p>
         <div class="wp-org-kpis" id="wpOrgOverviewKpis"></div>
         <p style="margin-top:0.75rem">
@@ -2281,7 +2281,7 @@
         }
       }
       if (!data || !data.ok) {
-        const emptyMsg = "هنوز اجرایی ثبت نشده — هر روز ۲ تا ۴ مقاله بهینه می‌شود.";
+        const emptyMsg = "هنوز اجرایی ثبت نشده.";
         if (lead) lead.textContent = emptyMsg;
         if (leadClient) leadClient.textContent = emptyMsg;
         if (leadOverview) leadOverview.textContent = emptyMsg;
@@ -2298,7 +2298,7 @@
         (cat.name || "مقالات") +
         "» · " +
         (cat.total || "—") +
-        " مقاله · هر روز ۲ تا ۴ پست به‌صورت خودکار بهینه می‌شود";
+        " مقاله";
       if (lead) lead.textContent = summaryText;
       if (leadClient) leadClient.textContent = summaryText;
       if (leadOverview) {
