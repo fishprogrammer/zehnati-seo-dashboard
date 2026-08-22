@@ -1,11 +1,11 @@
-/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: 2026-08-15 / ۲۴ مرداد ۱۴۰۵ */
+/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: 2026-08-22 / ۳۱ مرداد ۱۴۰۵ */
 window.ZEHNATI_SEO = {
   meta: {
     brand: "ذهن آتی",
     domain: "https://zehnati.ir/",
     manager: "دکتر زهرا جعفری",
     updatedAt: "2026-08-22",
-    updatedAtFa: "۲۴ مرداد ۱۴۰۵",
+    updatedAtFa: "۳۱ مرداد ۱۴۰۵",
     phase: 1,
     phaseLabel: "فاز ۱ — ماه ۱: لندینگ‌های تجاری P0",
     week: 5,
@@ -20,8 +20,8 @@ window.ZEHNATI_SEO = {
     keywordTotal: 206,
   },
   dailyHealth: {
-    checkedAt: "2026-08-22T13:49:33+03:30",
-    checkedAtFa: "۲۰۲۶-۰۸-۲۲ · ۱۳:۴۹",
+    checkedAt: "2026-08-22T13:54:42+03:30",
+    checkedAtFa: "۲۰۲۶-۰۸-۲۲ · ۱۳:۵۴",
     status: "critical",
     summaryFa: "۰/۱۳ صفحه 200 · مشکل robots/sitemap · P0 خراب: /، /مشاوره-کنکور/، /قیمت-مشاوره-کنکور/ · ۹ هشدار drift · بحرانی",
     pagesOk: 0,
@@ -31,27 +31,27 @@ window.ZEHNATI_SEO = {
     alerts: [{"level": "critical", "path": "/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-کنکور/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/قیمت-مشاوره-کنکور/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/بهترین-مشاور-کنکور-اصفهان/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-آنلاین-کنکور/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-کنکور-تجربی/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/مشاوره-تحصیلی-در-اصفهان/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}, {"level": "critical", "path": "/بهترین-مشاور-کنکور-تهران/", "message": "صفحه P0 وضعیت HTTP 0 دارد"}],
   },
   score: {
-    overall: 73,
-    label: "آدیت ۱۵ اوت: 73/۱۰۰ — GSC 3m 15٬565 کلیک · WoW +12.8٪ · P0 کلیک~128",
+    overall: 71,
+    label: "آدیت ۲۲ اوت: 71/۱۰۰ — GSC 3m 15٬565 کلیک · WoW +12.8٪ · P0 کلیک~128",
     breakdown: [
-      { id: "tech", name: "فنی", score: 78, max: 100 },
-      { id: "onpage", name: "آن‌پیج", score: 79, max: 100 },
+      { id: "tech", name: "فنی", score: 74, max: 100 },
+      { id: "onpage", name: "آن‌پیج", score: 78, max: 100 },
       { id: "content", name: "محتوا", score: 57, max: 100 },
-      { id: "local", name: "محلی", score: 74, max: 100 },
-      { id: "conversion", name: "تبدیل / Landing", score: 79, max: 100 },
+      { id: "local", name: "محلی", score: 71, max: 100 },
+      { id: "conversion", name: "تبدیل / Landing", score: 75, max: 100 },
     ],
   },
   kpis: [
     { label: "کیورد پوشش‌داده‌شده (از ۲۰۶)", current: "۲۵ ماه۱", target: "۲۰۶ · P0 ماه۱=۲۵/۲۵" },
     { label: "صفحات ایندکس (GSC)", current: "۱۱۷", target: "۱۰۰+ · 404+noindex audit done · re-crawl" },
-    { label: "لندینگ/هاب P0", current: "6", target: "ایندکس+کلیک تجاری · ماه۲ Silo" },
+    { label: "لندینگ/هاب P0", current: "3", target: "ایندکس+کلیک تجاری · ماه۲ Silo" },
     { label: "کلیک GSC (کل سایت · ۳ماه)", current: "15٬565", target: "ریباند پایدار · رشد لندینگ تجاری" },
     { label: "کلیک هفته اخیر (WoW)", current: "1٬108 (+12.8٪)", target: "تثبیت ≥۱٬۲۰۰ / هفته" },
   ],
-  /* GSC export 2026-08-15 — sitewide 3 months */
+  /* GSC export 2026-08-22 — sitewide 3 months */
   gsc: {
-    "exportedAt": "2026-08-15",
-    "exportedAtFa": "۲۴ مرداد ۱۴۰۵",
+    "exportedAt": "2026-08-22",
+    "exportedAtFa": "۳۱ مرداد ۱۴۰۵",
     "rangeLabel": "۳ ماه اخیر (۱۴ مه – ۱۳ اوت ۲۰۲۶)",
     "scope": "site",
     "scopeNote": "اکسپورت کل سایت — Web · Last 3 months · سقف ۱۰۰۰ کیورد GSC",
@@ -482,8 +482,8 @@ window.ZEHNATI_SEO = {
     ]
   },
   gscWow: {
-    "exportedAt": "2026-08-15",
-    "exportedAtFa": "۲۴ مرداد ۱۴۰۵",
+    "exportedAt": "2026-08-22",
+    "exportedAtFa": "۳۱ مرداد ۱۴۰۵",
     "scopeNote": "مقایسه هفتگی از Chart همان اکسپورت ۳ماهه · Web · کل سایت",
     "currentRange": "۷–۱۳ اوت ۲۰۲۶",
     "previousRange": "۳۱ جولای – ۶ اوت ۲۰۲۶",
@@ -813,8 +813,8 @@ window.ZEHNATI_SEO = {
   },
   techStatus: [
     { id: "ssl", name: "HTTPS / SSL", status: "pass", detail: "فعال" },
-    { id: "robots", name: "robots.txt", status: "fail", detail: "خطا · sitemap ref ✗ · Sentinel 13:49" },
-    { id: "sitemap", name: "XML Sitemap", status: "fail", detail: "sitemap_index.xml = 0 · Sentinel 13:49" },
+    { id: "robots", name: "robots.txt", status: "fail", detail: "خطا · sitemap ref ✗ · Sentinel 13:54" },
+    { id: "sitemap", name: "XML Sitemap", status: "fail", detail: "sitemap_index.xml = 0 · Sentinel 13:54" },
     { id: "rankmath", name: "Rank Math", status: "pass", detail: "نصب شده" },
     { id: "analytics", name: "Analytics / GTM", status: "pass", detail: "GA4 از Rank Math — G-Y0GZ4B5T0Y" },
     { id: "litespeed", name: "LiteSpeed Cache", status: "pass", detail: "فعال" },
@@ -823,7 +823,7 @@ window.ZEHNATI_SEO = {
     { id: "about-h1", name: "H1 درباره ما", status: "pass", detail: "۱ H1 — درباره آکادمی ذهن آتی" },
     { id: "landings", name: "Landingهای P0", status: "fail", detail: "Sentinel 22 Aug: 0/13 OK · P0 نیاز بررسی" },
     { id: "schema", name: "Schema محلی", status: "warn", detail: "Local/Edu اصفهان+تهران در لندینگ‌ها · Person جدا باز" },
-    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "آدیت 15 Aug: 73 · GSC 3m 15٬565 کلیک · P0 کلیک~128" },
+    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "آدیت 22 Aug: 71 · GSC 3m 15٬565 کلیک · P0 کلیک~128" },
     { id: "gsc-wow", name: "GSC هفته‌به‌هفته", status: "pass", detail: "۷–۱۳ Aug: 1٬108 کلیک (+12.8٪) · نمایش +16.9٪" },
     {
       id: "coverage",
