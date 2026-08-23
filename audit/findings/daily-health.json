@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-23T15:17:07+03:30",
-  "status": "warn",
-  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱۲ هشدار drift · هشدار",
+  "generated_at": "2026-08-23T19:00:05+03:30",
+  "status": "critical",
+  "summary": "۱۱/۱۳ صفحه 200 · robots+sitemap OK · P0 خراب: / · ۵ هشدار drift · بحرانی",
   "pages": [
     {
       "path": "/",
-      "status": 200,
+      "status": 0,
       "final": "/",
-      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
-      "h1": 1,
+      "title": "",
+      "h1": 0,
       "noindex": false,
-      "ok": true,
+      "ok": false,
       "p0": true
     },
     {
       "path": "/about/",
-      "status": 200,
+      "status": 0,
       "final": "/about/",
-      "title": "درباره آکادمی ذهن آتی | دکتر زهرا جعفری",
-      "h1": 1,
+      "title": "",
+      "h1": 0,
       "noindex": false,
-      "ok": true,
+      "ok": false,
       "p0": false
     },
     {
@@ -143,64 +143,29 @@
   },
   "alerts": [
     {
+      "level": "critical",
+      "path": "/",
+      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+    },
+    {
       "level": "warn",
       "path": "/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
+      "message": "تعداد H1 از 1 به 0 تغییر کرد"
+    },
+    {
+      "level": "critical",
+      "path": "/about/",
+      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/about/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
+      "message": "تعداد H1 از 1 به 0 تغییر کرد"
     },
     {
-      "level": "warn",
-      "path": "/contact-us/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/قیمت-مشاوره-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/بهترین-مشاور-کنکور-اصفهان/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-آنلاین-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-کنکور-تجربی/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-تحصیلی-در-اصفهان/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/ثبت-نام/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/بهترین-مشاور-کنکور-تهران/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
+      "level": "critical",
+      "path": "/",
+      "message": "صفحه P0 وضعیت HTTP 0 دارد"
     }
   ]
 }
