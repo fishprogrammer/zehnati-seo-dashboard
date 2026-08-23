@@ -494,13 +494,13 @@ window.ZEHNATI_SEO = {
   },
   score: {
     overall: 73,
-    label: "آدیت ۲۲ اوت: 73/۱۰۰ — GSC 3m 14٬288 کلیک · WoW +18.8٪ · P0~195",
+    label: "آدیت ۲۲ اوت: 73/۱۰۰ — GSC 3m 14٬288 کلیک · WoW +18.8٪ · P0 کلیک~195",
     breakdown: [
       { id: "tech", name: "فنی", score: 78, max: 100 },
       { id: "onpage", name: "آن‌پیج", score: 79, max: 100 },
       { id: "content", name: "محتوا", score: 57, max: 100 },
       { id: "local", name: "محلی", score: 74, max: 100 },
-      { id: "conversion", name: "تبدیل / Landing", score: 77, max: 100 },
+      { id: "conversion", name: "تبدیل / Landing", score: 79, max: 100 },
     ],
   },
   kpis: [
@@ -1291,7 +1291,7 @@ window.ZEHNATI_SEO = {
     { id: "about-h1", name: "H1 درباره ما", status: "pass", detail: "۱ H1 — درباره آکادمی ذهن آتی" },
     { id: "landings", name: "Landingهای P0", status: "warn", detail: "Sentinel 23 Aug: 13/13 OK · P0 سالم" },
     { id: "schema", name: "Schema محلی", status: "warn", detail: "Local/Edu اصفهان+تهران در لندینگ‌ها · Person جدا باز" },
-    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "آدیت 2026-08-22: 73 · GSC 3m 14٬288 کلیک · P0~195" },
+    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "آدیت 22 Aug: 73 · GSC 3m 14٬288 کلیک · P0 کلیک~195" },
     { id: "gsc-wow", name: "GSC هفته‌به‌هفته", status: "pass", detail: "2026-08-14 – 2026-08-20: 1٬316 کلیک (+18.8٪) · نمایش +55.4٪" },
     {
       id: "coverage",

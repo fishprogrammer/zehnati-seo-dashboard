@@ -2,26 +2,26 @@
   "summary": {
     "health_score": 73,
     "business_type": "local-service / education",
-    "generated_at": "2026-08-23T15:17:08+03:30",
+    "generated_at": "2026-08-23T15:18:18+03:30",
     "top_findings": [
-      "پنجره GSC ۳ماه بیشتر پسا-سقوط است: 14,288 کلیک (کمتر از اکسپورت قبلی).",
-      "لندینگ‌های P0 شروع رشد کرده‌اند (جمع کلیک تقریبی تجاری کلیدی ~195) ولی هنوز ناچیز نسبت به خانه/بلاگ.",
-      "WoW: +18.8% — ریباند تثبیت نشده.",
-      "/auth/ همچنان در Top pages کلیک می‌گیرد.",
-      "کیوردهای تجاری طلایی هنوز در Top1000 غایبند یا CTR/رتبه ضعیف‌اند."
+      "پنجره GSC ۳ماه: 14,288 کلیک · CTR 9.2% · رتبه 6.55.",
+      "WoW ۷–۱۳ اوت: 1316 کلیک (+18.8٪).",
+      "لندینگ‌های P0 رشد کرده‌اند (جمع کلیک تجاری کلیدی ~195): قیمت۶۹ · اصفهان۲۲ · تهران۱۴ · آنلاین۱۲ · هاب۱۱.",
+      "/auth/ هنوز در Top pages است (۷۳۸ کلیک) — نشتی ادامه دارد.",
+      "کیوردهای تجاری طلایی هنوز اکثراً خارج Top1000 یا CTR/رتبه ضعیف‌اند."
     ],
     "resolved_since_prev": [
       "6/۶ لندینگ P0 لایو ۲۰۰/۱H1",
-      "فاز ۰ Sitemap/Meta بسته",
-      "گزارش ماه ۱ منتشر شده",
-      "رشد اولیه کلیک روی قیمت/شهر/آنلاین نسبت به آدیت ۲۹ جولای"
+      "فاز ۰ بسته",
+      "WoW +18.8% هفته اخیر",
+      "رشد کلیک P0 نسبت به آدیت ۶ اوت"
     ],
     "quick_wins": [
-      "لینک داخلی از ۱۰ بلاگ پرکلیک → هاب/قیمت/اصفهان/تهران/آنلاین",
-      "تقویت Title/Meta/محتوای هاب «مشاوره کنکور» (رتبه ~۱۰ · CTR ضعیف)",
-      "LocalBusiness+NAP تهران/اصفهان + شروع GBP",
-      "۳۰۱ یا پاکسازی SERP برای /auth/",
-      "مقاله ستون ماه ۲: چگونه پزشکی قبول شویم"
+      "لینک داخلی بلاگ‌های پرکلیک → هاب/قیمت/شهر/آنلاین",
+      "تقویت CTR هاب مشاوره کنکور",
+      "۳۰۱/پاکسازی SERP برای /auth/",
+      "LocalBusiness+GBP اصفهان/تهران",
+      "مقاله ستون ماه ۲"
     ],
     "category_scores": {
       "technical": 78,
@@ -66,7 +66,7 @@
       "text_approx": 34911,
       "imgs": 16,
       "imgs_no_alt": 0,
-      "links_internal_approx": 93,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -172,7 +172,7 @@
       "text_approx": 30222,
       "imgs": 3,
       "imgs_no_alt": 0,
-      "links_internal_approx": 63,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -211,7 +211,7 @@
       "text_approx": 45074,
       "imgs": 7,
       "imgs_no_alt": 0,
-      "links_internal_approx": 84,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -250,7 +250,7 @@
       "text_approx": 53026,
       "imgs": 7,
       "imgs_no_alt": 0,
-      "links_internal_approx": 84,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -291,7 +291,7 @@
       "text_approx": 46249,
       "imgs": 4,
       "imgs_no_alt": 0,
-      "links_internal_approx": 83,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -332,7 +332,7 @@
       "text_approx": 47597,
       "imgs": 4,
       "imgs_no_alt": 0,
-      "links_internal_approx": 87,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -404,7 +404,7 @@
       "text_approx": 59404,
       "imgs": 28,
       "imgs_no_alt": 0,
-      "links_internal_approx": 117,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -440,7 +440,7 @@
       "text_approx": 56025,
       "imgs": 27,
       "imgs_no_alt": 0,
-      "links_internal_approx": 116,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -514,10 +514,10 @@
       "has_local": true,
       "has_person": true,
       "has_form": true,
-      "text_approx": 52466,
-      "imgs": 25,
+      "text_approx": 52446,
+      "imgs": 26,
       "imgs_no_alt": 0,
-      "links_internal_approx": 126,
+      "links_internal_approx": 0,
       "security": {
         "hsts": true,
         "xfo": true,

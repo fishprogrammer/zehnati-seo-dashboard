@@ -1,8 +1,6 @@
 # Schema — `/seo schema` — zehnati.ir
 
-> **تاریخ:** 2026-08-22 (۳۱ مرداد ۱۴۰۵)
-
-## تشخیص لایو
+> **تاریخ:** 2026-08-22
 
 | URL | Types |
 |-----|-------|
@@ -19,20 +17,3 @@
 | `/ثبت-نام/` | BlogPosting, BreadcrumbList, ImageObject, ListItem, Person, WebPage, WebSite |
 | `/بهترین-مشاور-کنکور-تهران/` | Answer, Article, BreadcrumbList, City, EducationalOrganization, FAQPage, GeoCoordinates, ImageObject, ListItem, Person, PostalAddress, Question |
 | `/برنامه-ریزی-کنکور/` | BlogPosting, BreadcrumbList, ImageObject, ListItem, Person, WebPage, WebSite |
-
-
-## ارزیابی
-
-| نوع | وضعیت |
-|-----|--------|
-| FAQPage روی لندینگ‌ها | 5 صفحه |
-| LocalBusiness / EducationalOrganization | 13 صفحه |
-| Person (دکتر جعفری) | روی برخی صفحات هست — باید یکدست و کامل شود |
-| Author fish-programmer | هنوز در JSON-LD Article |
-
-## اقدام‌ها
-
-1. تکمیل LocalBusiness برای اصفهان + تهران (NAP یکسان)
-2. Person کامل برای دکتر زهرا جعفری (sameAs شبکه‌ها، jobTitle، worksFor)
-3. حفظ FAQ روی همه لندینگ‌های P0
-4. جدا کردن author وردپرس از Entity برند/پزشک
