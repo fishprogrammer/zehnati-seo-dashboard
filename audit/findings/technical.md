@@ -6,13 +6,19 @@
 
 | شدت | یافته |
 |-----|--------|
-| 🟠 High | /auth/ هنوز کلیک می‌گیرد · هدرهای امنیتی ناقص |
-| 🟢 OK | Sitemap · 6/۶ لندینگ P0 با ۲۰۰/۱H1 · /auth/ noindex=True |
+| 🔴 Critical | اثر سقوط ترافیک مه ۲۰۲۶ روی میانگین GSC · /auth/ هنوز کلیک می‌گیرد |
+| 🟠 High | هدرهای امنیتی ناقص · تصاویر بدون alt روی خانه |
+| 🟢 OK | Sitemap 200 · robots→sitemap · لندینگ‌های P0 ایندکس‌پذیر · /auth/ noindex |
+
+## Sitemap / robots
+
+- `sitemap_index.xml` → HTTP **200** · فرزندان ~5
+- robots: Sitemap: https://zehnati.ir/sitemap_index.xml
 
 ## صفحات کلیدی
 
-| URL | Status | H1 | noindex | Schema |
-|-----|-------:|---:|:-------:|--------|
+| URL | Status | H1 | noindex | Schema snippets |
+|-----|-------:|---:|:-------:|-----------------|
 | `/` | 200 | 1 |  | EducationalOrganization, ImageObject, LocalBusiness, PostalAddress |
 | `/about/` | 200 | 1 |  | Article, BreadcrumbList, ImageObject, ListItem |
 | `/contact-us/` | 200 | 1 |  | Article, BreadcrumbList, ImageObject, ListItem |
@@ -26,3 +32,14 @@
 | `/ثبت-نام/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
 | `/بهترین-مشاور-کنکور-تهران/` | 200 | 1 |  | Answer, Article, BreadcrumbList, City |
 | `/برنامه-ریزی-کنکور/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
+
+
+## امنیت پاسخ HTTP (خانه)
+
+- HSTS: ✅
+- X-Frame-Options: ✅
+- CSP: ❌
+
+## فاز ۰ (بسته)
+
+گزارش: `SEO/05-tracking/phase0-critical-report.md`
