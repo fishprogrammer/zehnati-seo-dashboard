@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-23T19:00:05+03:30",
+  "generated_at": "2026-08-24T14:00:09+03:30",
   "status": "critical",
-  "summary": "۱۱/۱۳ صفحه 200 · robots+sitemap OK · P0 خراب: / · ۵ هشدار drift · بحرانی",
+  "summary": "۱۲/۱۳ صفحه 200 · robots+sitemap OK · P0 خراب: / · ۲ هشدار drift · بحرانی",
   "pages": [
     {
       "path": "/",
@@ -15,12 +15,12 @@
     },
     {
       "path": "/about/",
-      "status": 0,
+      "status": 200,
       "final": "/about/",
-      "title": "",
-      "h1": 0,
+      "title": "درباره آکادمی ذهن آتی | دکتر زهرا جعفری",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": false
     },
     {
@@ -143,24 +143,9 @@
   },
   "alerts": [
     {
-      "level": "critical",
-      "path": "/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/about/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
-    },
-    {
       "level": "warn",
       "path": "/about/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "critical",
