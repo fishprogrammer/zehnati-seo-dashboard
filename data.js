@@ -32,21 +32,168 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-08-24T17:30:07+03:30",
-    "updatedAtFa": "۲۰۲۶-۰۸-۲۴ · ۱۷:۳۰",
+    "updatedAt": "2026-08-25T17:30:12+03:30",
+    "updatedAtFa": "۲۰۲۶-۰۸-۲۵ · ۱۷:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 10,
-      "remaining": 210,
-      "runsAllTime": 8,
-      "optimizedToday": 2,
+      "optimizedAllTime": 13,
+      "remaining": 207,
+      "runsAllTime": 9,
+      "optimizedToday": 4,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-08-25",
+        "dateFa": "۲۰۲۶-۰۸-۲۵",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 4,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-08-25T17:30:12+03:30",
+            "atFa": "۲۰۲۶-۰۸-۲۵ · ۱۷:۳۰",
+            "dryRun": false,
+            "processed": 4,
+            "optimized": 4,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "فرهنگیان",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "content_append",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7688,
+                "title": "رفع مشکل کند خوانی+راهکار تضمینی",
+                "link": "https://zehnati.ir/%d8%b1%d9%81%d8%b9-%d9%85%d8%b4%da%a9%d9%84-%da%a9%d9%86%d8%af-%d8%ae%d9%88%d8%a7%d9%86%db%8c%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1-%d8%aa%d8%b6%d9%85%db%8c%d9%86%db%8c/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7692,
+                "title": "روش خلاصه نویسی زیست+راهکار",
+                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%84%d8%a7%d8%b5%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%b2%db%8c%d8%b3%d8%aa%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7694,
+                "title": "روش خلاصه نویسی درس ریاضی + راهکار",
+                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%84%d8%a7%d8%b5%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%af%d8%b1%d8%b3-%d8%b1%db%8c%d8%a7%d8%b6%db%8c-%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-08-24",
         "dateFa": "۲۰۲۶-۰۸-۲۴",
