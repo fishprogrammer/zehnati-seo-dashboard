@@ -1,316 +1,206 @@
 {
-  "generated_at": "2026-08-25T14:00:07+03:30",
-  "status": "critical",
-  "summary": "۰/۱۳ صفحه 200 · مشکل robots/sitemap · احتمال timeout شبکه — دوباره ظهر امتحان شود · P0 خراب: /، /مشاوره-کنکور/، /قیمت-مشاوره-کنکور/ · بحرانی",
+  "generated_at": "2026-08-25T19:00:09+03:30",
+  "status": "warn",
+  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱۲ هشدار drift · هشدار",
   "pages": [
     {
       "path": "/",
-      "status": 0,
+      "status": 200,
       "final": "/",
-      "title": "",
-      "h1": 0,
+      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/about/",
-      "status": 0,
+      "status": 200,
       "final": "/about/",
-      "title": "",
-      "h1": 0,
+      "title": "درباره آکادمی ذهن آتی | دکتر زهرا جعفری",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": false
     },
     {
       "path": "/contact-us/",
-      "status": 0,
+      "status": 200,
       "final": "/contact-us/",
-      "title": "",
-      "h1": 0,
+      "title": "تماس با ذهن آتی | مشاوره رایگان کنکور",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": false
     },
     {
       "path": "/auth/",
-      "status": 0,
+      "status": 200,
       "final": "/auth/",
-      "title": "",
+      "title": "ورود به پنل دانش‌آموز | ذهن آتی",
       "h1": 0,
-      "noindex": false,
-      "ok": false,
+      "noindex": true,
+      "ok": true,
       "p0": false
     },
     {
       "path": "/مشاوره-کنکور/",
-      "status": 0,
+      "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "title": "",
-      "h1": 0,
+      "title": "مشاوره کنکور | بهترین مشاور کنکور — ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/قیمت-مشاوره-کنکور/",
-      "status": 0,
+      "status": 200,
       "final": "/%D9%82%DB%8C%D9%85%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "title": "",
-      "h1": 0,
+      "title": "قیمت مشاوره کنکور ۱۴۰۵ | هزینه — ذهن آتی - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/بهترین-مشاور-کنکور-اصفهان/",
-      "status": 0,
+      "status": 200,
       "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
-      "title": "",
-      "h1": 0,
+      "title": "بهترین مشاور کنکور اصفهان | ذهن آتی — وحید",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/مشاوره-آنلاین-کنکور/",
-      "status": 0,
+      "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "title": "",
-      "h1": 0,
+      "title": "مشاوره آنلاین کنکور | سراسر کشور — ذهن آتی - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/مشاوره-کنکور-تجربی/",
-      "status": 0,
+      "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D8%AC%D8%B1%D8%A8%DB%8C/",
-      "title": "",
-      "h1": 0,
+      "title": "مشاوره کنکور تجربی - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/مشاوره-تحصیلی-در-اصفهان/",
-      "status": 0,
+      "status": 200,
       "final": "/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C-%D8%AF%D8%B1-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86/",
-      "title": "",
-      "h1": 0,
+      "title": "مشاور تحصیلی رایگان در اصفهان - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/ثبت-نام/",
-      "status": 0,
-      "final": "/%D8%AB%D8%A8%D8%AA-%D9%86%D8%A7%D9%85/",
-      "title": "",
-      "h1": 0,
+      "status": 200,
+      "final": "/%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85-%d8%a8%d8%af%d9%88%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+      "title": "ثبت نام بدون کنکور - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": false
     },
     {
       "path": "/بهترین-مشاور-کنکور-تهران/",
-      "status": 0,
+      "status": 200,
       "final": "/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/",
-      "title": "",
-      "h1": 0,
+      "title": "بهترین مشاور کنکور تهران - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
       "path": "/برنامه-ریزی-کنکور/",
-      "status": 0,
-      "final": "/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B1%DB%8C%D8%B2%DB%8C-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "title": "",
-      "h1": 0,
+      "status": 200,
+      "final": "/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d8%b1%db%8c%d8%b2%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%a7%d8%b1%d8%b4%d8%af-%da%a9%d8%a7%d9%85%d9%be%db%8c%d9%88%d8%aa%d8%b1-1404/",
+      "title": "برنامه ریزی کنکور - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     }
   ],
   "infra": {
-    "robots_status": 0,
-    "robots_ok": false,
-    "sitemap_status": 0,
-    "sitemap_ok": false,
-    "robots_has_sitemap": false
+    "robots_status": 200,
+    "robots_ok": true,
+    "sitemap_status": 200,
+    "sitemap_ok": true,
+    "robots_has_sitemap": true
   },
   "alerts": [
     {
-      "level": "critical",
-      "path": "/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
-    },
-    {
       "level": "warn",
       "path": "/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/about/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/about/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/contact-us/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/contact-us/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/auth/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-کنکور/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/مشاوره-کنکور/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/قیمت-مشاوره-کنکور/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/قیمت-مشاوره-کنکور/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/بهترین-مشاور-کنکور-اصفهان/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/بهترین-مشاور-کنکور-اصفهان/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-آنلاین-کنکور/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/مشاوره-آنلاین-کنکور/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-کنکور-تجربی/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/مشاوره-کنکور-تجربی/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-تحصیلی-در-اصفهان/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/مشاوره-تحصیلی-در-اصفهان/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/ثبت-نام/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/ثبت-نام/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/بهترین-مشاور-کنکور-تهران/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/بهترین-مشاور-کنکور-تهران/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     },
     {
       "level": "warn",
       "path": "/برنامه-ریزی-کنکور/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-کنکور/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/قیمت-مشاوره-کنکور/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/بهترین-مشاور-کنکور-اصفهان/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-آنلاین-کنکور/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-کنکور-تجربی/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/مشاوره-تحصیلی-در-اصفهان/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/بهترین-مشاور-کنکور-تهران/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
-    },
-    {
-      "level": "critical",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     }
   ]
 }
