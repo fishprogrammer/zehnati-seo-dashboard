@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25T19:00:09+03:30",
-  "status": "warn",
-  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱۲ هشدار drift · هشدار",
+  "generated_at": "2026-08-26T16:01:23+03:30",
+  "status": "ok",
+  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · سالم",
   "pages": [
     {
       "path": "/",
@@ -141,66 +141,5 @@
     "sitemap_ok": true,
     "robots_has_sitemap": true
   },
-  "alerts": [
-    {
-      "level": "warn",
-      "path": "/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/about/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/contact-us/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/قیمت-مشاوره-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/بهترین-مشاور-کنکور-اصفهان/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-آنلاین-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-کنکور-تجربی/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-تحصیلی-در-اصفهان/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/ثبت-نام/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/بهترین-مشاور-کنکور-تهران/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    }
-  ]
+  "alerts": []
 }
