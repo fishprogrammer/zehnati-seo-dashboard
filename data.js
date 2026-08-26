@@ -6,10 +6,10 @@ window.ZEHNATI_SEO = {
     manager: "دکتر زهرا جعفری",
     updatedAt: "2026-08-26",
     updatedAtFa: "۳۱ مرداد ۱۴۰۵",
-    phase: 1,
-    phaseLabel: "فاز ۱ — ماه ۱: لندینگ‌های تجاری P0",
-    week: 5,
-    month: 1,
+    phase: 2,
+    phaseLabel: "فاز ۲ — ماه ۲: تکمیل P0 + Silo",
+    week: 6,
+    month: 2,
     planStartFa: "۱۴۰۵/۰۴/۲۰",
     planStartLabel: "۲۰ تیر ۱۴۰۵",
     planEndFa: "۱۴۰۵/۱۱/۱۹",
@@ -1749,7 +1749,7 @@ window.ZEHNATI_SEO = {
       months: 1,
       spanLabel: "ماه ۱",
       dateRange: "۲۰ تیر – ۱۹ مرداد",
-      status: "active",
+      status: "done",
       summary: "۲۵ کیورد P0 · قیمت، هاب مشاوره، آنلاین، شهر، نویسنده، Schema.",
     },
     {
@@ -1758,8 +1758,8 @@ window.ZEHNATI_SEO = {
       months: 2,
       spanLabel: "ماه ۲",
       dateRange: "۲۰ مرداد – ۱۹ شهریور",
-      status: "upcoming",
-      summary: "۲۸ کیورد P0 باقی · homepage، Silo، هاب رشته‌ها — جمع P0 = ۵۳/۵۳.",
+      status: "active",
+      summary: "۲۸ کیورد P0 باقی · homepage ✓، Silo، هاب رشته‌ها — جمع P0 = ۵۳/۵۳.",
     },
     {
       phase: 3,
@@ -1881,7 +1881,7 @@ window.ZEHNATI_SEO = {
     1: {
       title: "فاز ۱ — ماه ۱: لندینگ‌های تجاری P0",
       period: "ماه ۱ · ۲۰ تیر تا ۱۹ مرداد ۱۴۰۵",
-      status: "active",
+      status: "done",
       goal: "قیف پول زنده · پوشش ۲۵ کیورد P0 از طریق لندینگ/هاب",
       kwTarget: { p0: 25, p1: 0, p2: 0, p3: 0, total: 25 },
       actions: [
@@ -2009,7 +2009,7 @@ window.ZEHNATI_SEO = {
     2: {
       title: "فاز ۲ — ماه ۲: تکمیل P0 + Silo",
       period: "ماه ۲ · ۲۰ مرداد تا ۱۹ شهریور ۱۴۰۵",
-      status: "upcoming",
+      status: "active",
       goal: "۲۸ کیورد P0 باقی → جمع P0 = ۵۳/۵۳ + لینک داخلی ستون‌دار",
       kwTarget: { p0: 28, p1: 0, p2: 0, p3: 0, total: 28 },
       actions: [
@@ -2019,7 +2019,8 @@ window.ZEHNATI_SEO = {
           title: "تقویت محتوای homepage (پوشش تجاری عمیق‌تر)",
           where: "صفحه اصلی Elementor",
           why: "هوم از نظر محتوا هنوز نازک است",
-          done: false,
+          done: true,
+          note: "۲۰۲۶-۰۸-۲۶: ویجت CTA تجاری (مشاوره/قیمت/آنلاین/اصفهان + درخواست مشاوره) · بدون /auth/ · لینک‌های P0 روی خانه لایو",
         },
         {
           id: "p2-a2",
@@ -2071,7 +2072,7 @@ window.ZEHNATI_SEO = {
         },
       ],
       checklist: [
-        { id: "p2-c1", label: "Homepage محتوایی تقویت شد", done: false },
+        { id: "p2-c1", label: "Homepage محتوایی تقویت شد", done: true },
         { id: "p2-c2", label: "حداقل ۳ مقاله/صفحه ستون P0", done: false },
         { id: "p2-c3", label: "لینک داخلی Silo روی ۱۰ پست کلیدی", done: false },
         { id: "p2-c4", label: "هاب رشته‌ها ساختار تمیز", done: false },
