@@ -2035,7 +2035,8 @@ window.ZEHNATI_SEO = {
           title: "لینک داخلی از بلاگ به هاب‌های مشاوره/قیمت/رشته",
           where: "پست‌های کلیدی",
           why: "Silo و انتقال اعتبار",
-          done: false,
+          done: true,
+          note: "۲۰۲۶-۰۸-۲۷: ۱۰ پست کلیدی · بلوک zehnati-seo-silo → مشاوره/قیمت/تجربی/آنلاین · تأیید لایو",
         },
         {
           id: "p2-a4",
@@ -2073,7 +2074,7 @@ window.ZEHNATI_SEO = {
       checklist: [
         { id: "p2-c1", label: "Homepage محتوایی تقویت شد", done: true },
         { id: "p2-c2", label: "حداقل ۳ مقاله/صفحه ستون P0", done: false },
-        { id: "p2-c3", label: "لینک داخلی Silo روی ۱۰ پست کلیدی", done: false },
+        { id: "p2-c3", label: "لینک داخلی Silo روی ۱۰ پست کلیدی", done: true },
         { id: "p2-c4", label: "هاب رشته‌ها ساختار تمیز", done: false },
         { id: "p2-c5", label: "رفع ریدایرکت‌های اشتباه تجاری", done: false },
         { id: "p2-c6", label: "P0 کامل: ۵۳/۵۳ کیورد به URL وصل", done: false },
