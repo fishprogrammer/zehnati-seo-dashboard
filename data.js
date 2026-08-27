@@ -879,9 +879,9 @@ window.ZEHNATI_SEO = {
     ],
   },
   kpis: [
-    { label: "کیورد پوشش‌داده‌شده (از ۲۰۶)", current: "۲۵ ماه۱", target: "۲۰۶ · P0 ماه۱=۲۵/۲۵" },
+    { label: "کیورد پوشش‌داده‌شده (از ۲۰۶)", current: "۵۳ P0 کامل", target: "۲۰۶ · P0=۵۳/۵۳ ✓ · بعدی P1" },
     { label: "صفحات ایندکس (GSC)", current: "۱۱۷", target: "۱۰۰+ · 404+noindex audit done · re-crawl" },
-    { label: "لندینگ/هاب P0", current: "6", target: "ایندکس+کلیک تجاری · ماه۲ Silo · P0 کلیک~261" },
+    { label: "لندینگ/هاب P0", current: "6+", target: "ایندکس+کلیک تجاری · Silo ✓ · P0 کلیک~261" },
     { label: "کلیک GSC (کل سایت · ۳ماه)", current: "13٬142", target: "ریباند پایدار · رشد لندینگ تجاری" },
     { label: "کلیک هفته اخیر (WoW)", current: "1٬307 (+12.8٪)", target: "تثبیت ≥۱٬۲۰۰ / هفته" },
   ],
@@ -1697,20 +1697,20 @@ window.ZEHNATI_SEO = {
     { kw: "مشاوره کنکور تجربی", page: "/مشاوره-کنکور-تجربی/", status: "mapped", note: "لایو: 1 H1 · محتوا+CTA · لینک داخلی" },
     { kw: "قیمت مشاوره کنکور", page: "/قیمت-مشاوره-کنکور/", status: "mapped", note: "ماه ۱ — 200 · هنوز در Top1000 نیست" },
     { kw: "مشاوره آنلاین کنکور", page: "/مشاوره-آنلاین-کنکور/", status: "mapped", note: "ماه ۱ — 200 · ۱ H1 · FAQ/schema · landing-online" },
-    { kw: "چگونه پزشکی قبول شویم", page: "بلاگ", status: "partial", note: "ماه ۲–۳" },
+    { kw: "چگونه پزشکی قبول شویم", page: "/قبولی-پزشکی/", status: "mapped", note: "ماه۲ → مقاله لایو · خوشه p2-a2" },
     { kw: "ثبت نام کلاس کنکور", page: "/contact-us/", status: "mapped", note: "ماه۱ → تماس (CTA) · /ثبت-نام/ آرشیووار" },
     { kw: "دکتر زهرا جعفری", page: "/about/", status: "ok", note: "Meta/Title + ۱ H1 OK" },
   ],
   /* پوشش کامل ۲۰۶ کیورد در ۷ ماه (هاب مشترک مجاز است) */
   keywordBuckets: [
-    { id: "P0", label: "حیاتی", count: 53, action: "ماه ۱–۲ · هدف پوشش ۵۳/۵۳" },
+    { id: "P0", label: "حیاتی", count: 53, action: "ماه ۱–۲ · پوشش ۵۳/۵۳ ✓" },
     { id: "P1", label: "مهم", count: 90, action: "ماه ۳–۶ · ۳۰+۱۵+۳۰+۱۵" },
     { id: "P2", label: "تکمیلی", count: 58, action: "ماه ۶–۷ · ۳۰+۲۸" },
     { id: "P3", label: "آینده‌نزدیک", count: 5, action: "ماه ۷ · ۵/۵" },
   ],
   keywordCoveragePlan: [
     { month: 1, phase: 1, p0: 25, p1: 0, p2: 0, p3: 0, note: "لندینگ/هاب تجاری حیاتی" },
-    { month: 2, phase: 2, p0: 28, p1: 0, p2: 0, p3: 0, note: "تکمیل P0 + Silo" },
+    { month: 2, phase: 2, p0: 28, p1: 0, p2: 0, p3: 0, note: "تکمیل P0 ✓ + Silo ✓" },
     { month: 3, phase: 3, p0: 0, p1: 30, p2: 0, p3: 0, note: "دستهٔ اول P1" },
     { month: 4, phase: 4, p0: 0, p1: 15, p2: 0, p3: 0, note: "لوکال/سرعت + P1 سبک" },
     { month: 5, phase: 5, p0: 0, p1: 30, p2: 0, p3: 0, note: "دستهٔ دوم P1" },
@@ -1758,7 +1758,7 @@ window.ZEHNATI_SEO = {
       spanLabel: "ماه ۲",
       dateRange: "۲۰ مرداد – ۱۹ شهریور",
       status: "active",
-      summary: "۲۸ کیورد P0 باقی · homepage ✓، Silo، هاب رشته‌ها — جمع P0 = ۵۳/۵۳.",
+      summary: "P0=۵۳/۵۳ ✓ · homepage ✓ · Silo ✓ · باقی: هاب رشته تمیز + ریدایرکت تجاری + گزارش ماه۲.",
     },
     {
       phase: 3,
@@ -2009,7 +2009,7 @@ window.ZEHNATI_SEO = {
       title: "فاز ۲ — ماه ۲: تکمیل P0 + Silo",
       period: "ماه ۲ · ۲۰ مرداد تا ۱۹ شهریور ۱۴۰۵",
       status: "active",
-      goal: "۲۸ کیورد P0 باقی → جمع P0 = ۵۳/۵۳ + لینک داخلی ستون‌دار",
+      goal: "P0 کامل ۵۳/۵۳ ✓ + لینک داخلی ستون‌دار · باقی هاب/ریدایرکت",
       kwTarget: { p0: 28, p1: 0, p2: 0, p3: 0, total: 28 },
       actions: [
         {
@@ -2060,7 +2060,8 @@ window.ZEHNATI_SEO = {
           title: "بستن ۲۸ کیورد P0 باقی‌مانده (پکیج، کلاس آنلاین، پایه، …)",
           where: "وردپرس + keywords.csv",
           why: "پوشش کامل ۵۳ کلمه حیاتی تا پایان ماه ۲",
-          done: false,
+          done: true,
+          note: "۲۰۲۶-۰۸-۲۷: ۲۵ کیورد stamp → پوشش-ماه۲ · تجمعی ۵۳/۵۳ · نقشه month2-p0-coverage-map.md",
         },
         {
           id: "p2-a7",
@@ -2077,7 +2078,7 @@ window.ZEHNATI_SEO = {
         { id: "p2-c3", label: "لینک داخلی Silo روی ۱۰ پست کلیدی", done: true },
         { id: "p2-c4", label: "هاب رشته‌ها ساختار تمیز", done: false },
         { id: "p2-c5", label: "رفع ریدایرکت‌های اشتباه تجاری", done: false },
-        { id: "p2-c6", label: "P0 کامل: ۵۳/۵۳ کیورد به URL وصل", done: false },
+        { id: "p2-c6", label: "P0 کامل: ۵۳/۵۳ کیورد به URL وصل", done: true },
         { id: "p2-c7", label: "گزارش ماه ۲", done: false },
       ],
     },
