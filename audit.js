@@ -92,7 +92,7 @@
     if (!iso) return "—";
     try {
       const d = new Date(iso);
-      return d.toLocaleDateString("fa-IR", {
+      return d.toLocaleDateString("fa-IR-u-ca-persian", {
         year: "numeric",
         month: "short",
         day: "numeric",

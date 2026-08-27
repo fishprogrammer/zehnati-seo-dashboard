@@ -2260,6 +2260,43 @@
 
     document.getElementById("btnLive")?.addEventListener("click", () => recheckSiteAndRefresh());
 
+    function formatFaDateTime(isoOrDate) {
+      if (!isoOrDate) return "";
+      try {
+        const d = isoOrDate instanceof Date ? isoOrDate : new Date(isoOrDate);
+        if (Number.isNaN(d.getTime())) return String(isoOrDate);
+        return d.toLocaleString("fa-IR-u-ca-persian", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+      } catch {
+        return String(isoOrDate);
+      }
+    }
+
+    function formatFaDate(isoOrDate) {
+      if (!isoOrDate) return "";
+      try {
+        const d =
+          isoOrDate instanceof Date
+            ? isoOrDate
+            : /^\d{4}-\d{2}-\d{2}$/.test(isoOrDate)
+              ? new Date(isoOrDate + "T12:00:00")
+              : new Date(isoOrDate);
+        if (Number.isNaN(d.getTime())) return String(isoOrDate);
+        return d.toLocaleDateString("fa-IR-u-ca-persian", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        });
+      } catch {
+        return String(isoOrDate);
+      }
+    }
+
     async function fillWpOrganic(refresh) {
       const lead = document.getElementById("wpOrgLead");
       const leadClient = document.getElementById("wpOrgLeadClient");
@@ -2309,7 +2346,11 @@
           (t.optimizedAllTime ?? 0) +
           " · باقی‌مانده " +
           (t.remaining ?? "—") +
-          (data.updatedAtFa ? " · به‌روز: " + data.updatedAtFa : "");
+          (data.updatedAt
+            ? " · به‌روز: " + formatFaDateTime(data.updatedAt)
+            : data.updatedAtFa
+              ? " · به‌روز: " + data.updatedAtFa
+              : "");
       }
 
       const kpiHtml = [
@@ -2372,7 +2413,7 @@
                   '<div class="wp-org-run-head">' +
                   badge +
                   "<span>" +
-                  (run.atFa || run.at || "") +
+                  (run.at ? formatFaDateTime(run.at) : run.atFa || "") +
                   "</span>" +
                   "<span>" +
                   (run.dryRun ? run.processed + " پیش‌نمایش" : run.optimized + " اعمال") +
@@ -2386,7 +2427,7 @@
             return (
               '<div class="wp-org-day">' +
               '<div class="wp-org-day-head"><strong>' +
-              (day.dateFa || day.date) +
+              (day.date ? formatFaDate(day.date) : day.dateFa || day.date) +
               "</strong>" +
               '<span class="wp-org-day-meta">' +
               (day.postsOptimized || 0) +
@@ -2403,9 +2444,11 @@
       }
 
       if (updated) {
-        updated.textContent = data.updatedAtFa
-          ? "آخرین به‌روزرسانی: " + data.updatedAtFa
-          : "";
+        updated.textContent = data.updatedAt
+          ? "آخرین به‌روزرسانی: " + formatFaDateTime(data.updatedAt)
+          : data.updatedAtFa
+            ? "آخرین به‌روزرسانی: " + data.updatedAtFa
+            : "";
       }
     }
 

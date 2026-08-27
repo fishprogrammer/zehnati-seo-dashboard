@@ -33,7 +33,7 @@ window.ZEHNATI_SEO = {
   wpOrganic: {
     "ok": true,
     "updatedAt": "2026-08-26T17:30:13+03:30",
-    "updatedAtFa": "۲۰۲۶-۰۸-۲۶ · ۱۷:۳۰",
+    "updatedAtFa": "۱۴۰۵/۰۶/۰۴ · ۱۷:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -43,13 +43,13 @@ window.ZEHNATI_SEO = {
       "optimizedAllTime": 16,
       "remaining": 204,
       "runsAllTime": 10,
-      "optimizedToday": 4,
-      "runsToday": 1
+      "optimizedToday": 0,
+      "runsToday": 0
     },
     "daily": [
       {
         "date": "2026-08-26",
-        "dateFa": "۲۰۲۶-۰۸-۲۶",
+        "dateFa": "۱۴۰۵/۰۶/۰۴",
         "runs": 1,
         "runsLive": 1,
         "postsOptimized": 4,
@@ -57,7 +57,7 @@ window.ZEHNATI_SEO = {
         "entries": [
           {
             "at": "2026-08-26T17:30:13+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۶ · ۱۷:۳۰",
+            "atFa": "۱۴۰۵/۰۶/۰۴ · ۱۷:۳۰",
             "dryRun": false,
             "processed": 4,
             "optimized": 4,
@@ -196,7 +196,7 @@ window.ZEHNATI_SEO = {
       },
       {
         "date": "2026-08-25",
-        "dateFa": "۲۰۲۶-۰۸-۲۵",
+        "dateFa": "۱۴۰۵/۰۶/۰۳",
         "runs": 1,
         "runsLive": 1,
         "postsOptimized": 4,
@@ -204,7 +204,7 @@ window.ZEHNATI_SEO = {
         "entries": [
           {
             "at": "2026-08-25T17:30:12+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۵ · ۱۷:۳۰",
+            "atFa": "۱۴۰۵/۰۶/۰۳ · ۱۷:۳۰",
             "dryRun": false,
             "processed": 4,
             "optimized": 4,
@@ -343,7 +343,7 @@ window.ZEHNATI_SEO = {
       },
       {
         "date": "2026-08-24",
-        "dateFa": "۲۰۲۶-۰۸-۲۴",
+        "dateFa": "۱۴۰۵/۰۶/۰۲",
         "runs": 1,
         "runsLive": 1,
         "postsOptimized": 2,
@@ -351,7 +351,7 @@ window.ZEHNATI_SEO = {
         "entries": [
           {
             "at": "2026-08-24T17:30:07+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۴ · ۱۷:۳۰",
+            "atFa": "۱۴۰۵/۰۶/۰۲ · ۱۷:۳۰",
             "dryRun": false,
             "processed": 2,
             "optimized": 2,
@@ -424,7 +424,7 @@ window.ZEHNATI_SEO = {
       },
       {
         "date": "2026-08-22",
-        "dateFa": "۲۰۲۶-۰۸-۲۲",
+        "dateFa": "۱۴۰۵/۰۵/۳۱",
         "runs": 7,
         "runsLive": 5,
         "postsOptimized": 11,
@@ -432,7 +432,7 @@ window.ZEHNATI_SEO = {
         "entries": [
           {
             "at": "2026-08-22T16:41:57+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۴۱",
+            "atFa": "۱۴۰۵/۰۵/۳۱ · ۱۶:۴۱",
             "dryRun": true,
             "processed": 1,
             "optimized": 0,
@@ -469,7 +469,7 @@ window.ZEHNATI_SEO = {
           },
           {
             "at": "2026-08-22T16:45:09+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۴۵",
+            "atFa": "۱۴۰۵/۰۵/۳۱ · ۱۶:۴۵",
             "dryRun": false,
             "processed": 3,
             "optimized": 3,
@@ -570,7 +570,7 @@ window.ZEHNATI_SEO = {
           },
           {
             "at": "2026-08-22T16:57:09+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۵۷",
+            "atFa": "۱۴۰۵/۰۵/۳۱ · ۱۶:۵۷",
             "dryRun": true,
             "processed": 1,
             "optimized": 0,
@@ -591,7 +591,7 @@ window.ZEHNATI_SEO = {
           },
           {
             "at": "2026-08-22T16:59:47+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۶:۵۹",
+            "atFa": "۱۴۰۵/۰۵/۳۱ · ۱۶:۵۹",
             "dryRun": false,
             "processed": 1,
             "optimized": 1,
@@ -630,7 +630,7 @@ window.ZEHNATI_SEO = {
           },
           {
             "at": "2026-08-22T17:00:05+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۷:۰۰",
+            "atFa": "۱۴۰۵/۰۵/۳۱ · ۱۷:۰۰",
             "dryRun": false,
             "processed": 3,
             "optimized": 3,
@@ -739,7 +739,7 @@ window.ZEHNATI_SEO = {
           },
           {
             "at": "2026-08-22T19:14:53+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۹:۱۴",
+            "atFa": "۱۴۰۵/۰۵/۳۱ · ۱۹:۱۴",
             "dryRun": false,
             "processed": 3,
             "optimized": 3,
@@ -834,7 +834,7 @@ window.ZEHNATI_SEO = {
           },
           {
             "at": "2026-08-22T19:20:31+03:30",
-            "atFa": "۲۰۲۶-۰۸-۲۲ · ۱۹:۲۰",
+            "atFa": "۱۴۰۵/۰۵/۳۱ · ۱۹:۲۰",
             "dryRun": false,
             "processed": 1,
             "optimized": 1,
