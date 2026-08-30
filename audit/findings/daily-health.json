@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-30T14:56:47+03:30",
-  "status": "warn",
-  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱ هشدار drift · هشدار",
+  "generated_at": "2026-08-30T19:37:04+03:30",
+  "status": "ok",
+  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · سالم",
   "pages": [
     {
       "path": "/",
@@ -141,11 +141,5 @@
     "sitemap_ok": true,
     "robots_has_sitemap": true
   },
-  "alerts": [
-    {
-      "level": "warn",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    }
-  ]
+  "alerts": []
 }
