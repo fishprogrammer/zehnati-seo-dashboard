@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-29T14:00:04+03:30",
-  "status": "critical",
-  "summary": "۱۲/۱۳ صفحه 200 · مشکل robots/sitemap · P0 خراب: /برنامه-ریزی-کنکور/ · ۹ هشدار drift · بحرانی",
+  "generated_at": "2026-08-30T14:56:47+03:30",
+  "status": "warn",
+  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱ هشدار drift · هشدار",
   "pages": [
     {
       "path": "/",
@@ -125,67 +125,27 @@
     },
     {
       "path": "/برنامه-ریزی-کنکور/",
-      "status": 0,
-      "final": "/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B1%DB%8C%D8%B2%DB%8C-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "title": "",
-      "h1": 0,
+      "status": 200,
+      "final": "/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d8%b1%db%8c%d8%b2%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%a7%d8%b1%d8%b4%d8%af-%da%a9%d8%a7%d9%85%d9%be%db%8c%d9%88%d8%aa%d8%b1-1404/",
+      "title": "برنامه ریزی کنکور - ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     }
   ],
   "infra": {
-    "robots_status": 0,
-    "robots_ok": false,
-    "sitemap_status": 0,
-    "sitemap_ok": false,
-    "robots_has_sitemap": false
+    "robots_status": 200,
+    "robots_ok": true,
+    "sitemap_status": 200,
+    "sitemap_ok": true,
+    "robots_has_sitemap": true
   },
   "alerts": [
     {
       "level": "warn",
-      "path": "/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/about/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/contact-us/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/مشاوره-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/قیمت-مشاوره-کنکور/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/بهترین-مشاور-کنکور-اصفهان/",
-      "message": "تعداد H1 از 0 به 1 تغییر کرد"
-    },
-    {
-      "level": "critical",
       "path": "/برنامه-ریزی-کنکور/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
-    },
-    {
-      "level": "warn",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     }
   ]
 }
