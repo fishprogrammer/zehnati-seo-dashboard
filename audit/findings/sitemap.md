@@ -2,7 +2,7 @@
 
 > **تاریخ:** 2026-08-27
 
-- `/sitemap_index.xml` → **0** · ~0 فرزند
-- robots: —
+- `/sitemap_index.xml` → **200** · ~5 فرزند
+- robots: Sitemap: https://zehnati.ir/sitemap_index.xml
 - GSC Submit: Success (فاز ۰)
 - لندینگ‌های P0 باید در `page-sitemap.xml` باشند

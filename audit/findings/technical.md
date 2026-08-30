@@ -12,8 +12,8 @@
 
 ## Sitemap / robots
 
-- `sitemap_index.xml` → HTTP **0** · فرزندان ~0
-- robots: —
+- `sitemap_index.xml` → HTTP **200** · فرزندان ~5
+- robots: Sitemap: https://zehnati.ir/sitemap_index.xml
 
 ## صفحات کلیدی
 
@@ -27,11 +27,11 @@
 | `/قیمت-مشاوره-کنکور/` | 0 | 0 |  |  |
 | `/بهترین-مشاور-کنکور-اصفهان/` | 0 | 0 |  |  |
 | `/مشاوره-آنلاین-کنکور/` | 0 | 0 |  |  |
-| `/مشاوره-کنکور-تجربی/` | 0 | 0 |  |  |
-| `/مشاوره-تحصیلی-در-اصفهان/` | 0 | 0 |  |  |
-| `/ثبت-نام/` | 0 | 0 |  |  |
-| `/بهترین-مشاور-کنکور-تهران/` | 0 | 0 |  |  |
-| `/برنامه-ریزی-کنکور/` | 0 | 0 |  |  |
+| `/مشاوره-کنکور-تجربی/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
+| `/مشاوره-تحصیلی-در-اصفهان/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
+| `/ثبت-نام/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
+| `/بهترین-مشاور-کنکور-تهران/` | 200 | 1 |  | Answer, Article, BreadcrumbList, City |
+| `/برنامه-ریزی-کنکور/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
 
 
 ## امنیت پاسخ HTTP (خانه)

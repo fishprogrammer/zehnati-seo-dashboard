@@ -14,19 +14,19 @@
 | `/قیمت-مشاوره-کنکور/` | — |
 | `/بهترین-مشاور-کنکور-اصفهان/` | — |
 | `/مشاوره-آنلاین-کنکور/` | — |
-| `/مشاوره-کنکور-تجربی/` | — |
-| `/مشاوره-تحصیلی-در-اصفهان/` | — |
-| `/ثبت-نام/` | — |
-| `/بهترین-مشاور-کنکور-تهران/` | — |
-| `/برنامه-ریزی-کنکور/` | — |
+| `/مشاوره-کنکور-تجربی/` | BlogPosting, BreadcrumbList, ImageObject, ListItem, Person, WebPage, WebSite |
+| `/مشاوره-تحصیلی-در-اصفهان/` | BlogPosting, BreadcrumbList, ImageObject, ListItem, Person, WebPage, WebSite |
+| `/ثبت-نام/` | BlogPosting, BreadcrumbList, ImageObject, ListItem, Person, WebPage, WebSite |
+| `/بهترین-مشاور-کنکور-تهران/` | Answer, Article, BreadcrumbList, City, EducationalOrganization, FAQPage, GeoCoordinates, ImageObject, ListItem, Person, PostalAddress, Question |
+| `/برنامه-ریزی-کنکور/` | BlogPosting, BreadcrumbList, ImageObject, ListItem, Person, WebPage, WebSite |
 
 
 ## ارزیابی
 
 | نوع | وضعیت |
 |-----|--------|
-| FAQPage روی لندینگ‌ها | 0 صفحه |
-| LocalBusiness / EducationalOrganization | 0 صفحه |
+| FAQPage روی لندینگ‌ها | 1 صفحه |
+| LocalBusiness / EducationalOrganization | 5 صفحه |
 | Person (دکتر جعفری) | روی برخی صفحات هست — باید یکدست و کامل شود |
 | Author fish-programmer | هنوز در JSON-LD Article |
 

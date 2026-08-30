@@ -1,0 +1,18 @@
+{
+  "health": 55,
+  "scores": {
+    "content": 44,
+    "geo": 52,
+    "local": 60,
+    "schema": 69,
+    "sitemap": 55,
+    "sxo": 70,
+    "technical": 48
+  },
+  "tech_blended": 50,
+  "images": {
+    "count": 16,
+    "empty_alt": 15
+  },
+  "generated_at": "2026-07-15T22:16:27+03:30"
+}
