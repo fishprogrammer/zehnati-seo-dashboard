@@ -32,21 +32,100 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-01T17:30:06+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۰ · ۱۷:۳۰",
+    "updatedAt": "2026-09-02T17:30:06+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۱۱ · ۱۷:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 23,
-      "remaining": 197,
-      "runsAllTime": 13,
-      "optimizedToday": 4,
+      "optimizedAllTime": 24,
+      "remaining": 196,
+      "runsAllTime": 14,
+      "optimizedToday": 2,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-02",
+        "dateFa": "۱۴۰۵/۰۶/۱۱",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 2,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-02T17:30:06+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۱ · ۱۷:۳۰",
+            "dryRun": false,
+            "processed": 2,
+            "optimized": 2,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "فرهنگیان",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "content_append",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7724,
+                "title": "در سال یازدهم روزی چند ساعت درس بخوانیم",
+                "link": "https://zehnati.ir/%d8%af%d8%b1-%d8%b3%d8%a7%d9%84-%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85-%d8%b1%d9%88%d8%b2%db%8c-%da%86%d9%86%d8%af-%d8%b3%d8%a7%d8%b9%d8%aa-%d8%af%d8%b1%d8%b3-%d8%a8%d8%ae%d9%88%d8%a7%d9%86%db%8c%d9%85/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-09-01",
         "dateFa": "۱۴۰۵/۰۶/۱۰",
