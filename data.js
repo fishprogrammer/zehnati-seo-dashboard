@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-02T17:30:06+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۱ · ۱۷:۳۰",
+    "updatedAt": "2026-09-03T17:30:08+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۱۲ · ۱۷:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,52 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 24,
       "remaining": 196,
-      "runsAllTime": 14,
-      "optimizedToday": 2,
+      "runsAllTime": 15,
+      "optimizedToday": 1,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-03",
+        "dateFa": "۱۴۰۵/۰۶/۱۲",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 1,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-03T17:30:08+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۲ · ۱۷:۳۰",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "فرهنگیان",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "content_append",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-09-02",
         "dateFa": "۱۴۰۵/۰۶/۱۱",
