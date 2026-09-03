@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-03T14:03:16+03:30",
+  "generated_at": "2026-09-03T19:00:11+03:30",
   "status": "critical",
-  "summary": "۱۲/۱۳ صفحه 200 · مشکل robots/sitemap · P0 خراب: / · ۳ هشدار drift · بحرانی",
+  "summary": "۱۳/۱۳ صفحه 200 · مشکل robots/sitemap · ۱ هشدار drift · بحرانی",
   "pages": [
     {
       "path": "/",
-      "status": 0,
+      "status": 200,
       "final": "/",
-      "title": "",
-      "h1": 0,
+      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     },
     {
@@ -143,19 +143,9 @@
   },
   "alerts": [
     {
-      "level": "critical",
-      "path": "/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
-    },
-    {
       "level": "warn",
       "path": "/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     }
   ]
 }
