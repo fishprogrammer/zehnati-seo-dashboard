@@ -1,7 +1,7 @@
 {
   "ok": true,
   "mode": "static",
-  "generated_at": "2026-09-04T10:44:43.917314+00:00",
+  "generated_at": "2026-09-04T17:33:42.860537+00:00",
   "findings": [
     "ACTION-PLAN.md",
     "audit-data.json",
