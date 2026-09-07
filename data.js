@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-03T17:30:08+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۲ · ۱۷:۳۰",
+    "updatedAt": "2026-09-07T16:22:09+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۱۶ · ۱۶:۲۲",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,249 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 24,
       "remaining": 196,
-      "runsAllTime": 15,
+      "runsAllTime": 17,
       "optimizedToday": 1,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-07",
+        "dateFa": "۱۴۰۵/۰۶/۱۶",
+        "runs": 2,
+        "runsLive": 1,
+        "postsOptimized": 1,
+        "postsPreviewed": 5,
+        "entries": [
+          {
+            "at": "2026-09-07T16:21:32+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۶ · ۱۶:۲۱",
+            "dryRun": true,
+            "processed": 5,
+            "optimized": 0,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "فرهنگیان",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7726,
+                "title": "همه چیز در مورد تغذیه کنکوری‌ها",
+                "link": "https://zehnati.ir/%d9%87%d9%85%d9%87-%da%86%db%8c%d8%b2-%d8%af%d8%b1-%d9%85%d9%88%d8%b1%d8%af-%d8%aa%d8%ba%d8%b0%db%8c%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1%db%8c%d9%87%d8%a7/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7730,
+                "title": "مهم‌ترین کارهای بعد کنکور",
+                "link": "https://zehnati.ir/%d9%85%d9%87%d9%85%d8%aa%d8%b1%db%8c%d9%86-%da%a9%d8%a7%d8%b1%d9%87%d8%a7%db%8c-%d8%a8%d8%b9%d8%af-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7735,
+                "title": "تأثیر مشاوره کنکور بر موفقیت تحصیلی",
+                "link": "https://zehnati.ir/%d8%aa%d8%a3%d8%ab%db%8c%d8%b1-%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%a8%d8%b1-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%aa%d8%ad%d8%b5%db%8c%d9%84%db%8c/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7740,
+                "title": "بهترین دانشگاه‌های ایران برای بورسیه",
+                "link": "https://zehnati.ir/%d8%a8%d9%87%d8%aa%d8%b1%db%8c%d9%86-%d8%af%d8%a7%d9%86%d8%b4%da%af%d8%a7%d9%87%d9%87%d8%a7%db%8c-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a8%d9%88%d8%b1%d8%b3%db%8c%d9%87/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-09-07T16:22:09+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۶ · ۱۶:۲۲",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "فرهنگیان",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "rank_math_description",
+                  "content_append",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "متا",
+                  "لینک داخلی/خروجی",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-09-03",
         "dateFa": "۱۴۰۵/۰۶/۱۲",
@@ -2196,7 +2434,7 @@ window.ZEHNATI_SEO = {
     { kw: "مشاوره کنکور تجربی", page: "/مشاوره-کنکور-تجربی/", status: "mapped", note: "لایو: 1 H1 · محتوا+CTA · لینک داخلی" },
     { kw: "قیمت مشاوره کنکور", page: "/قیمت-مشاوره-کنکور/", status: "mapped", note: "ماه ۱ — 200 · هنوز در Top1000 نیست" },
     { kw: "مشاوره آنلاین کنکور", page: "/مشاوره-آنلاین-کنکور/", status: "mapped", note: "ماه ۱ — 200 · ۱ H1 · FAQ/schema · landing-online" },
-    { kw: "چگونه پزشکی قبول شویم", page: "/قبولی-پزشکی/", status: "mapped", note: "ماه۲ → مقاله لایو · خوشه p2-a2" },
+    { kw: "چگونه پزشکی قبول شویم", page: "/قبولی-پزشکی/", status: "ok", note: "۲۰۲۶-۰۹-۰۷: محتوا+Title/Meta · ۱ H1 · ۹ H2 · لینک تجربی/هاب/قیمت · post 17896" },
     { kw: "ثبت نام کلاس کنکور", page: "/contact-us/", status: "mapped", note: "ماه۱ → تماس (CTA) · /ثبت-نام/ آرشیووار" },
     { kw: "دکتر زهرا جعفری", page: "/about/", status: "ok", note: "Meta/Title + ۱ H1 OK" },
   ],
@@ -2257,7 +2495,7 @@ window.ZEHNATI_SEO = {
       spanLabel: "ماه ۲",
       dateRange: "۲۰ مرداد – ۱۹ شهریور",
       status: "active",
-      summary: "P0=۵۳/۵۳ ✓ · homepage ✓ · Silo ✓ · باقی: هاب رشته تمیز + ریدایرکت تجاری + گزارش ماه۲.",
+      summary: "P0=۵۳/۵۳ ✓ · homepage ✓ · Silo ✓ · هاب رشته ✓ · ریدایرکت تجاری ✓ · باقی: گزارش ماه۲.",
     },
     {
       phase: 3,
@@ -2526,7 +2764,8 @@ window.ZEHNATI_SEO = {
           title: "مقاله/صفحه P0: چگونه پزشکی قبول شویم (+ خوشهٔ مرتبط)",
           where: "بلاگ / لندینگ",
           why: "کلمه طلایی اطلاعاتی داخل باکت P0",
-          done: false,
+          done: true,
+          note: "۲۰۲۶-۰۹-۰۷: /قبولی-پزشکی/ · post 17896 · Title/Meta focus «چگونه پزشکی قبول شویم» · خوشه رتبه/برنامه/معدل/تست · لینک تجربی+هاب+قیمت+اصفهان/تهران",
         },
         {
           id: "p2-a3",
@@ -2552,7 +2791,8 @@ window.ZEHNATI_SEO = {
           title: "برنامه ریزی کنکور + انتخاب رشته (صفحه اختصاصی)",
           where: "Landing یا اصلاح ریدایرکت‌های اشتباه",
           why: "URL تجاری نباید به مقاله نامرتبط برود",
-          done: false,
+          done: true,
+          note: "۲۰۲۶-۰۹-۰۷: /برنامه-ریزی-کنکور/ ← post 8217 اسلاگ درست · /انتخاب-رشته/ ← post 23789 لندینگ جدید · /ثبت-نام/ ← 23790 · مقالات ارشد/بدون‌کنکور روی URL خودشان ماندند",
         },
         {
           id: "p2-a6",
@@ -2574,10 +2814,10 @@ window.ZEHNATI_SEO = {
       ],
       checklist: [
         { id: "p2-c1", label: "Homepage محتوایی تقویت شد", done: true },
-        { id: "p2-c2", label: "حداقل ۳ مقاله/صفحه ستون P0", done: false },
+        { id: "p2-c2", label: "حداقل ۳ مقاله/صفحه ستون P0", done: true },
         { id: "p2-c3", label: "لینک داخلی Silo روی ۱۰ پست کلیدی", done: true },
         { id: "p2-c4", label: "هاب رشته‌ها ساختار تمیز", done: true },
-        { id: "p2-c5", label: "رفع ریدایرکت‌های اشتباه تجاری", done: false },
+        { id: "p2-c5", label: "رفع ریدایرکت‌های اشتباه تجاری", done: true },
         { id: "p2-c6", label: "P0 کامل: ۵۳/۵۳ کیورد به URL وصل", done: true },
         { id: "p2-c7", label: "گزارش ماه ۲", done: false },
       ],

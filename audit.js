@@ -112,13 +112,10 @@
   }
 
   function syncScoreFromAudit(status) {
+    // Keep hero ring on data.js score animation; don't snap to audit snapshot.
     const score = status?.summary?.health_score;
     if (score == null) return;
-    const num = document.getElementById("scoreNum");
-    const ring = document.getElementById("scoreRing");
     const label = document.getElementById("scoreLabel");
-    if (num) num.textContent = score;
-    if (ring) ring.style.setProperty("--pct", score);
     if (label && score < 40) label.textContent = "نیاز به اقدام فوری";
   }
 
