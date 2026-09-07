@@ -32,27 +32,27 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-07T16:22:09+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۶ · ۱۶:۲۲",
+    "updatedAt": "2026-09-07T16:28:52+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۱۶ · ۱۶:۲۸",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 24,
-      "remaining": 196,
-      "runsAllTime": 17,
-      "optimizedToday": 1,
-      "runsToday": 1
+      "optimizedAllTime": 30,
+      "remaining": 190,
+      "runsAllTime": 18,
+      "optimizedToday": 7,
+      "runsToday": 2
     },
     "daily": [
       {
         "date": "2026-09-07",
         "dateFa": "۱۴۰۵/۰۶/۱۶",
-        "runs": 2,
-        "runsLive": 1,
-        "postsOptimized": 1,
+        "runs": 3,
+        "runsLive": 2,
+        "postsOptimized": 7,
         "postsPreviewed": 5,
         "entries": [
           {
@@ -276,6 +276,251 @@ window.ZEHNATI_SEO = {
                   "متا",
                   "لینک داخلی/خروجی",
                   "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-09-07T16:28:52+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۶ · ۱۶:۲۸",
+            "dryRun": false,
+            "processed": 6,
+            "optimized": 6,
+            "results": [
+              {
+                "postId": 7726,
+                "title": "همه چیز در مورد تغذیه کنکوری‌ها",
+                "link": "https://zehnati.ir/%d9%87%d9%85%d9%87-%da%86%db%8c%d8%b2-%d8%af%d8%b1-%d9%85%d9%88%d8%b1%d8%af-%d8%aa%d8%ba%d8%b0%db%8c%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1%db%8c%d9%87%d8%a7/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7730,
+                "title": "مهم‌ترین کارهای بعد کنکور",
+                "link": "https://zehnati.ir/%d9%85%d9%87%d9%85%d8%aa%d8%b1%db%8c%d9%86-%da%a9%d8%a7%d8%b1%d9%87%d8%a7%db%8c-%d8%a8%d8%b9%d8%af-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7735,
+                "title": "تأثیر مشاوره کنکور بر موفقیت تحصیلی",
+                "link": "https://zehnati.ir/%d8%aa%d8%a3%d8%ab%db%8c%d8%b1-%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%a8%d8%b1-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%aa%d8%ad%d8%b5%db%8c%d9%84%db%8c/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7740,
+                "title": "بهترین دانشگاه‌های ایران برای بورسیه",
+                "link": "https://zehnati.ir/%d8%a8%d9%87%d8%aa%d8%b1%db%8c%d9%86-%d8%af%d8%a7%d9%86%d8%b4%da%af%d8%a7%d9%87%d9%87%d8%a7%db%8c-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a8%d9%88%d8%b1%d8%b3%db%8c%d9%87/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7745,
+                "title": "معافیت تحصیلی دانش‌آموزان کنکوری",
+                "link": "https://zehnati.ir/%d9%85%d8%b9%d8%a7%d9%81%db%8c%d8%aa-%d8%aa%d8%ad%d8%b5%db%8c%d9%84%db%8c-%d8%af%d8%a7%d9%86%d8%b4%d8%a2%d9%85%d9%88%d8%b2%d8%a7%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1%db%8c/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7747,
+                "title": "تعداد سوالات کنکور 1403",
+                "link": "https://zehnati.ir/%d8%aa%d8%b9%d8%af%d8%a7%d8%af-%d8%b3%d9%88%d8%a7%d9%84%d8%a7%d8%aa-%da%a9%d9%86%da%a9%d9%88%d8%b1-1403/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
                 ],
                 "ok": true,
                 "dryRun": false,
