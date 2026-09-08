@@ -32,21 +32,841 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-07T16:28:52+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۶ · ۱۶:۲۸",
+    "updatedAt": "2026-09-08T12:13:05+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۱۷ · ۱۲:۱۳",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 30,
-      "remaining": 190,
-      "runsAllTime": 18,
-      "optimizedToday": 7,
-      "runsToday": 2
+      "optimizedAllTime": 40,
+      "remaining": 180,
+      "runsAllTime": 20,
+      "optimizedToday": 10,
+      "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-08",
+        "dateFa": "۱۴۰۵/۰۶/۱۷",
+        "runs": 2,
+        "runsLive": 1,
+        "postsOptimized": 10,
+        "postsPreviewed": 10,
+        "entries": [
+          {
+            "at": "2026-09-08T12:12:46+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۷ · ۱۲:۱۲",
+            "dryRun": true,
+            "processed": 10,
+            "optimized": 0,
+            "results": [
+              {
+                "postId": 7752,
+                "title": "آیا معدل ترم اول توی کنکور تاثیر داره؟?",
+                "link": "https://zehnati.ir/%d8%a2%db%8c%d8%a7-%d9%85%d8%b9%d8%af%d9%84-%d8%aa%d8%b1%d9%85-%d8%a7%d9%88%d9%84-%d8%aa%d9%88%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%aa%d8%a7%d8%ab%db%8c%d8%b1-%d8%af%d8%a7%d8%b1%d9%87%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7757,
+                "title": "مهم‌ترین نکات جلسه آزمون کنکور",
+                "link": "https://zehnati.ir/%d9%85%d9%87%d9%85%d8%aa%d8%b1%db%8c%d9%86-%d9%86%da%a9%d8%a7%d8%aa-%d8%ac%d9%84%d8%b3%d9%87-%d8%a2%d8%b2%d9%85%d9%88%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7761,
+                "title": "جزئیات دفترچه کنکور سراسری",
+                "link": "https://zehnati.ir/%d8%ac%d8%b2%d8%a6%db%8c%d8%a7%d8%aa-%d8%af%d9%81%d8%aa%d8%b1%da%86%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%b3%d8%b1%d8%a7%d8%b3%d8%b1%db%8c/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7765,
+                "title": "شروع از تابستان برای کنکور",
+                "link": "https://zehnati.ir/%d8%b4%d8%b1%d9%88%d8%b9-%d8%a7%d8%b2-%d8%aa%d8%a7%d8%a8%d8%b3%d8%aa%d8%a7%d9%86-%d8%a8%d8%b1%d8%a7%db%8c-%da%a9%d9%86%da%a9%d9%88/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7769,
+                "title": "کسب رتبه زیر 1000 با پایه درسی ضعیف",
+                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7791,
+                "title": "پول‌سازترین رشته‌های هنر در ایران و جهان",
+                "link": "https://zehnati.ir/%d9%be%d9%88%d9%84%d8%b3%d8%a7%d8%b2%d8%aa%d8%b1%db%8c%d9%86-%d8%b1%d8%b4%d8%aa%d9%87-%d9%87%d8%a7%db%8c-%d9%87%d9%86%d8%b1-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88-%d8%ac%d9%87%d8%a7%d9%86/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7773,
+                "title": "آیا برای کنکور حتما باید کلاس بروم؟",
+                "link": "https://zehnati.ir/%d8%a2%db%8c%d8%a7-%d8%a8%d8%b1%d8%a7%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%ad%d8%aa%d9%85%d8%a7-%d8%a8%d8%a7%db%8c%d8%af-%da%a9%d9%84%d8%a7%d8%b3-%d8%a8%d8%b1%d9%88%d9%85%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7778,
+                "title": "برای مدرسه بخونیم یا کنکور؟",
+                "link": "https://zehnati.ir/%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d8%af%d8%b1%d8%b3%d9%87-%d8%a8%d8%ae%d9%88%d9%86%db%8c%d9%85-%db%8c%d8%a7-%da%a9%d9%86%da%a9%d9%88%d8%b1%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7783,
+                "title": "تعداد دفعات مجاز شرکت در کنکور",
+                "link": "https://zehnati.ir/%d8%aa%d8%b9%d8%af%d8%a7%d8%af-%d8%af%d9%81%d8%b9%d8%a7%d8%aa-%d9%85%d8%ac%d8%a7%d8%b2-%d8%b4%d8%b1%da%a9%d8%aa-%d8%af%d8%b1-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              },
+              {
+                "postId": 7788,
+                "title": "تاثیر دروس عمومی در کنکور",
+                "link": "https://zehnati.ir/%d8%aa%d8%a7%d8%ab%db%8c%d8%b1-%d8%af%d8%b1%d9%88%d8%b3-%d8%b9%d9%85%d9%88%d9%85%db%8c-%d8%af%d8%b1-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "content_append",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": true,
+                "dryRun": true,
+                "skipped": null
+              }
+            ]
+          },
+          {
+            "at": "2026-09-08T12:13:05+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۷ · ۱۲:۱۳",
+            "dryRun": false,
+            "processed": 10,
+            "optimized": 10,
+            "results": [
+              {
+                "postId": 7752,
+                "title": "آیا معدل ترم اول توی کنکور تاثیر داره؟?",
+                "link": "https://zehnati.ir/%d8%a2%db%8c%d8%a7-%d9%85%d8%b9%d8%af%d9%84-%d8%aa%d8%b1%d9%85-%d8%a7%d9%88%d9%84-%d8%aa%d9%88%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%aa%d8%a7%d8%ab%db%8c%d8%b1-%d8%af%d8%a7%d8%b1%d9%87%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7757,
+                "title": "مهم‌ترین نکات جلسه آزمون کنکور",
+                "link": "https://zehnati.ir/%d9%85%d9%87%d9%85%d8%aa%d8%b1%db%8c%d9%86-%d9%86%da%a9%d8%a7%d8%aa-%d8%ac%d9%84%d8%b3%d9%87-%d8%a2%d8%b2%d9%85%d9%88%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7761,
+                "title": "جزئیات دفترچه کنکور سراسری",
+                "link": "https://zehnati.ir/%d8%ac%d8%b2%d8%a6%db%8c%d8%a7%d8%aa-%d8%af%d9%81%d8%aa%d8%b1%da%86%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%b3%d8%b1%d8%a7%d8%b3%d8%b1%db%8c/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7765,
+                "title": "شروع از تابستان برای کنکور",
+                "link": "https://zehnati.ir/%d8%b4%d8%b1%d9%88%d8%b9-%d8%a7%d8%b2-%d8%aa%d8%a7%d8%a8%d8%b3%d8%aa%d8%a7%d9%86-%d8%a8%d8%b1%d8%a7%db%8c-%da%a9%d9%86%da%a9%d9%88/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7769,
+                "title": "کسب رتبه زیر 1000 با پایه درسی ضعیف",
+                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7791,
+                "title": "پول‌سازترین رشته‌های هنر در ایران و جهان",
+                "link": "https://zehnati.ir/%d9%be%d9%88%d9%84%d8%b3%d8%a7%d8%b2%d8%aa%d8%b1%db%8c%d9%86-%d8%b1%d8%b4%d8%aa%d9%87-%d9%87%d8%a7%db%8c-%d9%87%d9%86%d8%b1-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88-%d8%ac%d9%87%d8%a7%d9%86/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7773,
+                "title": "آیا برای کنکور حتما باید کلاس بروم؟",
+                "link": "https://zehnati.ir/%d8%a2%db%8c%d8%a7-%d8%a8%d8%b1%d8%a7%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%ad%d8%aa%d9%85%d8%a7-%d8%a8%d8%a7%db%8c%d8%af-%da%a9%d9%84%d8%a7%d8%b3-%d8%a8%d8%b1%d9%88%d9%85%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7778,
+                "title": "برای مدرسه بخونیم یا کنکور؟",
+                "link": "https://zehnati.ir/%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d8%af%d8%b1%d8%b3%d9%87-%d8%a8%d8%ae%d9%88%d9%86%db%8c%d9%85-%db%8c%d8%a7-%da%a9%d9%86%da%a9%d9%88%d8%b1%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7783,
+                "title": "تعداد دفعات مجاز شرکت در کنکور",
+                "link": "https://zehnati.ir/%d8%aa%d8%b9%d8%af%d8%a7%d8%af-%d8%af%d9%81%d8%b9%d8%a7%d8%aa-%d9%85%d8%ac%d8%a7%d8%b2-%d8%b4%d8%b1%da%a9%d8%aa-%d8%af%d8%b1-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7788,
+                "title": "تاثیر دروس عمومی در کنکور",
+                "link": "https://zehnati.ir/%d8%aa%d8%a7%d8%ab%db%8c%d8%b1-%d8%af%d8%b1%d9%88%d8%b3-%d8%b9%d9%85%d9%88%d9%85%db%8c-%d8%af%d8%b1-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-09-07",
         "dateFa": "۱۴۰۵/۰۶/۱۶",
