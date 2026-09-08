@@ -1,0 +1,342 @@
+{
+  "exportedAt": "2026-09-07",
+  "exportedAtFa": "۱۶ شهریور ۱۴۰۵",
+  "scopeNote": "گزارش Indexing / Coverage · All known pages · تاریخ آخرین نقطهٔ نمودار داخل گزارش",
+  "latest": {
+    "date": "2026-09-04",
+    "indexed": 296,
+    "notIndexed": 525,
+    "impressions": 802
+  },
+  "totals": {
+    "issueRowsWithPages": 8,
+    "issuePagesSum": 525,
+    "critical404": 31,
+    "noindex": 236,
+    "crawledNotIndexed": 91,
+    "discoveredNotIndexed": 139,
+    "redirects": 24
+  },
+  "issues": [
+    {
+      "reasonFa": "حذف با تگ noindex",
+      "pages": 236,
+      "severity": "critical",
+      "note": "⚠️ جهش شدید نسبت به ۴۶ قبلی — Validation=Failed · audit noindexهای غیرعمدی"
+    },
+    {
+      "reasonFa": "صفحه با ریدایرکت",
+      "pages": 24,
+      "severity": "medium",
+      "note": "طبیعی اگر زنجیره کوتاه باشد · ۲۴ مورد"
+    },
+    {
+      "reasonFa": "صفحه جایگزین با canonical درست",
+      "pages": 2,
+      "severity": "medium",
+      "note": "معمولاً نرمال (نسخه تکراری)"
+    },
+    {
+      "reasonFa": "خطای ریدایرکت",
+      "pages": 1,
+      "severity": "high",
+      "note": "یک خطای ریدایرکت — زنجیره/لوپ را چک کن"
+    },
+    {
+      "reasonFa": "مسدود به‌خاطر ۴۰۳",
+      "pages": 1,
+      "severity": "critical",
+      "note": "یک URL ممنوع — بررسی دسترسی"
+    },
+    {
+      "reasonFa": "کشف شده ولی هنوز ایندکس نیست",
+      "pages": 139,
+      "severity": "high",
+      "note": "صف در ایندکس — Submit لندینگ‌های P0 در GSC"
+    },
+    {
+      "reasonFa": "خزش شده ولی هنوز ایندکس نیست",
+      "pages": 91,
+      "severity": "high",
+      "note": "کیفیت/تکرار — تقویت لینک داخلی و عمق محتوا"
+    },
+    {
+      "reasonFa": "صفحه پیدا نشد (۴۰۴)",
+      "pages": 31,
+      "severity": "critical",
+      "note": "اولویت فنی: ۳۰۱ یا حذف از لینک/سایت‌مپ"
+    },
+    {
+      "reasonFa": "مسدود به‌خاطر خطای ۴xx دیگر",
+      "pages": 0,
+      "severity": "ok",
+      "note": "Validation: Passed"
+    },
+    {
+      "reasonFa": "مسدود با robots.txt",
+      "pages": 0,
+      "severity": "ok",
+      "note": "وضعیت خوب اگر صفر بماند"
+    },
+    {
+      "reasonFa": "خطای سرور (۵xx)",
+      "pages": 0,
+      "severity": "ok",
+      "note": "وضعیت خوب اگر صفر بماند"
+    }
+  ],
+  "insights": [
+    "آخرین وضعیت Coverage: ایندکس 296 · غیرایندکس 525 (2026-09-04).",
+    "رشد ایندکس نسبت به ۲۰ جولای (۱۱۷→296) — مثبت.",
+    "noindex: 236 صفحه — Validation=Failed · اولویت بحرانی (قبلاً ۴۶).",
+    "۴۰۴ در گزارش فعلی: ۰ (پاکسازی قبلی ماندگار به نظر می‌رسد).",
+    "خزش‌شده ولی ایندکس‌نشده: 91 · کشف‌شده ولی ایندکس‌نشده: 139.",
+    "ریدایرکت: 24 · Redirect error: 1 · 403: 1.",
+    "Sitemap scope در گزارش: All known pages.",
+    "Performance اکسپورت ۰۷ سپتامبر فیلتر صفحهٔ حسابداری است — پنل GSC کل‌سایت عمداً با ۲۷ اوت مانده تا اکسپورت سایت‌واید جدید بیاید."
+  ],
+  "chartTail": [
+    {
+      "date": "2026-08-24",
+      "indexed": 346,
+      "notIndexed": 471,
+      "impressions": 1023
+    },
+    {
+      "date": "2026-08-25",
+      "indexed": 346,
+      "notIndexed": 471,
+      "impressions": 1009
+    },
+    {
+      "date": "2026-08-26",
+      "indexed": 346,
+      "notIndexed": 471,
+      "impressions": 883
+    },
+    {
+      "date": "2026-08-27",
+      "indexed": 346,
+      "notIndexed": 471,
+      "impressions": 858
+    },
+    {
+      "date": "2026-08-28",
+      "indexed": 346,
+      "notIndexed": 471,
+      "impressions": 857
+    },
+    {
+      "date": "2026-08-29",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 1026
+    },
+    {
+      "date": "2026-08-30",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 1092
+    },
+    {
+      "date": "2026-08-31",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 977
+    },
+    {
+      "date": "2026-09-01",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 783
+    },
+    {
+      "date": "2026-09-02",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 793
+    },
+    {
+      "date": "2026-09-03",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 642
+    },
+    {
+      "date": "2026-09-04",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 802
+    }
+  ],
+  "drilldownNoindex": {
+    "exportedAt": "2026-09-07",
+    "exportedAtFa": "۱۶ شهریور ۱۴۰۵",
+    "issue": "Excluded by ‘noindex’ tag",
+    "issueFa": "حذف با تگ noindex",
+    "count": 236,
+    "sampleUrls": [
+      {
+        "url": "https://zehnati.ir/صفر-تاصد-عربی-یازدهم/",
+        "lastCrawled": "2026-09-05"
+      },
+      {
+        "url": "https://zehnati.ir/تست-های-غلط/",
+        "lastCrawled": "2026-09-05"
+      },
+      {
+        "url": "https://zehnati.ir/مدیریت-ارتباطات-در-سال-کنکور/",
+        "lastCrawled": "2026-09-05"
+      },
+      {
+        "url": "https://zehnati.ir/نفیسه-شکرانی/",
+        "lastCrawled": "2026-09-03"
+      },
+      {
+        "url": "https://zehnati.ir/⬆️تندخوانی-در-تست-زنی-👍/",
+        "lastCrawled": "2026-09-03"
+      },
+      {
+        "url": "https://zehnati.ir/روش-صحیح-مطالعه-در-طول-سال-تحصیلی/",
+        "lastCrawled": "2026-09-03"
+      },
+      {
+        "url": "https://zehnati.ir/امتحانات-دی-ماه-و-جمع-بندی-نیمسال-اول/",
+        "lastCrawled": "2026-09-03"
+      },
+      {
+        "url": "https://zehnati.ir/چگونه-درس-هارا-خلاصه-کنیم؟-2/",
+        "lastCrawled": "2026-09-03"
+      },
+      {
+        "url": "https://zehnati.ir/بهترین-درس-تخصصی-برای-درصد-بالا/",
+        "lastCrawled": "2026-09-03"
+      },
+      {
+        "url": "https://zehnati.ir/بیست-شو-عربی/",
+        "lastCrawled": "2026-09-03"
+      },
+      {
+        "url": "https://zehnati.ir/امیرحسین-صبوحی/",
+        "lastCrawled": "2026-09-02"
+      },
+      {
+        "url": "https://zehnati.ir/ریاضی-و-فیزیک-رشته-تجربی/",
+        "lastCrawled": "2026-09-02"
+      },
+      {
+        "url": "https://zehnati.ir/یک-ترفند-واقعی/",
+        "lastCrawled": "2026-09-02"
+      },
+      {
+        "url": "https://zehnati.ir/نحوه-مطالعه-تشریحی-دروس/",
+        "lastCrawled": "2026-09-02"
+      },
+      {
+        "url": "https://zehnati.ir/وبینار-آموزشی-ویژه-دهمی-ها-و-یازدهمی-ها/",
+        "lastCrawled": "2026-09-01"
+      },
+      {
+        "url": "https://zehnati.ir/اشتباهات-تست-زنی/",
+        "lastCrawled": "2026-09-01"
+      },
+      {
+        "url": "https://zehnati.ir/نمیتونم-درس-بخونم/",
+        "lastCrawled": "2026-09-01"
+      },
+      {
+        "url": "https://zehnati.ir/تغذیه-مناسب-سال-کنکور/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/طلسم-زبان-وعربی-کنکور-را-بشکن/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/فیزیک/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/تندخوانی/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/روش-مطالعه/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/ای-شن-اقائی/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/نحوه-مطالعه-شیمی-برای-نهایی-دی-ماه/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/auth/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/تحلیل-آزمون-های-سه-روز-یکبار/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/انگیزه-ندارم-چیکارکنم؟/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/ایلین-دنیائی/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/تا-حالا-فکر-کردی-فقط-۲۵-دقیقه/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/استراتژی-مطالعه-درس-فیزیک/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/چرا-نمیتونم-طولانی-مدت-بشینم-سردرس-خوا/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/اعتماد-به-نفس/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/چطور-از-الان-خودموبرای-کنکور-آماده-کنم/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/satisfaction/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/بی-دقتی/",
+        "lastCrawled": "2026-08-31"
+      },
+      {
+        "url": "https://zehnati.ir/نحوه-استفاده-از-تایم-حضور-مدرسه/",
+        "lastCrawled": "2026-08-30"
+      },
+      {
+        "url": "https://zehnati.ir/نحوه-مطالعه-درس-شیمی/",
+        "lastCrawled": "2026-08-30"
+      },
+      {
+        "url": "https://zehnati.ir/تاحالا-فکر-کردی-چرا-بعضی-ها-سریعتر-یاد-م/",
+        "lastCrawled": "2026-08-30"
+      },
+      {
+        "url": "https://zehnati.ir/استرس-کنکور-2/",
+        "lastCrawled": "2026-08-30"
+      },
+      {
+        "url": "https://zehnati.ir/روش-مطالعه-زیست-شناسی؟/",
+        "lastCrawled": "2026-08-30"
+      }
+    ],
+    "note": "Drilldown کامل noindex · ۲۳۶ URL در Table"
+  }
+}

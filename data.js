@@ -1,11 +1,11 @@
-/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: 2026-08-27 / 2026-08-27 */
+/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: 2026-08-27 / ۵ شهریور ۱۴۰۵ */
 window.ZEHNATI_SEO = {
   meta: {
     brand: "ذهن آتی",
     domain: "https://zehnati.ir/",
     manager: "دکتر زهرا جعفری",
-    updatedAt: "2026-09-07",
-    updatedAtFa: "2026-08-27",
+    updatedAt: "2026-09-08",
+    updatedAtFa: "۱۶ شهریور ۱۴۰۵",
     phase: 2,
     phaseLabel: "فاز ۲ — ماه ۲: تکمیل P0 + Silo",
     week: 5,
@@ -1851,18 +1851,18 @@ window.ZEHNATI_SEO = {
   },
   score: {
     overall: 73,
-    label: "آدیت ۲۲ اوت: 73/۱۰۰ — GSC 3m 13٬142 کلیک · WoW +12.8٪ · P0 کلیک~261",
+    label: "آدیت 2026-09-07: 73/۱۰۰ — Coverage ایندکس ۲۹۶ · noindex ۲۳۶ · GSC 3m هنوز ۲۷ اوت",
     breakdown: [
       { id: "tech", name: "فنی", score: 78, max: 100 },
       { id: "onpage", name: "آن‌پیج", score: 79, max: 100 },
       { id: "content", name: "محتوا", score: 57, max: 100 },
       { id: "local", name: "محلی", score: 74, max: 100 },
-      { id: "conversion", name: "تبدیل / Landing", score: 79, max: 100 },
+      { id: "conversion", name: "تبدیل / Landing", score: 77, max: 100 },
     ],
   },
   kpis: [
     { label: "کیورد پوشش‌داده‌شده (از ۲۰۶)", current: "۵۳ P0 کامل", target: "۲۰۶ · P0=۵۳/۵۳ ✓ · بعدی P1" },
-    { label: "صفحات ایندکس (GSC)", current: "۱۱۷", target: "۱۰۰+ · 404+noindex audit done · re-crawl" },
+    { label: "صفحات ایندکس (GSC)", current: "296", target: "نگهداشت رشد · کاهش noindex=236" },
     { label: "لندینگ/هاب P0", current: "6", target: "ایندکس+کلیک تجاری · ماه۲ Silo" },
     { label: "کلیک GSC (کل سایت · ۳ماه)", current: "13٬142", target: "ریباند پایدار · رشد لندینگ تجاری" },
     { label: "کلیک هفته اخیر (WoW)", current: "1٬307 (+12.8٪)", target: "تثبیت ≥۱٬۲۰۰ / هفته" },
@@ -1870,7 +1870,7 @@ window.ZEHNATI_SEO = {
   /* GSC export 2026-08-27 — Last 3 months */
   gsc: {
     "exportedAt": "2026-08-27",
-    "exportedAtFa": "2026-08-27",
+    "exportedAtFa": "۵ شهریور ۱۴۰۵",
     "rangeLabel": "Last 3 months (2026-05-26 – 2026-08-25)",
     "dateFilter": "Last 3 months",
     "periodTag": "3m",
@@ -2307,7 +2307,7 @@ window.ZEHNATI_SEO = {
   },
   gscWow: {
     "exportedAt": "2026-08-27",
-    "exportedAtFa": "2026-08-27",
+    "exportedAtFa": "۵ شهریور ۱۴۰۵",
     "scopeNote": "مقایسه هفتگی از Chart · Last 3 months · Web · کل سایت",
     "currentRange": "2026-08-19 – 2026-08-25",
     "previousRange": "2026-08-12 – 2026-08-18",
@@ -2328,311 +2328,492 @@ window.ZEHNATI_SEO = {
       "لندینگ‌های P0 هنوز سهم کوچکی از کلیک کل دارند؛ خانه و بلاگ‌ها غالب‌اند."
     ]
   },
+  gscPageSpotlight: {
+    "exportedAt": "2026-09-07",
+    "scope": "page",
+    "warning": "این اکسپورت فیلتر یک صفحه است — جایگزین GSC کل‌سایت نیست",
+    "filters": {
+      "Filter": "Value",
+      "Search type": "Web",
+      "Date": "Last 3 months",
+      "Page": "https://zehnati.ir/%D9%87%D9%85%D9%87-%DA%86%DB%8C%D8%B2-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AD%D8%B3%D8%A7%D8%A8%D8%AF%D8%A7%D8%B1%DB%8C/"
+    },
+    "pageUrl": "https://zehnati.ir/%D9%87%D9%85%D9%87-%DA%86%DB%8C%D8%B2-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AD%D8%B3%D8%A7%D8%A8%D8%AF%D8%A7%D8%B1%DB%8C/",
+    "pagePath": "/همه-چیز-درباره-کنکور-حسابداری/",
+    "dateFilter": "Last 3 months",
+    "totals": {
+      "clicks": 896,
+      "impressions": 10102,
+      "ctr": "8.87%",
+      "position": 4.58
+    },
+    "wow": {
+      "clicksCur": 39,
+      "clicksPrev": 57,
+      "clicksPct": -31.6
+    },
+    "topQueries": [
+      {
+        "kw": "کنکور حسابداری",
+        "clicks": 174,
+        "impressions": 1656,
+        "ctr": "10.51%",
+        "position": 3.13
+      },
+      {
+        "kw": "کنکور حسابداری چگونه است",
+        "clicks": 54,
+        "impressions": 154,
+        "ctr": "35.06%",
+        "position": 1.92
+      },
+      {
+        "kw": "کنکور رشته حسابداری",
+        "clicks": 33,
+        "impressions": 214,
+        "ctr": "15.42%",
+        "position": 2.78
+      },
+      {
+        "kw": "ایا ماشین حساب در کنکور حسابداری مجاز است",
+        "clicks": 23,
+        "impressions": 217,
+        "ctr": "10.6%",
+        "position": 3.58
+      },
+      {
+        "kw": "رشته حسابداری کنکور دارد",
+        "clicks": 16,
+        "impressions": 258,
+        "ctr": "6.2%",
+        "position": 2.21
+      },
+      {
+        "kw": "آیا رشته حسابداری کنکور دارد",
+        "clicks": 15,
+        "impressions": 288,
+        "ctr": "5.21%",
+        "position": 2.6
+      },
+      {
+        "kw": "حسابداری کنکور دارد؟",
+        "clicks": 14,
+        "impressions": 205,
+        "ctr": "6.83%",
+        "position": 2.06
+      },
+      {
+        "kw": "کنکور حسابداری فنی حرفه ای چگونه است",
+        "clicks": 11,
+        "impressions": 24,
+        "ctr": "45.83%",
+        "position": 1.88
+      },
+      {
+        "kw": "ایا رشته حسابداری کنکور دارد؟",
+        "clicks": 10,
+        "impressions": 198,
+        "ctr": "5.05%",
+        "position": 2.56
+      },
+      {
+        "kw": "رشته حسابداری کنکور دارد یا نه",
+        "clicks": 10,
+        "impressions": 160,
+        "ctr": "6.25%",
+        "position": 2.08
+      },
+      {
+        "kw": "ایا حسابداری کنکور دارد",
+        "clicks": 8,
+        "impressions": 129,
+        "ctr": "6.2%",
+        "position": 2.42
+      },
+      {
+        "kw": "کنکور حسابداری فنی حرفه ای",
+        "clicks": 6,
+        "impressions": 133,
+        "ctr": "4.51%",
+        "position": 7.32
+      },
+      {
+        "kw": "آیا حسابداری کنکور دارد",
+        "clicks": 6,
+        "impressions": 124,
+        "ctr": "4.84%",
+        "position": 2.33
+      },
+      {
+        "kw": "رشته حسابداری کنکور داره؟",
+        "clicks": 6,
+        "impressions": 47,
+        "ctr": "12.77%",
+        "position": 1.43
+      },
+      {
+        "kw": "در کنکور حسابداری ماشین حساب مجاز است",
+        "clicks": 5,
+        "impressions": 23,
+        "ctr": "21.74%",
+        "position": 3.91
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://zehnati.ir/همه-چیز-درباره-کنکور-حسابداری/",
+        "clicks": 896,
+        "impressions": 10102,
+        "ctr": "8.87%",
+        "position": 4.64
+      }
+    ],
+    "insights": [
+      "صفحه حسابداری · ۳ماه: 896 کلیک / 10102 نمایش / رتبه ~4.58.",
+      "WoW صفحه: 39 در برابر 57 (-31.6٪).",
+      "برای پنل GSC کل‌سایت باید اکسپورت بدون فیلتر Page بگیرید (Last 3 months)."
+    ]
+  },
   coverage: {
-    "exportedAt": "2026-07-20",
-    "exportedAtFa": "۲۸ تیر ۱۴۰۵",
+    "exportedAt": "2026-09-07",
+    "exportedAtFa": "۱۶ شهریور ۱۴۰۵",
     "scopeNote": "گزارش Indexing / Coverage · All known pages · تاریخ آخرین نقطهٔ نمودار داخل گزارش",
     "latest": {
-      "date": "2026-07-10",
-      "indexed": 117,
-      "notIndexed": 343,
-      "impressions": 887
+      "date": "2026-09-04",
+      "indexed": 296,
+      "notIndexed": 525,
+      "impressions": 802
     },
     "totals": {
-      "issueRowsWithPages": 7,
-      "issuePagesSum": 343,
-      "critical404": 61,
-      "noindex": 46,
-      "crawledNotIndexed": 126,
-      "discoveredNotIndexed": 98
+      "issueRowsWithPages": 8,
+      "issuePagesSum": 525,
+      "critical404": 31,
+      "noindex": 236,
+      "crawledNotIndexed": 91,
+      "discoveredNotIndexed": 139,
+      "redirects": 24
     },
     "issues": [
       {
-        "reasonFa": "صفحه پیدا نشد (۴۰۴)",
-        "pages": 61,
-        "severity": "ok",
-        "note": "✅ انجام شد: 64×301 لایو · تست 64/64 · Validate GSC 21 Jul · re-crawl"
-      },
-      {
         "reasonFa": "حذف با تگ noindex",
-        "pages": 46,
-        "severity": "ok",
-        "note": "✅ انجام شد: Rank Math noindex برای خصوصی/سیستمی · /auth/ · لندینگ‌ها Index"
+        "pages": 236,
+        "severity": "critical",
+        "note": "⚠️ جهش شدید نسبت به ۴۶ قبلی — Validation=Failed · audit noindexهای غیرعمدی"
       },
       {
         "reasonFa": "صفحه با ریدایرکت",
-        "pages": 6,
+        "pages": 24,
         "severity": "medium",
-        "note": "طبیعی اگر زنجیره کوتاه باشد"
-      },
-      {
-        "reasonFa": "مسدود به‌خاطر خطای ۴xx دیگر",
-        "pages": 5,
-        "severity": "medium",
-        "note": "۲۲ Jul: ۵× admin-ajax iguru_like → HTTP 400 · اولویت پایین · gsc-2026-07-22-coverage-4xx-drilldown.md"
+        "note": "طبیعی اگر زنجیره کوتاه باشد · ۲۴ مورد"
       },
       {
         "reasonFa": "صفحه جایگزین با canonical درست",
-        "pages": 1,
+        "pages": 2,
         "severity": "medium",
         "note": "معمولاً نرمال (نسخه تکراری)"
       },
       {
-        "reasonFa": "خزش شده ولی هنوز ایندکس نیست",
-        "pages": 126,
+        "reasonFa": "خطای ریدایرکت",
+        "pages": 1,
         "severity": "high",
-        "note": "کیفیت/تکرار محتوا — تقویت لندینگ‌های P0 و لینک داخلی"
+        "note": "یک خطای ریدایرکت — زنجیره/لوپ را چک کن"
+      },
+      {
+        "reasonFa": "مسدود به‌خاطر ۴۰۳",
+        "pages": 1,
+        "severity": "critical",
+        "note": "یک URL ممنوع — بررسی دسترسی"
       },
       {
         "reasonFa": "کشف شده ولی هنوز ایندکس نیست",
-        "pages": 98,
+        "pages": 139,
         "severity": "high",
-        "note": "صفحات در صف ایندکس — Submit مهم‌ها در GSC"
+        "note": "صف در ایندکس — Submit لندینگ‌های P0 در GSC"
       },
       {
-        "reasonFa": "خطای سرور (۵xx)",
+        "reasonFa": "خزش شده ولی هنوز ایندکس نیست",
+        "pages": 91,
+        "severity": "high",
+        "note": "کیفیت/تکرار — تقویت لینک داخلی و عمق محتوا"
+      },
+      {
+        "reasonFa": "صفحه پیدا نشد (۴۰۴)",
+        "pages": 31,
+        "severity": "critical",
+        "note": "Validation=Started · ۳۱ URL باقی — ۳۰۱/حذف از لینک/سایت‌مپ (قبلاً ۶۱)"
+      },
+      {
+        "reasonFa": "مسدود به‌خاطر خطای ۴xx دیگر",
         "pages": 0,
         "severity": "ok",
-        "note": "وضعیت خوب اگر صفر بماند"
+        "note": "Validation: Passed"
       },
       {
         "reasonFa": "مسدود با robots.txt",
         "pages": 0,
         "severity": "ok",
         "note": "وضعیت خوب اگر صفر بماند"
+      },
+      {
+        "reasonFa": "خطای سرور (۵xx)",
+        "pages": 0,
+        "severity": "ok",
+        "note": "وضعیت خوب اگر صفر بماند"
       }
     ],
     "insights": [
-      "آخرین وضعیت Coverage: ایندکس 117 · غیرایندکس 343 (2026-07-10).",
-      "۴۰۴: 61 URL — ✅ 64 ریدایرکت 301 لایو · Validate GSC 21 Jul · منتظر re-crawl.",
-      "noindex: 46 — ✅ Rank Math: صفحات خصوصی/سیستمی noindex شد · لندینگ‌ها Index · re-crawl GSC",
-      "خزش‌شده ولی ایندکس‌نشده: 126 · کشف‌شده ولی ایندکس‌نشده: 98.",
-      "۵xx و robots.txt مسدودکننده = ۰ (خوب).",
+      "آخرین وضعیت Coverage: ایندکس 296 · غیرایندکس 525 (2026-09-04).",
+      "رشد ایندکس نسبت به ۲۰ جولای (۱۱۷→296) — مثبت.",
+      "noindex: 236 صفحه — Validation=Failed · اولویت بحرانی (قبلاً ۴۶).",
+      "۴۰۴ در گزارش فعلی: ۰ (پاکسازی قبلی ماندگار به نظر می‌رسد).",
+      "خزش‌شده ولی ایندکس‌نشده: 91 · کشف‌شده ولی ایندکس‌نشده: 139.",
+      "ریدایرکت: 24 · Redirect error: 1 · 403: 1.",
       "Sitemap scope در گزارش: All known pages.",
-      "Drilldown ۴۰۴: ۶۱ URL — ۵ مورد کنکور/مشاوره مرده اولویت ریدایرکت دارند.",
-      "۲۰۲۶-۰۷-۲۰: aboutus / about-us / contactus / رضایتمندی / مشاورین-برتر → ۳۰۱ تأیید زنده.",
-      "۲۰۲۶-۰۷-۲۰: /shop/ و /shop/page/2/ → ۳۰۱ به خانه تأیید زنده.",
-      "۲۰۲۶-۰۷-۲۰: مشاوره-رایگان-حضوری-در-تهران → /contact-us/ تأیید (با و بدون اسلش).",
-      "۲۰۲۶-۰۷-۲۲: ۴xx دیگر = ۵ URL فقط admin-ajax?action=iguru_like (لایک تم) · لایو 400 · اولویت پایین.",
-      "نمونه: /مشاوره-کنکور-در-اصفهان/ و /مشاوره-تحصیلی-کنکور-در-اصفهان/ → لندینگ‌های زنده."
+      "Performance اکسپورت ۰۷ سپتامبر فیلتر صفحهٔ حسابداری است — پنل GSC کل‌سایت عمداً با ۲۷ اوت مانده تا اکسپورت سایت‌واید جدید بیاید."
     ],
-    "drilldown404": {
-      "exportedAt": "2026-07-20",
-      "exportedAtFa": "۲۸ تیر ۱۴۰۵",
-      "issue": "Not found (404)",
-      "issueFa": "صفحه پیدا نشد (۴۰۴)",
-      "count": 61,
-      "categories": [
-        {
-          "name": "اسلاگ تکی متفرقه",
-          "count": 18
-        },
-        {
-          "name": "پروفایل/نام مشاور (احتمالی)",
-          "count": 17
-        },
-        {
-          "name": "سایر",
-          "count": 13
-        },
-        {
-          "name": "محتوای کنکور/مشاوره (مرده)",
-          "count": 4
-        },
-        {
-          "name": "پارامتر / کوئری",
-          "count": 4
-        },
-        {
-          "name": "صفحات سیستمی/قدیمی",
-          "count": 3
-        },
-        {
-          "name": "فروشگاه / shop",
-          "count": 2
-        }
-      ],
-      "redirectPlan": [
-        {
-          "from": "/مشاوره-کنکور-در-اصفهان/",
-          "to": "/بهترین-مشاور-کنکور-اصفهان/",
-          "priority": "critical",
-          "done": true
-        },
-        {
-          "from": "/بهترین-مشاوره-کنکور-در-اصفهان/",
-          "to": "/بهترین-مشاور-کنکور-اصفهان/",
-          "priority": "critical",
-          "done": true
-        },
-        {
-          "from": "/مشاوره-تحصیلی-کنکور-در-اصفهان/",
-          "to": "/مشاوره-تحصیلی-در-اصفهان/",
-          "priority": "critical",
-          "done": true
-        },
-        {
-          "from": "/مشاوره-رایگان-حضوری-در-تهران/",
-          "to": "/contact-us/",
-          "priority": "high",
-          "done": true
-        },
-        {
-          "from": "/aboutus/",
-          "to": "/about/",
-          "priority": "high",
-          "done": true
-        },
-        {
-          "from": "/about-us/",
-          "to": "/about/",
-          "priority": "high",
-          "done": true
-        },
-        {
-          "from": "/contactus/",
-          "to": "/contact-us/",
-          "priority": "high",
-          "done": true
-        },
-        {
-          "from": "/رضایتمندی/",
-          "to": "/satisfaction/",
-          "priority": "medium",
-          "done": true
-        },
-        {
-          "from": "/مشاورین-برتر/",
-          "to": "/top-consultants/",
-          "priority": "medium",
-          "done": true
-        },
-        {
-          "from": "/shop/",
-          "to": "حذف از ایندکس / ریدایرکت خانه",
-          "priority": "medium",
-          "done": true
-        },
-        {
-          "from": "/shop/page/2/",
-          "to": "حذف از ایندکس / ریدایرکت خانه",
-          "priority": "medium",
-          "done": true
-        }
-      ],
+    "chartTail": [
+      {
+        "date": "2026-08-24",
+        "indexed": 346,
+        "notIndexed": 471,
+        "impressions": 1023
+      },
+      {
+        "date": "2026-08-25",
+        "indexed": 346,
+        "notIndexed": 471,
+        "impressions": 1009
+      },
+      {
+        "date": "2026-08-26",
+        "indexed": 346,
+        "notIndexed": 471,
+        "impressions": 883
+      },
+      {
+        "date": "2026-08-27",
+        "indexed": 346,
+        "notIndexed": 471,
+        "impressions": 858
+      },
+      {
+        "date": "2026-08-28",
+        "indexed": 346,
+        "notIndexed": 471,
+        "impressions": 857
+      },
+      {
+        "date": "2026-08-29",
+        "indexed": 296,
+        "notIndexed": 525,
+        "impressions": 1026
+      },
+      {
+        "date": "2026-08-30",
+        "indexed": 296,
+        "notIndexed": 525,
+        "impressions": 1092
+      },
+      {
+        "date": "2026-08-31",
+        "indexed": 296,
+        "notIndexed": 525,
+        "impressions": 977
+      },
+      {
+        "date": "2026-09-01",
+        "indexed": 296,
+        "notIndexed": 525,
+        "impressions": 783
+      },
+      {
+        "date": "2026-09-02",
+        "indexed": 296,
+        "notIndexed": 525,
+        "impressions": 793
+      },
+      {
+        "date": "2026-09-03",
+        "indexed": 296,
+        "notIndexed": 525,
+        "impressions": 642
+      },
+      {
+        "date": "2026-09-04",
+        "indexed": 296,
+        "notIndexed": 525,
+        "impressions": 802
+      }
+    ],
+    "drilldownNoindex": {
+      "exportedAt": "2026-09-07",
+      "exportedAtFa": "۱۶ شهریور ۱۴۰۵",
+      "issue": "Excluded by ‘noindex’ tag",
+      "issueFa": "حذف با تگ noindex",
+      "count": 236,
       "sampleUrls": [
         {
-          "path": "/shop/page/2/",
-          "category": "فروشگاه / shop",
-          "lastCrawled": "2026-07-11"
+          "url": "https://zehnati.ir/صفر-تاصد-عربی-یازدهم/",
+          "lastCrawled": "2026-09-05"
         },
         {
-          "path": "/shop/",
-          "category": "فروشگاه / shop",
-          "lastCrawled": "2026-07-11"
+          "url": "https://zehnati.ir/تست-های-غلط/",
+          "lastCrawled": "2026-09-05"
         },
         {
-          "path": "/آموزش-صفر-تا-صد-تست-زنی/",
-          "category": "اسلاگ تکی متفرقه",
-          "lastCrawled": "2026-07-09"
+          "url": "https://zehnati.ir/مدیریت-ارتباطات-در-سال-کنکور/",
+          "lastCrawled": "2026-09-05"
         },
         {
-          "path": "/aboutus/",
-          "category": "صفحات سیستمی/قدیمی",
-          "lastCrawled": "2026-07-04"
+          "url": "https://zehnati.ir/نفیسه-شکرانی/",
+          "lastCrawled": "2026-09-03"
         },
         {
-          "path": "/باران-داوری/",
-          "category": "پروفایل/نام مشاور (احتمالی)",
-          "lastCrawled": "2026-06-26"
+          "url": "https://zehnati.ir/⬆️تندخوانی-در-تست-زنی-👍/",
+          "lastCrawled": "2026-09-03"
         },
         {
-          "path": "/امیر-ناصری/",
-          "category": "پروفایل/نام مشاور (احتمالی)",
-          "lastCrawled": "2026-06-24"
+          "url": "https://zehnati.ir/روش-صحیح-مطالعه-در-طول-سال-تحصیلی/",
+          "lastCrawled": "2026-09-03"
         },
         {
-          "path": "/مشاوره-تحصیلی-کنکور-در-اصفهان/",
-          "category": "محتوای کنکور/مشاوره (مرده)",
-          "lastCrawled": "2026-06-22"
+          "url": "https://zehnati.ir/امتحانات-دی-ماه-و-جمع-بندی-نیمسال-اول/",
+          "lastCrawled": "2026-09-03"
         },
         {
-          "path": "/taein-sath/",
-          "category": "پروفایل/نام مشاور (احتمالی)",
-          "lastCrawled": "2026-06-16"
+          "url": "https://zehnati.ir/چگونه-درس-هارا-خلاصه-کنیم؟-2/",
+          "lastCrawled": "2026-09-03"
         },
         {
-          "path": "/هفتم/",
-          "category": "اسلاگ تکی متفرقه",
-          "lastCrawled": "2026-06-16"
+          "url": "https://zehnati.ir/بهترین-درس-تخصصی-برای-درصد-بالا/",
+          "lastCrawled": "2026-09-03"
         },
         {
-          "path": "/نازنین-عباسی/",
-          "category": "پروفایل/نام مشاور (احتمالی)",
-          "lastCrawled": "2026-06-15"
+          "url": "https://zehnati.ir/بیست-شو-عربی/",
+          "lastCrawled": "2026-09-03"
         },
         {
-          "path": "/ddd/",
-          "category": "اسلاگ تکی متفرقه",
-          "lastCrawled": "2026-06-09"
+          "url": "https://zehnati.ir/امیرحسین-صبوحی/",
+          "lastCrawled": "2026-09-02"
         },
         {
-          "path": "/profile/",
-          "category": "اسلاگ تکی متفرقه",
-          "lastCrawled": "2026-06-09"
+          "url": "https://zehnati.ir/ریاضی-و-فیزیک-رشته-تجربی/",
+          "lastCrawled": "2026-09-02"
         },
         {
-          "path": "/رضایتمندی/",
-          "category": "اسلاگ تکی متفرقه",
-          "lastCrawled": "2026-06-08"
+          "url": "https://zehnati.ir/یک-ترفند-واقعی/",
+          "lastCrawled": "2026-09-02"
         },
         {
-          "path": "/فرم-قرارداد/",
-          "category": "پروفایل/نام مشاور (احتمالی)",
-          "lastCrawled": "2026-06-07"
+          "url": "https://zehnati.ir/نحوه-مطالعه-تشریحی-دروس/",
+          "lastCrawled": "2026-09-02"
         },
         {
-          "path": "/مشاوره-کنکور-در-اصفهان/",
-          "category": "محتوای کنکور/مشاوره (مرده)",
-          "lastCrawled": "2026-06-04"
+          "url": "https://zehnati.ir/وبینار-آموزشی-ویژه-دهمی-ها-و-یازدهمی-ها/",
+          "lastCrawled": "2026-09-01"
         },
         {
-          "path": "/contactus/",
-          "category": "صفحات سیستمی/قدیمی",
-          "lastCrawled": "2026-06-03"
+          "url": "https://zehnati.ir/اشتباهات-تست-زنی/",
+          "lastCrawled": "2026-09-01"
         },
         {
-          "path": "/مشاورین-برتر/",
-          "category": "پروفایل/نام مشاور (احتمالی)",
-          "lastCrawled": "2026-05-26"
+          "url": "https://zehnati.ir/نمیتونم-درس-بخونم/",
+          "lastCrawled": "2026-09-01"
         },
         {
-          "path": "/home-2/",
-          "category": "پروفایل/نام مشاور (احتمالی)",
-          "lastCrawled": "2026-05-25"
+          "url": "https://zehnati.ir/تغذیه-مناسب-سال-کنکور/",
+          "lastCrawled": "2026-08-31"
         },
         {
-          "path": "/ticket/",
-          "category": "اسلاگ تکی متفرقه",
-          "lastCrawled": "2026-05-21"
+          "url": "https://zehnati.ir/طلسم-زبان-وعربی-کنکور-را-بشکن/",
+          "lastCrawled": "2026-08-31"
         },
         {
-          "path": "/ثبت-نام-آنلاین-ترمیم-معدل-و-سابقه-تحصیل/",
-          "category": "اسلاگ تکی متفرقه",
-          "lastCrawled": "2026-05-19"
+          "url": "https://zehnati.ir/فیزیک/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/تندخوانی/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/روش-مطالعه/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/ای-شن-اقائی/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/نحوه-مطالعه-شیمی-برای-نهایی-دی-ماه/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/auth/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/تحلیل-آزمون-های-سه-روز-یکبار/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/انگیزه-ندارم-چیکارکنم؟/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/ایلین-دنیائی/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/تا-حالا-فکر-کردی-فقط-۲۵-دقیقه/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/استراتژی-مطالعه-درس-فیزیک/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/چرا-نمیتونم-طولانی-مدت-بشینم-سردرس-خوا/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/اعتماد-به-نفس/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/چطور-از-الان-خودموبرای-کنکور-آماده-کنم/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/satisfaction/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/بی-دقتی/",
+          "lastCrawled": "2026-08-31"
+        },
+        {
+          "url": "https://zehnati.ir/نحوه-استفاده-از-تایم-حضور-مدرسه/",
+          "lastCrawled": "2026-08-30"
+        },
+        {
+          "url": "https://zehnati.ir/نحوه-مطالعه-درس-شیمی/",
+          "lastCrawled": "2026-08-30"
+        },
+        {
+          "url": "https://zehnati.ir/تاحالا-فکر-کردی-چرا-بعضی-ها-سریعتر-یاد-م/",
+          "lastCrawled": "2026-08-30"
+        },
+        {
+          "url": "https://zehnati.ir/استرس-کنکور-2/",
+          "lastCrawled": "2026-08-30"
+        },
+        {
+          "url": "https://zehnati.ir/روش-مطالعه-زیست-شناسی؟/",
+          "lastCrawled": "2026-08-30"
         }
       ],
-      "insights": [
-        "Drilldown فقط برای «Not found (404)» است — 61 URL در جدول.",
-        "اولویت: ریدایرکت ۳۰۱ اسلاگ‌های کنکور/مشاوره مرده به لندینگ‌های زنده؛ حذف از لینک داخلی.",
-        "URLهای /shop/ و پارامترهای فروشگاه احتمالاً ووکامرس/باقی‌مانده‌اند — noindex یا ریدایرکت به خانه/خدمات.",
-        "aboutus و اسلاگ‌های قدیمی را به /about/ و صفحات فعلی وصل کنید.",
-        "برای هر ۴۰۴ مهم در GSC Validate بعد از اصلاح.",
-        "2026-07-21: 64 ریدایرکت 301 (import+supplement+parents) — تست لایو 64/64 و GSC list 60/60.",
-        "2026-07-21: Validate Fix 404 در GSC — وضعیت PENDING تا re-crawl.",
-        "بخش زیادی از ۴۰۴ها دموی قالب (portfolio/courses) و تیکت/پروفایل تست است — اولویت پایین‌تر از اسلاگ‌های کنکور.",
-        "۵ URL کنکور/مشاوره مرده را اول ۳۰۱ کنید."
-      ]
+      "note": "Drilldown کامل noindex · ۲۳۶ URL در Table"
     }
   },
   techStatus: [
@@ -2646,14 +2827,14 @@ window.ZEHNATI_SEO = {
     { id: "meta", name: "Meta Description", status: "pass", detail: "اختصاصی و بهینه — دیگر اسکرپ نیست" },
     { id: "about-h1", name: "H1 درباره ما", status: "pass", detail: "۱ H1 — درباره آکادمی ذهن آتی" },
     { id: "landings", name: "Landingهای P0", status: "warn", detail: "Sentinel 07 Sep: 13/13 OK · P0 سالم" },
-    { id: "schema", name: "Schema محلی", status: "warn", detail: "Local/Edu اصفهان+تهران در لندینگ‌ها · Person جدا باز" },
-    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "آدیت 22 Aug: 73 · GSC 3m 13٬142 کلیک · P0 کلیک~261" },
+    { id: "schema", name: "Schema محلی", status: "pass", detail: "LocalBusiness اصفهان+تهران + Person دکتر جعفری ✓ 2026-09-08" },
+    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "سایت‌واید هنوز ۲۷ اوت: 13٬142 کلیک · اکسپورت ۰۷ سپتامبر فقط صفحهٔ حسابداری بود" },
     { id: "gsc-wow", name: "GSC هفته‌به‌هفته", status: "pass", detail: "2026-08-19 – 2026-08-25: 1٬307 کلیک (+12.8٪) · نمایش +23.8٪" },
     {
       id: "coverage",
       name: "ایندکس / Coverage",
-      status: "warn",
-      detail: "404+noindex audit ✅ · re-crawl GSC · crawled-not-indexed 126 باز",
+      status: "fail",
+      detail: "2026-09-04: ایندکس 296 · noindex 236 Failed · 404=31 Started · discovered 139",
     },
   ],
   homepage: {
@@ -2927,8 +3108,8 @@ window.ZEHNATI_SEO = {
           priority: "medium",
           title: "تکمیل Schema LocalBusiness + Person",
           where: "Rank Math Schema",
-          why: "اصفهان کامل‌تر + تهران + Person دکتر جعفری",
-          done: false,
+          why: "✅ LocalBusiness اصفهان(۰۳۱)+تهران + Person دکتر جعفری · live 2026-09-08",
+          done: true,
         },
         {
           id: "p1-a9",
@@ -2978,7 +3159,7 @@ window.ZEHNATI_SEO = {
         { id: "p1-c4", label: "لندینگ اصفهان", done: true },
         { id: "p1-c5", label: "لندینگ تهران (200 · 1 H1)", done: true },
         { id: "p1-c6", label: "نویسنده WP = fishprogrammer (عمدی)", done: true },
-        { id: "p1-c7", label: "Schema Local + Person", done: false },
+        { id: "p1-c7", label: "Schema Local + Person", done: true },
         { id: "p1-c8", label: "۲۵ کیورد P0 ماه ۱ به URL وصل شدند", done: true },
         { id: "p1-c9", label: "Submit صفحات جدید در GSC (Request indexing)", done: true },
         { id: "p1-c11", label: "۶۱×۴۰۴ → 301 (64 rule · Validate GSC)", done: true },
@@ -3053,8 +3234,8 @@ window.ZEHNATI_SEO = {
           priority: "high",
           title: "Meta description خانه → ۱۵۰–۲۲۰ کاراکتر",
           where: "Rank Math · /",
-          why: "Site Checkup: meta الان ۱۱۶ کاراکتر؛ توصیه ۱۵۰–۲۲۰",
-          done: false,
+          why: "✅ لایو 170 کاراکتر · مشاوره رایگان کنکور با دکتر زهرا جعفری —…",
+          done: true,
           note: "منبع: SEO Site Checkup 2026-09-07 · Score 77",
         },
         {
@@ -3091,7 +3272,7 @@ window.ZEHNATI_SEO = {
         { id: "p2-c4", label: "هاب رشته‌ها ساختار تمیز", done: true },
         { id: "p2-c5", label: "رفع ریدایرکت‌های اشتباه تجاری", done: true },
         { id: "p2-c6", label: "P0 کامل: ۵۳/۵۳ کیورد به URL وصل", done: true },
-        { id: "p2-c8", label: "Meta description خانه ۱۵۰–۲۲۰", done: false },
+        { id: "p2-c8", label: "Meta description خانه ۱۵۰–۲۲۰", done: true },
         { id: "p2-c9", label: "noopener روی target=_blank", done: false },
         { id: "p2-c10", label: "SPF دامنه ثبت شد", done: false },
         { id: "p2-c7", label: "گزارش ماه ۲", done: false },

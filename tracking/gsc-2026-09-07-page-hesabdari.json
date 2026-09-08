@@ -1,0 +1,146 @@
+{
+  "exportedAt": "2026-09-07",
+  "scope": "page",
+  "warning": "این اکسپورت فیلتر یک صفحه است — جایگزین GSC کل‌سایت نیست",
+  "filters": {
+    "Filter": "Value",
+    "Search type": "Web",
+    "Date": "Last 3 months",
+    "Page": "https://zehnati.ir/%D9%87%D9%85%D9%87-%DA%86%DB%8C%D8%B2-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AD%D8%B3%D8%A7%D8%A8%D8%AF%D8%A7%D8%B1%DB%8C/"
+  },
+  "pageUrl": "https://zehnati.ir/%D9%87%D9%85%D9%87-%DA%86%DB%8C%D8%B2-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%AD%D8%B3%D8%A7%D8%A8%D8%AF%D8%A7%D8%B1%DB%8C/",
+  "pagePath": "/همه-چیز-درباره-کنکور-حسابداری/",
+  "dateFilter": "Last 3 months",
+  "totals": {
+    "clicks": 896,
+    "impressions": 10102,
+    "ctr": "8.87%",
+    "position": 4.58
+  },
+  "wow": {
+    "clicksCur": 39,
+    "clicksPrev": 57,
+    "clicksPct": -31.6
+  },
+  "topQueries": [
+    {
+      "kw": "کنکور حسابداری",
+      "clicks": 174,
+      "impressions": 1656,
+      "ctr": "10.51%",
+      "position": 3.13
+    },
+    {
+      "kw": "کنکور حسابداری چگونه است",
+      "clicks": 54,
+      "impressions": 154,
+      "ctr": "35.06%",
+      "position": 1.92
+    },
+    {
+      "kw": "کنکور رشته حسابداری",
+      "clicks": 33,
+      "impressions": 214,
+      "ctr": "15.42%",
+      "position": 2.78
+    },
+    {
+      "kw": "ایا ماشین حساب در کنکور حسابداری مجاز است",
+      "clicks": 23,
+      "impressions": 217,
+      "ctr": "10.6%",
+      "position": 3.58
+    },
+    {
+      "kw": "رشته حسابداری کنکور دارد",
+      "clicks": 16,
+      "impressions": 258,
+      "ctr": "6.2%",
+      "position": 2.21
+    },
+    {
+      "kw": "آیا رشته حسابداری کنکور دارد",
+      "clicks": 15,
+      "impressions": 288,
+      "ctr": "5.21%",
+      "position": 2.6
+    },
+    {
+      "kw": "حسابداری کنکور دارد؟",
+      "clicks": 14,
+      "impressions": 205,
+      "ctr": "6.83%",
+      "position": 2.06
+    },
+    {
+      "kw": "کنکور حسابداری فنی حرفه ای چگونه است",
+      "clicks": 11,
+      "impressions": 24,
+      "ctr": "45.83%",
+      "position": 1.88
+    },
+    {
+      "kw": "ایا رشته حسابداری کنکور دارد؟",
+      "clicks": 10,
+      "impressions": 198,
+      "ctr": "5.05%",
+      "position": 2.56
+    },
+    {
+      "kw": "رشته حسابداری کنکور دارد یا نه",
+      "clicks": 10,
+      "impressions": 160,
+      "ctr": "6.25%",
+      "position": 2.08
+    },
+    {
+      "kw": "ایا حسابداری کنکور دارد",
+      "clicks": 8,
+      "impressions": 129,
+      "ctr": "6.2%",
+      "position": 2.42
+    },
+    {
+      "kw": "کنکور حسابداری فنی حرفه ای",
+      "clicks": 6,
+      "impressions": 133,
+      "ctr": "4.51%",
+      "position": 7.32
+    },
+    {
+      "kw": "آیا حسابداری کنکور دارد",
+      "clicks": 6,
+      "impressions": 124,
+      "ctr": "4.84%",
+      "position": 2.33
+    },
+    {
+      "kw": "رشته حسابداری کنکور داره؟",
+      "clicks": 6,
+      "impressions": 47,
+      "ctr": "12.77%",
+      "position": 1.43
+    },
+    {
+      "kw": "در کنکور حسابداری ماشین حساب مجاز است",
+      "clicks": 5,
+      "impressions": 23,
+      "ctr": "21.74%",
+      "position": 3.91
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://zehnati.ir/همه-چیز-درباره-کنکور-حسابداری/",
+      "clicks": 896,
+      "impressions": 10102,
+      "ctr": "8.87%",
+      "position": 4.64
+    }
+  ],
+  "insights": [
+    "صفحه حسابداری · ۳ماه: 896 کلیک / 10102 نمایش / رتبه ~4.58.",
+    "WoW صفحه: 39 در برابر 57 (-31.6٪).",
+    "برای پنل GSC کل‌سایت باید اکسپورت بدون فیلتر Page بگیرید (Last 3 months)."
+  ]
+}
