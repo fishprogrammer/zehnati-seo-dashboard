@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-08T12:13:05+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۷ · ۱۲:۱۳",
+    "updatedAt": "2026-09-08T15:30:22+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۱۷ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,16 +42,16 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 40,
       "remaining": 180,
-      "runsAllTime": 20,
+      "runsAllTime": 21,
       "optimizedToday": 10,
-      "runsToday": 1
+      "runsToday": 2
     },
     "daily": [
       {
         "date": "2026-09-08",
         "dateFa": "۱۴۰۵/۰۶/۱۷",
-        "runs": 2,
-        "runsLive": 1,
+        "runs": 3,
+        "runsLive": 2,
         "postsOptimized": 10,
         "postsPreviewed": 10,
         "entries": [
@@ -864,6 +864,14 @@ window.ZEHNATI_SEO = {
                 "skipped": null
               }
             ]
+          },
+          {
+            "at": "2026-09-08T15:30:22+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۷ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 0,
+            "optimized": 0,
+            "results": []
           }
         ]
       },
