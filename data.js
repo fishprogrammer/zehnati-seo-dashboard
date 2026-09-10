@@ -32,21 +32,268 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-08T15:30:22+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۷ · ۱۵:۳۰",
+    "updatedAt": "2026-09-10T15:30:08+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۱۹ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 40,
-      "remaining": 180,
-      "runsAllTime": 21,
-      "optimizedToday": 10,
-      "runsToday": 2
+      "optimizedAllTime": 46,
+      "remaining": 174,
+      "runsAllTime": 22,
+      "optimizedToday": 6,
+      "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-10",
+        "dateFa": "۱۴۰۵/۰۶/۱۹",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 6,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-10T15:30:08+03:30",
+            "atFa": "۱۴۰۵/۰۶/۱۹ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 6,
+            "optimized": 6,
+            "results": [
+              {
+                "postId": 7799,
+                "title": "زمان لازم برای رتبه برتر شدن",
+                "link": "https://zehnati.ir/%d8%b2%d9%85%d8%a7%d9%86-%d9%84%d8%a7%d8%b2%d9%85-%d8%a8%d8%b1%d8%a7%db%8c-%d8%b1%d8%aa%d8%a8%d9%87-%d8%a8%d8%b1%d8%aa%d8%b1-%d8%b4%d8%af%d9%86/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7803,
+                "title": "بهترین منابع کنکور",
+                "link": "https://zehnati.ir/%d8%a8%d9%87%d8%aa%d8%b1%db%8c%d9%86-%d9%85%d9%86%d8%a7%d8%a8%d8%b9-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7808,
+                "title": "آشنایی با روش‌های جمع‌بندی کنکور",
+                "link": "https://zehnati.ir/%d8%a2%d8%b4%d9%86%d8%a7%db%8c%db%8c-%d8%a8%d8%a7-%d8%b1%d9%88%d8%b4%d9%87%d8%a7%db%8c-%d8%ac%d9%85%d8%b9%d8%a8%d9%86%d8%af%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7813,
+                "title": "تخمین رتبه کنکور+درصدها+معدل",
+                "link": "https://zehnati.ir/%d8%aa%d8%ae%d9%85%db%8c%d9%86-%d8%b1%d8%aa%d8%a8%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7818,
+                "title": "چطوری رشته پزشکی قبول بشیم؟",
+                "link": "https://zehnati.ir/%da%86%d8%b7%d9%88%d8%b1%db%8c-%d8%b1%d8%b4%d8%aa%d9%87-%d9%be%d8%b2%d8%b4%da%a9%db%8c-%d9%82%d8%a8%d9%88%d9%84-%d8%a8%d8%b4%db%8c%d9%85%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7823,
+                "title": "کارنامه سبز کنکور",
+                "link": "https://zehnati.ir/%da%a9%d8%a7%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d8%b3%d8%a8%d8%b2-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-09-08",
         "dateFa": "۱۴۰۵/۰۶/۱۷",
