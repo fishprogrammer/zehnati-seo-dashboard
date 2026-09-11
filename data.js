@@ -20,8 +20,8 @@ window.ZEHNATI_SEO = {
     keywordTotal: 206,
   },
   dailyHealth: {
-    checkedAt: "2026-09-11T14:51:31+03:30",
-    checkedAtFa: "۲۰۲۶-۰۹-۱۱ · ۱۴:۵۱",
+    checkedAt: "2026-09-11T19:00:20+03:30",
+    checkedAtFa: "۲۰۲۶-۰۹-۱۱ · ۱۹:۰۰",
     status: "critical",
     summaryFa: "۰/۱۳ صفحه 200 · مشکل robots/sitemap · احتمال timeout شبکه — دوباره ظهر امتحان شود · P0 خراب: /، /مشاوره-کنکور/، /قیمت-مشاوره-کنکور/ · بحرانی",
     pagesOk: 0,
@@ -3893,8 +3893,8 @@ window.ZEHNATI_SEO = {
   },
   techStatus: [
     { id: "ssl", name: "HTTPS / SSL", status: "pass", detail: "فعال" },
-    { id: "robots", name: "robots.txt", status: "fail", detail: "خطا · sitemap ref ✗ · Sentinel 14:51" },
-    { id: "sitemap", name: "XML Sitemap", status: "fail", detail: "sitemap_index.xml = 0 · Sentinel 14:51" },
+    { id: "robots", name: "robots.txt", status: "fail", detail: "خطا · sitemap ref ✗ · Sentinel 19:00" },
+    { id: "sitemap", name: "XML Sitemap", status: "fail", detail: "sitemap_index.xml = 0 · Sentinel 19:00" },
     { id: "rankmath", name: "Rank Math", status: "pass", detail: "نصب شده" },
     { id: "analytics", name: "Analytics / GTM", status: "pass", detail: "GA4 از Rank Math — G-Y0GZ4B5T0Y" },
     { id: "litespeed", name: "LiteSpeed Cache", status: "pass", detail: "فعال" },
