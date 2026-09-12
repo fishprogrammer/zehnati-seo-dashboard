@@ -32,21 +32,112 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-10T15:30:08+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۱۹ · ۱۵:۳۰",
+    "updatedAt": "2026-09-12T15:30:12+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۲۱ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 46,
-      "remaining": 174,
-      "runsAllTime": 22,
-      "optimizedToday": 6,
+      "optimizedAllTime": 48,
+      "remaining": 172,
+      "runsAllTime": 23,
+      "optimizedToday": 2,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-12",
+        "dateFa": "۱۴۰۵/۰۶/۲۱",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 2,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-12T15:30:12+03:30",
+            "atFa": "۱۴۰۵/۰۶/۲۱ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 2,
+            "optimized": 2,
+            "results": [
+              {
+                "postId": 7827,
+                "title": "انتخاب رشته دانشگاه آزاد",
+                "link": "https://zehnati.ir/%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8-%d8%b1%d8%b4%d8%aa%d9%87-%d8%af%d8%a7%d9%86%d8%b4%da%af%d8%a7%d9%87-%d8%a2%d8%b2%d8%a7%d8%af/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7832,
+                "title": "ثبت نام بدون کنکور",
+                "link": "https://zehnati.ir/%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85-%d8%a8%d8%af%d9%88%d9%86-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-09-10",
         "dateFa": "۱۴۰۵/۰۶/۱۹",
