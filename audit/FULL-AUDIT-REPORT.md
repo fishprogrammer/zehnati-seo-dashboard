@@ -1,6 +1,6 @@
 # Full SEO Audit — `/seo audit` — zehnati.ir
 
-**Generated:** 2026-09-07T20:09:20+03:30  
+**Generated:** 2026-09-13T15:43:51+03:30  
 **Health Score:** 73/100  
 **GSC 3m:** 13,142 کلیک · 136,685 نمایش · CTR 9.61% · pos 6.7  
 **WoW:** 1307 کلیک (+12.8٪)

@@ -19,19 +19,19 @@
 
 | URL | Status | H1 | noindex | Schema snippets |
 |-----|-------:|---:|:-------:|-----------------|
-| `/` | 200 | 1 |  | EducationalOrganization, ImageObject, LocalBusiness, PostalAddress |
-| `/about/` | 200 | 1 |  | Article, BreadcrumbList, ImageObject, ListItem |
-| `/contact-us/` | 200 | 1 |  | Article, BreadcrumbList, ImageObject, ListItem |
-| `/auth/` | 200 | 0 | yes | Article, BreadcrumbList, ImageObject, ListItem |
-| `/مشاوره-کنکور/` | 200 | 1 |  | Answer, Article, BreadcrumbList, FAQPage |
-| `/قیمت-مشاوره-کنکور/` | 200 | 1 |  | Answer, Article, BreadcrumbList, FAQPage |
-| `/بهترین-مشاور-کنکور-اصفهان/` | 200 | 1 |  | Answer, Article, BreadcrumbList, City |
-| `/مشاوره-آنلاین-کنکور/` | 200 | 1 |  | Answer, Article, BreadcrumbList, Country |
-| `/مشاوره-کنکور-تجربی/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
-| `/مشاوره-تحصیلی-در-اصفهان/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
-| `/ثبت-نام/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
-| `/بهترین-مشاور-کنکور-تهران/` | 200 | 1 |  | Answer, Article, BreadcrumbList, City |
-| `/برنامه-ریزی-کنکور/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ImageObject, ListItem |
+| `/` | 200 | 1 |  | City, ContactPoint, Country, GeoCoordinates |
+| `/about/` | 200 | 1 |  | BreadcrumbList, ContactPoint, ImageObject, ListItem |
+| `/contact-us/` | 200 | 1 |  | Article, BreadcrumbList, ContactPoint, ImageObject |
+| `/auth/` | 200 | 0 | yes | Article, BreadcrumbList, ContactPoint, ImageObject |
+| `/مشاوره-کنکور/` | 200 | 1 |  | Answer, Article, BreadcrumbList, ContactPoint |
+| `/قیمت-مشاوره-کنکور/` | 200 | 1 |  | Answer, Article, BreadcrumbList, ContactPoint |
+| `/بهترین-مشاور-کنکور-اصفهان/` | 200 | 1 |  | Answer, BreadcrumbList, City, ContactPoint |
+| `/مشاوره-آنلاین-کنکور/` | 200 | 1 |  | Answer, Article, BreadcrumbList, ContactPoint |
+| `/مشاوره-کنکور-تجربی/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ContactPoint, ImageObject |
+| `/مشاوره-تحصیلی-در-اصفهان/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ContactPoint, ImageObject |
+| `/ثبت-نام/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ContactPoint, ImageObject |
+| `/بهترین-مشاور-کنکور-تهران/` | 200 | 1 |  | Answer, BreadcrumbList, City, ContactPoint |
+| `/برنامه-ریزی-کنکور/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ContactPoint, ImageObject |
 
 
 ## امنیت پاسخ HTTP (خانه)
