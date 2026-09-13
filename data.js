@@ -4,7 +4,7 @@ window.ZEHNATI_SEO = {
     brand: "ذهن آتی",
     domain: "https://zehnati.ir/",
     manager: "دکتر زهرا جعفری",
-    updatedAt: "2026-09-12",
+    updatedAt: "2026-09-13",
     updatedAtFa: "۱۶ شهریور ۱۴۰۵",
     phase: 2,
     phaseLabel: "فاز ۲ — ماه ۲: تکمیل P0 + Silo",
@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-12T15:30:12+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۲۱ · ۱۵:۳۰",
+    "updatedAt": "2026-09-13T15:43:45+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۲۲ · ۱۵:۴۳",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,29 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 23,
-      "optimizedToday": 2,
+      "runsAllTime": 24,
+      "optimizedToday": 0,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-13",
+        "dateFa": "۱۴۰۵/۰۶/۲۲",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 0,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-13T15:43:45+03:30",
+            "atFa": "۱۴۰۵/۰۶/۲۲ · ۱۵:۴۳",
+            "dryRun": false,
+            "processed": 0,
+            "optimized": 0,
+            "results": []
+          }
+        ]
+      },
       {
         "date": "2026-09-12",
         "dateFa": "۱۴۰۵/۰۶/۲۱",
