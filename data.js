@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-14T15:30:08+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۲۳ · ۱۵:۳۰",
+    "updatedAt": "2026-09-15T17:08:21+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۲۴ · ۱۷:۰۸",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,29 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 25,
+      "runsAllTime": 26,
       "optimizedToday": 0,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-15",
+        "dateFa": "۱۴۰۵/۰۶/۲۴",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 0,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-15T17:08:21+03:30",
+            "atFa": "۱۴۰۵/۰۶/۲۴ · ۱۷:۰۸",
+            "dryRun": false,
+            "processed": 0,
+            "optimized": 0,
+            "results": []
+          }
+        ]
+      },
       {
         "date": "2026-09-14",
         "dateFa": "۱۴۰۵/۰۶/۲۳",
@@ -2514,87 +2532,6 @@ window.ZEHNATI_SEO = {
                   "متا",
                   "فوکوس کیورد",
                   "کلمه کلیدی در متن",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-08-24",
-        "dateFa": "۱۴۰۵/۰۶/۰۲",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 2,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-08-24T17:30:07+03:30",
-            "atFa": "۱۴۰۵/۰۶/۰۲ · ۱۷:۳۰",
-            "dryRun": false,
-            "processed": 2,
-            "optimized": 2,
-            "results": [
-              {
-                "postId": 7681,
-                "title": "فرهنگیان",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "content_append",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7686,
-                "title": "روش خلاصه نویسی دروس حفظی+راهکار",
-                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%84%d8%a7%d8%b5%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%af%d8%b1%d9%88%d8%b3-%d8%ad%d9%81%d8%b8%db%8c%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description",
-                  "no_internal_links",
-                  "no_outbound_links"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن",
-                  "لینک داخلی",
-                  "لینک خروجی"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "content_append",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "لینک داخلی/خروجی",
                   "featured_image_alt",
                   "تصویر شاخص + alt"
                 ],
