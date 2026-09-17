@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-16T16:14:27+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۲۵ · ۱۶:۱۴",
+    "updatedAt": "2026-09-17T15:30:14+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۲۶ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,29 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 27,
+      "runsAllTime": 28,
       "optimizedToday": 0,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-17",
+        "dateFa": "۱۴۰۵/۰۶/۲۶",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 0,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-17T15:30:14+03:30",
+            "atFa": "۱۴۰۵/۰۶/۲۶ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 0,
+            "optimized": 0,
+            "results": []
+          }
+        ]
+      },
       {
         "date": "2026-09-16",
         "dateFa": "۱۴۰۵/۰۶/۲۵",
@@ -2256,153 +2274,6 @@ window.ZEHNATI_SEO = {
                   "متا",
                   "فوکوس کیورد",
                   "کلمه کلیدی در متن",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-08-26",
-        "dateFa": "۱۴۰۵/۰۶/۰۴",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 4,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-08-26T17:30:13+03:30",
-            "atFa": "۱۴۰۵/۰۶/۰۴ · ۱۷:۳۰",
-            "dryRun": false,
-            "processed": 4,
-            "optimized": 4,
-            "results": [
-              {
-                "postId": 7681,
-                "title": "فرهنگیان",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "content_append",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7699,
-                "title": "روش خلاصه نویسی درس اقتصاد + راهکار",
-                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%84%d8%a7%d8%b5%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%af%d8%b1%d8%b3-%d8%a7%d9%82%d8%aa%d8%b5%d8%a7%d8%af-%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7701,
-                "title": "روش خواندن درس جامعه شناسی + راهکار",
-                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%88%d8%a7%d9%86%d8%af%d9%86-%d8%af%d8%b1%d8%b3-%d8%ac%d8%a7%d9%85%d8%b9%d9%87-%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7703,
-                "title": "روش مطالعه فلسفه و منطق کنکور + راهکار",
-                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d9%85%d8%b7%d8%a7%d9%84%d8%b9%d9%87-%d9%81%d9%84%d8%b3%d9%81%d9%87-%d9%88-%d9%85%d9%86%d8%b7%d9%82-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description",
-                  "no_outbound_links"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن",
-                  "لینک خروجی"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "content_append",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "لینک داخلی/خروجی",
                   "featured_image_alt",
                   "تصویر شاخص + alt"
                 ],
