@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-17T15:30:14+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۲۶ · ۱۵:۳۰",
+    "updatedAt": "2026-09-19T15:30:07+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۲۸ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,29 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 28,
+      "runsAllTime": 29,
       "optimizedToday": 0,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-19",
+        "dateFa": "۱۴۰۵/۰۶/۲۸",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 0,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-19T15:30:07+03:30",
+            "atFa": "۱۴۰۵/۰۶/۲۸ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 0,
+            "optimized": 0,
+            "results": []
+          }
+        ]
+      },
       {
         "date": "2026-09-17",
         "dateFa": "۱۴۰۵/۰۶/۲۶",
@@ -2140,117 +2158,6 @@ window.ZEHNATI_SEO = {
                 "postId": 7714,
                 "title": "روش مدیریت استرس کنکور + راهکار",
                 "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d9%85%d8%af%db%8c%d8%b1%db%8c%d8%aa-%d8%a7%d8%b3%d8%aa%d8%b1%d8%b3-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-08-30",
-        "dateFa": "۱۴۰۵/۰۶/۰۸",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 3,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-08-30T18:25:34+03:30",
-            "atFa": "۱۴۰۵/۰۶/۰۸ · ۱۸:۲۵",
-            "dryRun": false,
-            "processed": 3,
-            "optimized": 3,
-            "results": [
-              {
-                "postId": 7681,
-                "title": "فرهنگیان",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "content_append",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7705,
-                "title": "روش خواندن گسسته برای کنکور + راهکار",
-                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%88%d8%a7%d9%86%d8%af%d9%86-%da%af%d8%b3%d8%b3%d8%aa%d9%87-%d8%a8%d8%b1%d8%a7%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description",
-                  "no_outbound_links"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن",
-                  "لینک خروجی"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "content_append",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7708,
-                "title": "روش خواندن درس شیمی کنکور",
-                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d8%ae%d9%88%d8%a7%d9%86%d8%af%d9%86-%d8%af%d8%b1%d8%b3-%d8%b4%db%8c%d9%85%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
                 "issuesBefore": [
                   "missing_focus_keyword",
                   "missing_seo_title",
