@@ -2101,13 +2101,13 @@ window.ZEHNATI_SEO = {
   },
   score: {
     overall: 73,
-    label: "آدیت 2026-08-27: 73/۱۰۰ — GSC 3m 13٬142 کلیک · WoW +12.8٪ · P0~261",
+    label: "آدیت ۲۲ اوت: 73/۱۰۰ — GSC 3m 13٬142 کلیک · WoW +12.8٪ · P0 کلیک~261",
     breakdown: [
       { id: "tech", name: "فنی", score: 78, max: 100 },
       { id: "onpage", name: "آن‌پیج", score: 79, max: 100 },
       { id: "content", name: "محتوا", score: 57, max: 100 },
       { id: "local", name: "محلی", score: 74, max: 100 },
-      { id: "conversion", name: "تبدیل / Landing", score: 77, max: 100 },
+      { id: "conversion", name: "تبدیل / Landing", score: 79, max: 100 },
     ],
   },
   kpis: [
@@ -3078,7 +3078,7 @@ window.ZEHNATI_SEO = {
     { id: "about-h1", name: "H1 درباره ما", status: "pass", detail: "۱ H1 — درباره آکادمی ذهن آتی" },
     { id: "landings", name: "Landingهای P0", status: "pass", detail: "Sentinel 20 Sep: 13/13 OK · P0 سالم" },
     { id: "schema", name: "Schema محلی", status: "pass", detail: "LocalBusiness اصفهان+تهران + Person دکتر جعفری ✓ 2026-09-08" },
-    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "آدیت 2026-08-27: 73 · GSC 3m 13٬142 کلیک · P0~261" },
+    { id: "gsc-site", name: "GSC کل سایت", status: "warn", detail: "آدیت 22 Aug: 73 · GSC 3m 13٬142 کلیک · P0 کلیک~261" },
     { id: "gsc-wow", name: "GSC هفته‌به‌هفته", status: "pass", detail: "2026-08-19 – 2026-08-25: 1٬307 کلیک (+12.8٪) · نمایش +23.8٪" },
     {
       id: "coverage",

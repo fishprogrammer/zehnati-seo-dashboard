@@ -1,24 +1,18 @@
 # Technical SEO — `/seo technical` — zehnati.ir
 
-> **تاریخ:** 2026-08-27 (۵ شهریور ۱۴۰۵)
+> **تاریخ:** 2026-08-22 (۳۱ مرداد ۱۴۰۵)
 
 ## خلاصه
 
 | شدت | یافته |
 |-----|--------|
-| 🔴 Critical | اثر سقوط ترافیک مه ۲۰۲۶ روی میانگین GSC · /auth/ هنوز کلیک می‌گیرد |
-| 🟠 High | هدرهای امنیتی ناقص · تصاویر بدون alt روی خانه |
-| 🟢 OK | Sitemap 200 · robots→sitemap · لندینگ‌های P0 ایندکس‌پذیر · /auth/ noindex |
-
-## Sitemap / robots
-
-- `sitemap_index.xml` → HTTP **200** · فرزندان ~5
-- robots: Sitemap: https://zehnati.ir/sitemap_index.xml
+| 🟠 High | /auth/ هنوز کلیک می‌گیرد · هدرهای امنیتی ناقص |
+| 🟢 OK | Sitemap · 6/۶ لندینگ P0 با ۲۰۰/۱H1 · /auth/ noindex=True |
 
 ## صفحات کلیدی
 
-| URL | Status | H1 | noindex | Schema snippets |
-|-----|-------:|---:|:-------:|-----------------|
+| URL | Status | H1 | noindex | Schema |
+|-----|-------:|---:|:-------:|--------|
 | `/` | 200 | 1 |  | City, ContactPoint, Country, GeoCoordinates |
 | `/about/` | 200 | 1 |  | BreadcrumbList, ContactPoint, ImageObject, ListItem |
 | `/contact-us/` | 200 | 1 |  | Article, BreadcrumbList, ContactPoint, ImageObject |
@@ -32,14 +26,3 @@
 | `/ثبت-نام/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ContactPoint, ImageObject |
 | `/بهترین-مشاور-کنکور-تهران/` | 200 | 1 |  | Answer, BreadcrumbList, City, ContactPoint |
 | `/برنامه-ریزی-کنکور/` | 200 | 1 |  | BlogPosting, BreadcrumbList, ContactPoint, ImageObject |
-
-
-## امنیت پاسخ HTTP (خانه)
-
-- HSTS: ✅
-- X-Frame-Options: ✅
-- CSP: ❌
-
-## فاز ۰ (بسته)
-
-گزارش: `SEO/05-tracking/phase0-critical-report.md`
