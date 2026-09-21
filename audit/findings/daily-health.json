@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T19:00:05+03:30",
-  "status": "critical",
-  "summary": "۱۲/۱۳ صفحه 200 · مشکل robots/sitemap · P0 خراب: /برنامه-ریزی-کنکور/ · ۳ هشدار drift · بحرانی",
+  "generated_at": "2026-09-21T14:00:15+03:30",
+  "status": "warn",
+  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱ هشدار drift · هشدار",
   "pages": [
     {
       "path": "/",
@@ -125,37 +125,27 @@
     },
     {
       "path": "/برنامه-ریزی-کنکور/",
-      "status": 0,
+      "status": 200,
       "final": "/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B1%DB%8C%D8%B2%DB%8C-%DA%A9%D9%86%DA%A9%D9%88%D8%B1/",
-      "title": "",
-      "h1": 0,
+      "title": "برنامه ریزی کنکور | برنامه شخصی ۱۴۰۵ — ذهن آتی",
+      "h1": 1,
       "noindex": false,
-      "ok": false,
+      "ok": true,
       "p0": true
     }
   ],
   "infra": {
     "robots_status": 200,
     "robots_ok": true,
-    "sitemap_status": 0,
-    "sitemap_ok": false,
+    "sitemap_status": 200,
+    "sitemap_ok": true,
     "robots_has_sitemap": true
   },
   "alerts": [
     {
-      "level": "critical",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "وضعیت HTTP از 200 به 0 تغییر کرد"
-    },
-    {
       "level": "warn",
       "path": "/برنامه-ریزی-کنکور/",
-      "message": "تعداد H1 از 1 به 0 تغییر کرد"
-    },
-    {
-      "level": "critical",
-      "path": "/برنامه-ریزی-کنکور/",
-      "message": "صفحه P0 وضعیت HTTP 0 دارد"
+      "message": "تعداد H1 از 0 به 1 تغییر کرد"
     }
   ]
 }
