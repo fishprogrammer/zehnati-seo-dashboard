@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-20T16:07:01+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۶/۲۹ · ۱۶:۰۷",
+    "updatedAt": "2026-09-22T15:30:08+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۶/۳۱ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,29 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 30,
+      "runsAllTime": 31,
       "optimizedToday": 0,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-22",
+        "dateFa": "۱۴۰۵/۰۶/۳۱",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 0,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-22T15:30:08+03:30",
+            "atFa": "۱۴۰۵/۰۶/۳۱ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 0,
+            "optimized": 0,
+            "results": []
+          }
+        ]
+      },
       {
         "date": "2026-09-20",
         "dateFa": "۱۴۰۵/۰۶/۲۹",
@@ -1914,161 +1932,6 @@ window.ZEHNATI_SEO = {
                   "فوکوس کیورد",
                   "عنوان SEO",
                   "متا دیسکریپشن",
-                  "لینک خروجی"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "content_append",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-09-01",
-        "dateFa": "۱۴۰۵/۰۶/۱۰",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 4,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-09-01T17:30:06+03:30",
-            "atFa": "۱۴۰۵/۰۶/۱۰ · ۱۷:۳۰",
-            "dryRun": false,
-            "processed": 4,
-            "optimized": 4,
-            "results": [
-              {
-                "postId": 7681,
-                "title": "فرهنگیان",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "content_append",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7716,
-                "title": "روش مطالعه درس روانشناسی برای کنکور",
-                "link": "https://zehnati.ir/%d8%b1%d9%88%d8%b4-%d9%85%d8%b7%d8%a7%d9%84%d8%b9%d9%87-%d8%af%d8%b1%d8%b3-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d8%a8%d8%b1%d8%a7%db%8c-%da%a9%d9%86%da%a9%d9%88%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description",
-                  "no_outbound_links"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن",
-                  "لینک خروجی"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "content_append",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7718,
-                "title": "چگونه در دوران پریود درس بخوانیم؟(راهکار)",
-                "link": "https://zehnati.ir/%da%86%da%af%d9%88%d9%86%d9%87-%d8%af%d8%b1-%d8%af%d9%88%d8%b1%d8%a7%d9%86-%d9%be%d8%b1%db%8c%d9%88%d8%af-%d8%af%d8%b1%d8%b3-%d8%a8%d8%ae%d9%88%d8%a7%d9%86%db%8c%d9%85%d8%9f%d8%b1%d8%a7%d9%87%da%a9/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description",
-                  "no_outbound_links"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن",
-                  "لینک خروجی"
-                ],
-                "changed": [
-                  "rank_math_title",
-                  "rank_math_description",
-                  "rank_math_focus_keyword",
-                  "content_prepend",
-                  "content_append",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "عنوان SEO",
-                  "متا",
-                  "فوکوس کیورد",
-                  "کلمه کلیدی در متن",
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7722,
-                "title": "رابطه عاشقانه در سال کنکور(راهکار)",
-                "link": "https://zehnati.ir/%d8%b1%d8%a7%d8%a8%d8%b7%d9%87-%d8%b9%d8%a7%d8%b4%d9%82%d8%a7%d9%86%d9%87-%d8%af%d8%b1-%d8%b3%d8%a7%d9%84-%da%a9%d9%86%da%a9%d9%88%d8%b1%d8%b1%d8%a7%d9%87%da%a9%d8%a7%d8%b1/",
-                "issuesBefore": [
-                  "missing_focus_keyword",
-                  "missing_seo_title",
-                  "missing_meta_description",
-                  "no_internal_links",
-                  "no_outbound_links"
-                ],
-                "issuesBeforeFa": [
-                  "فوکوس کیورد",
-                  "عنوان SEO",
-                  "متا دیسکریپشن",
-                  "لینک داخلی",
                   "لینک خروجی"
                 ],
                 "changed": [
