@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-09-23T15:30:07+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۰۱ · ۱۵:۳۰",
+    "updatedAt": "2026-09-24T15:30:06+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۰۲ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,29 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 32,
+      "runsAllTime": 33,
       "optimizedToday": 0,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-09-24",
+        "dateFa": "۱۴۰۵/۰۷/۰۲",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 0,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-09-24T15:30:06+03:30",
+            "atFa": "۱۴۰۵/۰۷/۰۲ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 0,
+            "optimized": 0,
+            "results": []
+          }
+        ]
+      },
       {
         "date": "2026-09-23",
         "dateFa": "۱۴۰۵/۰۷/۰۱",
@@ -1849,47 +1867,6 @@ window.ZEHNATI_SEO = {
                   "featured_media_id",
                   "featured_image_alt",
                   "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-09-03",
-        "dateFa": "۱۴۰۵/۰۶/۱۲",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 1,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-09-03T17:30:08+03:30",
-            "atFa": "۱۴۰۵/۰۶/۱۲ · ۱۷:۳۰",
-            "dryRun": false,
-            "processed": 1,
-            "optimized": 1,
-            "results": [
-              {
-                "postId": 7681,
-                "title": "فرهنگیان",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "content_append",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "لینک داخلی/خروجی",
-                  "featured_image_alt"
                 ],
                 "ok": true,
                 "dryRun": false,
