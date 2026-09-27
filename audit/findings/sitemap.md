@@ -1,6 +1,6 @@
 # Sitemap — zehnati.ir
 
-> **تاریخ:** 2026-08-27
+> **تاریخ:** 2026-09-27
 
 - `/sitemap_index.xml` → **200** · ~5 فرزند
 - robots: Sitemap: https://zehnati.ir/sitemap_index.xml
