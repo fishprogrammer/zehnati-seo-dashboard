@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-10-01T15:30:07+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۰۹ · ۱۵:۳۰",
+    "updatedAt": "2026-10-02T15:30:07+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۱۰ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,52 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 39,
+      "runsAllTime": 40,
       "optimizedToday": 1,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-10-02",
+        "dateFa": "۱۴۰۵/۰۷/۱۰",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 1,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-10-02T15:30:07+03:30",
+            "atFa": "۱۴۰۵/۰۷/۱۰ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7769,
+                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
+                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
+                "issuesBefore": [
+                  "image_alt_no_keyword"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-10-01",
         "dateFa": "۱۴۰۵/۰۷/۰۹",
@@ -424,24 +465,6 @@ window.ZEHNATI_SEO = {
           {
             "at": "2026-09-16T16:14:27+03:30",
             "atFa": "۱۴۰۵/۰۶/۲۵ · ۱۶:۱۴",
-            "dryRun": false,
-            "processed": 0,
-            "optimized": 0,
-            "results": []
-          }
-        ]
-      },
-      {
-        "date": "2026-09-15",
-        "dateFa": "۱۴۰۵/۰۶/۲۴",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 0,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-09-15T17:08:21+03:30",
-            "atFa": "۱۴۰۵/۰۶/۲۴ · ۱۷:۰۸",
             "dryRun": false,
             "processed": 0,
             "optimized": 0,
