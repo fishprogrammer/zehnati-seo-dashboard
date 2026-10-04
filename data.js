@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-10-02T15:30:07+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۱۰ · ۱۵:۳۰",
+    "updatedAt": "2026-10-04T15:30:07+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۱۲ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,54 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 40,
+      "runsAllTime": 41,
       "optimizedToday": 1,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-10-04",
+        "dateFa": "۱۴۰۵/۰۷/۱۲",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 1,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-10-04T15:30:07+03:30",
+            "atFa": "۱۴۰۵/۰۷/۱۲ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "کنکور فرهنگیان؛ راهنمای مسیر",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "image_alt_no_keyword",
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی",
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-10-02",
         "dateFa": "۱۴۰۵/۰۷/۱۰",
@@ -447,24 +490,6 @@ window.ZEHNATI_SEO = {
           {
             "at": "2026-09-17T15:30:14+03:30",
             "atFa": "۱۴۰۵/۰۶/۲۶ · ۱۵:۳۰",
-            "dryRun": false,
-            "processed": 0,
-            "optimized": 0,
-            "results": []
-          }
-        ]
-      },
-      {
-        "date": "2026-09-16",
-        "dateFa": "۱۴۰۵/۰۶/۲۵",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 0,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-09-16T16:14:27+03:30",
-            "atFa": "۱۴۰۵/۰۶/۲۵ · ۱۶:۱۴",
             "dryRun": false,
             "processed": 0,
             "optimized": 0,
