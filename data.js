@@ -20,8 +20,8 @@ window.ZEHNATI_SEO = {
     keywordTotal: 206,
   },
   dailyHealth: {
-    checkedAt: "2026-10-08T14:00:06+03:30",
-    checkedAtFa: "۲۰۲۶-۱۰-۰۸ · ۱۴:۰۰",
+    checkedAt: "2026-10-08T19:14:34+03:30",
+    checkedAtFa: "۲۰۲۶-۱۰-۰۸ · ۱۹:۱۴",
     status: "ok",
     summaryFa: "۱۳/۱۳ صفحه 200 · robots+sitemap OK · سالم",
     pagesOk: 13,
@@ -1575,8 +1575,8 @@ window.ZEHNATI_SEO = {
   },
   techStatus: [
     { id: "ssl", name: "HTTPS / SSL", status: "pass", detail: "فعال" },
-    { id: "robots", name: "robots.txt", status: "pass", detail: "موجود · sitemap ref ✓ · Sentinel 14:00" },
-    { id: "sitemap", name: "XML Sitemap", status: "pass", detail: "sitemap_index.xml = 200 · Sentinel 14:00" },
+    { id: "robots", name: "robots.txt", status: "pass", detail: "موجود · sitemap ref ✓ · Sentinel 19:14" },
+    { id: "sitemap", name: "XML Sitemap", status: "pass", detail: "sitemap_index.xml = 200 · Sentinel 19:14" },
     { id: "rankmath", name: "Rank Math", status: "pass", detail: "نصب شده" },
     { id: "analytics", name: "Analytics / GTM", status: "pass", detail: "GA4 از Rank Math — G-Y0GZ4B5T0Y" },
     { id: "litespeed", name: "LiteSpeed Cache", status: "pass", detail: "فعال" },
