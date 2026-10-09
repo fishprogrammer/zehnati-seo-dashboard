@@ -2017,8 +2017,8 @@
         <div class="compare-row">
           <h3>H1 و Schema</h3>
           <div class="now-target">
-            <div class="box now"><div class="lbl">الان</div>بدون H1 · Schema: ${h.schemas.join(", ")}</div>
-            <div class="box target"><div class="lbl">هدف</div>${h.h1Target} · + EducationalOrganization / LocalBusiness</div>
+            <div class="box now"><div class="lbl">الان</div>${h.h1Now || "بدون H1"} · Schema: ${(h.schemas || []).join(", ")}</div>
+            <div class="box target"><div class="lbl">هدف</div>${h.h1Target} · EducationalOrganization / LocalBusiness</div>
           </div>
         </div>`;
 
