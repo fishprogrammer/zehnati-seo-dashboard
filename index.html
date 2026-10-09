@@ -440,6 +440,11 @@
     }
     .box.now { background: #fdecea; border: 1px solid #f5c2c0; }
     .box.target { background: #e8f6ee; border: 1px solid #a6e0bf; }
+    .box.done {
+      background: #e8f6ee;
+      border: 1px solid #a6e0bf;
+      color: var(--ink-soft);
+    }
     .box .lbl {
       font-size: 0.72rem;
       font-weight: 700;
@@ -447,6 +452,38 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
+    .compare-row.is-done {
+      border-color: #a6e0bf;
+      background: linear-gradient(180deg, #f3fbf6 0%, var(--white) 55%);
+    }
+    .compare-row.is-done h3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .done-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.12rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: rgba(6, 118, 71, 0.12);
+      color: var(--pass);
+      border: 1px solid rgba(6, 118, 71, 0.28);
+    }
+    .meta-card.is-applied {
+      border-color: #a6e0bf;
+      background: linear-gradient(180deg, #f3fbf6 0%, var(--white) 60%);
+    }
+    .meta-card.is-applied .copy-btn {
+      background: rgba(6, 118, 71, 0.1);
+      color: var(--pass);
+      border-color: rgba(6, 118, 71, 0.3);
+    }
+    #onpageHomeTitle .done-badge { margin-inline-start: 0.35rem; }
 
     .timeline {
       display: grid;
@@ -1255,12 +1292,12 @@
     <!-- On-page -->
     <div class="panel" id="panel-onpage" role="tabpanel">
       <section class="block">
-        <h2>صفحه اصلی — الان در برابر هدف</h2>
+        <h2 id="onpageHomeTitle">صفحه اصلی — الان در برابر هدف</h2>
         <div class="compare" id="homepageCompare"></div>
       </section>
       <section class="block">
-        <h2>Meta آماده برای کپی (فاز ۰)</h2>
-        <p class="section-lead">مستقیم در Rank Math بچسبانید</p>
+        <h2 id="onpageMetaTitle">Meta آماده برای کپی (فاز ۰)</h2>
+        <p class="section-lead" id="onpageMetaLead">مستقیم در Rank Math بچسبانید</p>
         <div id="metaTargets"></div>
       </section>
     </div>
@@ -1998,41 +2035,79 @@
     }
 
     function fillOnpage() {
-      const h = D.homepage;
-      document.getElementById("homepageCompare").innerHTML = `
-        <div class="compare-row">
-          <h3>Title</h3>
+      const h = D.homepage || {};
+      const schemas = h.schemas || [];
+      const norm = (s) => String(s || "").replace(/\s+/g, " ").trim();
+      const titleDone = norm(h.titleNow) === norm(h.titleTarget) && !!norm(h.titleNow);
+      const descDone = norm(h.descNow) === norm(h.descTarget) && !!norm(h.descNow);
+      const h1Done = norm(h.h1Now) === norm(h.h1Target) && !!norm(h.h1Now);
+      const schemaDone =
+        schemas.includes("LocalBusiness") && schemas.includes("EducationalOrganization");
+      const h1SchemaDone = h1Done && schemaDone;
+      const allHomeDone = titleDone && descDone && h1SchemaDone;
+
+      const row = (label, done, nowHtml, targetHtml) => {
+        if (done) {
+          return `<div class="compare-row is-done">
+            <h3>${label} <span class="done-badge">✓ انجام‌شده</span></h3>
+            <div class="box done"><div class="lbl">وضعیت فعلی</div>${nowHtml}</div>
+          </div>`;
+        }
+        return `<div class="compare-row">
+          <h3>${label}</h3>
           <div class="now-target">
-            <div class="box now"><div class="lbl">الان</div>${h.titleNow}</div>
-            <div class="box target"><div class="lbl">هدف</div>${h.titleTarget}</div>
-          </div>
-        </div>
-        <div class="compare-row">
-          <h3>Meta Description</h3>
-          <div class="now-target">
-            <div class="box now"><div class="lbl">الان</div>${h.descNow}</div>
-            <div class="box target"><div class="lbl">هدف</div>${h.descTarget}</div>
-          </div>
-        </div>
-        <div class="compare-row">
-          <h3>H1 و Schema</h3>
-          <div class="now-target">
-            <div class="box now"><div class="lbl">الان</div>${h.h1Now || "بدون H1"} · Schema: ${(h.schemas || []).join(", ")}</div>
-            <div class="box target"><div class="lbl">هدف</div>${h.h1Target} · EducationalOrganization / LocalBusiness</div>
+            <div class="box now"><div class="lbl">الان</div>${nowHtml}</div>
+            <div class="box target"><div class="lbl">هدف</div>${targetHtml}</div>
           </div>
         </div>`;
+      };
 
-      document.getElementById("metaTargets").innerHTML = D.metaTargets
-        .map(
-          (m, idx) => `<div class="compare-row" style="margin-bottom:0.65rem">
-            <h3>${m.page} <code dir="ltr">${m.url}</code>
-              <button class="copy-btn" type="button" data-copy="${idx}">کپی Meta</button>
-            </h3>
+      const homeTitle = document.getElementById("onpageHomeTitle");
+      if (homeTitle) {
+        homeTitle.innerHTML = allHomeDone
+          ? `صفحه اصلی — آن‌پیج <span class="done-badge">✓ همه‌چیز انجام‌شده</span>`
+          : "صفحه اصلی — الان در برابر هدف";
+      }
+
+      document.getElementById("homepageCompare").innerHTML =
+        row("Title", titleDone, h.titleNow || "—", h.titleTarget || "—") +
+        row("Meta Description", descDone, h.descNow || "—", h.descTarget || "—") +
+        row(
+          "H1 و Schema",
+          h1SchemaDone,
+          `${h.h1Now || "بدون H1"} · Schema: ${schemas.join(", ") || "—"}`,
+          `${h.h1Target || "—"} · EducationalOrganization / LocalBusiness`
+        );
+
+      const metaLead = document.getElementById("onpageMetaLead");
+      const metaTitle = document.getElementById("onpageMetaTitle");
+      const anyApplied = (D.metaTargets || []).some((m) => m.applied);
+      if (metaTitle) {
+        metaTitle.textContent = anyApplied
+          ? "Meta فاز ۰ — وضعیت Rank Math"
+          : "Meta آماده برای کپی (فاز ۰)";
+      }
+      if (metaLead) {
+        metaLead.textContent = anyApplied
+          ? "موارد تیک‌خورده مستقیم در Rank Math اعمال شده‌اند"
+          : "مستقیم در Rank Math بچسبانید";
+      }
+
+      document.getElementById("metaTargets").innerHTML = (D.metaTargets || [])
+        .map((m, idx) => {
+          const applied =
+            m.applied === true ||
+            (m.url === "/" && titleDone && descDone && h1Done);
+          const badge = applied
+            ? `<span class="done-badge">✓ در Rank Math</span>`
+            : `<button class="copy-btn" type="button" data-copy="${idx}">کپی Meta</button>`;
+          return `<div class="compare-row meta-card${applied ? " is-applied" : ""}" style="margin-bottom:0.65rem">
+            <h3>${m.page} <code dir="ltr">${m.url}</code> ${badge}</h3>
             <p style="margin:0 0 0.35rem;font-size:0.85rem"><strong>Title:</strong> ${m.title}</p>
             <p style="margin:0 0 0.35rem;font-size:0.85rem"><strong>Description:</strong> ${m.description}</p>
             <p style="margin:0;font-size:0.85rem"><strong>H1:</strong> ${m.h1}</p>
-          </div>`
-        )
+          </div>`;
+        })
         .join("");
 
       document.querySelectorAll("[data-copy]").forEach((btn) => {
