@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-09T14:00:09+03:30",
-  "status": "warn",
-  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱ هشدار drift · هشدار",
+  "generated_at": "2026-10-09T19:20:42+03:30",
+  "status": "ok",
+  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · سالم",
   "pages": [
     {
       "path": "/",
@@ -141,13 +141,5 @@
     "sitemap_ok": true,
     "robots_has_sitemap": true
   },
-  "alerts": [
-    {
-      "level": "warn",
-      "path": "/",
-      "message": "title تغییر کرد",
-      "before": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
-      "after": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر جعفری"
-    }
-  ]
+  "alerts": []
 }
