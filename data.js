@@ -1595,14 +1595,15 @@ window.ZEHNATI_SEO = {
     },
   ],
   homepage: {
-    titleNow: "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+    titleNow: "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر جعفری",
     titleTarget: "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر جعفری",
     descNow:
       "مشاوره رایگان کنکور با ۹ سال سابقه و ۵۰۰+ رتبه برتر. شعب اصفهان و تهران + آنلاین سراسر کشور. همین الان ثبت‌نام کنید!",
     descTarget:
       "مشاوره رایگان کنکور با ۹ سال سابقه و ۵۰۰+ رتبه برتر. شعب اصفهان و تهران + آنلاین سراسر کشور. همین الان ثبت‌نام کنید!",
     h1Target: "مشاوره رایگان کنکور در ذهن آتی",
-    schemas: ["ImageObject", "WebSite", "SearchAction", "WebPage", "Person", "Article"],
+    h1Now: "مشاوره رایگان کنکور در ذهن آتی",
+    schemas: ["EducationalOrganization", "LocalBusiness", "Person", "WebSite", "WebPage", "ImageObject", "SearchAction", "Organization"],
   },
   goldenKeywords: [
     { kw: "مشاوره رایگان کنکور", page: "/", status: "ok", note: "GSC ۳ماه: ۲۷ کلیک / ۲۰۴ نمایش / رتبه ~۶.۱" },
