@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-08T19:14:34+03:30",
-  "status": "ok",
-  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · سالم",
+  "generated_at": "2026-10-09T14:00:09+03:30",
+  "status": "warn",
+  "summary": "۱۳/۱۳ صفحه 200 · robots+sitemap OK · ۱ هشدار drift · هشدار",
   "pages": [
     {
       "path": "/",
       "status": 200,
       "final": "/",
-      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر جعفری",
       "h1": 1,
       "noindex": false,
       "ok": true,
@@ -141,5 +141,13 @@
     "sitemap_ok": true,
     "robots_has_sitemap": true
   },
-  "alerts": []
+  "alerts": [
+    {
+      "level": "warn",
+      "path": "/",
+      "message": "title تغییر کرد",
+      "before": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
+      "after": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر جعفری"
+    }
+  ]
 }
