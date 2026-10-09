@@ -6,10 +6,10 @@ window.ZEHNATI_SEO = {
     manager: "دکتر زهرا جعفری",
     updatedAt: "2026-10-09",
     updatedAtFa: "۱۷ مهر ۱۴۰۵",
-    phase: 3,
-    phaseLabel: "فاز ۳ — ماه ۳: محتوای P1 (دسته ۱)",
+    phase: 4,
+    phaseLabel: "فاز ۴ — ماه ۴: محلی، سرعت + ۱۵ کیورد P1",
     week: 5,
-    month: 2,
+    month: 3,
     planStartFa: "۱۴۰۵/۰۴/۲۰",
     planStartLabel: "۲۰ تیر ۱۴۰۵",
     planEndFa: "۱۴۰۵/۱۱/۱۹",
@@ -1687,8 +1687,8 @@ window.ZEHNATI_SEO = {
       months: 3,
       spanLabel: "ماه ۳",
       dateRange: "۲۰ شهریور – ۱۹ مهر",
-      status: "active",
-      summary: "۳۰ کیورد P1 · مقالات/صفحات + CTA و E-E-A-T · هدف تجمعی ۸۳/۲۰۶.",
+      status: "done",
+      summary: "P1 دسته۱ ۳۰/۳۰ ✓ · ۸۳/۲۰۶ · llms.txt · E-E-A-T · گزارش ماه۳ ✓.",
     },
     {
       phase: 4,
@@ -1696,7 +1696,7 @@ window.ZEHNATI_SEO = {
       months: 4,
       spanLabel: "ماه ۴",
       dateRange: "۲۰ مهر – ۱۹ آبان",
-      status: "upcoming",
+      status: "active",
       summary: "GBP/CWV/امنیت + ۱۵ کیورد P1 سبک.",
     },
     {
@@ -2040,7 +2040,7 @@ window.ZEHNATI_SEO = {
     3: {
       title: "فاز ۳ — ماه ۳: محتوای P1 (دسته ۱)",
       period: "ماه ۳ · ۲۰ شهریور تا ۱۹ مهر ۱۴۰۵",
-      status: "active",
+      status: "done",
       goal: "۳۰ کیورد P1 · اعتماد/عمق محتوا خانه + AI visibility",
       kwTarget: { p0: 0, p1: 30, p2: 0, p3: 0, total: 30 },
       actions: [
@@ -2113,7 +2113,8 @@ window.ZEHNATI_SEO = {
           title: "به‌روزرسانی وضعیت ۳۰ کیورد در CSV + گزارش ماه ۳",
           where: "keywords.csv + GSC",
           why: "تجمعی ۸۳/۲۰۶ (۵۳ P0 + ۳۰ P1)",
-          done: false,
+          done: true,
+          note: "✅ گزارش: SEO/05-tracking/month3-report-1405-07.md · ۳۰/۳۰ P1 · تجمعی ۸۳/۲۰۶ · GSC 14,098 کلیک · 2026-10-09",
         },
       ],
       checklist: [
@@ -2124,13 +2125,13 @@ window.ZEHNATI_SEO = {
         { id: "p3-c8", label: "داستان موفقیت با attribution", done: true },
         { id: "p3-c3", label: "بایو/نویسنده یکدست روی صفحات جدید", done: true },
         { id: "p3-c4", label: "llms.txt یا صفحات قابل استناد", done: true },
-        { id: "p3-c5", label: "گزارش ماه ۳ · تجمعی ۸۳/۲۰۶", done: false },
+        { id: "p3-c5", label: "گزارش ماه ۳ · تجمعی ۸۳/۲۰۶", done: true },
       ],
     },
     4: {
       title: "فاز ۴ — ماه ۴: محلی، سرعت + ۱۵ کیورد P1",
       period: "ماه ۴ · ۲۰ مهر تا ۱۹ آبان ۱۴۰۵",
-      status: "upcoming",
+      status: "active",
       goal: "Map Pack / CWV (Site Checkup Speed 68) + ۱۵ کیورد P1 سبک",
       kwTarget: { p0: 0, p1: 15, p2: 0, p3: 0, total: 15 },
       actions: [
