@@ -2,7 +2,7 @@
   "summary": {
     "health_score": 73,
     "business_type": "local-service / education",
-    "generated_at": "2026-10-09T12:56:11+03:30",
+    "generated_at": "2026-10-11T15:01:03+03:30",
     "top_findings": [
       "پنجره GSC ۳ماه بیشتر پسا-سقوط است: 14,098 کلیک (کمتر از اکسپورت قبلی).",
       "لندینگ‌های P0 شروع رشد کرده‌اند (جمع کلیک تقریبی تجاری کلیدی ~927) ولی هنوز ناچیز نسبت به خانه/بلاگ.",
@@ -41,8 +41,8 @@
       "path": "/",
       "status": 200,
       "final": "/",
-      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر زهرا جعفری",
-      "description": "مشاوره رایگان کنکور با دکتر زهرا جعفری — ۹ سال سابقه، ۵۰۰+ رتبه برتر و ۲۰۰۰+ قبولی. شعب اصفهان (وحید) و تهران (فاطمی) + آنلاین سراسر کشور. همین الان درخواست مشاوره بدهید.",
+      "title": "مشاوره رایگان کنکور | آکادمی ذهن آتی — دکتر جعفری",
+      "description": "مشاوره رایگان کنکور با ۹ سال سابقه و ۵۰۰+ رتبه برتر. شعب اصفهان و تهران + آنلاین سراسر کشور. همین الان ثبت‌نام کنید!",
       "h1": 1,
       "h1_text": [
         "مشاوره رایگان کنکور در ذهن آتی"
@@ -68,10 +68,10 @@
       "has_local": true,
       "has_person": true,
       "has_form": true,
-      "text_approx": 168013,
+      "text_approx": 169330,
       "imgs": 17,
       "imgs_no_alt": 0,
-      "links_internal_approx": 133,
+      "links_internal_approx": 135,
       "security": {
         "hsts": true,
         "xfo": true,
@@ -122,7 +122,7 @@
       "description": "تماس با آکادمی ذهن آتی: ۰۲۱-۲۸۴۲۷۲۵۹. شعب اصفهان (وحید) و تهران (میدان فاطمی). مشاوره رایگان آنلاین.",
       "h1": 1,
       "h1_text": [
-        "ارتباط با ما"
+        "تماس با ما"
       ],
       "noindex": false,
       "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -141,7 +141,7 @@
       "has_local": true,
       "has_person": true,
       "has_form": true,
-      "text_approx": 97116,
+      "text_approx": 97102,
       "imgs": 6,
       "imgs_no_alt": 0,
       "links_internal_approx": 105,
@@ -375,7 +375,7 @@
       "has_local": true,
       "has_person": true,
       "has_form": true,
-      "text_approx": 112794,
+      "text_approx": 112823,
       "imgs": 26,
       "imgs_no_alt": 0,
       "links_internal_approx": 163,
@@ -412,8 +412,8 @@
       "has_local": true,
       "has_person": true,
       "has_form": true,
-      "text_approx": 119456,
-      "imgs": 26,
+      "text_approx": 119339,
+      "imgs": 25,
       "imgs_no_alt": 0,
       "links_internal_approx": 152,
       "security": {
@@ -449,7 +449,7 @@
       "has_local": true,
       "has_person": true,
       "has_form": true,
-      "text_approx": 109180,
+      "text_approx": 109136,
       "imgs": 25,
       "imgs_no_alt": 0,
       "links_internal_approx": 160,
@@ -527,8 +527,8 @@
       "has_local": true,
       "has_person": true,
       "has_form": true,
-      "text_approx": 112885,
-      "imgs": 25,
+      "text_approx": 112785,
+      "imgs": 24,
       "imgs_no_alt": 0,
       "links_internal_approx": 165,
       "security": {
