@@ -2232,7 +2232,8 @@ window.ZEHNATI_SEO = {
           title: "پاکسازی ۲۹×۴۰۴ (۳۰۱ / حذف لینک / سایت‌مپ)",
           where: "GSC → Not found (404) + وردپرس",
           why: "Validation=Failed · لینک مرده سیگنال و کرال را هدر می‌دهد",
-          done: false,
+          done: true,
+          note: "✅ ۴۰×۳۰۱ Rank Math · واریانت عربی ي/ك + صفحات مرده · Validate started 2026-10-12 · Pending 29",
         },
         {
           id: "p4-gsc3",
@@ -2361,7 +2362,7 @@ window.ZEHNATI_SEO = {
       ],
       checklist: [
         { id: "p4-c-gsc1", label: "GSC Validate fix noindex", done: true },
-        { id: "p4-c-gsc2", label: "۲۹×۴۰۴ پاکسازی شد", done: false },
+        { id: "p4-c-gsc2", label: "۲۹×۴۰۴ پاکسازی شد", done: true },
         { id: "p4-c-gsc3", label: "CWV LCP موبایل · Need improvement↓", done: false },
         { id: "p4-c-gsc4", label: "صف Discovered/Crawled کاهش یافت", done: false },
         { id: "p4-c-gsc5", label: "Unparsable schema = 0", done: false },
