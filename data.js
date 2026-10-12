@@ -2223,8 +2223,8 @@ window.ZEHNATI_SEO = {
           title: "GSC Validate fix برای noindex (۳۶۶)",
           where: "Search Console → Page indexing → noindex",
           why: "لایو محتوا index شد · GSC هنوز Failed · بدون Validate عدد پایین نمی‌آید",
-          done: false,
-          note: "گزارش: gsc-issues-report-2026-10-12.md · fix-final.md",
+          done: true,
+          note: "✅ Validation started 2026-10-12 · Pending 366 · Failed 0 · چند روز تا چند هفته طول می‌کشد",
         },
         {
           id: "p4-gsc2",
@@ -2360,7 +2360,7 @@ window.ZEHNATI_SEO = {
         },
       ],
       checklist: [
-        { id: "p4-c-gsc1", label: "GSC Validate fix noindex", done: false },
+        { id: "p4-c-gsc1", label: "GSC Validate fix noindex", done: true },
         { id: "p4-c-gsc2", label: "۲۹×۴۰۴ پاکسازی شد", done: false },
         { id: "p4-c-gsc3", label: "CWV LCP موبایل · Need improvement↓", done: false },
         { id: "p4-c-gsc4", label: "صف Discovered/Crawled کاهش یافت", done: false },
