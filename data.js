@@ -679,7 +679,7 @@ window.ZEHNATI_SEO = {
   },
   kpis: [
     { label: "کیورد پوشش‌داده‌شده (از ۲۰۶)", current: "۸۳ (۵۳ P0 + ۳۰ P1)", target: "۲۰۶ · P1 دسته۱ ✓ · بعدی اعتماد/بازنویسی" },
-    { label: "صفحات ایندکس (GSC)", current: "296", target: "نگهداشت رشد · کاهش noindex=236" },
+    { label: "صفحات ایندکس (GSC)", current: "228", target: "رشد ایندکس · noindex لایو✓ · Validate GSC · ↓404/LCP" },
     { label: "لندینگ/هاب P0", current: "6", target: "ایندکس+کلیک تجاری · ماه۲ Silo" },
     { label: "کلیک GSC (کل سایت · ۳ماه)", current: "14٬751", target: "ریباند پایدار · رشد لندینگ تجاری" },
     { label: "کلیک هفته اخیر (WoW)", current: "2٬107 (+67.8٪)", target: "تثبیت ≥۱٬۲۰۰ / هفته" },
@@ -1303,101 +1303,106 @@ window.ZEHNATI_SEO = {
     ]
   },
   coverage: {
-    "exportedAt": "2026-09-07",
-    "exportedAtFa": "۱۶ شهریور ۱۴۰۵",
-    "scopeNote": "گزارش Indexing / Coverage · All known pages · تاریخ آخرین نقطهٔ نمودار داخل گزارش",
+    "exportedAt": "2026-10-12",
+    "exportedAtFa": "۲۰۲۶-۱۰-۱۲",
+    "scopeNote": "GSC Page indexing · All known pages · Last update 10/9/26 · بررسی زنده مرورگر 2026-10-12",
     "latest": {
-      "date": "2026-09-04",
-      "indexed": 296,
-      "notIndexed": 525,
-      "impressions": 802
+      "date": "2026-10-09",
+      "indexed": 228,
+      "notIndexed": 671,
+      "impressions": null
     },
     "totals": {
-      "issueRowsWithPages": 8,
-      "issuePagesSum": 525,
-      "critical404": 31,
-      "noindex": 236,
-      "crawledNotIndexed": 91,
-      "discoveredNotIndexed": 139,
-      "redirects": 24
+      "issueRowsWithPages": 9,
+      "issuePagesSum": 671,
+      "critical404": 29,
+      "noindex": 366,
+      "crawledNotIndexed": 109,
+      "discoveredNotIndexed": 130,
+      "redirects": 32
+    },
+    "cwv": {
+      "updatedAt": "2026-10-11",
+      "mobile": {
+        "poor": 0,
+        "needImprovement": 106,
+        "good": 0,
+        "issue": "LCP longer than 2.5s (mobile)",
+        "validation": "Failed"
+      },
+      "desktop": "Not enough usage data"
     },
     "issues": [
       {
         "reasonFa": "حذف با تگ noindex",
-        "pages": 236,
+        "pages": 366,
         "severity": "critical",
-        "note": "⚠️ جهش شدید نسبت به ۴۶ قبلی — Validation=Failed · audit noindexهای غیرعمدی"
+        "note": "GSC هنوز Failed · لایو محتوا index شد (~۳۵۹) · ۷ عمداً noindex · Validate fix بزن"
+      },
+      {
+        "reasonFa": "کشف شده ولی هنوز ایندکس نیست",
+        "pages": 130,
+        "severity": "high",
+        "note": "صف Google · لینک داخلی + Request indexing برای P0/P1"
+      },
+      {
+        "reasonFa": "خزش شده ولی هنوز ایندکس نیست",
+        "pages": 109,
+        "severity": "high",
+        "note": "کیفیت/تکرار — عمق محتوا + سیگنال لینک"
       },
       {
         "reasonFa": "صفحه با ریدایرکت",
-        "pages": 24,
+        "pages": 32,
         "severity": "medium",
-        "note": "طبیعی اگر زنجیره کوتاه باشد · ۲۴ مورد"
+        "note": "طبیعی اگر زنجیره کوتاه · audit زنجیره‌های بلند"
+      },
+      {
+        "reasonFa": "صفحه پیدا نشد (۴۰۴)",
+        "pages": 29,
+        "severity": "critical",
+        "note": "Validation=Failed · ۳۰۱ به جایگزین یا حذف از لینک/سایت‌مپ"
       },
       {
         "reasonFa": "صفحه جایگزین با canonical درست",
         "pages": 2,
-        "severity": "medium",
+        "severity": "low",
         "note": "معمولاً نرمال (نسخه تکراری)"
       },
       {
         "reasonFa": "خطای ریدایرکت",
         "pages": 1,
         "severity": "high",
-        "note": "یک خطای ریدایرکت — زنجیره/لوپ را چک کن"
+        "note": "لوپ/زنجیره خراب — فوری"
       },
       {
         "reasonFa": "مسدود به‌خاطر ۴۰۳",
         "pages": 1,
-        "severity": "critical",
-        "note": "یک URL ممنوع — بررسی دسترسی"
-      },
-      {
-        "reasonFa": "کشف شده ولی هنوز ایندکس نیست",
-        "pages": 139,
         "severity": "high",
-        "note": "صف در ایندکس — Submit لندینگ‌های P0 در GSC"
+        "note": "دسترسی crawler را باز کن"
       },
       {
-        "reasonFa": "خزش شده ولی هنوز ایندکس نیست",
-        "pages": 91,
+        "reasonFa": "مسدود با robots.txt",
+        "pages": 1,
         "severity": "high",
-        "note": "کیفیت/تکرار — تقویت لینک داخلی و عمق محتوا"
-      },
-      {
-        "reasonFa": "صفحه پیدا نشد (۴۰۴)",
-        "pages": 31,
-        "severity": "critical",
-        "note": "Validation=Started · ۳۱ URL باقی — ۳۰۱/حذف از لینک/سایت‌مپ (قبلاً ۶۱)"
+        "note": "اگر URL مهم است از Disallow خارج کن"
       },
       {
         "reasonFa": "مسدود به‌خاطر خطای ۴xx دیگر",
         "pages": 0,
         "severity": "ok",
         "note": "Validation: Passed"
-      },
-      {
-        "reasonFa": "مسدود با robots.txt",
-        "pages": 0,
-        "severity": "ok",
-        "note": "وضعیت خوب اگر صفر بماند"
-      },
-      {
-        "reasonFa": "خطای سرور (۵xx)",
-        "pages": 0,
-        "severity": "ok",
-        "note": "وضعیت خوب اگر صفر بماند"
       }
     ],
     "insights": [
-      "آخرین وضعیت Coverage: ایندکس 296 · غیرایندکس 525 (2026-09-04).",
-      "رشد ایندکس نسبت به ۲۰ جولای (۱۱۷→296) — مثبت.",
-      "noindex: 236 صفحه — Validation=Failed · اولویت بحرانی (قبلاً ۴۶).",
-      "۴۰۴ در گزارش فعلی: ۰ (پاکسازی قبلی ماندگار به نظر می‌رسد).",
-      "خزش‌شده ولی ایندکس‌نشده: 91 · کشف‌شده ولی ایندکس‌نشده: 139.",
-      "ریدایرکت: 24 · Redirect error: 1 · 403: 1.",
-      "Sitemap scope در گزارش: All known pages.",
-      "Performance اکسپورت ۰۷ سپتامبر فیلتر صفحهٔ حسابداری است — پنل GSC کل‌سایت عمداً با ۲۷ اوت مانده تا اکسپورت سایت‌واید جدید بیاید."
+      "GSC 2026-10-09: ایندکس 228 · غیرایندکس 671 (۹ دلیل) — ایندکس نسبت به سپتامبر (296) افت کرده.",
+      "noindex در GSC: 366 Failed — روی سایت محتوا اصلاح شد؛ Validate fix در GSC لازم است.",
+      "۴۰۴: 29 Failed · اولویت پاکسازی URL مرده.",
+      "Discovered not indexed: 130 · Crawled not indexed: 109 — صف ایندکس + کیفیت.",
+      "CWV موبایل: 106 URL نیاز به بهبود · LCP >2.5s · Validation Failed · 0 Good.",
+      "Sitemap Success · 286 discovered · Breadcrumbs 105 Valid · HTTPS OK.",
+      "Unparsable structured data: 1 × Incorrect value type.",
+      "گزارش: SEO/05-tracking/gsc-issues-report-2026-10-12.md"
     ],
     "chartTail": [
       {
@@ -1474,11 +1479,11 @@ window.ZEHNATI_SEO = {
       }
     ],
     "drilldownNoindex": {
-      "exportedAt": "2026-09-07",
-      "exportedAtFa": "۱۶ شهریور ۱۴۰۵",
+      "exportedAt": "2026-10-12",
+      "exportedAtFa": "۲۰۲۶-۱۰-۱۲",
       "issue": "Excluded by ‘noindex’ tag",
       "issueFa": "حذف با تگ noindex",
-      "count": 236,
+      "count": 366,
       "sampleUrls": [
         {
           "url": "https://zehnati.ir/صفر-تاصد-عربی-یازدهم/",
@@ -1641,7 +1646,7 @@ window.ZEHNATI_SEO = {
           "lastCrawled": "2026-08-30"
         }
       ],
-      "note": "Drilldown کامل noindex · ۲۳۶ URL در Table"
+      "note": "GSC 366 · لایو محتوا index (~۳۵۹) · ۷ keep · Validate fix باقی است · fix-final.md"
     }
   },
   techStatus: [
@@ -1662,7 +1667,13 @@ window.ZEHNATI_SEO = {
       id: "coverage",
       name: "ایندکس / Coverage",
       status: "fail",
-      detail: "2026-09-04: ایندکس 296 · noindex 236 Failed · 404=31 Started · discovered 139",
+      detail: "10/9: ایندکس 228 · not 671 · noindex 366 Failed · 404=29 · LCP 106 Need improve",
+    },
+    {
+      id: "cwv",
+      name: "Core Web Vitals",
+      status: "fail",
+      detail: "موبایل: 0 Good · 106 Need improvement · LCP>2.5s Failed · Desktop: no data",
     },
   ],
   homepage: {
@@ -2207,6 +2218,56 @@ window.ZEHNATI_SEO = {
       kwTarget: { p0: 0, p1: 15, p2: 0, p3: 0, total: 15 },
       actions: [
         {
+          id: "p4-gsc1",
+          priority: "critical",
+          title: "GSC Validate fix برای noindex (۳۶۶)",
+          where: "Search Console → Page indexing → noindex",
+          why: "لایو محتوا index شد · GSC هنوز Failed · بدون Validate عدد پایین نمی‌آید",
+          done: false,
+          note: "گزارش: gsc-issues-report-2026-10-12.md · fix-final.md",
+        },
+        {
+          id: "p4-gsc2",
+          priority: "critical",
+          title: "پاکسازی ۲۹×۴۰۴ (۳۰۱ / حذف لینک / سایت‌مپ)",
+          where: "GSC → Not found (404) + وردپرس",
+          why: "Validation=Failed · لینک مرده سیگنال و کرال را هدر می‌دهد",
+          done: false,
+        },
+        {
+          id: "p4-gsc3",
+          priority: "critical",
+          title: "LCP موبایل ≤۲.۵s برای ۱۰۶ URL (CWV)",
+          where: "LiteSpeed · تصاویر · خانه/قالب",
+          why: "GSC CWV: Need improvement 106 · LCP>2.5s · Validation Failed · 0 Good",
+          done: false,
+          note: "هم‌راستا با p4-a5 / p4-a9 · CrUX 2026-10-11",
+        },
+        {
+          id: "p4-gsc4",
+          priority: "high",
+          title: "صف ۱۳۰×Discovered + ۱۰۹×Crawled not indexed",
+          where: "لینک داخلی · Request indexing · کیفیت صفحه",
+          why: "بخش بزرگی از ۶۷۱ not indexed · اولویت P0/P1 تجاری",
+          done: false,
+        },
+        {
+          id: "p4-gsc5",
+          priority: "high",
+          title: "رفع ۱ Unparsable schema (Incorrect value type)",
+          where: "Rank Math / JSON-LD",
+          why: "GSC Enhancements · Invalid 1 · Not Started",
+          done: false,
+        },
+        {
+          id: "p4-gsc6",
+          priority: "high",
+          title: "رفع تکی: redirect error + 403 + robots block",
+          where: "GSC Indexing + سرور",
+          why: "هر کدام ۱ URL · دسترسی/زنجیره کرالر",
+          done: false,
+        },
+        {
           id: "p4-a1",
           priority: "high",
           title: "راه‌اندازی / تأیید Google Business اصفهان",
@@ -2227,9 +2288,9 @@ window.ZEHNATI_SEO = {
           priority: "critical",
           title: "CWV خانه: FCP≤۱.۸s · کاهش render-blocking",
           where: "LiteSpeed · صفحه اصلی",
-          why: "Site Checkup HIGH · FCP 2.24s · Speed score 68 · 85 HTTP request",
+          why: "Site Checkup HIGH · FCP 2.24s · Speed score 68 · 85 HTTP request · GSC LCP 106",
           done: false,
-          note: "منبع: Render Blocking + Page Objects + FCP tests 2026-09-07",
+          note: "منبع: Render Blocking + Page Objects + FCP 2026-09-07 · GSC CWV 2026-10-11",
         },
         {
           id: "p4-a9",
@@ -2299,6 +2360,11 @@ window.ZEHNATI_SEO = {
         },
       ],
       checklist: [
+        { id: "p4-c-gsc1", label: "GSC Validate fix noindex", done: false },
+        { id: "p4-c-gsc2", label: "۲۹×۴۰۴ پاکسازی شد", done: false },
+        { id: "p4-c-gsc3", label: "CWV LCP موبایل · Need improvement↓", done: false },
+        { id: "p4-c-gsc4", label: "صف Discovered/Crawled کاهش یافت", done: false },
+        { id: "p4-c-gsc5", label: "Unparsable schema = 0", done: false },
         { id: "p4-c1", label: "GBP اصفهان ثبت/تأیید شده", done: false },
         { id: "p4-c2", label: "هدرهای امنیتی فعال", done: false },
         { id: "p4-c3", label: "alt تصاویر صفحه اصلی", done: false },
