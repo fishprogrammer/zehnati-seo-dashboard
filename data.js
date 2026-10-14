@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-10-13T15:30:28+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۲۱ · ۱۵:۳۰",
+    "updatedAt": "2026-10-14T15:30:08+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۲۲ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,52 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 48,
       "remaining": 172,
-      "runsAllTime": 49,
+      "runsAllTime": 50,
       "optimizedToday": 1,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-10-14",
+        "dateFa": "۱۴۰۵/۰۷/۲۲",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 1,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-10-14T15:30:08+03:30",
+            "atFa": "۱۴۰۵/۰۷/۲۲ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7769,
+                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
+                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
+                "issuesBefore": [
+                  "image_alt_no_keyword"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-10-13",
         "dateFa": "۱۴۰۵/۰۷/۲۱",
@@ -583,101 +624,6 @@ window.ZEHNATI_SEO = {
                   "featured_image_alt"
                 ],
                 "changedFa": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-09-28",
-        "dateFa": "۱۴۰۵/۰۷/۰۶",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 3,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-09-28T15:30:07+03:30",
-            "atFa": "۱۴۰۵/۰۷/۰۶ · ۱۵:۳۰",
-            "dryRun": false,
-            "processed": 3,
-            "optimized": 3,
-            "results": [
-              {
-                "postId": 7675,
-                "title": "مزایا و معایب رشته دندانپزشکی",
-                "link": "https://zehnati.ir/dandaanpezeshki/",
-                "issuesBefore": [
-                  "image_alt_no_keyword"
-                ],
-                "issuesBeforeFa": [
-                  "alt تصویر + کلمه کلیدی"
-                ],
-                "changed": [
-                  "featured_media_id",
-                  "featured_image_alt",
-                  "inject_featured_image"
-                ],
-                "changedFa": [
-                  "featured_media_id",
-                  "featured_image_alt",
-                  "تصویر شاخص + alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7681,
-                "title": "کنکور فرهنگیان؛ راهنمای مسیر",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "image_alt_no_keyword",
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "alt تصویر + کلمه کلیدی",
-                  "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "content_prepend",
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "کلمه کلیدی در متن",
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              },
-              {
-                "postId": 7769,
-                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
-                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
-                "issuesBefore": [
-                  "focus_keyword_not_in_content",
-                  "image_alt_no_keyword"
-                ],
-                "issuesBeforeFa": [
-                  "کلمه کلیدی در متن",
-                  "alt تصویر + کلمه کلیدی"
-                ],
-                "changed": [
-                  "content_prepend",
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "کلمه کلیدی در متن",
                   "featured_media_id",
                   "featured_image_alt"
                 ],
