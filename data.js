@@ -32,21 +32,134 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-10-15T15:30:10+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۲۳ · ۱۵:۳۰",
+    "updatedAt": "2026-10-16T15:30:10+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۲۴ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 48,
-      "remaining": 172,
-      "runsAllTime": 51,
-      "optimizedToday": 1,
+      "optimizedAllTime": 50,
+      "remaining": 170,
+      "runsAllTime": 52,
+      "optimizedToday": 3,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-10-16",
+        "dateFa": "۱۴۰۵/۰۷/۲۴",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 3,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-10-16T15:30:10+03:30",
+            "atFa": "۱۴۰۵/۰۷/۲۴ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 3,
+            "optimized": 3,
+            "results": [
+              {
+                "postId": 7769,
+                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
+                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
+                "issuesBefore": [
+                  "image_alt_no_keyword"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7845,
+                "title": "انتخاب رشته پایه نهم چگونه است؟",
+                "link": "https://zehnati.ir/%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8-%d8%b1%d8%b4%d8%aa%d9%87-%d9%be%d8%a7%db%8c%d9%87-%d9%86%d9%87%d9%85-%da%86%da%af%d9%88%d9%86%d9%87-%d8%a7%d8%b3%d8%aa%d8%9f/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7849,
+                "title": "انتخاب رشته کنکور تجربی ۱۴۰۳",
+                "link": "https://zehnati.ir/%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8-%d8%b1%d8%b4%d8%aa%d9%87-%da%a9%d9%86%da%a9%d9%88%d8%b1-%d8%aa%d8%ac%d8%b1%d8%a8%db%8c-%db%b1%db%b4%db%b0%db%b3/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-10-15",
         "dateFa": "۱۴۰۵/۰۷/۲۳",
@@ -577,47 +690,6 @@ window.ZEHNATI_SEO = {
                 "issuesBeforeFa": [
                   "alt تصویر + کلمه کلیدی",
                   "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-09-30",
-        "dateFa": "۱۴۰۵/۰۷/۰۸",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 1,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-09-30T15:30:18+03:30",
-            "atFa": "۱۴۰۵/۰۷/۰۸ · ۱۵:۳۰",
-            "dryRun": false,
-            "processed": 1,
-            "optimized": 1,
-            "results": [
-              {
-                "postId": 7769,
-                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
-                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
-                "issuesBefore": [
-                  "image_alt_no_keyword"
-                ],
-                "issuesBeforeFa": [
-                  "alt تصویر + کلمه کلیدی"
                 ],
                 "changed": [
                   "featured_media_id",
