@@ -32,21 +32,162 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-10-16T15:30:10+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۲۴ · ۱۵:۳۰",
+    "updatedAt": "2026-10-17T15:51:43+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۲۵ · ۱۵:۵۱",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
       "total": 220
     },
     "totals": {
-      "optimizedAllTime": 50,
-      "remaining": 170,
-      "runsAllTime": 52,
+      "optimizedAllTime": 51,
+      "remaining": 169,
+      "runsAllTime": 53,
       "optimizedToday": 3,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-10-17",
+        "dateFa": "۱۴۰۵/۰۷/۲۵",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 3,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-10-17T15:51:43+03:30",
+            "atFa": "۱۴۰۵/۰۷/۲۵ · ۱۵:۵۱",
+            "dryRun": false,
+            "processed": 4,
+            "optimized": 3,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "کنکور فرهنگیان؛ راهنمای مسیر",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "image_alt_no_keyword",
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی",
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7769,
+                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
+                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
+                "issuesBefore": [
+                  "image_alt_no_keyword"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7836,
+                "title": "انتخاب رشته با سهمیه ۵ درصد",
+                "link": "https://zehnati.ir/%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8-%d8%b1%d8%b4%d8%aa%d9%87-%d8%a8%d8%a7-%d8%b3%d9%87%d9%85%db%8c%d9%87-%db%b5-%d8%af%d8%b1%d8%b5%d8%af/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description",
+                  "no_outbound_links"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن",
+                  "لینک خروجی"
+                ],
+                "changed": [
+                  "rank_math_title",
+                  "rank_math_description",
+                  "rank_math_focus_keyword",
+                  "content_prepend",
+                  "content_append",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "inject_featured_image"
+                ],
+                "changedFa": [
+                  "عنوان SEO",
+                  "متا",
+                  "فوکوس کیورد",
+                  "کلمه کلیدی در متن",
+                  "لینک داخلی/خروجی",
+                  "featured_media_id",
+                  "featured_image_alt",
+                  "تصویر شاخص + alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              },
+              {
+                "postId": 7841,
+                "title": "انتخاب رشته فرهنگیان",
+                "link": "https://zehnati.ir/%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8-%d8%b1%d8%b4%d8%aa%d9%87-%d9%81%d8%b1%d9%87%d9%86%da%af%db%8c%d8%a7%d9%86/",
+                "issuesBefore": [
+                  "missing_focus_keyword",
+                  "missing_seo_title",
+                  "missing_meta_description"
+                ],
+                "issuesBeforeFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا دیسکریپشن"
+                ],
+                "changed": [
+                  "rank_math_focus_keyword",
+                  "rank_math_title",
+                  "rank_math_description",
+                  "content_prepend",
+                  "inject_featured_image",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "changedFa": [
+                  "فوکوس کیورد",
+                  "عنوان SEO",
+                  "متا",
+                  "کلمه کلیدی در متن",
+                  "تصویر شاخص + alt",
+                  "featured_image_alt",
+                  "featured_media_id"
+                ],
+                "ok": false,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-10-16",
         "dateFa": "۱۴۰۵/۰۷/۲۴",
@@ -647,49 +788,6 @@ window.ZEHNATI_SEO = {
                 ],
                 "issuesBeforeFa": [
                   "alt تصویر + کلمه کلیدی"
-                ],
-                "changed": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-10-01",
-        "dateFa": "۱۴۰۵/۰۷/۰۹",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 1,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-10-01T15:30:07+03:30",
-            "atFa": "۱۴۰۵/۰۷/۰۹ · ۱۵:۳۰",
-            "dryRun": false,
-            "processed": 1,
-            "optimized": 1,
-            "results": [
-              {
-                "postId": 7681,
-                "title": "کنکور فرهنگیان؛ راهنمای مسیر",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "image_alt_no_keyword",
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "alt تصویر + کلمه کلیدی",
-                  "امتیاز SEO پایین"
                 ],
                 "changed": [
                   "featured_media_id",
