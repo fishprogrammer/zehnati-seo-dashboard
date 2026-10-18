@@ -12,7 +12,7 @@
 
 ## Sitemap / robots
 
-- `sitemap_index.xml` → HTTP **200** · فرزندان ~5
+- `sitemap_index.xml` → HTTP **200** · فرزندان ~7
 - robots: Sitemap: https://zehnati.ir/sitemap_index.xml
 
 ## صفحات کلیدی
