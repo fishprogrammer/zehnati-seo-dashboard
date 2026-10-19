@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-10-18T15:30:07+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۲۶ · ۱۵:۳۰",
+    "updatedAt": "2026-10-19T15:30:07+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۲۷ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,54 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 51,
       "remaining": 169,
-      "runsAllTime": 54,
-      "optimizedToday": 2,
+      "runsAllTime": 55,
+      "optimizedToday": 1,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-10-19",
+        "dateFa": "۱۴۰۵/۰۷/۲۷",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 1,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-10-19T15:30:07+03:30",
+            "atFa": "۱۴۰۵/۰۷/۲۷ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7681,
+                "title": "کنکور فرهنگیان؛ راهنمای مسیر",
+                "link": "https://zehnati.ir/farhangian/",
+                "issuesBefore": [
+                  "image_alt_no_keyword",
+                  "low_seo_score"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی",
+                  "امتیاز SEO پایین"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-10-18",
         "dateFa": "۱۴۰۵/۰۷/۲۶",
@@ -769,49 +812,6 @@ window.ZEHNATI_SEO = {
                 ],
                 "issuesBeforeFa": [
                   "alt تصویر + کلمه کلیدی"
-                ],
-                "changed": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-10-04",
-        "dateFa": "۱۴۰۵/۰۷/۱۲",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 1,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-10-04T15:30:07+03:30",
-            "atFa": "۱۴۰۵/۰۷/۱۲ · ۱۵:۳۰",
-            "dryRun": false,
-            "processed": 1,
-            "optimized": 1,
-            "results": [
-              {
-                "postId": 7681,
-                "title": "کنکور فرهنگیان؛ راهنمای مسیر",
-                "link": "https://zehnati.ir/farhangian/",
-                "issuesBefore": [
-                  "image_alt_no_keyword",
-                  "low_seo_score"
-                ],
-                "issuesBeforeFa": [
-                  "alt تصویر + کلمه کلیدی",
-                  "امتیاز SEO پایین"
                 ],
                 "changed": [
                   "featured_media_id",
