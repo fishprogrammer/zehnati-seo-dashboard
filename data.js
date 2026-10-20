@@ -32,8 +32,8 @@ window.ZEHNATI_SEO = {
   },
   wpOrganic: {
     "ok": true,
-    "updatedAt": "2026-10-19T15:30:07+03:30",
-    "updatedAtFa": "۱۴۰۵/۰۷/۲۷ · ۱۵:۳۰",
+    "updatedAt": "2026-10-20T15:30:14+03:30",
+    "updatedAtFa": "۱۴۰۵/۰۷/۲۸ · ۱۵:۳۰",
     "category": {
       "name": "مقالات",
       "slug": "blogs",
@@ -42,11 +42,52 @@ window.ZEHNATI_SEO = {
     "totals": {
       "optimizedAllTime": 51,
       "remaining": 169,
-      "runsAllTime": 55,
+      "runsAllTime": 56,
       "optimizedToday": 1,
       "runsToday": 1
     },
     "daily": [
+      {
+        "date": "2026-10-20",
+        "dateFa": "۱۴۰۵/۰۷/۲۸",
+        "runs": 1,
+        "runsLive": 1,
+        "postsOptimized": 1,
+        "postsPreviewed": 0,
+        "entries": [
+          {
+            "at": "2026-10-20T15:30:14+03:30",
+            "atFa": "۱۴۰۵/۰۷/۲۸ · ۱۵:۳۰",
+            "dryRun": false,
+            "processed": 1,
+            "optimized": 1,
+            "results": [
+              {
+                "postId": 7769,
+                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
+                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
+                "issuesBefore": [
+                  "image_alt_no_keyword"
+                ],
+                "issuesBeforeFa": [
+                  "alt تصویر + کلمه کلیدی"
+                ],
+                "changed": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "changedFa": [
+                  "featured_media_id",
+                  "featured_image_alt"
+                ],
+                "ok": true,
+                "dryRun": false,
+                "skipped": null
+              }
+            ]
+          }
+        ]
+      },
       {
         "date": "2026-10-19",
         "dateFa": "۱۴۰۵/۰۷/۲۷",
@@ -771,47 +812,6 @@ window.ZEHNATI_SEO = {
                 "issuesBeforeFa": [
                   "alt تصویر + کلمه کلیدی",
                   "امتیاز SEO پایین"
-                ],
-                "changed": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "changedFa": [
-                  "featured_media_id",
-                  "featured_image_alt"
-                ],
-                "ok": true,
-                "dryRun": false,
-                "skipped": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "date": "2026-10-05",
-        "dateFa": "۱۴۰۵/۰۷/۱۳",
-        "runs": 1,
-        "runsLive": 1,
-        "postsOptimized": 1,
-        "postsPreviewed": 0,
-        "entries": [
-          {
-            "at": "2026-10-05T15:30:32+03:30",
-            "atFa": "۱۴۰۵/۰۷/۱۳ · ۱۵:۳۰",
-            "dryRun": false,
-            "processed": 1,
-            "optimized": 1,
-            "results": [
-              {
-                "postId": 7769,
-                "title": "رتبه زیر ۱۰۰۰ با پایه درسی ضعیف",
-                "link": "https://zehnati.ir/%da%a9%d8%b3%d8%a8-%d8%b1%d8%aa%d8%a8%d9%87-%d8%b2%db%8c%d8%b1-%db%b1%db%b0%db%b0%db%b0-%d8%a8%d8%a7-%d9%be%d8%a7%db%8c%d9%87-%d8%af%d8%b1%d8%b3%db%8c-%d8%b6%d8%b9%db%8c%d9%81/",
-                "issuesBefore": [
-                  "image_alt_no_keyword"
-                ],
-                "issuesBeforeFa": [
-                  "alt تصویر + کلمه کلیدی"
                 ],
                 "changed": [
                   "featured_media_id",
