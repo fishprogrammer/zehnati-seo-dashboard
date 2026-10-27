@@ -331,11 +331,38 @@
     }
     .badge.ok { background: #e8f6ee; color: var(--pass); }
     .badge.mapped { background: #e8f6ee; color: var(--pass); }
+    .badge.done { background: #d8f3e4; color: #0f6b3c; }
+    .badge.todo { background: #eef1f4; color: #5a6570; }
     .badge.missing { background: #fdecea; color: var(--fail); }
     .badge.partial { background: #fff4e5; color: var(--warn); }
     .badge.critical { background: #fdecea; color: var(--fail); }
     .badge.high { background: #fff4e5; color: var(--warn); }
     .badge.medium { background: #e8f0f6; color: var(--ink-soft); }
+    .kw-legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0 0 0.85rem; font-size: 0.82rem; color: var(--ink-soft); }
+    .kw-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .kw-swatch { width: 0.85rem; height: 0.85rem; border-radius: 3px; display: inline-block; }
+    .kw-swatch.done { background: #ccefdc; border: 1px solid #8fd4ad; }
+    .kw-swatch.todo { background: #f4f6f8; border: 1px solid #d0d7de; }
+    .kw-filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 0.75rem; }
+    .kw-filters button {
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
+      border-radius: 999px; padding: 0.28rem 0.7rem; font: inherit; font-size: 0.78rem; cursor: pointer;
+    }
+    .kw-filters button.active { background: var(--teal-deep); color: #fff; border-color: var(--teal-deep); }
+    tr.kw-done td { background: #eaf7f0; }
+    tr.kw-todo td { background: #fafbfc; color: #4a5560; }
+    tr.kw-done td:first-child { box-shadow: inset 3px 0 0 #2f9e62; }
+    #allKwBody td { vertical-align: top; }
+    .kw-summary {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; margin: 0 0 1rem;
+    }
+    @media (max-width: 720px) { .kw-summary { grid-template-columns: 1fr; } }
+    .kw-summary .card {
+      border: 1px solid var(--line); border-radius: 10px; padding: 0.7rem 0.85rem; background: #fff;
+    }
+    .kw-summary .card.done { background: #eaf7f0; border-color: #8fd4ad; }
+    .kw-summary .card .n { font-size: 1.45rem; font-weight: 800; line-height: 1; }
+    .kw-summary .card .l { margin-top: 0.25rem; font-size: 0.8rem; color: var(--ink-soft); }
 
     .action {
       display: grid;
@@ -1361,6 +1388,40 @@
     <div class="panel" id="panel-keywords" role="tabpanel">
       <div class="bucket-grid" id="buckets"></div>
       <section class="block">
+        <h2>همه کیوردهای برنامه (۲۰۶)</h2>
+        <p class="section-lead">لیست کامل کارشده و باقی‌مانده از CSV قرارداد · سبز = انجام‌شده</p>
+        <div class="kw-summary" id="kwSummary"></div>
+        <div class="kw-legend">
+          <span><i class="kw-swatch done"></i> انجام‌شده (پوشش ماه / موجود)</span>
+          <span><i class="kw-swatch todo"></i> باقی‌مانده (جدید / برنامه‌آینده)</span>
+        </div>
+        <div class="kw-filters" id="kwFilters" role="group" aria-label="فیلتر کیوردها">
+          <button type="button" class="active" data-kw-filter="all">همه</button>
+          <button type="button" data-kw-filter="done">انجام‌شده</button>
+          <button type="button" data-kw-filter="todo">باقی‌مانده</button>
+          <button type="button" data-kw-filter="P0">P0</button>
+          <button type="button" data-kw-filter="P1">P1</button>
+          <button type="button" data-kw-filter="P2">P2</button>
+          <button type="button" data-kw-filter="P3">P3</button>
+        </div>
+        <div style="overflow:auto;max-height:28rem;border:1px solid var(--line);border-radius:10px">
+          <table class="data" style="margin:0">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>کیورد</th>
+                <th>اولویت</th>
+                <th>صفحه هدف</th>
+                <th>وضعیت</th>
+                <th>ماه</th>
+              </tr>
+            </thead>
+            <tbody id="allKwBody"></tbody>
+          </table>
+        </div>
+        <p class="live-note" id="kwListNote">—</p>
+      </section>
+      <section class="block">
         <h2>پوشش ماهانهٔ ۲۰۶ کیورد</h2>
         <p class="section-lead">جمع ماهانه = ۲۰۶ · هاب مشترک مجاز است، ولی هر کیورد باید URL هدف داشته باشد</p>
         <table class="data">
@@ -2107,15 +2168,70 @@
       });
     }
 
+    let kwFilter = "all";
+
+    function renderAllKeywords() {
+      const items = D.allKeywords || [];
+      const meta = D.allKeywordsMeta || {
+        total: items.length,
+        done: items.filter((x) => x.done).length,
+        pending: items.filter((x) => !x.done).length,
+      };
+      const sum = document.getElementById("kwSummary");
+      if (sum) {
+        sum.innerHTML = `
+          <div class="card"><div class="n">${meta.total}</div><div class="l">کل کیورد برنامه</div></div>
+          <div class="card done"><div class="n">${meta.done}</div><div class="l">انجام‌شده</div></div>
+          <div class="card"><div class="n">${meta.pending}</div><div class="l">باقی‌مانده</div></div>`;
+      }
+      const filtered = items.filter((k) => {
+        if (kwFilter === "done") return !!k.done;
+        if (kwFilter === "todo") return !k.done;
+        if (kwFilter === "P0" || kwFilter === "P1" || kwFilter === "P2" || kwFilter === "P3") {
+          return k.pri === kwFilter;
+        }
+        return true;
+      });
+      const body = document.getElementById("allKwBody");
+      if (body) {
+        body.innerHTML = filtered
+          .map((k) => {
+            const cls = k.done ? "kw-done" : "kw-todo";
+            const badge = k.done ? "done" : "todo";
+            const label = k.done ? "انجام‌شده" : "باقی‌مانده";
+            const st = k.status || "—";
+            const month = k.month ? `ماه ${k.month}` : "—";
+            return `<tr class="${cls}">
+              <td>${k.id}</td>
+              <td><strong>${k.kw}</strong><div style="font-size:.72rem;opacity:.75;margin-top:.15rem">${k.cat || ""} · ${k.type || ""}</div></td>
+              <td>${k.pri || "—"}</td>
+              <td dir="ltr" style="text-align:left;font-size:.78rem">${k.page || "—"}</td>
+              <td><span class="badge ${badge}">${label}</span><div style="font-size:.7rem;margin-top:.2rem;opacity:.8">${st}</div></td>
+              <td>${month}</td>
+            </tr>`;
+          })
+          .join("");
+      }
+      const note = document.getElementById("kwListNote");
+      if (note) {
+        note.textContent = `نمایش ${filtered.length} از ${items.length} کیورد · فیلتر: ${kwFilter}`;
+      }
+    }
+
     function fillKeywords() {
+      const meta = D.allKeywordsMeta || {};
+      const byPri = meta.byPriority || {};
       document.getElementById("buckets").innerHTML = D.keywordBuckets
-        .map(
-          (b, i) => `<div class="bucket p${i}">
-            <div class="n">${b.count}</div>
+        .map((b, i) => {
+          const stats = byPri[b.id] || {};
+          const done = stats.done != null ? stats.done : "—";
+          const total = stats.total != null ? stats.total : b.count;
+          return `<div class="bucket p${i}">
+            <div class="n">${done}/${total}</div>
             <div class="l">${b.id} — ${b.label}</div>
             <div class="a">${b.action}</div>
-          </div>`
-        )
+          </div>`;
+        })
         .join("");
 
       const coverEl = document.getElementById("kwCoverBody");
@@ -2157,6 +2273,19 @@
           </tr>`
         )
         .join("");
+
+      renderAllKeywords();
+      const filters = document.getElementById("kwFilters");
+      if (filters && !filters.dataset.bound) {
+        filters.dataset.bound = "1";
+        filters.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            kwFilter = btn.getAttribute("data-kw-filter") || "all";
+            filters.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
+            renderAllKeywords();
+          });
+        });
+      }
     }
 
     function fillOnpage() {
