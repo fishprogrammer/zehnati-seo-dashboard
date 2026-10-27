@@ -7,7 +7,7 @@ publish to the GitHub Pages repo.
 
 Usage:
     python serve.py
-    # then open http://127.0.0.1:8765/
+    # then open http://127.0.0.1:8876/
 """
 
 from __future__ import annotations
@@ -29,7 +29,7 @@ import apply_dashboard_state as dash_state
 ROOT = Path(__file__).resolve().parent
 AUDIT_DIR = ROOT.parents[1] / "claude-seo" / "zehnati.ir-audit"
 PUBLISH_REPO = Path(r"D:\claude-seo\zehnati-seo-dashboard")
-PORT = 8765
+PORT = 8876  # dedicated; 8765 often used by other SEO dashboards
 ALLOWED_HOSTS = {"zehnati.ir", "www.zehnati.ir"}
 
 ALLOWED_FINDINGS = {

@@ -366,6 +366,15 @@
     .action-title { font-weight: 700; margin: 0 0 0.25rem; }
     .action-meta { font-size: 0.82rem; color: var(--muted); margin: 0; }
     .action-why { font-size: 0.85rem; margin: 0.4rem 0 0; color: var(--ink-soft); }
+    .action-note {
+      font-size: 0.82rem;
+      margin: 0.35rem 0 0;
+      color: #1b6b3a;
+      background: #eef8f1;
+      border-radius: 8px;
+      padding: 0.35rem 0.55rem;
+      line-height: 1.45;
+    }
     .action-status {
       display: inline-block;
       margin-top: 0.55rem;
@@ -376,6 +385,10 @@
     .action-status.pending {
       color: var(--warn);
       font-weight: 600;
+    }
+    .action-status.progress {
+      color: #0b6e4f;
+      font-weight: 700;
     }
     .action-side {
       display: flex;
@@ -668,6 +681,88 @@
       font-size: 0.92rem;
     }
     .callout strong { color: var(--accent); }
+
+    .lead-brief {
+      background: linear-gradient(160deg, #fff8f0 0%, #ffffff 55%);
+      border: 1px solid #f0d5b8;
+      border-radius: 14px;
+      padding: 1.1rem 1.2rem 1.25rem;
+      margin: 0 0 1.35rem;
+    }
+    .lead-brief h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.15rem;
+    }
+    .lead-brief .lead-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 0 0 0.85rem;
+    }
+    .lead-brief .verdict {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin: 0 0 1rem;
+      color: var(--ink);
+    }
+    .lead-status {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 800px) {
+      .lead-status { grid-template-columns: 1fr; }
+    }
+    .lead-stat {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.65rem 0.8rem;
+    }
+    .lead-stat .k { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.2rem; }
+    .lead-stat .v { font-size: 0.88rem; font-weight: 650; line-height: 1.45; }
+    .lead-stat.ok { border-color: #b7e0c5; }
+    .lead-stat.warn { border-color: #f0d08a; }
+    .lead-stat.bad { border-color: #f0b4b4; }
+    .lead-gaps, .lead-prios {
+      margin: 0 0 0.85rem;
+      padding: 0;
+      list-style: none;
+    }
+    .lead-gaps li, .lead-prios li {
+      margin: 0 0 0.55rem;
+      padding: 0.55rem 0.7rem;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    .lead-gaps strong, .lead-prios strong { display: block; margin-bottom: 0.2rem; }
+    .lead-prios .rank {
+      display: inline-block;
+      min-width: 1.4rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      text-align: center;
+      border-radius: 999px;
+      background: #ef7414;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-left: 0.35rem;
+    }
+    .lead-prios ul {
+      margin: 0.35rem 0 0;
+      padding: 0 1rem 0 0;
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+      line-height: 1.65;
+    }
+    .lead-subh {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin: 0.9rem 0 0.45rem;
+    }
 
     .gsc-note {
       font-size: 0.85rem;
@@ -1070,6 +1165,17 @@
       <strong>فاز جاری:</strong>
       فاز ۱ — ماه ۱: لندینگ‌های تجاری P0 (۲۵ کیورد از ۲۰۶). فاز ۰ فنی انجام شده است.
     </div>
+
+    <section class="lead-brief" id="seoLeadBrief" aria-label="خلاصه SEO">
+      <h2>خلاصه SEO</h2>
+      <p class="lead-meta" id="leadBriefMeta">—</p>
+      <p class="verdict" id="leadBriefVerdict"></p>
+      <div class="lead-status" id="leadBriefStatus"></div>
+      <p class="lead-subh">گلوگاه‌های لید</p>
+      <ul class="lead-gaps" id="leadBriefGaps"></ul>
+      <p class="lead-subh">اولویت‌های اجرایی (به ترتیب)</p>
+      <ul class="lead-prios" id="leadBriefPriorities"></ul>
+    </section>
 
     <nav class="tabs" role="tablist" aria-label="بخش‌های داشبورد">
       <button class="tab" role="tab" aria-selected="true" data-tab="overview">نمای کلی</button>
@@ -1600,21 +1706,35 @@
       });
     }
 
+    function actionStatusLabel(a, done) {
+      if (done) return { text: "✓ انجام شد", cls: "" };
+      const note = a.note || "";
+      if (/اعمال|🛠️|در انتظار CrUX|در انتظار افت|Validate|IndexNow/i.test(note)) {
+        return { text: "اعمال شد — منتظر GSC", cls: "progress" };
+      }
+      return { text: "در انتظار انجام", cls: "pending" };
+    }
+
     function renderActionRows(list, mountId) {
       const mount = document.getElementById(mountId);
       if (!mount) return;
       mount.innerHTML = list
         .map((a) => {
           const done = itemDone(a.id, a.done);
+          const st = actionStatusLabel(a, done);
           const pri =
             a.priority === "critical" ? "بحرانی" : a.priority === "high" ? "بالا" : "متوسط";
+          const noteHtml = a.note
+            ? `<p class="action-note">${a.note}</p>`
+            : "";
           return `<div class="action ${done ? "done" : ""}" data-id="${a.id}">
             <input type="checkbox" ${done ? "checked" : ""} ${USE_BROWSER_TICKS ? "" : "disabled"} aria-label="انجام شد" />
             <div>
               <p class="action-title">${a.title}</p>
               <p class="action-meta">${a.where || ""}</p>
               <p class="action-why">${a.why || ""}</p>
-              <span class="action-status ${done ? "" : "pending"}">${done ? "✓ انجام شد" : "در انتظار انجام"}</span>
+              ${noteHtml}
+              <span class="action-status ${st.cls}">${st.text}</span>
             </div>
             <div class="action-side">
               <span class="badge ${a.priority}">${pri}</span>
@@ -1938,15 +2058,20 @@
           const rows = items
             .map((a) => {
               const done = itemDone(a.id, a.done);
+              const st = actionStatusLabel(a, done);
               const pri =
                 a.priority === "critical" ? "بحرانی" : a.priority === "high" ? "بالا" : "متوسط";
+              const noteHtml = a.note
+                ? `<p class="action-note">${a.note}</p>`
+                : "";
               return `<div class="action ${done ? "done" : ""}" data-id="${a.id}">
                 <input type="checkbox" ${done ? "checked" : ""} ${USE_BROWSER_TICKS ? "" : "disabled"} aria-label="انجام شد" />
                 <div>
                   <p class="action-title">${a.title}</p>
                   <p class="action-meta">${a.where || ""}</p>
                   <p class="action-why">${a.why || ""}</p>
-                  <span class="action-status ${done ? "" : "pending"}">${done ? "✓ انجام شد" : "در انتظار انجام"}</span>
+                  ${noteHtml}
+                  <span class="action-status ${st.cls}">${st.text}</span>
                 </div>
                 <div class="action-side">
                   <span class="badge ${a.priority}">${pri}</span>
@@ -2217,7 +2342,7 @@
             "<strong>قدم بعدی:</strong> H1 صفحه اصلی را اضافه کنید و Meta Description را اختصاصی بنویسید.";
         } else {
           callout.innerHTML =
-            "<strong>آدیت 2026-10-12:</strong> امتیاز 73/۱۰۰ · GSC 3m 14٬751 · WoW +67.8٪ · P0~1052 · page/technical/content/schema/local/audit.";
+            "<strong>آدیت 2026-10-27:</strong> امتیاز 73/۱۰۰ · GSC 3m 15٬861 · WoW -7.9٪ · P0~1411 · page/technical/content/schema/local/audit.";
         }
       }
 
@@ -2713,12 +2838,59 @@
       recheckSiteAndRefresh();
     });
 
+    function fillSeoLeadBrief() {
+      const b = D.seoLeadBrief;
+      const root = document.getElementById("seoLeadBrief");
+      if (!b || !root) {
+        if (root) root.hidden = true;
+        return;
+      }
+      root.hidden = false;
+      const meta = document.getElementById("leadBriefMeta");
+      const verdict = document.getElementById("leadBriefVerdict");
+      if (meta) meta.textContent = `${b.updatedAtFa || b.updatedAt || ""} · ${b.source || ""}`;
+      if (verdict) {
+        const v = (b.verdict || "").trim();
+        verdict.textContent = v;
+        verdict.hidden = !v;
+      }
+
+      const st = document.getElementById("leadBriefStatus");
+      if (st) {
+        st.innerHTML = (b.status || [])
+          .map(
+            (s) =>
+              `<div class="lead-stat ${s.tone || ""}"><div class="k">${s.label || ""}</div><div class="v">${s.value || ""}</div></div>`
+          )
+          .join("");
+      }
+      const gaps = document.getElementById("leadBriefGaps");
+      if (gaps) {
+        gaps.innerHTML = (b.leadGaps || [])
+          .map(
+            (g) =>
+              `<li><strong>${g.title || ""}</strong><span style="font-size:0.86rem;color:var(--ink-soft);display:block;line-height:1.65">${g.detail || ""}</span></li>`
+          )
+          .join("");
+      }
+      const prios = document.getElementById("leadBriefPriorities");
+      if (prios) {
+        prios.innerHTML = (b.priorities || [])
+          .map((p) => {
+            const steps = (p.do || []).map((d) => `<li>${d}</li>`).join("");
+            return `<li><strong><span class="rank">${p.rank || ""}</span>${p.title || ""}</strong><div style="font-size:0.82rem;color:var(--muted);margin:0.15rem 0 0.25rem">${p.why || ""}</div><ul>${steps}</ul></li>`;
+          })
+          .join("");
+      }
+    }
+
     (async function boot() {
       await hydrateStateFromServer();
       fillHeader();
       fillBars();
       fillTimeline();
       fillPhaseWork();
+      fillSeoLeadBrief();
       fillKpis();
       fillGsc();
       fillGscWow();
