@@ -1,15 +1,15 @@
-/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: 2026-10-27 / 2026-10-27 */
+/* دادهٔ آنالیز SEO ذهن آتی — به‌روز: 2026-11-02 */
 window.ZEHNATI_SEO = {
   meta: {
     brand: "ذهن آتی",
     domain: "https://zehnati.ir/",
     manager: "دکتر زهرا جعفری",
-    updatedAt: "2026-10-27",
-    updatedAtFa: "2026-10-27",
+    updatedAt: "2026-11-02",
+    updatedAtFa: "2026-11-02",
     phase: 4,
-    phaseLabel: "فاز ۴ — ماه ۴: محلی، سرعت + ۱۵ کیورد P1",
-    week: 5,
-    month: 3,
+    phaseLabel: "فاز ۴ — ماه ۴: لید CTR + غیربرند + ایندکس",
+    week: 6,
+    month: 4,
     planStartFa: "۱۴۰۵/۰۴/۲۰",
     planStartLabel: "۲۰ تیر ۱۴۰۵",
     planEndFa: "۱۴۰۵/۱۱/۱۹",
@@ -20,59 +20,63 @@ window.ZEHNATI_SEO = {
     keywordTotal: 206,
   },
   seoLeadBrief: {
-    updatedAt: "2026-10-27",
-    updatedAtFa: "۲۰۲۶-۱۰-۲۷ · ۱۷:۱۰",
-    source: "GSC زنده (Overview/Pages/Performance) + اکسپورت ۳ماه ۲۰۲۶-۱۰-۲۷",
-    note: "ماه۴ بسته: امنیت/HTML/FAQ/۱۵P1 · تجمعی ۹۸/۲۰۶ · GBP sanctions · Bridge 2.0.5 برای PP",
+    lead_bottlenecks_2026_11_02: "✅ گلوگاه لید ۲۰۲۶-۱۱-۰۲: CTR meta ۹/۹ · CTA ۱۱ · غیربرند ۱۶ · ریدایرکت ۸ · IndexNow ✓",
+    verdict: "گلوگاه‌های لید اعمال شد · ۱۸/۱۸ مقاله AIO خوشه مشاور · منتظر CTR/ایندکس در GSC · ۲۰۲۶-۱۱-۰۲",
+    updatedAt: "2026-11-02",
+    updatedAtFa: "2026-11-02",
+    source: "Bridge live + GSC ۲۰۲۶-۱۰-۲۷ + مقالات AIO ۲۰۲۶-۱۱-۰۲",
+    note: "اولویت کارفرما: خوشه مشاور ۱۸/۱۸ قوی · CTR+غیربرند+نشتی کرال روی سایت اعمال شد",
     status: [
       { label: "Performance ۳ماه", value: "۱۵٫۹K کلیک · ۱۱۴K نمایش · CTR ۱۴٪ · رتبه ~۸٫۲", tone: "ok" },
-      { label: "ایندکس (۱۰/۲۳)", value: "۲۰۰ ایندکس · ۷۰۶ not · روند منفی", tone: "bad" },
-      { label: "CWV موبایل", value: "۰ Good · ۱۰۳ Need improvement (LCP) · قبلاً ۱۰۶", tone: "warn" },
-      { label: "ساختار ترافیک", value: "برند غالب · موبایل ۹۲٪ · خانه ~۱۰K کلیک از ۱۵٫۹K", tone: "warn" },
+      { label: "خوشه مشاور", value: "۱۸/۱۸ مقاله AIO (پاسخ مستقیم+FAQ)", tone: "ok" },
+      { label: "گلوگاه لید", value: "CTR+CTA+غیربرند+ریدایرکت نشتی اعمال شد", tone: "ok" },
+      { label: "ایندکس", value: "IndexNow P0 ✓ · Validate/Request در GSC دستی", tone: "warn" },
     ],
     leadGaps: [
       {
-        title: "CTR ضعیف روی صفحات فروش پربازدید",
-        detail: "تجربی ~۱۰K نمایش / CTR ۲٫۹٪ · تماس ۳۷۷ کلیک / CTR ۳٪ با رتبه ~۲ — Title/Meta هفت صفحه اعمال شد؛ منتظر CTR در GSC.",
+        title: "CTR صفحات فروش — ✅ اعمال شد",
+        detail: "Title/Meta ۹ صفحه P0 با «جلسه رایگان» · CTA fold روی ۱۱ مقاله/لندینگ فروش · منتظر بهبود CTR در GSC.",
       },
       {
-        title: "وابستگی به برند",
-        detail: "ذهن آتی / ذهن اتی / آکادمی… ستون کلیک‌اند. کیوردهای غیربرند تجاری (قیمت، مشاور اصفهان/تهران، آنلاین) باید سهم بیشتری از فرم مشاوره بگیرند.",
+        title: "غیربرند تجاری — ✅ اعمال شد",
+        detail: "بلوک قیمت/اصفهان/تهران/آنلاین/فرم روی ۶ لندینگ + ۱۰ بلاگ پرکلیک GSC.",
       },
       {
-        title: "نشتی ایندکس و کرال",
-        detail: "noindex ۳۹۷ Failed · Discovered ۱۲۸ · Crawled ۱۱۴ · ۴۰۴=۲۹ — بودجهٔ کرال روی صفحات کم‌ارزش می‌سوزد.",
+        title: "نشتی ایندکس/کرال — ✅ اعمال شد",
+        detail: "login/checkout/my-account → ۳۰۱ خانه · auth noindex+nofollow · IndexNow P0 · Validate ۴۰۴/noindex در GSC باقی است.",
       },
     ],
     priorities: [
+
       {
         rank: 1,
-        title: "CTR و CTA لندینگ‌های P0 (لید سریع)",
-        why: "بیشترین بازده نسبت به تلاش — نمایش زیاد، تبدیل کم",
+        title: "خوشه اولویت کارفرما: بهترین/معروف‌ترین مشاور (+تیزهوشان)",
+        why: "۱۸ عبارت تجاری — پوشش AIO کامل شد",
         do: [
-          "✅ Title/Description هفت لندینگ P0 اعمال شد (۲۰۲۶-۱۰-۲۷)",
-          "✅ CTA/فرم بالای fold: تجربی + هیرو قیمت/هاب/اصفهان/تهران/آنلاین (۲۰۲۶-۱۰-۲۷)",
-          "مقایسه قیمت/پکیج شفاف در /قیمت-مشاوره-کنکور/ (قبلاً ۹۰۴ کلیک — حفظ و گسترش)",
+          "✅ ۱۸/۱۸ مقاله با پاسخ مستقیم + FAQ (۲۰۲۶-۱۱-۰۲)",
+          "✅ /بهترین-مشاور-کنکور/ اختصاصی (دیگر ۳۰۱ به اصفهان نیست)",
+          "✅ تیزهوشان + معروف‌ترین تجربی/اصفهان/تهران ساخته شد",
+          "رصد GSC بعد از ایندکس مقالات جدید",
         ],
       },
-      {
+{
         rank: 2,
         title: "لوکال و قصد تجاری غیربرند",
         why: "لید حضوری/تلفنی از اصفهان و تهران",
         do: [
-          "✅ نقشه+NAP+کراس‌لینک اصفهان/تهران روی لندینگ (۲۰۲۶-۱۰-۲۷)",
-          "⛔ GBP: Google برای ایران sanctions block — ایجاد پروفایل ممکن نیست (۲۰۲۶-۱۰-۲۷) · جایگزین: نشان/بلد + دایرکتوری",
-          "✅ لینک لید روی ۸ بلاگ پرکلیک (حسابداری، تخمین، داروسازی، … → فرم/قیمت/شهر)",
+          "✅ نقشه+NAP+کراس‌لینک اصفهان/تهران روی لندینگ",
+          "✅ بلوک غیربرند روی هاب/قیمت/شهر/آنلاین + ۱۰ بلاگ GSC (۲۰۲۶-۱۱-۰۲)",
+          "⛔ GBP: sanctions block — جایگزین نشان/بلد",
         ],
       },
       {
         rank: 3,
         title: "پاکسازی ایندکس + Validate در GSC",
-        why: "ایندکس ۲۰۰→ باید جلوی افت بیشتر گرفته شود",
+        why: "جلوگیری از سوختن بودجه کرال",
         do: [
-          "✅ Validate ۴۰۴ شروع شد (۲۰۲۶-۱۰-۲۷) · noindex عمدی پروفایل‌ها → Validate سراسری نزن",
-          "Request indexing P0: Live test گوگل DNS unresponsive — بعد از رفع تکرار · IndexNow ✓",
-          "✅ Validate Unparsable FAQ شروع شد · بعدی: رصد CWV بعد از LiteSpeed",
+          "✅ ۴۰۴های login/checkout/my-account → ۳۰۱ خانه (۲۰۲۶-۱۱-۰۲)",
+          "✅ auth noindex+nofollow · IndexNow P0",
+          "دستی GSC: Validate ۴۰۴/noindex + Request indexing فقط P0/P1",
         ],
       },
       {
@@ -1910,6 +1914,393 @@ window.ZEHNATI_SEO = {
     h1Now: "مشاوره رایگان کنکور در ذهن آتی",
     schemas: ["EducationalOrganization", "LocalBusiness", "Person", "WebSite", "WebPage", "ImageObject", "SearchAction", "Organization"],
   },
+  /* __PRIORITY_MOSHAVER_START__ */
+  priorityMoshaverCluster: {
+    aio_articles_2026_11_02: "✅ ۱۳ مقاله AIO منتشر/بازنویسی + لندینگ‌ها · ۱۸/۱۸ ok_aio · 2026-11-02",
+    content_fixed_2026_11_01: "✅ ۱۸/۱۸ قوی · ۴ صفحه جدید + تقویت هاب/رشته/شهر/about · 2026-11-01",
+  "updatedAt": "2026-11-02",
+  "updatedAtFa": "2026-11-02",
+  "source": "لایو zehnati.ir · AIO quality audit ۲۰۲۶-۱۱-۰۲",
+  "verdict": "۱۸/۱۸ مقاله بهینه‌شده برای AI Overview (پاسخ مستقیم + FAQ + CTA).",
+  "summary": {
+    "strong": 18,
+    "weak": 0,
+    "thin": 0,
+    "missing": 0,
+    "total": 18
+  },
+  "items": [
+    {
+      "kw": "بهترین مشاور کنکور",
+      "coverage": "weak",
+      "coverageFa": "پوشش ضعیف",
+      "page": "/مشاوره-کنکور/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 4,
+      "inCsv": false,
+      "actions": [
+        "افزودن عبارت دقیق در Title یا H2 (بدون کیورداستافینگ)",
+        "بلوک FAQ با همان عبارت",
+        "لینک داخلی با انکر دقیق"
+      ],
+      "priority": "P0",
+      "rankBucket": "تقویت فوری"
+    },
+    {
+      "kw": "بهترین مشاور کنکور اصفهان",
+      "coverage": "strong",
+      "coverageFa": "پوشش قوی",
+      "page": "/بهترین-مشاور-کنکور-اصفهان/",
+      "pageCode": 200,
+      "inTitle": true,
+      "inH1": true,
+      "bodyCount": 6,
+      "inCsv": true,
+      "actions": [
+        "حفظ Title/H1 فعلی",
+        "تقویت لینک داخلی از خانه/فوتر/هاب",
+        "رصد رتبه GSC هفتگی"
+      ],
+      "priority": "P0",
+      "rankBucket": "نگهداشت"
+    },
+    {
+      "kw": "بهترین مشاور کنکور تهران",
+      "coverage": "strong",
+      "coverageFa": "پوشش قوی",
+      "page": "/بهترین-مشاور-کنکور-تهران/",
+      "pageCode": 200,
+      "inTitle": true,
+      "inH1": true,
+      "bodyCount": 6,
+      "inCsv": true,
+      "actions": [
+        "حفظ Title/H1 فعلی",
+        "تقویت لینک داخلی از خانه/فوتر/هاب",
+        "رصد رتبه GSC هفتگی"
+      ],
+      "priority": "P0",
+      "rankBucket": "نگهداشت"
+    },
+    {
+      "kw": "مشاور کنکور تجربی",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/مشاوره-کنکور-تجربی/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "تقویت فوری"
+    },
+    {
+      "kw": "مشاور کنکور ریاضی",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/مشاوره-کنکور-ریاضی/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "تقویت فوری"
+    },
+    {
+      "kw": "مشاور کنکور انسانی",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/مشاوره-کنکور-انسانی/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "تقویت فوری"
+    },
+    {
+      "kw": "مشاور کنکور",
+      "coverage": "weak",
+      "coverageFa": "پوشش ضعیف",
+      "page": "/مشاوره-کنکور/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 4,
+      "inCsv": true,
+      "actions": [
+        "افزودن عبارت دقیق در Title یا H2 (بدون کیورداستافینگ)",
+        "بلوک FAQ با همان عبارت",
+        "لینک داخلی با انکر دقیق"
+      ],
+      "priority": "P0",
+      "rankBucket": "تقویت فوری"
+    },
+    {
+      "kw": "مشاور تحصیلی اصفهان",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/مشاوره-تحصیلی-در-اصفهان/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "لوکال/تحصیلی"
+    },
+    {
+      "kw": "مشاور تحصیلی تهران",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/بهترین-مشاور-کنکور-تهران/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "لوکال/تحصیلی"
+    },
+    {
+      "kw": "بهترین مشاور تحصیلی اصفهان",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/بهترین-مشاور-کنکور-اصفهان/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "لوکال/تحصیلی"
+    },
+    {
+      "kw": "بهترین مشاور تحصیلی تهران",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/بهترین-مشاور-کنکور-تهران/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "لوکال/تحصیلی"
+    },
+    {
+      "kw": "بهترین مشاور تحصیلی",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/مشاوره-کنکور/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P0",
+      "rankBucket": "لوکال/تحصیلی"
+    },
+    {
+      "kw": "مشاور تیزهوشان",
+      "coverage": "missing_page",
+      "coverageFa": "صفحه/بخش ندارد",
+      "page": "/مشاور-تیزهوشان/",
+      "pageCode": 404,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "ایجاد لندینگ/مقاله اختصاصی یا بخش قوی روی هاب مرتبط",
+        "Title/H1/FAQ روی عبارت دقیق",
+        "افزودن به CSV + لینک از فوتر/هاب"
+      ],
+      "priority": "P1",
+      "rankBucket": "خوشه جدید"
+    },
+    {
+      "kw": "بهترین مشاور تیزهوشان",
+      "coverage": "missing_page",
+      "coverageFa": "صفحه/بخش ندارد",
+      "page": "/بهترین-مشاور-تیزهوشان/",
+      "pageCode": 404,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "ایجاد لندینگ/مقاله اختصاصی یا بخش قوی روی هاب مرتبط",
+        "Title/H1/FAQ روی عبارت دقیق",
+        "افزودن به CSV + لینک از فوتر/هاب"
+      ],
+      "priority": "P1",
+      "rankBucket": "خوشه جدید"
+    },
+    {
+      "kw": "معروف ترین مشاور کنکور",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/about/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P1",
+      "rankBucket": "برند/اعتبار"
+    },
+    {
+      "kw": "معروف ترین مشاور کنکور تجربی",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/مشاوره-کنکور-تجربی/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P1",
+      "rankBucket": "برند/اعتبار"
+    },
+    {
+      "kw": "معروف ترین مشاور کنکور اصفهان",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/بهترین-مشاور-کنکور-اصفهان/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P1",
+      "rankBucket": "برند/اعتبار"
+    },
+    {
+      "kw": "معروف ترین مشاور کنکور تهران",
+      "coverage": "page_exists_kw_thin",
+      "coverageFa": "صفحه هست · عبارت نازک",
+      "page": "/بهترین-مشاور-کنکور-تهران/",
+      "pageCode": 200,
+      "inTitle": false,
+      "inH1": false,
+      "bodyCount": 0,
+      "inCsv": false,
+      "actions": [
+        "درج عبارت دقیق در H2/بدنه/FAQ صفحه هدف",
+        "به‌روزرسانی Title/Meta در صورت فاصله معنایی کم",
+        "کراس‌لینک از لندینگ‌های مرتبط"
+      ],
+      "priority": "P1",
+      "rankBucket": "برند/اعتبار"
+    }
+  ],
+  "actions": [
+    {
+      "id": "mk-a1",
+      "title": "هاب /مشاوره-کنکور/: تقویت «مشاور کنکور» + «بهترین مشاور کنکور»",
+      "where": "Title فرعی/H2/FAQ + انکر فوتر",
+      "done": true
+    },
+    {
+      "id": "mk-a2",
+      "title": "هاب‌های رشته: درج دقیق «مشاور کنکور تجربی/ریاضی/انسانی»",
+      "where": "/مشاوره-کنکور-تجربی|ریاضی|انسانی/",
+      "done": true
+    },
+    {
+      "id": "mk-a3",
+      "title": "اصفهان: «مشاور تحصیلی اصفهان» + «بهترین مشاور تحصیلی اصفهان» + «معروف‌ترین…اصفهان»",
+      "where": "/مشاوره-تحصیلی-در-اصفهان/ + /بهترین-مشاور-کنکور-اصفهان/",
+      "done": true
+    },
+    {
+      "id": "mk-a4",
+      "title": "تهران: «مشاور تحصیلی تهران» + «بهترین مشاور تحصیلی تهران» + «معروف‌ترین…تهران»",
+      "where": "/بهترین-مشاور-کنکور-تهران/",
+      "done": true
+    },
+    {
+      "id": "mk-a5",
+      "title": "about/: بلوک E-E-A-T «معروف‌ترین مشاور کنکور» (دکتر جعفری)",
+      "where": "/about/ + لینک به هاب",
+      "done": true
+    },
+    {
+      "id": "mk-a6",
+      "title": "خوشه تیزهوشان: لندینگ یا بخش قوی + ۲ کیورد",
+      "where": "صفحه جدید یا هاب مرتبط",
+      "done": true
+    },
+    {
+      "id": "mk-a7",
+      "title": "اضافه کردن کیوردهای غایب به keywords.csv و رصد GSC",
+      "where": "CSV + Search Console",
+      "done": true
+    }
+  ]
+},
+  /* __PRIORITY_MOSHAVER_END__ */
   goldenKeywords: [
     { kw: "مشاوره رایگان کنکور", page: "/", status: "ok", note: "GSC ۳ماه: ۲۷ کلیک / ۲۰۴ نمایش / رتبه ~۶.۱" },
     { kw: "مشاوره کنکور", page: "/مشاوره-کنکور/", status: "mapped", note: "GSC ۳ماه: ۱۰ کلیک / ۳۸۷ نمایش / رتبه ~۱۱.۹" },

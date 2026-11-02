@@ -1387,6 +1387,31 @@
     <!-- Keywords -->
     <div class="panel" id="panel-keywords" role="tabpanel">
       <div class="bucket-grid" id="buckets"></div>
+      <section class="block" id="priorityMoshaverBlock">
+        <h2>اولویت کارفرما — خوشه مشاور (۱۸ کیورد)</h2>
+        <p class="section-lead" id="mkVerdict">بررسی لایو برای رتبه گرفتن روی بهترین/معروف‌ترین مشاور…</p>
+        <div class="kw-summary" id="mkSummary"></div>
+        <div class="kw-legend">
+          <span><i class="kw-swatch done"></i> پوشش قوی (Title/H1)</span>
+          <span><i class="kw-swatch todo"></i> ضعیف / نازک / بدون صفحه</span>
+        </div>
+        <p class="phase-subh">اقدام‌های اجرایی</p>
+        <ul class="lead-prios" id="mkActions" style="margin-bottom:1rem"></ul>
+        <div style="overflow:auto;max-height:26rem;border:1px solid var(--line);border-radius:10px">
+          <table class="data" style="margin:0">
+            <thead>
+              <tr>
+                <th>کیورد</th>
+                <th>اولویت</th>
+                <th>وضعیت محتوا</th>
+                <th>صفحه هدف</th>
+                <th>اقدام</th>
+              </tr>
+            </thead>
+            <tbody id="mkBody"></tbody>
+          </table>
+        </div>
+      </section>
       <section class="block">
         <h2>همه کیوردهای برنامه (۲۰۶)</h2>
         <p class="section-lead">لیست کامل کارشده و باقی‌مانده از CSV قرارداد · سبز = انجام‌شده</p>
@@ -2218,7 +2243,50 @@
       }
     }
 
+    function fillPriorityMoshaver() {
+      const c = D.priorityMoshaverCluster;
+      if (!c) return;
+      const v = document.getElementById("mkVerdict");
+      if (v) v.textContent = `${c.updatedAtFa || ""} · ${c.verdict || ""}`;
+      const s = c.summary || {};
+      const sum = document.getElementById("mkSummary");
+      if (sum) {
+        sum.innerHTML = `
+          <div class="card done"><div class="n">${s.strong || 0}</div><div class="l">پوشش قوی</div></div>
+          <div class="card"><div class="n">${(s.weak || 0) + (s.thin || 0)}</div><div class="l">ضعیف/نازک</div></div>
+          <div class="card"><div class="n">${s.missing || 0}</div><div class="l">بدون صفحه</div></div>`;
+      }
+      const acts = document.getElementById("mkActions");
+      if (acts) {
+        acts.innerHTML = (c.actions || [])
+          .map(
+            (a, i) =>
+              `<li><strong><span class="rank">${i + 1}</span>${a.title || ""}</strong><div style="font-size:0.82rem;color:var(--muted);margin:0.15rem 0 0">${a.where || ""}</div></li>`
+          )
+          .join("");
+      }
+      const body = document.getElementById("mkBody");
+      if (body) {
+        body.innerHTML = (c.items || [])
+          .map((k) => {
+            const done = k.coverage === "strong";
+            const cls = done ? "kw-done" : "kw-todo";
+            const badge = done ? "done" : "todo";
+            const steps = (k.actions || []).slice(0, 2).map((x) => `• ${x}`).join("<br>");
+            return `<tr class="${cls}">
+              <td><strong>${k.kw}</strong><div style="font-size:.72rem;opacity:.75;margin-top:.15rem">${k.rankBucket || ""}</div></td>
+              <td>${k.priority || "—"}</td>
+              <td><span class="badge ${badge}">${k.coverageFa || k.coverage}</span></td>
+              <td dir="ltr" style="text-align:left;font-size:.78rem">${k.page || "—"}</td>
+              <td style="font-size:.78rem;line-height:1.55">${steps}</td>
+            </tr>`;
+          })
+          .join("");
+      }
+    }
+
     function fillKeywords() {
+      fillPriorityMoshaver();
       const meta = D.allKeywordsMeta || {};
       const byPri = meta.byPriority || {};
       document.getElementById("buckets").innerHTML = D.keywordBuckets
