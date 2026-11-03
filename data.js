@@ -2303,22 +2303,528 @@ window.ZEHNATI_SEO = {
   ]
 },
   /* __PRIORITY_MOSHAVER_END__ */
+  competitorWatch: {
+    "updatedAt": "2026-11-03",
+    "source": "GSC 2026-10-27 last3m + WebSearch SERP 2026-11-03",
+    "summary": [
+      "حمله: بهترین مشاور اصفهان/در اصفهان + قیمت/هزینه + CTR آنلاین",
+      "دفاع: مشاور تحصیلی رایگان اصفهان + مشاوره رایگان کنکور + برند دکتر جعفری",
+      "محتوا: برنامه ریزی + تجربی/پزشکی + انتخاب رشته مدارک"
+    ],
+    "topCompetitors": [
+      "randoteam.com",
+      "konkorsad.ir",
+      "darsbama.com",
+      "darsema.com",
+      "justmrkonkur.ir",
+      "rabinedu.com",
+      "zankoplus.com",
+      "blitzstudy.net"
+    ],
+    "rows": [
+      {
+        "kw": "مشاوره کنکور",
+        "page": "/مشاوره-کنکور/",
+        "status": "ok",
+        "note": "GSC: 17 کلیک / 743 نمایش / رتبه ~14.08 · رقبا: konkorsad.ir، randoteam.com، rabinedu.com · تقویت هاب: جدول قیمت/معیار + لینک راهنمای تصمیم · ماه۶",
+        "priority": "P0-defend",
+        "competitors": [
+          "konkorsad.ir",
+          "randoteam.com",
+          "rabinedu.com",
+          "blitzstudy.net",
+          "behtarinostad.ir"
+        ]
+      },
+      {
+        "kw": "مشاوره رایگان کنکور",
+        "page": "/",
+        "status": "ok",
+        "note": "GSC: 69 کلیک / 701 نمایش / رتبه ~5.74 · رقبا: ماترو/فرم رایگان، کنکورصد فرم تشخیص، زانکو ارزیابی رایگان · CTR خانه + فرم تماس · ماه۶ رصد هفتگی",
+        "priority": "P0-defend",
+        "competitors": [
+          "ماترو/فرم رایگان",
+          "کنکورصد فرم تشخیص",
+          "زانکو ارزیابی رایگان"
+        ]
+      },
+      {
+        "kw": "بهترین مشاور کنکور",
+        "page": "/بهترین-مشاور-کنکور/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: tikschool.ir، randoteam.com، darsema.com · گسترش مقایسه معیار + لینک اصفهان/تهران · ماه۶",
+        "priority": "P0-attack",
+        "competitors": [
+          "tikschool.ir",
+          "randoteam.com",
+          "darsema.com",
+          "konkurface.com"
+        ]
+      },
+      {
+        "kw": "بهترین مشاور کنکور اصفهان",
+        "page": "/بهترین-مشاور-کنکور-اصفهان/",
+        "status": "opportunity",
+        "note": "GSC: 0 کلیک / 8 نمایش / رتبه ~50.62 · رقبا: justmrkonkur.ir، concourino.ir، isfahankoja.com · اولویت حمله محلی: NAP+معیار+CTA · ماه۶–۷",
+        "priority": "P0-attack",
+        "competitors": [
+          "justmrkonkur.ir",
+          "concourino.ir",
+          "isfahankoja.com",
+          "darsbama.com",
+          "behtarinamozeshgah.com"
+        ]
+      },
+      {
+        "kw": "بهترین مشاور کنکور در اصفهان",
+        "page": "/بهترین-مشاور-کنکور-اصفهان/",
+        "status": "opportunity",
+        "note": "GSC: 0 کلیک / 244 نمایش / رتبه ~66.35 · رقبا: justmrkonkur.ir، concourino.ir، ravesh/روش · هم‌تراز با فرم کوتاه؛ Title/H1 فرم «در اصفهان» · ماه۶",
+        "priority": "P0-attack",
+        "competitors": [
+          "justmrkonkur.ir",
+          "concourino.ir",
+          "ravesh/روش",
+          "epsilon"
+        ]
+      },
+      {
+        "kw": "بهترین مشاور کنکور تهران",
+        "page": "/بهترین-مشاور-کنکور-تهران/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: سینا تهرانی/darsema، دکتر مهراب، randoteam.com · تقویت لندینگ فاطمی + اثبات محلی · ماه۷",
+        "priority": "P1-watch",
+        "competitors": [
+          "سینا تهرانی/darsema",
+          "دکتر مهراب",
+          "randoteam.com",
+          "zankoplus.com"
+        ]
+      },
+      {
+        "kw": "برنامه ریزی کنکور",
+        "page": "/برنامه-ریزی-کنکور/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: darsema.com، randoteam.com، soroushjabbari.com · عمق آموزشی هاب برنامه + نمونه هفته · ماه۶",
+        "priority": "P0-attack",
+        "competitors": [
+          "darsema.com",
+          "randoteam.com",
+          "soroushjabbari.com",
+          "bekhun.com"
+        ]
+      },
+      {
+        "kw": "مشاوره کنکور تجربی",
+        "page": "/مشاوره-کنکور-تجربی/",
+        "status": "opportunity",
+        "note": "GSC: 0 کلیک / 38 نمایش / رتبه ~31.92 · رقبا: randoteam.com، justmrkonkur.ir، fullito.net · خوشه تجربی+پزشکی CTA · ماه۶",
+        "priority": "P0-attack",
+        "competitors": [
+          "randoteam.com",
+          "justmrkonkur.ir",
+          "fullito.net",
+          "drmajidnikrad.com"
+        ]
+      },
+      {
+        "kw": "قیمت مشاوره کنکور",
+        "page": "/قیمت-مشاوره-کنکور/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: darsbama.com، blitzstudy.net، medicalstus.ir · جدول قیمت شفاف‌تر + مقایسه بسته · ماه۶ critical",
+        "priority": "P0-attack",
+        "competitors": [
+          "darsbama.com",
+          "blitzstudy.net",
+          "medicalstus.ir",
+          "academymilad.ir",
+          "ostadlink.com"
+        ]
+      },
+      {
+        "kw": "هزینه مشاوره کنکور",
+        "page": "/قیمت-مشاوره-کنکور/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: darsbama.com، ostadlink.com، blitzstudy.net · همان لندینگ قیمت · پوشش مترادف · ماه۶",
+        "priority": "P0-attack",
+        "competitors": [
+          "darsbama.com",
+          "ostadlink.com",
+          "blitzstudy.net"
+        ]
+      },
+      {
+        "kw": "مشاوره آنلاین کنکور",
+        "page": "/مشاوره-آنلاین-کنکور/",
+        "status": "opportunity",
+        "note": "GSC: 0 کلیک / 40 نمایش / رتبه ~9.68 · رقبا: konkorsad.ir، darsbama.com، randoteam.com · بهبود meta/CTA آنلاین · ماه۶",
+        "priority": "P0-attack",
+        "competitors": [
+          "konkorsad.ir",
+          "darsbama.com",
+          "randoteam.com",
+          "zankoplus.com",
+          "advising-matro.ir"
+        ]
+      },
+      {
+        "kw": "مشاور کنکور",
+        "page": "/مشاوره-کنکور/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: rabinedu.com، randoteam.com، konkorsad.ir · لینک داخلی هاب · ماه۶",
+        "priority": "P0-defend",
+        "competitors": [
+          "rabinedu.com",
+          "randoteam.com",
+          "konkorsad.ir"
+        ]
+      },
+      {
+        "kw": "چگونه پزشکی قبول شویم",
+        "page": "/قبولی-پزشکی/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: محتوای آموزشی عمومی، fullito، رندو تجربی · خوشه پزشکی/انتخاب رشته · ماه۷",
+        "priority": "P1-content",
+        "competitors": [
+          "محتوای آموزشی عمومی",
+          "fullito",
+          "رندو تجربی"
+        ]
+      },
+      {
+        "kw": "ثبت نام کلاس کنکور",
+        "page": "/contact-us/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: لندینگ ثبت‌نام رقبا، فرم‌های ارزیابی رایگان · تقویت CTA تماس/ثبت‌نام · ماه۶",
+        "priority": "P1-convert",
+        "competitors": [
+          "لندینگ ثبت‌نام رقبا",
+          "فرم‌های ارزیابی رایگان"
+        ]
+      },
+      {
+        "kw": "دکتر زهرا جعفری",
+        "page": "/about/",
+        "status": "ok",
+        "note": "GSC: 4 کلیک / 409 نمایش / رتبه ~7.88 · رقبا: جستجوی برند شخصی · E-E-A-T about + schema · ماه۶",
+        "priority": "P0-defend",
+        "competitors": [
+          "جستجوی برند شخصی"
+        ]
+      },
+      {
+        "kw": "مشاوره کنکور اصفهان",
+        "page": "/بهترین-مشاور-کنکور-اصفهان/",
+        "status": "opportunity",
+        "note": "GSC: 0 کلیک / 62 نمایش / رتبه ~22.02 · رقبا: روش، کنکورینو، اپسیلون · هم‌راستا با لندینگ اصفهان · ماه۶",
+        "priority": "P0-attack",
+        "competitors": [
+          "روش",
+          "کنکورینو",
+          "اپسیلون",
+          "آیین"
+        ]
+      },
+      {
+        "kw": "مشاور تحصیلی رایگان اصفهان",
+        "page": "/مشاوره-تحصیلی-در-اصفهان/",
+        "status": "ok",
+        "note": "GSC: 222 کلیک / 518 نمایش / رتبه ~1.34 · رقبا: رقبای محلی فرم رایگان · حفظ + لینک به لندینگ بهترین مشاور · ماه۶",
+        "priority": "P0-defend",
+        "competitors": [
+          "رقبای محلی فرم رایگان"
+        ]
+      },
+      {
+        "kw": "بهترین مشاور تحصیلی",
+        "page": "/بهترین-مشاور-تحصیلی/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: tikschool.ir، darsema.com، لیست‌سایت‌ها · نگه‌داشت معیار ادعای قابل دفاع · ماه۷",
+        "priority": "P1-watch",
+        "competitors": [
+          "tikschool.ir",
+          "darsema.com",
+          "لیست‌سایت‌ها"
+        ]
+      },
+      {
+        "kw": "انتخاب رشته",
+        "page": "/انتخاب-رشته/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: سanjesh-adjacent blogs، کنکورصد، محتوای مدارک انتخاب رشته · محتوای مدارک/زمان‌بندی انتخاب رشته · ماه۷",
+        "priority": "P1-content",
+        "competitors": [
+          "سanjesh-adjacent blogs",
+          "کنکورصد",
+          "محتوای مدارک انتخاب رشته"
+        ]
+      },
+      {
+        "kw": "کلاس آنلاین کنکور",
+        "page": "/مشاوره-آنلاین-کنکور/",
+        "status": "gap",
+        "note": "GSC: خارج Top/missing · رقبا: tikschool.ir، گاج/قلم‌چی، zanako · تثبیت تمایز مشاوره/کلاس · ماه۷",
+        "priority": "P1-watch",
+        "competitors": [
+          "tikschool.ir",
+          "گاج/قلم‌چی",
+          "zanako",
+          "ماترو"
+        ]
+      }
+    ]
+  },
   goldenKeywords: [
-    { kw: "مشاوره رایگان کنکور", page: "/", status: "ok", note: "GSC ۳ماه: ۲۷ کلیک / ۲۰۴ نمایش / رتبه ~۶.۱" },
-    { kw: "مشاوره کنکور", page: "/مشاوره-کنکور/", status: "mapped", note: "GSC ۳ماه: ۱۰ کلیک / ۳۸۷ نمایش / رتبه ~۱۱.۹" },
     {
-      kw: "بهترین مشاور کنکور اصفهان",
-      page: "/بهترین-مشاور-کنکور-اصفهان/",
-      status: "mapped",
-      note: "ماه ۱ — 200 · ۱ H1 · FAQ/Local schema · ۳۰۱ از بلاگ و URL قدیمی",
+      "kw": "مشاوره کنکور",
+      "page": "/مشاوره-کنکور/",
+      "status": "ok",
+      "note": "GSC: 17 کلیک / 743 نمایش / رتبه ~14.08 · رقبا: konkorsad.ir، randoteam.com، rabinedu.com · تقویت هاب: جدول قیمت/معیار + لینک راهنمای تصمیم · ماه۶",
+      "priority": "P0-defend",
+      "competitors": [
+        "konkorsad.ir",
+        "randoteam.com",
+        "rabinedu.com",
+        "blitzstudy.net",
+        "behtarinostad.ir"
+      ]
     },
-    { kw: "برنامه ریزی کنکور", page: "/برنامه-ریزی-کنکور/", status: "mapped", note: "لایو 22 Jul: Title/H1 درست · محتوا+CTA · لینک هاب/قیمت/آنلاین" },
-    { kw: "مشاوره کنکور تجربی", page: "/مشاوره-کنکور-تجربی/", status: "mapped", note: "لایو: 1 H1 · محتوا+CTA · لینک داخلی" },
-    { kw: "قیمت مشاوره کنکور", page: "/قیمت-مشاوره-کنکور/", status: "mapped", note: "ماه ۱ — 200 · هنوز در Top1000 نیست" },
-    { kw: "مشاوره آنلاین کنکور", page: "/مشاوره-آنلاین-کنکور/", status: "mapped", note: "ماه ۱ — 200 · ۱ H1 · FAQ/schema · landing-online" },
-    { kw: "چگونه پزشکی قبول شویم", page: "/قبولی-پزشکی/", status: "ok", note: "۲۰۲۶-۰۹-۰۷: محتوا+Title/Meta · ۱ H1 · ۹ H2 · لینک تجربی/هاب/قیمت · post 17896" },
-    { kw: "ثبت نام کلاس کنکور", page: "/contact-us/", status: "mapped", note: "ماه۱ → تماس (CTA) · /ثبت-نام/ آرشیووار" },
-    { kw: "دکتر زهرا جعفری", page: "/about/", status: "ok", note: "Meta/Title + ۱ H1 OK" },
+    {
+      "kw": "مشاوره رایگان کنکور",
+      "page": "/",
+      "status": "ok",
+      "note": "GSC: 69 کلیک / 701 نمایش / رتبه ~5.74 · رقبا: ماترو/فرم رایگان، کنکورصد فرم تشخیص، زانکو ارزیابی رایگان · CTR خانه + فرم تماس · ماه۶ رصد هفتگی",
+      "priority": "P0-defend",
+      "competitors": [
+        "ماترو/فرم رایگان",
+        "کنکورصد فرم تشخیص",
+        "زانکو ارزیابی رایگان"
+      ]
+    },
+    {
+      "kw": "بهترین مشاور کنکور",
+      "page": "/بهترین-مشاور-کنکور/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: tikschool.ir، randoteam.com، darsema.com · گسترش مقایسه معیار + لینک اصفهان/تهران · ماه۶",
+      "priority": "P0-attack",
+      "competitors": [
+        "tikschool.ir",
+        "randoteam.com",
+        "darsema.com",
+        "konkurface.com"
+      ]
+    },
+    {
+      "kw": "بهترین مشاور کنکور اصفهان",
+      "page": "/بهترین-مشاور-کنکور-اصفهان/",
+      "status": "opportunity",
+      "note": "GSC: 0 کلیک / 8 نمایش / رتبه ~50.62 · رقبا: justmrkonkur.ir، concourino.ir، isfahankoja.com · اولویت حمله محلی: NAP+معیار+CTA · ماه۶–۷",
+      "priority": "P0-attack",
+      "competitors": [
+        "justmrkonkur.ir",
+        "concourino.ir",
+        "isfahankoja.com",
+        "darsbama.com",
+        "behtarinamozeshgah.com"
+      ]
+    },
+    {
+      "kw": "بهترین مشاور کنکور در اصفهان",
+      "page": "/بهترین-مشاور-کنکور-اصفهان/",
+      "status": "opportunity",
+      "note": "GSC: 0 کلیک / 244 نمایش / رتبه ~66.35 · رقبا: justmrkonkur.ir، concourino.ir، ravesh/روش · هم‌تراز با فرم کوتاه؛ Title/H1 فرم «در اصفهان» · ماه۶",
+      "priority": "P0-attack",
+      "competitors": [
+        "justmrkonkur.ir",
+        "concourino.ir",
+        "ravesh/روش",
+        "epsilon"
+      ]
+    },
+    {
+      "kw": "بهترین مشاور کنکور تهران",
+      "page": "/بهترین-مشاور-کنکور-تهران/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: سینا تهرانی/darsema، دکتر مهراب، randoteam.com · تقویت لندینگ فاطمی + اثبات محلی · ماه۷",
+      "priority": "P1-watch",
+      "competitors": [
+        "سینا تهرانی/darsema",
+        "دکتر مهراب",
+        "randoteam.com",
+        "zankoplus.com"
+      ]
+    },
+    {
+      "kw": "برنامه ریزی کنکور",
+      "page": "/برنامه-ریزی-کنکور/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: darsema.com، randoteam.com، soroushjabbari.com · عمق آموزشی هاب برنامه + نمونه هفته · ماه۶",
+      "priority": "P0-attack",
+      "competitors": [
+        "darsema.com",
+        "randoteam.com",
+        "soroushjabbari.com",
+        "bekhun.com"
+      ]
+    },
+    {
+      "kw": "مشاوره کنکور تجربی",
+      "page": "/مشاوره-کنکور-تجربی/",
+      "status": "opportunity",
+      "note": "GSC: 0 کلیک / 38 نمایش / رتبه ~31.92 · رقبا: randoteam.com، justmrkonkur.ir، fullito.net · خوشه تجربی+پزشکی CTA · ماه۶",
+      "priority": "P0-attack",
+      "competitors": [
+        "randoteam.com",
+        "justmrkonkur.ir",
+        "fullito.net",
+        "drmajidnikrad.com"
+      ]
+    },
+    {
+      "kw": "قیمت مشاوره کنکور",
+      "page": "/قیمت-مشاوره-کنکور/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: darsbama.com، blitzstudy.net، medicalstus.ir · جدول قیمت شفاف‌تر + مقایسه بسته · ماه۶ critical",
+      "priority": "P0-attack",
+      "competitors": [
+        "darsbama.com",
+        "blitzstudy.net",
+        "medicalstus.ir",
+        "academymilad.ir",
+        "ostadlink.com"
+      ]
+    },
+    {
+      "kw": "هزینه مشاوره کنکور",
+      "page": "/قیمت-مشاوره-کنکور/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: darsbama.com، ostadlink.com، blitzstudy.net · همان لندینگ قیمت · پوشش مترادف · ماه۶",
+      "priority": "P0-attack",
+      "competitors": [
+        "darsbama.com",
+        "ostadlink.com",
+        "blitzstudy.net"
+      ]
+    },
+    {
+      "kw": "مشاوره آنلاین کنکور",
+      "page": "/مشاوره-آنلاین-کنکور/",
+      "status": "opportunity",
+      "note": "GSC: 0 کلیک / 40 نمایش / رتبه ~9.68 · رقبا: konkorsad.ir، darsbama.com، randoteam.com · بهبود meta/CTA آنلاین · ماه۶",
+      "priority": "P0-attack",
+      "competitors": [
+        "konkorsad.ir",
+        "darsbama.com",
+        "randoteam.com",
+        "zankoplus.com",
+        "advising-matro.ir"
+      ]
+    },
+    {
+      "kw": "مشاور کنکور",
+      "page": "/مشاوره-کنکور/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: rabinedu.com، randoteam.com، konkorsad.ir · لینک داخلی هاب · ماه۶",
+      "priority": "P0-defend",
+      "competitors": [
+        "rabinedu.com",
+        "randoteam.com",
+        "konkorsad.ir"
+      ]
+    },
+    {
+      "kw": "چگونه پزشکی قبول شویم",
+      "page": "/قبولی-پزشکی/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: محتوای آموزشی عمومی، fullito، رندو تجربی · خوشه پزشکی/انتخاب رشته · ماه۷",
+      "priority": "P1-content",
+      "competitors": [
+        "محتوای آموزشی عمومی",
+        "fullito",
+        "رندو تجربی"
+      ]
+    },
+    {
+      "kw": "ثبت نام کلاس کنکور",
+      "page": "/contact-us/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: لندینگ ثبت‌نام رقبا، فرم‌های ارزیابی رایگان · تقویت CTA تماس/ثبت‌نام · ماه۶",
+      "priority": "P1-convert",
+      "competitors": [
+        "لندینگ ثبت‌نام رقبا",
+        "فرم‌های ارزیابی رایگان"
+      ]
+    },
+    {
+      "kw": "دکتر زهرا جعفری",
+      "page": "/about/",
+      "status": "ok",
+      "note": "GSC: 4 کلیک / 409 نمایش / رتبه ~7.88 · رقبا: جستجوی برند شخصی · E-E-A-T about + schema · ماه۶",
+      "priority": "P0-defend",
+      "competitors": [
+        "جستجوی برند شخصی"
+      ]
+    },
+    {
+      "kw": "مشاوره کنکور اصفهان",
+      "page": "/بهترین-مشاور-کنکور-اصفهان/",
+      "status": "opportunity",
+      "note": "GSC: 0 کلیک / 62 نمایش / رتبه ~22.02 · رقبا: روش، کنکورینو، اپسیلون · هم‌راستا با لندینگ اصفهان · ماه۶",
+      "priority": "P0-attack",
+      "competitors": [
+        "روش",
+        "کنکورینو",
+        "اپسیلون",
+        "آیین"
+      ]
+    },
+    {
+      "kw": "مشاور تحصیلی رایگان اصفهان",
+      "page": "/مشاوره-تحصیلی-در-اصفهان/",
+      "status": "ok",
+      "note": "GSC: 222 کلیک / 518 نمایش / رتبه ~1.34 · رقبا: رقبای محلی فرم رایگان · حفظ + لینک به لندینگ بهترین مشاور · ماه۶",
+      "priority": "P0-defend",
+      "competitors": [
+        "رقبای محلی فرم رایگان"
+      ]
+    },
+    {
+      "kw": "بهترین مشاور تحصیلی",
+      "page": "/بهترین-مشاور-تحصیلی/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: tikschool.ir، darsema.com، لیست‌سایت‌ها · نگه‌داشت معیار ادعای قابل دفاع · ماه۷",
+      "priority": "P1-watch",
+      "competitors": [
+        "tikschool.ir",
+        "darsema.com",
+        "لیست‌سایت‌ها"
+      ]
+    },
+    {
+      "kw": "انتخاب رشته",
+      "page": "/انتخاب-رشته/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: سanjesh-adjacent blogs، کنکورصد، محتوای مدارک انتخاب رشته · محتوای مدارک/زمان‌بندی انتخاب رشته · ماه۷",
+      "priority": "P1-content",
+      "competitors": [
+        "سanjesh-adjacent blogs",
+        "کنکورصد",
+        "محتوای مدارک انتخاب رشته"
+      ]
+    },
+    {
+      "kw": "کلاس آنلاین کنکور",
+      "page": "/مشاوره-آنلاین-کنکور/",
+      "status": "gap",
+      "note": "GSC: خارج Top/missing · رقبا: tikschool.ir، گاج/قلم‌چی، zanako · تثبیت تمایز مشاوره/کلاس · ماه۷",
+      "priority": "P1-watch",
+      "competitors": [
+        "tikschool.ir",
+        "گاج/قلم‌چی",
+        "zanako",
+        "ماترو"
+      ]
+    }
   ],
   /* پوشش کامل ۲۰۶ کیورد در ۷ ماه (هاب مشترک مجاز است) */
   keywordBuckets: [
@@ -3065,7 +3571,8 @@ window.ZEHNATI_SEO = {
           title: "رصد رقبا روی ۲۰ کلمه طلایی",
           where: "GSC + SERP",
           why: "تنظیم اولویت ماه ۶–۷",
-          done: false,
+          done: true,
+          note: "✅ ماه۵ p5-a4: رصد ۲۰ کلمه طلایی · GSC ۱۰-۲۷ + SERP ۱۱-۰۳ · اولویت ماه۶–۷ تنظیم شد · 2026-11-03",
         },
         {
           id: "p5-a5",
@@ -3081,7 +3588,7 @@ window.ZEHNATI_SEO = {
         { id: "p5-c5", label: "عمق آموزشی هاب‌ها تقویت شد", done: true },
         { id: "p5-c6", label: "تاریخ به‌روزرسانی روی صفحات ستون", done: false },
         { id: "p5-c2", label: "حداقل ۲ دارایی برند/لینک معتبر", done: false },
-        { id: "p5-c3", label: "جدول رصد رقبا به‌روز", done: false },
+        { id: "p5-c3", label: "جدول رصد رقبا به‌روز", done: true },
         { id: "p5-c4", label: "گزارش ماه ۵ · ۱۲۸/۲۰۶", done: false },
       ],
     },
@@ -3089,7 +3596,7 @@ window.ZEHNATI_SEO = {
       title: "فاز ۶ — ماه ۶: باقی P1 + شروع P2",
       period: "ماه ۶ · ۲۰ آذر تا ۱۹ دی ۱۴۰۵",
       status: "upcoming",
-      goal: "۱۵ کیورد P1 باقی (۹۰/۹۰) + ۳۰ کیورد P2",
+      goal: "۱۵ P1 باقی + ۳۰ P2 · اولویت از رصد: اصفهان/قیمت/آنلاین",
       kwTarget: { p0: 0, p1: 15, p2: 30, p3: 0, total: 45 },
       actions: [
         {
