@@ -21,13 +21,14 @@ window.ZEHNATI_SEO = {
   },
   seoLeadBrief: {
     lead_bottlenecks_2026_11_02: "✅ گلوگاه لید ۲۰۲۶-۱۱-۰۲: CTR meta ۹/۹ · CTA ۱۱ · غیربرند ۱۶ · ریدایرکت ۸ · IndexNow ✓",
-    verdict: "گلوگاه‌های لید اعمال شد · ۱۸/۱۸ مقاله AIO خوشه مشاور · منتظر CTR/ایندکس در GSC · ۲۰۲۶-۱۱-۰۲",
+    verdict: "ماه۵: ۳۰ P1 دسته۲ · تجمعی ۱۲۸/۲۰۶ · گلوگاه لید+AIO مشاور · ۲۰۲۶-۱۱-۰۲",
     updatedAt: "2026-11-02",
     updatedAtFa: "2026-11-02",
     source: "Bridge live + GSC ۲۰۲۶-۱۰-۲۷ + مقالات AIO ۲۰۲۶-۱۱-۰۲",
     note: "اولویت کارفرما: خوشه مشاور ۱۸/۱۸ قوی · CTR+غیربرند+نشتی کرال روی سایت اعمال شد",
     status: [
       { label: "Performance ۳ماه", value: "۱۵٫۹K کلیک · ۱۱۴K نمایش · CTR ۱۴٪ · رتبه ~۸٫۲", tone: "ok" },
+      { label: "پوشش P1 ماه۵", value: "۳۰/۳۰ دسته۲ · تجمعی ۱۲۸/۲۰۶", tone: "ok" },
       { label: "خوشه مشاور", value: "۱۸/۱۸ مقاله AIO (پاسخ مستقیم+FAQ)", tone: "ok" },
       { label: "گلوگاه لید", value: "CTR+CTA+غیربرند+ریدایرکت نشتی اعمال شد", tone: "ok" },
       { label: "ایندکس", value: "IndexNow P0 ✓ · Validate/Request در GSC دستی", tone: "warn" },
@@ -3020,7 +3021,8 @@ window.ZEHNATI_SEO = {
           title: "۳۰ کیورد P1 دستهٔ دوم → صفحه یا بلاگ",
           where: "وردپرس",
           why: "پیشروی سیستماتیک · تجمعی بعد از ماه: ۱۲۸/۲۰۶",
-          done: false,
+          done: true,
+          note: "✅ ماه۵ p5-a1: ۳۰/۳۰ P1 · ۱۶ مقاله جدید/آپدیت + نگاشت رتبه‌برتر→رتبه زیر۱۰۰ · تجمعی ۱۲۸/۲۰۶ · 2026-11-02",
         },
         {
           id: "p5-a2",
@@ -3073,7 +3075,7 @@ window.ZEHNATI_SEO = {
         },
       ],
       checklist: [
-        { id: "p5-c1", label: "۳۰ کیورد P1 ماه ۵ پوشش شد", done: false },
+        { id: "p5-c1", label: "۳۰ کیورد P1 ماه ۵ پوشش شد", done: true },
         { id: "p5-c5", label: "عمق آموزشی هاب‌ها تقویت شد", done: false },
         { id: "p5-c6", label: "تاریخ به‌روزرسانی روی صفحات ستون", done: false },
         { id: "p5-c2", label: "حداقل ۲ دارایی برند/لینک معتبر", done: false },
