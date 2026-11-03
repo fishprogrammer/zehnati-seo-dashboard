@@ -3040,8 +3040,8 @@ window.ZEHNATI_SEO = {
           title: "عمق آموزشی هاب‌ها: راهنمای تصمیم والدین/داوطلب",
           where: "هاب مشاوره + خانه",
           why: "Site Checkup: Limited Educational Depth · Content Trust 56٪",
-          done: false,
-          note: "منبع: Domain Business Context / Content Weaknesses",
+          done: true,
+          note: "✅ ماه۵ p5-a6: راهنمای تصمیم والدین/داوطلب + ویجت خانه + بلوک هاب مشاوره · guide=create home=append hub=content · 2026-11-03",
         },
         {
           id: "p5-a7",
@@ -3078,7 +3078,7 @@ window.ZEHNATI_SEO = {
       ],
       checklist: [
         { id: "p5-c1", label: "۳۰ کیورد P1 ماه ۵ پوشش شد", done: true },
-        { id: "p5-c5", label: "عمق آموزشی هاب‌ها تقویت شد", done: false },
+        { id: "p5-c5", label: "عمق آموزشی هاب‌ها تقویت شد", done: true },
         { id: "p5-c6", label: "تاریخ به‌روزرسانی روی صفحات ستون", done: false },
         { id: "p5-c2", label: "حداقل ۲ دارایی برند/لینک معتبر", done: false },
         { id: "p5-c3", label: "جدول رصد رقبا به‌روز", done: false },
