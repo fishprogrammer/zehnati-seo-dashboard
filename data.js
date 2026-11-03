@@ -21,14 +21,15 @@ window.ZEHNATI_SEO = {
   },
   seoLeadBrief: {
     lead_bottlenecks_2026_11_02: "✅ گلوگاه لید ۲۰۲۶-۱۱-۰۲: CTR meta ۹/۹ · CTA ۱۱ · غیربرند ۱۶ · ریدایرکت ۸ · IndexNow ✓",
-    verdict: "ماه۵: ۳۰ P1 دسته۲ · تجمعی ۱۲۸/۲۰۶ · گلوگاه لید+AIO مشاور · ۲۰۲۶-۱۱-۰۲",
-    updatedAt: "2026-11-02",
-    updatedAtFa: "2026-11-02",
+    verdict: "ماه۵: ۳۰ P1 دسته۲ · p5-a2 بهترین قابل‌دفاع · تجمعی ۱۲۸/۲۰۶ · ۲۰۲۶-۱۱-۰۳",
+    updatedAt: "2026-11-03",
+    updatedAtFa: "2026-11-03",
     source: "Bridge live + GSC ۲۰۲۶-۱۰-۲۷ + مقالات AIO ۲۰۲۶-۱۱-۰۲",
     note: "اولویت کارفرما: خوشه مشاور ۱۸/۱۸ قوی · CTR+غیربرند+نشتی کرال روی سایت اعمال شد",
     status: [
       { label: "Performance ۳ماه", value: "۱۵٫۹K کلیک · ۱۱۴K نمایش · CTR ۱۴٪ · رتبه ~۸٫۲", tone: "ok" },
       { label: "پوشش P1 ماه۵", value: "۳۰/۳۰ دسته۲ · تجمعی ۱۲۸/۲۰۶", tone: "ok" },
+      { label: "بهترین… قابل دفاع", value: "۲ مقاله کلاس + ۶ هاب با سیاست ادعا", tone: "ok" },
       { label: "خوشه مشاور", value: "۱۸/۱۸ مقاله AIO (پاسخ مستقیم+FAQ)", tone: "ok" },
       { label: "گلوگاه لید", value: "CTR+CTA+غیربرند+ریدایرکت نشتی اعمال شد", tone: "ok" },
       { label: "ایندکس", value: "IndexNow P0 ✓ · Validate/Request در GSC دستی", tone: "warn" },
@@ -3030,7 +3031,8 @@ window.ZEHNATI_SEO = {
           title: "محتوای مقایسه‌ای/«بهترین…» فقط با ادعای قابل دفاع",
           where: "لندینگ یا بلاگ",
           why: "کلمات commercial بدون ریسک ادعا",
-          done: false,
+          done: true,
+          note: "✅ ماه۵ p5-a2: 2 کیورد کلاس + 2 مقاله + 6 هاب با سیاست ادعای قابل دفاع · 2026-11-03",
         },
         {
           id: "p5-a6",
