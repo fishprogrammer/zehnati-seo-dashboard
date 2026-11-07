@@ -2937,7 +2937,7 @@ window.ZEHNATI_SEO = {
       spanLabel: "ماه ۶",
       dateRange: "۲۰ آذر – ۱۹ دی",
       status: "active",
-      summary: "P1 کامل ۹۰/۹۰ ✓ · P2 دسته۱ ۳۰/۵۸ ✓ · کنیبال/silo ✓.",
+      summary: "P1 ۹۰/۹۰ · P2 ۳۰/۵۸ · کنیبال ✓ · ایمیل ✓ · گزارش ۱۷۶/۲۰۶ ✓.",
     },
     {
       phase: 7,
@@ -3609,7 +3609,7 @@ window.ZEHNATI_SEO = {
     6: {
       title: "فاز ۶ — ماه ۶: باقی P1 + شروع P2",
       period: "ماه ۶ · ۲۰ آذر تا ۱۹ دی ۱۴۰۵",
-      status: "active",
+      status: "done",
       goal: "۱۵ P1 باقی + ۳۰ P2 · اولویت از رصد: اصفهان/قیمت/آنلاین",
       kwTarget: { p0: 0, p1: 15, p2: 30, p3: 0, total: 45 },
       actions: [
@@ -3646,8 +3646,8 @@ window.ZEHNATI_SEO = {
           title: "مخفی‌سازی ایمیل plaintext از HTML عمومی",
           where: "خانه / فوتر / تماس",
           why: "Site Checkup: plaintext email harvest risk",
-          done: false,
-          note: "اولویت پایین؛ ads.txt لازم نیست (سایت تبلیغ‌فروش نیست)",
+          done: true,
+          note: "✅ p6-a5: فوتر→CTA تماس · حذف email از LocalBusiness JSON-LD · فرم‌ها دست‌نخورده · ads.txt لازم نیست · 2026-11-07",
         },
         {
           id: "p6-a4",
@@ -3655,15 +3655,16 @@ window.ZEHNATI_SEO = {
           title: "گزارش ماه ۶ · تجمعی ۱۷۳/۲۰۶",
           where: "داشبورد + GSC",
           why: "P0+P1 کامل · P2 نیمه‌راه",
-          done: false,
+          done: true,
+          note: "✅ گزارش ماه۶: تجمعی ۱۷۶/۲۰۶ (هدف ۱۷۳) · P0+P1 کامل · P2 ۳۳/۵۸ · GSC 16K کلیک · 2026-11-07 · month6-report-1405-09.md",
         },
       ],
       checklist: [
         { id: "p6-c1", label: "P1 کامل: ۹۰/۹۰", done: true },
         { id: "p6-c2", label: "۳۰ کیورد P2 ماه ۶ پوشش شد", done: true },
         { id: "p6-c3", label: "بازبینی کنیبال خوشه‌ها", done: true },
-        { id: "p6-c5", label: "ایمیل plaintext محافظت شد", done: false },
-        { id: "p6-c4", label: "گزارش ماه ۶ · ۱۷۳/۲۰۶", done: false },
+        { id: "p6-c5", label: "ایمیل plaintext محافظت شد", done: true },
+        { id: "p6-c4", label: "گزارش ماه ۶ · ۱۷۶/۲۰۶", done: true },
       ],
     },
     7: {
