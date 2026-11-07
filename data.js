@@ -2937,7 +2937,7 @@ window.ZEHNATI_SEO = {
       spanLabel: "ماه ۶",
       dateRange: "۲۰ آذر – ۱۹ دی",
       status: "active",
-      summary: "P1 کامل ۹۰/۹۰ ✓ · ادامه ۳۰ کیورد P2.",
+      summary: "P1 کامل ۹۰/۹۰ ✓ · P2 دسته۱ ۳۰/۵۸ ✓ · کنیبال/silo ✓.",
     },
     {
       phase: 7,
@@ -3628,7 +3628,8 @@ window.ZEHNATI_SEO = {
           title: "۳۰ کیورد P2 دستهٔ اول (بلاگ تکمیلی / تقویت موجود)",
           where: "بلاگ",
           why: "شروع پوشش ۵۸ کلمه تکمیلی",
-          done: false,
+          done: true,
+          note: "✅ ماه۶ p6-a2: 30/۳۰ P2 · ایجاد 14 · بدون push · 2026-11-07",
         },
         {
           id: "p6-a3",
@@ -3636,7 +3637,8 @@ window.ZEHNATI_SEO = {
           title: "بازبینی کنیبال و لینک داخلی خوشه‌های جدید",
           where: "سایت",
           why: "جلوگیری از رقابت داخلی بعد از حجم محتوا",
-          done: false,
+          done: true,
+          note: "✅ ماه۶ p6-a3: ۳۰۱ گسسته + silo خوشه‌های جدید · 2026-11-07",
         },
         {
           id: "p6-a5",
@@ -3658,8 +3660,8 @@ window.ZEHNATI_SEO = {
       ],
       checklist: [
         { id: "p6-c1", label: "P1 کامل: ۹۰/۹۰", done: true },
-        { id: "p6-c2", label: "۳۰ کیورد P2 ماه ۶ پوشش شد", done: false },
-        { id: "p6-c3", label: "بازبینی کنیبال خوشه‌ها", done: false },
+        { id: "p6-c2", label: "۳۰ کیورد P2 ماه ۶ پوشش شد", done: true },
+        { id: "p6-c3", label: "بازبینی کنیبال خوشه‌ها", done: true },
         { id: "p6-c5", label: "ایمیل plaintext محافظت شد", done: false },
         { id: "p6-c4", label: "گزارش ماه ۶ · ۱۷۳/۲۰۶", done: false },
       ],
