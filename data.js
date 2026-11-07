@@ -2945,8 +2945,8 @@ window.ZEHNATI_SEO = {
       months: 7,
       spanLabel: "ماه ۷",
       dateRange: "۲۰ دی – ۱۹ بهمن",
-      status: "upcoming",
-      summary: "۲۸ کیورد P2 + ۵ کیورد P3 · Audit نهایی و بستهٔ تحویل — ۲۰۶/۲۰۶.",
+      status: "active",
+      summary: "P2 کامل ۵۸/۵۸ ✓ · ادامه ۵ P3 + Audit نهایی.",
     },
   ],
 
@@ -3670,7 +3670,7 @@ window.ZEHNATI_SEO = {
     7: {
       title: "فاز ۷ — ماه ۷: تکمیل P2/P3 + تحویل",
       period: "ماه ۷ · ۲۰ دی تا ۱۹ بهمن ۱۴۰۵",
-      status: "upcoming",
+      status: "active",
       goal: "۲۸ کیورد P2 + ۵ کیورد P3 · Audit نهایی · ۲۰۶/۲۰۶",
       kwTarget: { p0: 0, p1: 0, p2: 28, p3: 5, total: 33 },
       actions: [
@@ -3680,7 +3680,8 @@ window.ZEHNATI_SEO = {
           title: "۲۸ کیورد P2 باقی → بستن ۵۸/۵۸",
           where: "بلاگ / صفحات سبک",
           why: "اتمام باکت تکمیلی",
-          done: false,
+          done: true,
+          note: "✅ ماه۷ p7-a1: 25/۲۵ P2 باقی · ایجاد 12 · P2=۵۸/۵۸ · 2026-11-07",
         },
         {
           id: "p7-a2",
@@ -3733,7 +3734,7 @@ window.ZEHNATI_SEO = {
         },
       ],
       checklist: [
-        { id: "p7-c1", label: "P2 کامل: ۵۸/۵۸", done: false },
+        { id: "p7-c1", label: "P2 کامل: ۵۸/۵۸", done: true },
         { id: "p7-c2", label: "P3 کامل: ۵/۵", done: false },
         { id: "p7-c3", label: "پوشش کیورد ۲۰۶/۲۰۶ تأیید شد", done: false },
         { id: "p7-c4", label: "Audit نهایی ثبت شد", done: false },
