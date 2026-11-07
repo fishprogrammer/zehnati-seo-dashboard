@@ -2946,7 +2946,7 @@ window.ZEHNATI_SEO = {
       spanLabel: "ماه ۷",
       dateRange: "۲۰ دی – ۱۹ بهمن",
       status: "active",
-      summary: "P2 کامل ۵۸/۵۸ ✓ · ادامه ۵ P3 + Audit نهایی.",
+      summary: "P2+P3 کامل · ۲۰۶/۲۰۶ ✓ · ادامه Audit نهایی.",
     },
   ],
 
@@ -3689,7 +3689,8 @@ window.ZEHNATI_SEO = {
           title: "۵ کیورد P3 → صفحه یا ریدایرکت هدفمند",
           where: "وردپرس",
           why: "پوشش کامل ۲۰۶ کیورد لیست",
-          done: false,
+          done: true,
+          note: "✅ ماه۷ p7-a2: 5/۵ P3 · پوشش کل 206/206 · 2026-11-07",
         },
         {
           id: "p7-a3",
@@ -3735,8 +3736,8 @@ window.ZEHNATI_SEO = {
       ],
       checklist: [
         { id: "p7-c1", label: "P2 کامل: ۵۸/۵۸", done: true },
-        { id: "p7-c2", label: "P3 کامل: ۵/۵", done: false },
-        { id: "p7-c3", label: "پوشش کیورد ۲۰۶/۲۰۶ تأیید شد", done: false },
+        { id: "p7-c2", label: "P3 کامل: ۵/۵", done: true },
+        { id: "p7-c3", label: "پوشش کیورد ۲۰۶/۲۰۶ تأیید شد", done: true },
         { id: "p7-c4", label: "Audit نهایی ثبت شد", done: false },
         { id: "p7-c7", label: "Site Checkup ≥۸۵ / AI Vis ≥۷۰", done: false },
         { id: "p7-c5", label: "چک‌لیست نگهداری تحویل شد", done: false },
