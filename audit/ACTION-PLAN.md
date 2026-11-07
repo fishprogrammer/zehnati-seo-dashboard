@@ -1,4 +1,4 @@
-# ACTION PLAN — zehnati.ir (2026-10-27)
+# ACTION PLAN — zehnati.ir (2026-11-07)
 
 ## Critical
 1. لینک داخلی بلاگ‌های پرکلیک → لندینگ‌های P0
