@@ -6,7 +6,7 @@
 
 | URL | Types |
 |-----|-------|
-| `/` | City, ContactPoint, Country, GeoCoordinates, ImageObject, LocalBusiness, OpeningHoursSpecification, Person, PostalAddress, SearchAction, WebPage, WebSite |
+| `/` | ContactPoint, ImageObject, LocalBusiness, Person, PostalAddress, SearchAction, WebPage, WebSite |
 | `/about/` | BreadcrumbList, ContactPoint, ImageObject, ListItem, Person, WebPage, WebSite |
 | `/contact-us/` | Article, BreadcrumbList, ContactPoint, ImageObject, ListItem, Person, WebPage, WebSite |
 | `/auth/` | Article, BreadcrumbList, ContactPoint, ImageObject, ListItem, Person, WebPage, WebSite |
@@ -14,8 +14,8 @@
 | `/قیمت-مشاوره-کنکور/` | Answer, Article, BreadcrumbList, ContactPoint, FAQPage, ImageObject, ListItem, Person, Question, WebPage, WebSite |
 | `/بهترین-مشاور-کنکور-اصفهان/` | Answer, BreadcrumbList, City, ContactPoint, Country, FAQPage, GeoCoordinates, ImageObject, ListItem, LocalBusiness, OpeningHoursSpecification, Person |
 | `/مشاوره-آنلاین-کنکور/` | Answer, Article, BreadcrumbList, ContactPoint, Country, EducationalOrganization, FAQPage, ImageObject, ListItem, Person, Question, WebPage |
-| `/مشاوره-کنکور-تجربی/` | BlogPosting, BreadcrumbList, ContactPoint, ImageObject, ListItem, Person, WebPage, WebSite |
-| `/مشاوره-تحصیلی-در-اصفهان/` | BlogPosting, BreadcrumbList, ContactPoint, ImageObject, ListItem, Person, WebPage, WebSite |
+| `/مشاوره-کنکور-تجربی/` | Answer, BreadcrumbList, ContactPoint, ImageObject, ListItem, Question, WebSite |
+| `/مشاوره-تحصیلی-در-اصفهان/` | Answer, BreadcrumbList, ContactPoint, ImageObject, ListItem, Question, WebSite |
 | `/ثبت-نام/` | Answer, BlogPosting, BreadcrumbList, ContactPoint, FAQPage, ImageObject, ListItem, Person, Question, WebPage, WebSite |
 | `/بهترین-مشاور-کنکور-تهران/` | Answer, BreadcrumbList, City, ContactPoint, Country, FAQPage, GeoCoordinates, ImageObject, ListItem, LocalBusiness, OpeningHoursSpecification, Person |
 | `/برنامه-ریزی-کنکور/` | Answer, BlogPosting, BreadcrumbList, ContactPoint, FAQPage, ImageObject, ListItem, Person, Question, WebPage, WebSite |

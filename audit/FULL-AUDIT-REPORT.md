@@ -1,6 +1,6 @@
 # Full SEO Audit — `/seo audit` — zehnati.ir
 
-**Generated:** 2026-11-07T11:22:39+03:30  
+**Generated:** 2026-11-08T15:21:51+03:30  
 **Health Score:** 73/100  
 **GSC 3m:** 16,035 کلیک · 113,158 نمایش · CTR 14.17% · pos 8.49  
 **WoW:** 1120 کلیک (-3.5٪)
@@ -33,8 +33,8 @@
 
 | Category | Score |
 |----------|------:|
-| technical | 76 |
-| technical_raw | 76 |
+| technical | 78 |
+| technical_raw | 78 |
 | content | 57 |
 | on_page_sxo | 79 |
 | schema | 64 |
@@ -51,7 +51,7 @@
 | `/` | 200 | 1 | Local/Edu |
 | `/about/` | 200 | 1 | Local/Edu |
 | `/contact-us/` | 200 | 1 | Local/Edu |
-| `/auth/` | 200 | 0 | Local/Edu |
+| `/auth/` | 200 | 0 | noindex · Local/Edu |
 | `/مشاوره-کنکور/` | 200 | 1 | FAQ · Local/Edu |
 | `/قیمت-مشاوره-کنکور/` | 200 | 1 | FAQ · Local/Edu |
 | `/بهترین-مشاور-کنکور-اصفهان/` | 200 | 1 | FAQ · Local/Edu |

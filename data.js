@@ -4,7 +4,7 @@ window.ZEHNATI_SEO = {
     brand: "ذهن آتی",
     domain: "https://zehnati.ir/",
     manager: "دکتر زهرا جعفری",
-    updatedAt: "2026-11-07",
+    updatedAt: "2026-11-08",
     updatedAtFa: "2026-11-07",
     phase: 4,
     phaseLabel: "فاز ۴ — ماه ۴: لید CTR + غیربرند + ایندکس",
@@ -908,7 +908,7 @@ window.ZEHNATI_SEO = {
     overall: 73,
     label: "آدیت 2026-10-27: 73/۱۰۰ — GSC 3m 15٬861 کلیک · WoW -7.9٪ · P0~1411",
     breakdown: [
-      { id: "tech", name: "فنی", score: 76, max: 100 },
+      { id: "tech", name: "فنی", score: 78, max: 100 },
       { id: "onpage", name: "آن‌پیج", score: 79, max: 100 },
       { id: "content", name: "محتوا", score: 57, max: 100 },
       { id: "local", name: "محلی", score: 74, max: 100 },
