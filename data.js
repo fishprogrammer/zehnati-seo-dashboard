@@ -1638,25 +1638,25 @@ window.ZEHNATI_SEO = {
     ]
   },
   coverage: {
-    "exportedAt": "2026-10-27",
-    "exportedAtFa": "۲۰۲۶-۱۰-۲۷",
-    "scopeNote": "GSC Page indexing · noindex drilldown مرورگر 2026-11-14 · Last update indexing 11/9/26",
+    "exportedAt": "2026-11-17",
+    "exportedAtFa": "۲۰۲۶-۱۱-۱۷",
+    "scopeNote": "GSC Page indexing مرورگر 2026-11-17 · Last update indexing 11/13/26 · Performance xlsx 11/17",
     "latest": {
-      "date": "2026-11-09",
-      "indexed": null,
-      "notIndexed": null,
+      "date": "2026-11-13",
+      "indexed": 621,
+      "notIndexed": 666,
       "impressions": null,
-      "noindexAffected": 437,
-      "noindexValidation": "failed"
+      "noindexAffected": 436,
+      "noindexValidation": "started"
     },
     "totals": {
       "issueRowsWithPages": 9,
-      "issuePagesSum": 706,
-      "critical404": 29,
-      "noindex": 437,
-      "crawledNotIndexed": 114,
-      "discoveredNotIndexed": 128,
-      "redirects": 33
+      "issuePagesSum": 666,
+      "critical404": 30,
+      "noindex": 436,
+      "crawledNotIndexed": 120,
+      "discoveredNotIndexed": 41,
+      "redirects": 34
     },
     "cwv": {
       "updatedAt": "2026-10-27",
@@ -1672,19 +1672,19 @@ window.ZEHNATI_SEO = {
     "issues": [
       {
         "reasonFa": "حذف با تگ noindex",
-        "pages": 437,
+        "pages": 436,
         "severity": "critical",
-        "note": "2026-11-14: Validation failed (۱۱/۱۰) · Failed۱۱ لایو fix شد · ۴۲۶ pending · Start new validation"
+        "note": "2026-11-17: Validation Started · Indexed۶۲۱↑ · لایو publish پاک"
       },
       {
         "reasonFa": "کشف شده ولی هنوز ایندکس نیست",
-        "pages": 128,
+        "pages": 41,
         "severity": "high",
-        "note": "۲۰۲۶-۱۰-۲۷: P0 cluster + IndexNow · Request indexing دستی برای فروش"
+        "note": "↓ از ۱۲۸ · IndexNow/لینک فقط P0/P1"
       },
       {
         "reasonFa": "خزش شده ولی هنوز ایندکس نیست",
-        "pages": 114,
+        "pages": 120,
         "severity": "high",
         "note": "کیفیت/تکرار — عمق محتوا + سیگنال لینک P0"
       },
