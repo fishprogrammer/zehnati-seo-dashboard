@@ -21,52 +21,52 @@ window.ZEHNATI_SEO = {
   },
   seoLeadBrief: {
     lead_bottlenecks_2026_11_02: "✅ گلوگاه لید ۲۰۲۶-۱۱-۰۲: CTR meta ۹/۹ · CTA ۱۱ · غیربرند ۱۶ · ریدایرکت ۸ · IndexNow ✓",
-    verdict: "آدیت ۱۱/۱۷: ۷۳/۱۰۰ · Indexed ۶۲۱↑ · Not ۶۶۶↓ · کلیک ۱۵٬۹۱۴ · WoW -2.2٪",
+    verdict: "۱۱/۱۷: Validate Failed=۰ · CTR meta ۹ صفحه P0 تازه شد · حسابداری→قیمت/فرم",
     updatedAt: "2026-11-17",
     updatedAtFa: "2026-11-17",
-    source: "GSC xlsx 2026-11-17 + Pages overview زنده ۱۱/۱۳",
-    note: "ایندکس بهتر شد (۴۵۹→۶۲۱) · noindex/۴۰۴ هنوز Validate · Discovered↓۴۱ · Crawled↓۱۲۰",
+    source: "GSC Validate زنده + CTR refresh از xlsx 11/17",
+    note: "noindex Pending۴۳۶/Failed۰ · ۴۰۴ Pending۳۰/Failed۰ · meta۹ لندینگ + CTA حسابداری",
     status: [
-      { label: "آدیت 2026-11-17", value: "۷۳/۱۰۰ · ۱۵٬۹۱۴ کلیک · CTR ۱۴٫۵٪ · رتبه ~۸٫۵", tone: "ok" },
-      { label: "Indexed / Not (۱۱/۱۳)", value: "۶۲۱ / ۶۶۶ (۹ دلیل) · ↑۱۶۲ ایندکس نسبت به ۱۱/۱۴", tone: "ok" },
-      { label: "noindex", value: "۴۳۶ · Validation Started", tone: "warn" },
-      { label: "۴۰۴", value: "۳۰ · Validation Started", tone: "warn" },
-      { label: "Crawled / Discovered", value: "۱۲۰ / ۴۱ — ↓ نسبت به قبل", tone: "warn" },
-      { label: "WoW کلیک", value: "۱٬۰۳۳ (−۲٫۲٪) · نمایش +۱۱٫۸٪", tone: "warn" },
+      { label: "آدیت 2026-11-17", value: "۷۳/۱۰۰ · ۱۵٬۹۱۴ کلیک · CTR ۱۴٫۵٪", tone: "ok" },
+      { label: "Indexed / Not", value: "۶۲۱ / ۶۶۶", tone: "ok" },
+      { label: "Validate noindex", value: "Pending ۴۳۶ · Failed ۰", tone: "ok" },
+      { label: "Validate ۴۰۴", value: "Pending ۳۰ · Failed ۰", tone: "ok" },
+      { label: "CTR meta refresh", value: "۹ لندینگ P0 title/desc آپدیت", tone: "ok" },
+      { label: "WoW", value: "کلیک −۲٫۲٪ · نمایش +۱۱٫۸٪", tone: "warn" },
     ],
     leadGaps: [
       {
-        title: "ایندکس — پیشرفت خوب",
-        detail: "Indexed ۴۵۹→۶۲۱ · Not ۸۲۸→۶۶۶ · ۵xx=۰ · Discovered ۱۲۸→۴۱ · Crawled ۱۹۳→۱۲۰. noindex۴۳۶ و ۴۰۴۳۰ هنوز Validate.",
+        title: "Validate — بدون Fail جدید",
+        detail: "noindex و ۴۰۴ هر دو Failed=۰ و هنوز Pending. auth همچنان noindex. منتظر کرال.",
       },
       {
-        title: "نمایش↑ کلیک↓ جزئی",
-        detail: "WoW نمایش +۱۱٫۸٪ ولی کلیک −۲٫۲٪ → CTR را روی P0 بپا؛ meta/CTA قبلاً اعمال شده.",
+        title: "CTR P0 — ✅ refresh امروز",
+        detail: "هاب مشاوره ۱٫۲۷٪ · تماس ۳٪ · آنلاین ۱٫۲۵٪ · تهران/اصفهان/قیمت: title+desc با جلسه رایگان بازنویسی شد.",
       },
       {
-        title: "Redirect ۳۴ + noindex ۴۳۶",
-        detail: "ریدایرکت‌ها طبیعی‌اند اگر زنجیره کوتاه. noindex: keep=auth/documents/growth · بقیه منتظر کرال Validate.",
+        title: "مقاله حسابداری — لینک لید",
+        detail: "CTA طبیعی به قیمت + فرم + هاب مشاوره تزریق شد · meta کنکور حسابداری آپدیت.",
       },
     ],
     priorities: [
       {
         rank: 1,
         title: "رصد Validateهای noindex و ۴۰۴",
-        why: "هر دو Started · عدد GSC هنوز بالاست تا کرال تمام شود",
+        why: "هر دو Started · Failed فعلی ۰",
         do: [
-          "✅ لایو publish پاک + تگ خالی ۳۰۱ + کارنامه-ها ۳۰۱",
-          "اگر Fail جدید آمد triage دوباره",
-          "Request indexing فقط P0/P1 فروش",
+          "✅ چک ۱۱/۱۷: noindex Pending۴۳۶/Failed۰ · ۴۰۴ Pending۳۰/Failed۰",
+          "✅ auth noindex حفظ شد",
+          "اگر Fail آمد triage دوباره",
         ],
       },
       {
         rank: 2,
         title: "CTR روی نمایش رو به رشد",
-        why: "نمایش WoW +۱۱٫۸٪ · کلیک −۲٫۲٪",
+        why: "نمایش +۱۱٫۸٪ · کلیک −۲٫۲٪",
         do: [
-          "رصد title/meta صفحات P0 در GSC",
-          "لینک داخلی به قیمت/فرم از مقالات پرکلیک",
-          "✅ CTA/غیربرند از قبل اعمال شده",
+          "✅ title/desc ۹ لندینگ ضعیف‌CTR (هاب/تماس/آنلاین/شهر/قیمت/…)",
+          "✅ لینک داخلی حسابداری → قیمت/فرم/هاب",
+          "رصد CTR هفتگی بعد از ایندکس meta جدید",
         ],
       },
       {
@@ -75,7 +75,6 @@ window.ZEHNATI_SEO = {
         why: "۱۲۰+۴۱ هنوز خارج ایندکس",
         do: [
           "تقویت لینک داخلی خوشه مشاور/شهر",
-          "IndexNow فقط URLهای تجاری",
           "بدون request انبوه به صفحات نازک",
         ],
       },
@@ -1696,7 +1695,7 @@ window.ZEHNATI_SEO = {
       },
       {
         "reasonFa": "صفحه پیدا نشد (۴۰۴)",
-        "pages": 29,
+        "pages": 30,
         "severity": "critical",
         "note": "Validate شروع شد ۲۰۲۶-۱۰-۲۷ · PENDING · ۳۰۱ قبلی انجام شده"
       },
